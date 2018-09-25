@@ -1,0 +1,10 @@
+.testimonial .testimonial-photo{
+    width: 100px;
+    display: block;
+    margin: 10px auto -70px;
+}
+.testimonial .icon{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
