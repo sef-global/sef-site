@@ -2661,7 +2661,7 @@ textarea.form-control
 
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before,
 .custom-control-input.is-valid:checked ~ .custom-control-label::before
-{
+{   
     border-color: #93e7c3; 
     background-color: #54daa1;
 }
@@ -14720,6 +14720,49 @@ a.btn-icon-only
 {
     box-shadow: none, 0 0 0 0 rgba(234, 76, 137, .5);
 }
+
+/* START added by naveen  */
+
+.btn-linkedin
+{
+    color: #fff;
+    border-color: #0077B5;
+    background-color: #0077B5;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+.btn-linkedin:hover
+{
+    color: #fff;
+    border-color: #0077B5; 
+    background-color: #0077B5;
+}
+.btn-linkedin:focus,
+.btn-linkedin.focus
+{
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgba(234, 76, 137, .5);
+}
+.btn-linkedin.disabled,
+.btn-linkedin:disabled
+{
+    color: #fff;
+    border-color: #0077B5; 
+    background-color: #0077B5;
+}
+.btn-linkedin:not(:disabled):not(.disabled):active,
+.btn-linkedin:not(:disabled):not(.disabled).active,
+.show > .btn-linkedin.dropdown-toggle
+{
+    color: #fff;
+    border-color: #0077B5; 
+    background-color: #e51e6b;
+}
+.btn-linkedin:not(:disabled):not(.disabled):active:focus,
+.btn-linkedin:not(:disabled):not(.disabled).active:focus,
+.show > .btn-linkedin.dropdown-toggle:focus
+{
+    box-shadow: none, 0 0 0 0 rgba(234, 76, 137, .5);
+}
+/* END added by naveen */
 
 .btn-github
 {
