@@ -14754,7 +14754,7 @@ a.btn-icon-only
 {
     color: #fff;
     border-color: #0077B5; 
-    background-color: #e51e6b;
+    background-color: #0077B5;
 }
 .btn-linkedin:not(:disabled):not(.disabled):active:focus,
 .btn-linkedin:not(:disabled):not(.disabled).active:focus,
