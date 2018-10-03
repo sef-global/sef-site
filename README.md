@@ -2,8 +2,9 @@
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
 
-######## Theme : Argon
-######## Theme Author : Creative Tim
+###### Theme : Argon
+
+###### Theme Author : Creative Tim
 
 <div align="center">
   <img src="https://avatars3.githubusercontent.com/u/31291163?s=200&v=4" />
