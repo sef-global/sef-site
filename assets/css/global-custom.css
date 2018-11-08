@@ -9,6 +9,18 @@
     margin-right: auto;
 }
 
+.img-full{
+    width: 100%;
+}
+
+.blog-card .card-body{
+    padding: 24px 0;
+}
+.blog-card .card-description{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
 /* START added by naveen  */
 
 .btn-linkedin
