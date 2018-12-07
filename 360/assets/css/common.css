@@ -1,3 +1,18 @@
 .page-header .content-center img{
     height: auto;
 }
+
+/*added by heshan*/
+
+.section-lineup .path{
+    width: 30%;
+    top: 0;
+    left: 3%;
+}
+.section-overview .path{
+    width: 30%;
+    top: 0;
+    left: 3%;
+}
+
+/* END added by heshan*/
