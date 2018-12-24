@@ -2,6 +2,11 @@
     height: auto;
 }
 
+.navbar-brand img {
+    height: 40px;
+}
+/* END added by jaye*/
+
 /*added by heshan*/
 
 .section-lineup .path{
