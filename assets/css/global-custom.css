@@ -9,6 +9,18 @@
     margin-right: auto;
 }
 
+.img-full{
+    width: 100%;
+}
+
+.blog-card .card-body{
+    padding: 24px 0;
+}
+.blog-card .card-description{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
 /* START added by naveen  */
 
 .btn-linkedin
@@ -58,3 +70,17 @@
 }
 
 /*end added by jaye*/
+
+/* added by tiagopedutti */
+
+.partners img{
+    opacity: 0.5;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.partners img:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* END added by tiagopedutti */
