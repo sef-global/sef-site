@@ -84,3 +84,12 @@
 }
 
 /* END added by tiagopedutti */
+
+
+/*event cards*/
+
+.event-card .date{
+    text-align: right;
+    margin-bottom: -20px;
+    margin-top: 15px;
+}
