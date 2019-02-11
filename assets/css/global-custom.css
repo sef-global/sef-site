@@ -93,3 +93,10 @@
     margin-bottom: -20px;
     margin-top: 15px;
 }
+
+.event-card .card-img-top{
+    object-fit: cover;
+    object-position: 100% 5px;
+    width: 490px;
+    height: 162px;
+}
