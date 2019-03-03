@@ -2,7 +2,14 @@
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
 
-[![Build Status](https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master)](https://travis-ci.org/SustainableEducationFoundation/LiveWeb)
+<p align="center">
+ <a href="https://travis-ci.org/SustainableEducationFoundation/LiveWeb">
+<img src="https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master" alt="Build - Master Branch">
+</a>
+<a href="https://opensource.org/licenses/MIT">
+<img alt="" src="https://img.shields.io/badge/license-MIT-green.svg">
+ </a>
+</p>
 
 ###### Theme : Argon
 
@@ -20,7 +27,4 @@ This repository contains source for Sustainable Education Foundation Website. [V
 Want to contribute to this project? 
 
 #### Send us a Pull Request
-
-## License 
-`MIT` (Docs Only) + `CC3` 
 
