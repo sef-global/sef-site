@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master)](https://travis-ci.org/SustainableEducationFoundation/LiveWeb)
+
 # Official Website for Sustainable Education Foundation
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
