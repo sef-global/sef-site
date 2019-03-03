@@ -2,7 +2,12 @@
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
 
+<p align="center">
 [![Build Status](https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master)](https://travis-ci.org/SustainableEducationFoundation/LiveWeb)
+<a href="https://opensource.org/licenses/MIT">
+<img alt="" src="https://img.shields.io/badge/license-MIT-green.svg">
+ </a>
+</p>
 
 ###### Theme : Argon
 
