@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master)](https://travis-ci.org/SustainableEducationFoundation/LiveWeb)
-
 # Official Website for Sustainable Education Foundation
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
+
+[![Build Status](https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master)](https://travis-ci.org/SustainableEducationFoundation/LiveWeb)
 
 ###### Theme : Argon
 
@@ -22,5 +22,5 @@ Want to contribute to this project?
 #### Send us a Pull Request
 
 ## License 
-`MIT` (Docs Only) + `CC3`
+`MIT` (Docs Only) + `CC3` 
 
