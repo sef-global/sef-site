@@ -1,4 +1,4 @@
-branches:
+gibranches:
   only:
     - master
 notifications:
