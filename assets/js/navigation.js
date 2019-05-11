@@ -1,8 +1,10 @@
-$(function () {
+//function to load navbar and footer
 
+
+function loadNavAndFooter(pathToContentDirectory) {
     $.ajax({
         type: 'get',
-        url: 'assets/content/navbar.html',
+        url: pathToContentDirectory+'/navbar.html',
         dataType: 'html',
         success: function (addHeader) {
             $("#navbar").html(addHeader)
@@ -12,12 +14,11 @@ $(function () {
 
     $.ajax({
         type: 'get',
-        url: 'assets/content/footer.html',
+        url: pathToContentDirectory+'/footer.html',
         dataType: 'html',
         success: function (addFooter) {
             $("#footer").html(addFooter)
         }
 
     });
-
-});
+}
