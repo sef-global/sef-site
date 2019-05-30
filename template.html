@@ -25,7 +25,7 @@
 <header class="header-global">
     <!--nav bar goes here-->
 </header>
-<!-- to use the static navbar, use this instead of above tag => * <div id="navbar"></div> * -->
+<!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
 
 <main>
     <!--main content goes here-->
@@ -35,7 +35,7 @@
     <!--footer goes here -->
 </footer>
 
-<!-- to use the static footer, use this instead of above tag => *<div id="footer"></div>* -->
+<!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
 
 <!-- Core -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -51,7 +51,7 @@
 
 <script>
     $(function () {
-        loadNavAndFooter('assets/content')
+        loadNavAndFooter('assets/content')  //relative path to content directory
         // link to the navbar, footer content goes here
     })
 </script>
