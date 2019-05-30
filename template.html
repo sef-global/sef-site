@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Volunteer driven organisation which empowers students, education institutes and education as a whole in Sri Lanka.">
+    <meta name="description"
+          content="Volunteer driven organisation which empowers students, education institutes and education as a whole in Sri Lanka.">
     <meta name="author" content="Sustainable Education Foundation">
     <title>Sustainable Education Foundation</title>
     <!-- Favicon -->
@@ -24,7 +25,7 @@
 <header class="header-global">
     <!--nav bar goes here-->
 </header>
-<!-- or  <div id="navbar"></div> -->
+<!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
 
 <main>
     <!--main content goes here-->
@@ -33,7 +34,8 @@
 <footer class="footer">
     <!--footer goes here -->
 </footer>
-<!-- or  <div id="footer"></div> -->
+
+<!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
 
 <!-- Core -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -43,14 +45,17 @@
 <!-- Argon JS -->
 <script src="assets/js/argon.js?v=1.0.1"></script>
 
-<!--
+<!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
+
 
 <script>
     $(function () {
-        loadNavAndFooter('assets/content')
+        loadNavAndFooter('assets/content')  //relative path to content directory
+        // link to the navbar, footer content goes here
     })
-</script>-->
+</script>
+
 
 </body>
 
