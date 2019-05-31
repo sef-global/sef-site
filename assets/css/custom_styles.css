@@ -1,0 +1,41 @@
+.profile_div{
+	margin: 0 auto;
+	text-align: center;
+}
+.profile_img{
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile_div:hover img{
+	transform: scale(1.2);
+}
+.content_divider{
+	width: 15%;
+	height: 5px;
+	margin: 20px 0;
+	background-image: linear-gradient(to right, #1e21ce, #7f27ea);
+}
+.content_divider1{
+	width: 10%;
+	height: 5px;
+	margin: 20px auto 60px auto;
+	background-image: linear-gradient(to right, #1e21ce, #7f27ea);
+}
+#signup-btn{
+	padding: 10px 100px;
+}
+.btn-linkedin{
+	background: #0077B5;
+	border: 0;
+	color: #fff;
+}
+.btn-linkedin:hover{
+	text-decoration: none;
+	background: #0077B5;
+	color: #fff;
+}
+.shape-secondary{
+	background: #0b5e89;
+}
