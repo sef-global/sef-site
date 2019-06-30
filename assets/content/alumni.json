@@ -11,17 +11,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/naveencooray/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/og_m3rlin",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/naveencharuka",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -34,12 +34,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/kalpani-ranasinghe/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/kalpani.ranasinghe.50",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -52,7 +52,7 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/RashmiRatnayake",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -65,17 +65,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/dulandias/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/dias_dulan",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/DulanDiasTheProfile",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -94,12 +94,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/hasini-yasathma-manage/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/hasi.yasathma",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -112,12 +112,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/iresha-kodikara/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/ishu.kodikara",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -130,17 +130,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/mathanraj-sharma/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/mathanrajsharma",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/rvmmathan",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -153,17 +153,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/sanduni-chamika-2017/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/sanduni_chamika",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sanduni.aththanayake.12",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -176,17 +176,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/mit-madhushani-dissanayake/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/bridy_bb",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/shani.dissanayake.11",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -199,12 +199,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/pradeepa-subhashini/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/pradeepasubhashini.urala",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -217,17 +217,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/sahan-pabasara-a84840110/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/Sahan_Pabasara",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/Serve.the.Light.BE.Sahan.Pabasara.Firenze",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -240,7 +240,7 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sandunimahinsala",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -253,12 +253,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/gihani-gamage-645a31132/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/gihani.gamage.90",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -271,17 +271,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/isurusachitha/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/IsuruSachithax`",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/isurusachitha",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -294,12 +294,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/sachith-manchanayaka-163a77148/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sachith.manchanayaka",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -312,17 +312,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/navin-chandrasiri/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/Navin_Thamindu",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/navin.thamindu",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -335,7 +335,7 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/uddeepa-wijerathna-404648126/",
-            "buttonColor": "default"
+            "button": "default"
           }
         ],
         "br": ""
@@ -348,17 +348,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/gobiga-rajalingam-00714b143/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/Gobir19",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/Gobiga.R",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br><br>"
@@ -371,17 +371,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/maneesha-dedigama-1832b913a/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/MTDedigama",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/ManeeshaTDedigama",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -394,7 +394,7 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sandhalee.siriwardhna",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": "<br>"
@@ -407,17 +407,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/arambawelaml/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/MilindaLaknath",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/milindalaknath",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -430,17 +430,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/jude-niroshan/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/Jude_4m_SL",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/Crazy.Doki",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -453,12 +453,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/madhushi-welikala-0b3157120/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/madhushiwelikala",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -471,17 +471,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/thamindu-wickramasinghe-aa3931161/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/Dtamindu",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/thamindu.wickramasinghe",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -494,12 +494,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/naveen-r-292539103/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/ntr.sack",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -512,17 +512,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/sureshmichael/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/TSMPeiris",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/TSMPeiris",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -535,17 +535,17 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/thinura-laksara/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "twitter",
             "link": "https://twitter.com/thinuralaksara",
-            "buttonColor": "twitter"
+            "button": "twitter"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/thinura.laksara",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -558,12 +558,12 @@
           {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/vithursan-raveendran-26170b123/",
-            "buttonColor": "default"
+            "button": "default"
           },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/chrisvithu",
-            "buttonColor": "facebook"
+            "button": "facebook"
           }
         ],
         "br": ""
