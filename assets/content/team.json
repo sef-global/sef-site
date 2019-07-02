@@ -23,8 +23,8 @@
                         "link": "https://www.facebook.com/alaganm",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": ""
+                ]
+               
             },
             {
                 "name": "Anjana Wijekoon",
@@ -46,8 +46,8 @@
                         "link": "https://www.facebook.com/anjana.wijekoon",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": ""
+                ]
+                
             },
             {
                 "name": "Bhagya Nirmaan Silva",
@@ -64,8 +64,8 @@
                         "link": "https://www.facebook.com/bhagyas",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": ""
+                ]
+                
             },
             {
                 "name": "Dinal Kurukulasooriya",
@@ -82,8 +82,8 @@
                         "link": "https://www.facebook.com/dinal.kurukulasooriya",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": ""
+                ]
+               
             },
             {
                 "name": "Heminda Jayaweera",
@@ -100,8 +100,8 @@
                         "link": "https://www.facebook.com/heminda",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
+               
             },
             {
                 "name": "Rohan Jayaweera",
@@ -123,8 +123,8 @@
                         "link": "https://www.facebook.com/rohan.jayaweera",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
+               
             },
             {
                 "name": "Ramindu Deshapriya",
@@ -146,8 +146,8 @@
                         "link": "https://www.facebook.com/ramdeshlota",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
+                
             },
             {
                 "name": "Shenal Senarath",
@@ -169,8 +169,7 @@
                         "link": "https://www.facebook.com/shenal.senarath",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Dr.Yasantha Rajakarunanayake",
@@ -192,8 +191,7 @@
                         "link": "https://www.facebook.com/yasanthar",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             }
         ]
     },
@@ -216,8 +214,7 @@
                         "link": "https://www.facebook.com/anish.wijesinghe",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Charith Samarakoon",
@@ -239,8 +236,7 @@
                         "link": "https://www.facebook.com/charith.samarakoon",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Kavindya Thennakoon",
@@ -262,8 +258,7 @@
                         "link": "https://www.facebook.com/kavindya.thennakoon",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Yasiru Kassapa",
@@ -280,8 +275,7 @@
                         "link": "https://www.facebook.com/wik2kassa",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             }
         ]
     },
@@ -309,8 +303,7 @@
                         "link": "https://www.facebook.com/ak.wijesundara",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Buwaneka De Silva",
@@ -332,8 +325,7 @@
                         "link": "https://www.facebook.com/Buwaneka.DeSilva",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Hasitha Senevirathne",
@@ -355,8 +347,7 @@
                         "link": "https://www.facebook.com/senevirathnehasitha",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Suresh Peiris",
@@ -378,8 +369,7 @@
                         "link": "https://www.facebook.com/TSMPeiris",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Tharika Weerakoon",
@@ -396,8 +386,7 @@
                         "link": "https://www.facebook.com/tharika.weerakoon.3",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             },
             {
                 "name": "Jayasanka Weerasinghe",
@@ -414,8 +403,7 @@
                         "link": "https://www.facebook.com/jayasanka.sack",
                         "buttonColor": "facebook"
                     }
-                ],
-                "br": "<br>"
+                ]
             }
         ]
     }
