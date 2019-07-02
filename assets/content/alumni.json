@@ -1,0 +1,573 @@
+[
+  {
+    "heading": "Former Executive Committee",
+    "description": "The head team which handles the functionality of the foundation.",
+    "people": [
+      {
+        "name": "Naveen Cooray",
+        "image": "../assets/img/team/naveen.jpg",
+        "post": "Chief Technology Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/naveencooray/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/og_m3rlin",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/naveencharuka",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Kalpani Ranasinghe",
+        "image": "../assets/img/team/kalpani.jpeg",
+        "post": "Secretary",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/kalpani-ranasinghe/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/kalpani.ranasinghe.50",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Rashmi Ratnayaka",
+        "image": "../assets/img/team/rashmi.jpg",
+        "post": "Product Manager - Onelive",
+        "social": [
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/RashmiRatnayake",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Dulan Dias",
+        "image": "../assets/img/team/dulan.jpg",
+        "post": "Chief Executive Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/dulandias/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/dias_dulan",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/DulanDiasTheProfile",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      }
+    ]
+  },
+  {
+    "heading": "Alumni 2018",
+    "description": "",
+    "people": [
+      {
+        "name": "Hasini Yasathma",
+        "image": "../assets/img/team/hasinni.jpg",
+        "post": "Digital Marketing Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/hasini-yasathma-manage/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/hasi.yasathma",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Iresha Kodikara",
+        "image": "../assets/img/team/iresha.jpg",
+        "post": "Operations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/iresha-kodikara/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/ishu.kodikara",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Mathanraj Sharma",
+        "image": "../assets/img/team/mathanraj.jpeg",
+        "post": "Operations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/mathanraj-sharma/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/mathanrajsharma",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/rvmmathan",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sanduni Chamika",
+        "image": "../assets/img/team/sanduni.jpg",
+        "post": "Operations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sanduni-chamika-2017/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/sanduni_chamika",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sanduni.aththanayake.12",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Madhushani Dissanayake",
+        "image": "../assets/img/team/madhushani.jpeg",
+        "post": "Creative Design Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/mit-madhushani-dissanayake/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/bridy_bb",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/shani.dissanayake.11",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Pradeepa Subhashini",
+        "image": "../assets/img/team/pradeepa.jpg",
+        "post": "Student Ambassador",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/pradeepa-subhashini/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/pradeepasubhashini.urala",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sahan Pabasara",
+        "image": "../assets/img/team/sahanP.jpeg",
+        "post": "Digital Marketing Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sahan-pabasara-a84840110/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/Sahan_Pabasara",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/Serve.the.Light.BE.Sahan.Pabasara.Firenze",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sanduni Perera",
+        "image": "../assets/img/team/sanduniM.jpg",
+        "post": "Digital Marketing Executive",
+        "social": [
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sandunimahinsala",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Gihani Gamage",
+        "image": "../assets/img/team/gihani.jpg",
+        "post": "Public Relations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/gihani-gamage-645a31132/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/gihani.gamage.90",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Isuru Sachitha",
+        "image": "../assets/img/team/isurusachitha.jpg",
+        "post": "Public Relations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/isurusachitha/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/IsuruSachithax`",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/isurusachitha",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sachith Manchanayaka",
+        "image": "../assets/img/team/sacith.jpg",
+        "post": "Public Relations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sachith-manchanayaka-163a77148/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sachith.manchanayaka",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Navin Thamindu",
+        "image": "../assets/img/team/navin.jpg",
+        "post": "Creative Design Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/navin-chandrasiri/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/Navin_Thamindu",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/navin.thamindu",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Uddeepa Wijerathna",
+        "image": "../assets/img/team/udeepa.jpg",
+        "post": "Digital Marketing Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/uddeepa-wijerathna-404648126/",
+            "button": "default"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Gobiga Rajalingam",
+        "image": "../assets/img/team/gobiga.png",
+        "post": "Assistant Secretary",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/gobiga-rajalingam-00714b143/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/Gobir19",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/Gobiga.R",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br><br>"
+      },
+      {
+        "name": "Maneesha Dedigama",
+        "image": "../assets/img/team/maneesha.jpg",
+        "post": "Assistant Secretary",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/maneesha-dedigama-1832b913a/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/MTDedigama",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/ManeeshaTDedigama",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sandali Siriwardhana",
+        "image": "../assets/img/team/sandali.jpeg",
+        "post": "Student Ambassador",
+        "social": [
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sandhalee.siriwardhna",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Milinda Arambawela",
+        "image": "../assets/img/team/milinda.jpg",
+        "post": "Systems Architect",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/arambawelaml/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/MilindaLaknath",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/milindalaknath",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Jude Niroshan",
+        "image": "../assets/img/team/jude.jpg",
+        "post": "Student Ambassador - Developer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/jude-niroshan/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/Jude_4m_SL",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/Crazy.Doki",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Madhushi Welikala",
+        "image": "../assets/img/team/madushi.jpg",
+        "post": "Student Ambassador - QA",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/madhushi-welikala-0b3157120/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/madhushiwelikala",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Thamindu Wickramasinghe",
+        "image": "../assets/img/team/thamindu.jpg",
+        "post": "Software Engineer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/thamindu-wickramasinghe-aa3931161/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/Dtamindu",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/thamindu.wickramasinghe",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Naveen Rajan",
+        "image": "../assets/img/team/naveenR.jpg",
+        "post": "Software Engineer - Full Stack",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/naveen-r-292539103/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/ntr.sack",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Suresh Peiris",
+        "image": "../assets/img/team/suresh.jpg",
+        "post": "Software Engineer - Cross Platform",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sureshmichael/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/TSMPeiris",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/TSMPeiris",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Thinura Laksara",
+        "image": "../assets/img/team/thinura.jpeg",
+        "post": "Software Engineer - Cross Platform",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/thinura-laksara/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/thinuralaksara",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/thinura.laksara",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Vithursan Raveendran",
+        "image": "../assets/img/team/vithu.jpeg",
+        "post": "UI & UX Designer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/vithursan-raveendran-26170b123/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/chrisvithu",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      }
+    ]
+  }
+]
