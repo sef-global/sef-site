@@ -1,0 +1,119 @@
+{
+  "title": "Sustainable Education Foundation",
+  "image1":"../assets/img/brand/scholarx.png",
+
+  "heading1":"Premium Mentoring by Sri Lankans for Sri Lankans",
+  "image2": "../assets/img/rohan.jpg",
+
+  "h3":"What is ScholarX?",
+  "scholarx p":"Founded by Sustainable Education Foundation, the ScholarX is a 3 month program for Sri Lankan students who would like to get free premium mentoring during their study period. \n ScholarX program will also connect Sri Lankans who live all around the world, making the program for Sri Lankans who are living abroad to contribute directly to Sri Lankan students and the education system.",
+
+  "why scholarx h1":"Why ScholarX?",
+  "why scholarx paragraph": "There are two reasons to start the ScholarX program.</br></br>\n\n                        Reason 1 — There is no proper mentoring platform for Sri Lankan students. Also there is no proper mechanisms for Sri Lankan students to connect with Sri Lankans who are living abroad.</br>\n\n                        Reason 2 — There is no proper platform for Sri Lankans who lives abroad to share their knowledge with the Sri Lankan students.</br></br>\n\n                        In order to address these two problems we started the program.",
+  "image3": "../assets/img/l.jpg",
+
+  "mentors":[
+
+    {
+      "name": "Dr Hasini Jayatilaka",
+      "image": "../assets/img/mentors/hasini.jpeg",
+      "title": "Dr Hasini Jayatilaka",
+      "intro": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
+      "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
+      "twitter": "https://twitter.com/HasiniJt"
+    },
+
+    {
+      "name": "Dr Jeewika Ranaweera",
+      "image": "../assets/img/mentors/jeewika.jpeg",
+      "title": "Dr Jeewika Ranaweera",
+      "intro": "Principal Hardware Engineer at Oracle, PhD at University of Toronto.",
+      "linkedin": "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/",
+      "twitter": "https://twitter.com/JeewikaR",
+      "facebook": "https://www.facebook.com/jeewika.ranaweera"
+    },
+
+    {
+      "name": "Dr Rukshan Batuwita",
+      "image": "../assets/img/mentors/rukshan.jpeg",
+      "title": "Dr Rukshan Batuwita",
+      "intro": "Data Scientist at Google, PhD at University of Oxford.",
+      "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/",
+      "facebook": "https://www.facebook.com/rukshan.batuwita"
+    },
+
+    {
+      "name": "Dr Savithru Jayasinghe",
+      "image": "../assets/img/mentors/savithru.jpeg",
+      "title": "Dr Savithru Jayasinghe",
+      "intro": "PhD at Massachusetts Institute of Technology (MIT), MEng at University of Cambridge.",
+      "linkedin": "https://www.linkedin.com/in/savithru/",
+      "facebook": "https://www.facebook.com/savithru.j"
+    },
+
+    {
+      "name": "Sumudu Herath",
+      "image": "../assets/img/mentors/sumudu.jpeg",
+      "title": "Sumudu Herath",
+      "intro": "Ph.D. candidate at University of Cambridge, Best Engineering Undergraduate of University of Moratuwa.",
+      "linkedin": "https://www.linkedin.com/in/sumudu-herath-6618b855/",
+      "twitter": "https://twitter.com/sumuduherath",
+      "facebook": "https://www.facebook.com/sumudu.t.herath"
+    },
+
+    {
+      "name": "Yasith Vidanaarachchi",
+      "image": "../assets/img/mentors/yasith.jpeg",
+      "title": "Yasith Vidanaarachchi",
+      "intro": "Software Engineer at Google, Ex — Software Engineer at Amazon",
+      "linkedin": "https://www.linkedin.com/in/yasithv/",
+      "twitter": "https://twitter.com/tuxv",
+      "facebook": "https://www.facebook.com/yasith"
+    }
+
+  ],
+
+  "scholarx video": {
+    "title":"ScholarX Premium Mentoring",
+    "video":"https://www.youtube.com/embed/OSCus9R5M3s"
+
+  },
+
+  "How to be a ScholarX?": {
+    "title":"Find a mentor for me",
+    "paragraph": " The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
+
+  },
+
+  "How to be a Mentor?":"We are always in the look for exceptional mentors. Please write to us with your cv via our email : sustainableedufoundation@gmail.com",
+
+  "FAQ": {
+
+    "quiz1": {
+      "quiz": "Do you have to live abroad to be a mentor?",
+      "ans": "No, Anyone can become a mentor. Please do reach out to us. More the merrier."
+    },
+
+    "quiz2": {
+      "quiz": "Do you have to be Sri Lankan to be a mentor?",
+      "ans": "No, Anyone can become a mentor. Please do reach out to us. We are more than happy to get foreign mentors."
+    },
+
+    "quiz3": {
+      "quiz": "Who can become a ScholarX?",
+      "ans": "Our priority is given to Sri Lankan Students in Universities and Schools. \n If we have excess of mentors we can expand the program in to foreign students as well."
+    },
+
+    "quiz4": {
+      "quiz": "What is the cost of the program?",
+      "ans": "ScholarX is a free program conducted by volunteer mentors."
+    },
+
+    "quiz5": {
+      "quiz": "What kind of mentoring can I get?",
+      "ans": "The type of mentoring that you receive will depends on the mentor. \n After you are selected as a ScholarX, you will discuss this with your mentor. \n Some of the ways students have got mentoring in the past are as follows,\n <ul>\n <li>Collaborating with the mentor on a project.</li>\n <li>Getting career advice.</li>\n <li>Discussing about higher studies.</li>\n </ul>."
+    }
+  }
+
+}
+
