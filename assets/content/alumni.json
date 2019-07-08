@@ -79,6 +79,24 @@
           }
         ],
         "br": "<br>"
+      },
+      {
+        "name": "Dinithi Dharmapala",
+        "image": "../assets/img/team/dinithi.jpg",
+        "post": "Chief Communications Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/dinithi-dharmapala-890625117/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/dinithi.dharmapala",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
       }
     ]
   },
@@ -86,6 +104,29 @@
     "heading": "Alumni 2018",
     "description": "",
     "people": [
+      {
+        "name": "Charith Samarakoon",
+        "image": "../assets/img/team/charith.jpg",
+        "post": "Consultant",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/charithsamarakoon/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/ChariSamarakoon",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/charith.samarakoon",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
       {
         "name": "Hasini Yasathma",
         "image": "../assets/img/team/hasinni.jpg",
@@ -397,7 +438,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Milinda Arambawela",
@@ -567,7 +608,81 @@
           }
         ],
         "br": ""
+      },
+      {
+        "name": "Varuni Punchihewa",
+        "image": "../assets/img/team/varuni.jpg",
+        "post": "Director Of Operations",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/varuni-punchihewa-319a87120/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/varuni.punchihewa",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Udani Kaushalya",
+        "image": "../assets/img/team/udani.jpg",
+        "post": "Volunteer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/udani-kaushalya-b24003160/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/udani.kaushalya",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Iroshini Senevirathne",
+        "image": "../assets/img/team/iroshini.jpg",
+        "post": "Volunteer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/iroshini-senavirathne-0b4651133/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/iroshini.senavirathne",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
+        "name": "Sajitha Daupadi",
+        "image": "../assets/img/team/sajitha.jpg",
+        "post": "Volunteer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sajitha-daupadie/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sajitha.daupadie",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
       }
+      
+
     ]
   }
 ]
