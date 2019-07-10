@@ -1,0 +1,288 @@
+{
+  "researchers": [
+    {
+      "name": "Yadurshini Raveendran",
+      "image": "../assets/img/researchers/yudharshini.jpeg",
+      "title": "Duke University - Duke Global Health Institute",
+      "linkedin": "https://www.linkedin.com/in/yraveendran",
+      "twitter": ""
+    },
+    {
+      "name": "Kasun Gayan Bandara",
+      "image": "../assets/img/researchers/kasun.jpeg",
+      "title": "Monash University, Australia",
+      "linkedin": "https://www.linkedin.com/in/bandarakasun/",
+      "twitter": ""
+    },
+    {
+      "name": "Pramodh Chandrasinghe",
+      "image": "../assets/img/researchers/pramodh.jpeg",
+      "title": "Imperial College London",
+      "linkedin": "https://www.linkedin.com/in/pramodh-chandrasinghe-34491133/",
+      "twitter": ""
+    },
+    {
+      "name": "Amila Jayasinghe",
+      "image": "../assets/img/researchers/amila.jpeg",
+      "title": "University of Cambridge",
+      "linkedin": "https://www.linkedin.com/in/amila-jayasinghe-343148136/",
+      "twitter": ""
+    },
+    {
+      "name": "Haritha Thilakarathne",
+      "image": "../assets/img/researchers/haritha.jpeg",
+      "title": "La Trobe University",
+      "linkedin": "https://www.linkedin.com/in/hthilakarathne/",
+      "twitter": ""
+    },
+    {
+      "name": "Nivanthika Wimalasena",
+      "image": "../assets/img/researchers/nivanthika.jpeg",
+      "title": "Harvard University",
+      "linkedin": "https://www.linkedin.com/in/nivanthika-wimalasena-aa84a699/",
+      "twitter": ""
+    },
+    {
+      "name": "Sitara Weerakoon",
+      "image": "../assets/img/researchers/sitara.jpeg",
+      "title": "University of Texas Health Science Center School of Public Health",
+      "linkedin": "https://www.linkedin.com/in/sitaraweerakoon/",
+      "twitter": ""
+    },
+    {
+      "name": "Iromi Wanigasuriya",
+      "image": "../assets/img/researchers/iromi.jpeg",
+      "title": "The Walter and Eliza Hall Institute of Medical research, Department of Medical Biology, The University of Melbourne",
+      "linkedin": "https://www.linkedin.com/in/iromiw",
+      "twitter": ""
+    },
+    {
+      "name": "Vishvapali Kobbekaduwa",
+      "image": "../assets/img/researchers/vishvapali.jpeg",
+      "title": "Michigan State University ",
+      "linkedin": "https://www.linkedin.com/in/vishvapali-kobbekaduwa-6b775680/",
+      "twitter": ""
+    },
+    {
+      "name": "Dakshitha Weerasinghe",
+      "image": "../assets/img/researchers/dakshitha.jpeg",
+      "title": "University of Sydney,  School of Civil Engineering",
+      "linkedin": "https://www.linkedin.com/in/dakshitha92/",
+      "twitter": ""
+    },
+    {
+      "name": "Suren Rajakaruna",
+      "image": "../assets/img/researchers/suren.jpg",
+      "title": "University of Pennsylvania",
+      "linkedin": "https://www.linkedin.com/in/suren-rajakaruna-41138516/",
+      "twitter": ""
+    },
+    {
+      "name": "Sandun M Dassanayake",
+      "image": "../assets/img/researchers/sandun.jpeg",
+      "title": "Monash University",
+      "linkedin": "https://www.linkedin.com/in/sandun-m-dassanayake-145a9842/",
+      "twitter": ""
+    },
+    {
+      "name": "Yasun Y. Kannangara",
+      "image": "../assets/img/researchers/yasun.jpeg",
+      "title": "Sungkyunkwan University (Korea), University of Peradeniya, University of Colombo",
+      "linkedin": "https://www.linkedin.com/in/yasun-kannangara-19181641/",
+      "twitter": ""
+    },
+    {
+      "name": "Chathura Sarathchandra",
+      "image": "../assets/img/researchers/chathura.jpeg",
+      "title": "InterDigital Inc. (International Labs)",
+      "linkedin": "https://www.linkedin.com/in/chathura77",
+      "twitter": ""
+    },
+    {
+      "name": "Manoranjan Muthusamy",
+      "image": "../assets/img/researchers/manoranjan.jpg",
+      "title": "Cranfield University",
+      "linkedin": "https://www.linkedin.com/in/manomuthu/",
+      "twitter": ""
+    },
+    {
+      "name": "C D Tharindu Mathew",
+      "image": "../assets/img/researchers/tharindu.jpeg",
+      "title": "Purdue University",
+      "linkedin": "https://www.linkedin.com/in/tharindu-mathew-5305b114/",
+      "twitter": ""
+    },
+    {
+      "name": "Imalka Matarage ",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "Kansas State University ",
+      "linkedin": "https://www.linkedin.com/in/imalka-matarage-24781561/",
+      "twitter": ""
+    },
+    {
+      "name": "Rivindu Weerasekera",
+      "image": "../assets/img/researchers/rivindu.jpeg",
+      "title": "University of Auckland",
+      "linkedin": "https://www.linkedin.com/in/rivinduw/",
+      "twitter": ""
+    },
+    {
+      "name": "Nirmali Sivapragasam",
+      "image": "../assets/img/researchers/nirmali.jpeg",
+      "title": "Duke-NUS Medical School",
+      "linkedin": "https://www.linkedin.com/in/nirmalisivapragasam/",
+      "twitter": ""
+    },
+    {
+      "name": "Vinuri Fernando",
+      "image": "../assets/img/researchers/vinuri.jpeg",
+      "title": "University of Portsmouth",
+      "linkedin": "https://www.linkedin.com/in/m-a-vinuri-fernando-468134115/",
+      "twitter": ""
+    },
+    {
+      "name": "Mirantha Jayathilaka",
+      "image": "../assets/img/researchers/mirantha.jpeg",
+      "title": "University of Manchester",
+      "linkedin": "https://www.linkedin.com/in/miranthajayathilaka/",
+      "twitter": ""
+    },
+    {
+      "name": "Iroshan Aberathne",
+      "image": "../assets/img/researchers/iroshan.jpeg",
+      "title": "University of Peradeniya, Sri Lanka",
+      "linkedin": "https://www.linkedin.com/in/iroshan-aberathne/",
+      "twitter": ""
+    },
+    {
+      "name": "Prasan Yapa (Y.H.P.P Priyadarshana)",
+      "image": "../assets/img/researchers/prasan.jpeg",
+      "title": "University of Moratuwa",
+      "linkedin": "https://www.linkedin.com/in/prasan-yapa-b0610935",
+      "twitter": ""
+    },
+    {
+      "name": "Naresh Nandakumar",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "Johns Hopkins University",
+      "linkedin": "https://www.linkedin.com/in/naresh-nandakumar-3b4322ba/",
+      "twitter": ""
+    },
+    {
+      "name": "Aruna Kananka Liyanage",
+      "image": "../assets/img/researchers/aruna.jpeg",
+      "title": "University of British Columbia and Open University of Sri Lanka",
+      "linkedin": "https://ca.linkedin.com/in/aruna-arunasiri-k-liyanage-09741527",
+      "twitter": ""
+    },
+    {
+      "name": "Himal Shankana Wijekoon",
+      "image": "../assets/img/researchers/himal.jpeg",
+      "title": "National Institute of Fundamental Studies",
+      "linkedin": "https://www.linkedin.com/in/himal-wijekoon/",
+      "twitter": ""
+    },
+    {
+      "name": "Ruwandi Kariyawasam",
+      "image": "../assets/img/researchers/ruwandi.jpeg",
+      "title": "Institute of Medical Sciences-University of Toronto",
+      "linkedin": "https://www.linkedin.com/in/ruwandikariyawasam/",
+      "twitter": ""
+    },
+    {
+      "name": "Harshani Deepa Kumari Nainanayaka",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "Jeju National University, South Korea/ University of Ruhuna, Sri Lanka",
+      "linkedin": "https://www.linkedin.com/in/harshani-deepakumari-nainanayaka-7006a914b/",
+      "twitter": ""
+    },
+    {
+      "name": "Dr. Kalhari Goonewardene",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "Western College of Veterinary Medicine, University of Saskatchewan, Canada",
+      "linkedin": "https://www.linkedin.com/in/kalhari-goonewardene-9abb4321/",
+      "twitter": ""
+    },
+    {
+      "name": "Gathsaurie Neelika Malavige",
+      "image": "../assets/img/researchers/gathsaurie.jpeg",
+      "title": "University of Sri Jayewardenapura",
+      "linkedin": "https://www.linkedin.com/in/gathsaurie-neelika-malavige-85b7b727/",
+      "twitter": ""
+    },
+    {
+      "name": "Dr. Chamod Hettiarachchi",
+      "image": "../assets/img/researchers/chamod.jpeg",
+      "title": "Tongji University, Shanghai, China",
+      "linkedin": "https://www.linkedin.com/in/chamod-hettiarachchi-639373145/",
+      "twitter": ""
+    },
+    {
+      "name": "Thisum Buddhika",
+      "image": "../assets/img/researchers/thisum.jpeg",
+      "title": "University of Auckland ",
+      "linkedin": "https://www.linkedin.com/in/thisumbuddhika/",
+      "twitter": ""
+    },
+    {
+      "name": "Yvanka de Soysa",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "University of California, San Francisco/Gladstone Institutes",
+      "linkedin": "https://www.linkedin.com/in/yvankadesoysa/",
+      "twitter": ""
+    },
+    {
+      "name": "Priyadharshany Sandanapitchai",
+      "image": "../assets/img/researchers/priyadharshany.jpeg",
+      "title": "Rutgers University ",
+      "linkedin": "https://www.linkedin.com/in/psandanapitchai",
+      "twitter": ""
+    },
+    {
+      "name": "Nilushka Perera",
+      "image": "../assets/img/researchers/nilushka.jpeg",
+      "title": "Best Beginnings /University of West London/The Ohana Project ",
+      "linkedin": "https://www.linkedin.com/in/nilushkaperera/",
+      "twitter": ""
+    },
+    {
+      "name": "Sohani Pramoodha Liyanage",
+      "image": "../assets/img/researchers/sohani.jpeg",
+      "title": "Swinburne University of Technology",
+      "linkedin": "https://www.linkedin.com/in/sohani-liyanage-69589355/",
+      "twitter": ""
+    }
+  ],
+  "scholarx video": {
+    "title": "ScholarX Premium Mentoring",
+    "video": "https://www.youtube.com/embed/OSCus9R5M3s"
+  },
+  "How to be a ScholarX?": {
+    "title": "Find a mentor for me",
+    "paragraph": " The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
+  },
+  "How to be a Mentor?": "We are always in the look for exceptional mentors. Please write to us with your cv via our email : sustainableedufoundation@gmail.com",
+  "FAQ": {
+    "quiz1": {
+      "quiz": "Do you have to live abroad to be a mentor?",
+      "ans": "No, Anyone can become a mentor. Please do reach out to us. More the merrier."
+    },
+    "quiz2": {
+      "quiz": "Do you have to be Sri Lankan to be a mentor?",
+      "ans": "No, Anyone can become a mentor. Please do reach out to us. We are more than happy to get foreign mentors."
+    },
+    "quiz3": {
+      "quiz": "Who can become a ScholarX?",
+      "ans": "Our priority is given to Sri Lankan Students in Universities and Schools. \n If we have excess of mentors we can expand the program in to foreign students as well."
+    },
+    "quiz4": {
+      "quiz": "What is the cost of the program?",
+      "ans": "ScholarX is a free program conducted by volunteer mentors."
+    },
+    "quiz5": {
+      "quiz": "What kind of mentoring can I get?",
+      "ans": "The type of mentoring that you receive will depends on the mentor. \n After you are selected as a ScholarX, you will discuss this with your mentor. \n Some of the ways students have got mentoring in the past are as follows,\n <ul>\n <li>Collaborating with the mentor on a project.</li>\n <li>Getting career advice.</li>\n <li>Discussing about higher studies.</li>\n </ul>."
+    }
+  }
+}
+
