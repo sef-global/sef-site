@@ -1,4 +1,16 @@
 {
+  "contents": [
+    {
+      "heading": "What is IRC ?",
+      "description": "The International Research Council (IRC) is a community created by the Sustainable Education Foundation (SEF) to showcase the work of Sri Lankan researchers. One of the main goals of IRC is to provide a digital platform to connect our community of researchers who are actively pursuing research projects in various fields all over the world.",
+      "image": "#"
+    },
+    {
+      "heading": "Why IRC ?",
+      "description": "SEF attracts a strong following of undergraduate and postgraduate students who are mostly confined to our local education system that encourage traditional careers. The IRC can act as a catalyst for these students to get insight to the wide array of possibilities available in the research space and even steer towards an academic career. Having a strong community of researchers can also assist students to find or connect with higher studies and research opportunities all over the world.",
+      "image": "#"
+    }
+  ],
   "researchers": [
     {
       "name": "Yadurshini Raveendran",
@@ -17,14 +29,14 @@
     {
       "name": "Pramodh Chandrasinghe",
       "image": "../assets/img/researchers/pramodh.jpeg",
-      "title": "Imperial College London",
+      "title": "Imperial College <br> London",
       "linkedin": "https://www.linkedin.com/in/pramodh-chandrasinghe-34491133/",
       "twitter": ""
     },
     {
-      "name": "Amila Jayasinghe",
+      "name": "Amila<br> Jayasinghe",
       "image": "../assets/img/researchers/amila.jpeg",
-      "title": "University of Cambridge",
+      "title": "University of Cambridge<br><br>",
       "linkedin": "https://www.linkedin.com/in/amila-jayasinghe-343148136/",
       "twitter": ""
     },
@@ -59,7 +71,7 @@
     {
       "name": "Vishvapali Kobbekaduwa",
       "image": "../assets/img/researchers/vishvapali.jpeg",
-      "title": "Michigan State University ",
+      "title": "Michigan State University <br>",
       "linkedin": "https://www.linkedin.com/in/vishvapali-kobbekaduwa-6b775680/",
       "twitter": ""
     },
@@ -71,16 +83,16 @@
       "twitter": ""
     },
     {
-      "name": "Suren Rajakaruna",
+      "name": "Suren <br>Rajakaruna",
       "image": "../assets/img/researchers/suren.jpg",
-      "title": "University of Pennsylvania",
+      "title": "University of Pennsylvania<br>",
       "linkedin": "https://www.linkedin.com/in/suren-rajakaruna-41138516/",
       "twitter": ""
     },
     {
       "name": "Sandun M Dassanayake",
       "image": "../assets/img/researchers/sandun.jpeg",
-      "title": "Monash University",
+      "title": "Monash University<br><br>",
       "linkedin": "https://www.linkedin.com/in/sandun-m-dassanayake-145a9842/",
       "twitter": ""
     },
@@ -101,28 +113,28 @@
     {
       "name": "Manoranjan Muthusamy",
       "image": "../assets/img/researchers/manoranjan.jpg",
-      "title": "Cranfield University",
+      "title": "Cranfield University<br><br>",
       "linkedin": "https://www.linkedin.com/in/manomuthu/",
       "twitter": ""
     },
     {
       "name": "C D Tharindu Mathew",
       "image": "../assets/img/researchers/tharindu.jpeg",
-      "title": "Purdue University",
+      "title": "Purdue University<br><br>",
       "linkedin": "https://www.linkedin.com/in/tharindu-mathew-5305b114/",
       "twitter": ""
     },
     {
-      "name": "Imalka Matarage ",
+      "name": "Imalka<br> Matarage ",
       "image": "../assets/img/researchers/unknown.png",
-      "title": "Kansas State University ",
+      "title": "Kansas State University<br><br>",
       "linkedin": "https://www.linkedin.com/in/imalka-matarage-24781561/",
       "twitter": ""
     },
     {
       "name": "Rivindu Weerasekera",
       "image": "../assets/img/researchers/rivindu.jpeg",
-      "title": "University of Auckland",
+      "title": "University of Auckland<br><br>",
       "linkedin": "https://www.linkedin.com/in/rivinduw/",
       "twitter": ""
     },
@@ -134,7 +146,7 @@
       "twitter": ""
     },
     {
-      "name": "Vinuri Fernando",
+      "name": "Vinuri <br>Fernando",
       "image": "../assets/img/researchers/vinuri.jpeg",
       "title": "University of Portsmouth",
       "linkedin": "https://www.linkedin.com/in/m-a-vinuri-fernando-468134115/",
@@ -148,7 +160,7 @@
       "twitter": ""
     },
     {
-      "name": "Iroshan Aberathne",
+      "name": "Iroshan<br> Aberathne",
       "image": "../assets/img/researchers/iroshan.jpeg",
       "title": "University of Peradeniya, Sri Lanka",
       "linkedin": "https://www.linkedin.com/in/iroshan-aberathne/",
@@ -178,7 +190,7 @@
     {
       "name": "Himal Shankana Wijekoon",
       "image": "../assets/img/researchers/himal.jpeg",
-      "title": "National Institute of Fundamental Studies",
+      "title": "National Institute of Fundamental<br> Studies",
       "linkedin": "https://www.linkedin.com/in/himal-wijekoon/",
       "twitter": ""
     },
@@ -218,16 +230,16 @@
       "twitter": ""
     },
     {
-      "name": "Thisum Buddhika",
+      "name": "Thisum<br> Buddhika",
       "image": "../assets/img/researchers/thisum.jpeg",
-      "title": "University of Auckland ",
+      "title": "University of Auckland<br><br> ",
       "linkedin": "https://www.linkedin.com/in/thisumbuddhika/",
       "twitter": ""
     },
     {
       "name": "Yvanka de Soysa",
       "image": "../assets/img/researchers/unknown.png",
-      "title": "University of California, San Francisco/Gladstone Institutes",
+      "title": "University of California, San Francisco/ Gladstone Institutes",
       "linkedin": "https://www.linkedin.com/in/yvankadesoysa/",
       "twitter": ""
     },
@@ -253,36 +265,24 @@
       "twitter": ""
     }
   ],
-  "scholarx video": {
-    "title": "ScholarX Premium Mentoring",
-    "video": "https://www.youtube.com/embed/OSCus9R5M3s"
-  },
-  "How to be a ScholarX?": {
-    "title": "Find a mentor for me",
-    "paragraph": " The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
-  },
-  "How to be a Mentor?": "We are always in the look for exceptional mentors. Please write to us with your cv via our email : sustainableedufoundation@gmail.com",
-  "FAQ": {
-    "quiz1": {
-      "quiz": "Do you have to live abroad to be a mentor?",
-      "ans": "No, Anyone can become a mentor. Please do reach out to us. More the merrier."
+
+  "FAQ": [
+    {
+      "quiz": "WHO CAN JOIN THE IRC?",
+      "ans": "Any researcher of Sri Lankan origin who have completed or are currently working on an approved research proposal ideally pursuing postgraduate studies or a doctoral degree."
     },
-    "quiz2": {
-      "quiz": "Do you have to be Sri Lankan to be a mentor?",
-      "ans": "No, Anyone can become a mentor. Please do reach out to us. We are more than happy to get foreign mentors."
+    {
+      "quiz": "DO I NEED TO HAVE POSTGRADUATE STUDIES TO ENTER THE IRC?",
+      "ans": "No, But in order to be featured on our social media channels, we expect you to be conducting impactful research that cover one or more of the UN Sustainable Development Goals."
     },
-    "quiz3": {
-      "quiz": "Who can become a ScholarX?",
-      "ans": "Our priority is given to Sri Lankan Students in Universities and Schools. \n If we have excess of mentors we can expand the program in to foreign students as well."
+    {
+      "quiz": "WILL IT COST ME A MEMBERSHIP FEE?",
+      "ans": "No, it won’t cost you anything other than your valuable time."
     },
-    "quiz4": {
-      "quiz": "What is the cost of the program?",
-      "ans": "ScholarX is a free program conducted by volunteer mentors."
-    },
-    "quiz5": {
-      "quiz": "What kind of mentoring can I get?",
-      "ans": "The type of mentoring that you receive will depends on the mentor. \n After you are selected as a ScholarX, you will discuss this with your mentor. \n Some of the ways students have got mentoring in the past are as follows,\n <ul>\n <li>Collaborating with the mentor on a project.</li>\n <li>Getting career advice.</li>\n <li>Discussing about higher studies.</li>\n </ul>."
+    {
+      "quiz": "HOW CAN I JOIN IRC?",
+      "ans": "Submit your details via our online form or drop us an email at sustainableedufoundation@gmail.com We look forward to hearing from you!"
     }
-  }
+  ]
 }
 
