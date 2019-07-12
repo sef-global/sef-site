@@ -37,6 +37,11 @@
             "button": "default"
           },
           {
+            "name": "twitter",
+            "link": "https://twitter.com/KbKalpani",
+            "button": "twitter"
+          },
+          {
             "name": "facebook",
             "link": "https://www.facebook.com/kalpani.ranasinghe.50",
             "button": "facebook"
@@ -79,7 +84,7 @@
           }
         ],
         "br": "<br>"
-      },
+      }, 
       {
         "name": "Dinithi Dharmapala",
         "image": "../assets/img/team/dinithi.jpg",
@@ -91,12 +96,86 @@
             "button": "default"
           },
           {
+            "name": "twitter",
+            "link": "https://twitter.com/d_dharmapala",
+            "button": "twitter"
+          },
+          {
             "name": "facebook",
             "link": "https://www.facebook.com/dinithi.dharmapala",
             "button": "facebook"
           }
         ],
         "br": ""
+      },
+      {
+        "name": "Oshani Weerakoon",
+        "image": "../assets/img/team/oshani.jpg",
+        "post": "Chief Operations Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/oshani-weerakoon/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/oshani101",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/oshy0294",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br> <br>"
+      },
+      {
+        "name": "MK Dilan",
+        "image": "../assets/img/team/MKDilan.jpg",
+        "post": "Chief Research and Development Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/mkdilan/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/mk_sata",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/dilan.munasinghe1",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Warren Pietersz",
+        "image": "../assets/img/team/warren.jpg",
+        "post": "Chief Design Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/warren-pietersz-21770b10a/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/WABpietersz",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/warrenpietersz",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br><br>"
       }
     ]
   },
@@ -105,27 +184,50 @@
     "description": "",
     "people": [
       {
-        "name": "Charith Samarakoon",
-        "image": "../assets/img/team/charith.jpg",
-        "post": "Consultant",
+        "name": "Anjana Wijekoon",
+        "image": "../assets/img/team/Anjana.jpg",
+        "post": "Founding Member",
         "social": [
           {
             "name": "linkedin",
-            "link": "https://www.linkedin.com/in/charithsamarakoon/",
+            "link": "https://www.linkedin.com/in/anjanawijekoon/",
             "button": "default"
           },
           {
             "name": "twitter",
-            "link": "https://twitter.com/ChariSamarakoon",
+            "link": "https://twitter.com/Anjana_Wijekoon",
             "button": "twitter"
           },
           {
             "name": "facebook",
-            "link": "https://www.facebook.com/charith.samarakoon",
+            "link": "https://www.facebook.com/anjana.wijekoon",
             "button": "facebook"
           }
         ],
-        "br": ""
+        "br": "<br>"
+      },
+      {
+        "name": "Shenal Senarath",
+        "image": "../assets/img/team/shenal.jpg",
+        "post": "Founding Member",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/shenalsenarath/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/ShenalSenarath",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/shenal.senarath",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
       },
       {
         "name": "Hasini Yasathma",
@@ -184,7 +286,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": "<br><br>"
       },
       {
         "name": "Sanduni Chamika",
@@ -207,7 +309,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": "<br><br>"
       },
       {
         "name": "Madhushani Dissanayake",
@@ -271,7 +373,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Sanduni Perera",
@@ -284,7 +386,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Gihani Gamage",
@@ -302,7 +404,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Isuru Sachitha",
@@ -325,7 +427,7 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Sachith Manchanayaka",
@@ -377,6 +479,11 @@
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/uddeepa-wijerathna-404648126/",
             "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/uddeepa.wijerathna",
+            "button": "facebook"
           }
         ],
         "br": ""
@@ -425,13 +532,18 @@
             "button": "facebook"
           }
         ],
-        "br": "<br>"
+        "br": ""
       },
       {
         "name": "Sandali Siriwardhana",
         "image": "../assets/img/team/sandali.jpeg",
         "post": "Student Ambassador",
         "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sandalisiriwardane/",
+            "button": "default"
+          },
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sandhalee.siriwardhna",
@@ -612,7 +724,7 @@
       {
         "name": "Varuni Punchihewa",
         "image": "../assets/img/team/varuni.jpg",
-        "post": "Director Of Operations",
+        "post": "Operations Executive",
         "social": [
           {
             "name": "linkedin",
@@ -622,24 +734,6 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/varuni.punchihewa",
-            "button": "facebook"
-          }
-        ],
-        "br": "<br>"
-      },
-      {
-        "name": "Udani Kaushalya",
-        "image": "../assets/img/team/udani.jpg",
-        "post": "Volunteer",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/udani-kaushalya-b24003160/",
-            "button": "default"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/udani.kaushalya",
             "button": "facebook"
           }
         ],
@@ -664,6 +758,42 @@
         "br": ""
       },
       {
+        "name": "Udani Kaushalya",
+        "image": "../assets/img/team/udani.jpg",
+        "post": "HR executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/udani-kaushalya-b24003160/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/udani.kaushalya",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Sasika Sulochana",
+        "image": "../assets/img/team/sasika.jpg",
+        "post": "Public Relations Executive",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/sasika-sulochana-537b92147/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/sasika.silva.73",
+            "button": "facebook"
+          }
+        ],
+        "br": ""
+      },
+      {
         "name": "Sajitha Daupadi",
         "image": "../assets/img/team/sajitha.jpg",
         "post": "Volunteer",
@@ -676,6 +806,24 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/sajitha.daupadie",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
+      {
+        "name": "Muditha Cherangi",
+        "image": "../assets/img/team/muditha.jpg",
+        "post": "Sinhala Foundation Lead",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/muditha-cherangani-086686127/",
+            "button": "default"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/mudi.cherangi",
             "button": "facebook"
           }
         ],
