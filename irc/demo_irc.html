@@ -404,7 +404,8 @@
                 <div class="pt-4 text-center">
                     <h5 class="title">
                         <span class="d-block mb-1">{{{name}}}</span>
-                        <small class="h6 text-muted">{{{title}}}</small>
+                        <small><span class="h6 small mb-1 d-block"><strong>{{{title}}}</strong><br>{{{field}}}</span></small>
+                        <span class="h6 small text-muted">{{{university}}}</span>
                     </h5>
                     <div class="mt-3">
                         <a href="{{linkedin}}" class="btn btn-linkedin btn-icon-only rounded-circle">
@@ -430,6 +431,7 @@
         url: '../assets/content/irc.json',
         dataType: 'json',
         success: function (addData) {
+
             let content = Mustache.render($("#templateResearchers").html(), {"ircContent": addData});
             $("#researchersContent").html(content);
         }
