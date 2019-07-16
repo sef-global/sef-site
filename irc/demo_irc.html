@@ -392,7 +392,6 @@
 <script type="text/html" id="templateResearchers">
 
     <div class="row">
-        {{#ircContent}}
         {{#researchers}}
         <div class="col-md-6 col-lg-3 mb-5 profile_div">
             <div class="px-4">
@@ -419,7 +418,6 @@
             </div>
         </div>
         {{/researchers}}
-        {{/ircContent}}
     </div>
 
 </script>
@@ -430,12 +428,24 @@
         type: 'get',
         url: '../assets/content/irc.json',
         dataType: 'json',
-        success: function (addData) {
+        success: function (data) {
 
-            let content = Mustache.render($("#templateResearchers").html(), {"ircContent": addData});
+            //pre processing to alphabetical order
+            let rawData = data.researchers;
+            function SortByname(x,y) {
+                return ((x.name == y.name) ? 0 : ((x.name > y.name) ? 1 : -1));
+            }
+            let preProcessedData = rawData.sort(SortByname);
+
+            //mustache render
+            let content = Mustache.render($("#templateResearchers").html(), {"researchers": preProcessedData});
             $("#researchersContent").html(content);
         }
-    })
+    });
+
+
+
+
 </script>
 
 <!--Script for nav and footer-->
