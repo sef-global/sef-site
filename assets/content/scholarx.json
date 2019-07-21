@@ -1,19 +1,7 @@
 {
-  "title": "Sustainable Education Foundation",
-  "image1":"../assets/img/brand/scholarx.png",
-
-  "heading1":"Premium Mentoring by Sri Lankans for Sri Lankans",
-  "image2": "../assets/img/rohan.jpg",
-
-  "h3":"What is ScholarX?",
-  "scholarx p":"Founded by Sustainable Education Foundation, the ScholarX is a 3 month program for Sri Lankan students who would like to get free premium mentoring during their study period. \n ScholarX program will also connect Sri Lankans who live all around the world, making the program for Sri Lankans who are living abroad to contribute directly to Sri Lankan students and the education system.",
-
-  "why scholarx h1":"Why ScholarX?",
-  "why scholarx paragraph": "There are two reasons to start the ScholarX program.</br></br>\n\n                        Reason 1 — There is no proper mentoring platform for Sri Lankan students. Also there is no proper mechanisms for Sri Lankan students to connect with Sri Lankans who are living abroad.</br>\n\n                        Reason 2 — There is no proper platform for Sri Lankans who lives abroad to share their knowledge with the Sri Lankan students.</br></br>\n\n                        In order to address these two problems we started the program.",
-  "image3": "../assets/img/l.jpg",
-
-  "mentors":[
-
+  "logo": "../assets/img/brand/scholarx.png",
+  "title": "Premium Mentoring by Sri Lankans for Sri Lankans",
+  "mentors": [
     {
       "name": "Dr Hasini Jayatilaka",
       "image": "../assets/img/mentors/hasini.jpeg",
@@ -22,7 +10,6 @@
       "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
       "twitter": "https://twitter.com/HasiniJt"
     },
-
     {
       "name": "Dr Jeewika Ranaweera",
       "image": "../assets/img/mentors/jeewika.jpeg",
@@ -32,7 +19,6 @@
       "twitter": "https://twitter.com/JeewikaR",
       "facebook": "https://www.facebook.com/jeewika.ranaweera"
     },
-
     {
       "name": "Dr Rukshan Batuwita",
       "image": "../assets/img/mentors/rukshan.jpeg",
@@ -41,7 +27,6 @@
       "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/",
       "facebook": "https://www.facebook.com/rukshan.batuwita"
     },
-
     {
       "name": "Dr Savithru Jayasinghe",
       "image": "../assets/img/mentors/savithru.jpeg",
@@ -50,7 +35,6 @@
       "linkedin": "https://www.linkedin.com/in/savithru/",
       "facebook": "https://www.facebook.com/savithru.j"
     },
-
     {
       "name": "Sumudu Herath",
       "image": "../assets/img/mentors/sumudu.jpeg",
@@ -60,7 +44,6 @@
       "twitter": "https://twitter.com/sumuduherath",
       "facebook": "https://www.facebook.com/sumudu.t.herath"
     },
-
     {
       "name": "Yasith Vidanaarachchi",
       "image": "../assets/img/mentors/yasith.jpeg",
@@ -70,50 +53,82 @@
       "twitter": "https://twitter.com/tuxv",
       "facebook": "https://www.facebook.com/yasith"
     }
-
   ],
-
-  "scholarx video": {
-    "title":"ScholarX Premium Mentoring",
-    "video":"https://www.youtube.com/embed/OSCus9R5M3s"
-
+  "video": {
+    "title": "ScholarX Premium Mentoring",
+    "link": "https://www.youtube.com/embed/OSCus9R5M3s"
   },
-
-  "How to be a ScholarX?": {
-    "title":"Find a mentor for me",
-    "paragraph": " The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
-
+  "apply": {
+    "title": "Find a mentor for me",
+    "description": "The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
   },
-
-  "How to be a Mentor?":"We are always in the look for exceptional mentors. Please write to us with your cv via our email : sustainableedufoundation@gmail.com",
-
-  "FAQ": {
-
-    "quiz1": {
-      "quiz": "Do you have to live abroad to be a mentor?",
-      "ans": "No, Anyone can become a mentor. Please do reach out to us. More the merrier."
+  "general": [
+    {
+      "question": "What is ScholarX?",
+      "answer": "ScholarX is an exclusive 3-month program aimed at providing mentoring support to a selected pool of High Potential undergraduate students based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of the world’s top universities or Fortune 500 companies. It’s our free premium mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture of knowledge and expertise sharing without the limitation of geographical borders."
     },
-
-    "quiz2": {
-      "quiz": "Do you have to be Sri Lankan to be a mentor?",
-      "ans": "No, Anyone can become a mentor. Please do reach out to us. We are more than happy to get foreign mentors."
+    {
+      "question": "What is the duration of the program?",
+      "answer": "The program will require a 3-month commitment from both mentor and mentee. The number of meetings during this time will be up to the mentor and mentee to negotiate. However, based on past program effectiveness we recommend 12 meetings with the mentor."
     },
-
-    "quiz3": {
-      "quiz": "Who can become a ScholarX?",
-      "ans": "Our priority is given to Sri Lankan Students in Universities and Schools. \n If we have excess of mentors we can expand the program in to foreign students as well."
+    {
+      "question": "What is the cost of the program?",
+      "answer": "ScholarX is a free program conducted by volunteer mentors who generously offer their time to support the next generation of change makers in Sri Lanka."
     },
-
-    "quiz4": {
-      "quiz": "What is the cost of the program?",
-      "ans": "ScholarX is a free program conducted by volunteer mentors."
-    },
-
-    "quiz5": {
-      "quiz": "What kind of mentoring can I get?",
-      "ans": "The type of mentoring that you receive will depends on the mentor. \n After you are selected as a ScholarX, you will discuss this with your mentor. \n Some of the ways students have got mentoring in the past are as follows,\n <ul>\n <li>Collaborating with the mentor on a project.</li>\n <li>Getting career advice.</li>\n <li>Discussing about higher studies.</li>\n </ul>."
+    {
+      "question": "What topics are covered?",
+      "answer": "We acknowledge that each individual mentee is at a different stage of their career and learning pathway. So we encourage both parties to have an open and honest conversation to identify the direction and expertise required to customize their mentoring. Topics past groups have requested include: <br><br><ul><li>Collaborating with the mentor on a project</li><li>General career advice</li><li>Higher study options to align with career path in academia or professional line of work. </li></ul>"
     }
-  }
-
+  ],
+  "mentee": [
+    {
+      "title": "How to be a ScholarX Mentee?"
+    },
+    {
+      "question": "What are the eligibility requirements?",
+      "answer": "Our priority is given to applicants of Sri Lankan origin. However, if we have an excess of mentors, we will look at expanding the offering to foreign students as well. *) You must be atleast 18 years of age when you register\n*)You must currently be a full time or part-time student undertaking an undergraduate or postgraduate course.\n*)You have not already been accepted as a mentee in ScholarX more than once"
+    },
+    {
+      "question": "How do I apply?",
+      "answer": "Follow us on our Facebook, Linkedin , Instagram and Twitter pages and also keep an eye on the ScholarX page on our website for the application link. We will share more information closer to the launch of the next intake."
+    },
+    {
+      "question": "What is the selection criteria?",
+      "answer": "We require all applicants to demonstrate, a high standard of English proficiency and a genuine curiosity to learn and innovate. In their responses, applicants must also show ambition to achieve their career goals and articulately express how the mentoring program will assist with achieving their overall academic and/or professional objectives."
+    },
+    {
+      "question": "How do I contact the mentors?",
+      "answer": "Mentor contact details will only be shared once you have been successful in securing a place in the program as a ScholarX mentee."
+    },
+    {
+      "question": "Can I continue my mentorship relationship at the end of the 3-month program?",
+      "answer": "At the end of the official mentorship program, if you and your mentor wish to continue your mentoring relationship, we encourage you to do so."
+    }
+  ],
+  "mentor": [
+    {
+      "title": "How to be a Mentor?"
+    },
+    {
+      "question": "What are the eligibility requirements?",
+      "answer": "We look for industry experts and academics who have excelled in their careers ideally with recognition from industry bodies/international agencies for their work or have demonstrated exceptional performance in their industry where they represent a minority group (e.g.: women in STEM industry, entrepreneurs of niche industries). \n\nWhile we have been very fortunate to host a high calibre of Sri Lankan mentors in our past program offerings, we are always on the lookout for exceptional mentors regardless of nationality."
+    },
+    {
+      "question": "How do I apply to be a mentor?",
+      "answer": "Submit your CV and expression of interest to sustainableedufoundation@gmail.com"
+    },
+    {
+      "question": "Do mentors receive any money for participating in ScholarX as a mentor?",
+      "answer": "No, this is a volunteer run program."
+    },
+    {
+      "question": "Can I participate in ScholarX as both a mentor and a student?",
+      "answer": "No. We do not encourage a dual hat approach as this will deteriorate the quality of the offering. Please choose whether participation as a mentor or a mentee achieve your career objectives the best and apply for the most suitable role."
+    },
+    {
+      "question": "I want to learn more about participating as a mentor in ScholarX. Where can I find more information?",
+      "answer": "If you have specific queries regarding the role of the mentor , please reach out to us via sustainableedufoundation@gmail.com"
+    }
+  ]
 }
 
