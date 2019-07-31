@@ -24,7 +24,7 @@
     {
       "name": "Kasun Gayan Bandara",
       "image": "../assets/img/researchers/kasun.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Neural Networks for Time series Forecasting",
       "university": "Monash University, Australia",
       "linkedin": "https://www.linkedin.com/in/bandarakasun/",
@@ -42,7 +42,7 @@
     {
       "name": "Amila Jayasinghe",
       "image": "../assets/img/researchers/amila.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Civil and Structural engineering- Structural Optimisations",
       "university": "University of Cambridge",
       "linkedin": "https://www.linkedin.com/in/amila-jayasinghe-343148136/",
@@ -69,7 +69,7 @@
     {
       "name": "Sitara Weerakoon",
       "image": "../assets/img/researchers/sitara.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Child & adolescent health, obesity prevention, data analysis, international health",
       "university": "University of Texas Health Science Center School of Public Health",
       "linkedin": "https://www.linkedin.com/in/sitaraweerakoon/",
@@ -96,7 +96,7 @@
     {
       "name": "Dakshitha Weerasinghe",
       "image": "../assets/img/researchers/dakshitha.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Finite Element Analysis | Protective Structures",
       "university": "University of Sydney,  School of Civil Engineering",
       "linkedin": "https://www.linkedin.com/in/dakshitha92/",
@@ -123,7 +123,7 @@
     {
       "name": "Yasun Y. Kannangara",
       "image": "../assets/img/researchers/yasun.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Energy storage, Energy nano-materials, Smart applications",
       "university": "Sungkyunkwan University (Korea), University of Peradeniya, University of Colombo",
       "linkedin": "https://www.linkedin.com/in/yasun-kannangara-19181641/",
@@ -195,7 +195,7 @@
     {
       "name": "Mirantha Jayathilaka",
       "image": "../assets/img/researchers/mirantha.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Artificial Intelligence (Machine Learning)",
       "university": "University of Manchester",
       "linkedin": "https://www.linkedin.com/in/miranthajayathilaka/",
@@ -222,7 +222,7 @@
     {
       "name": "Naresh Nandakumar",
       "image": "../assets/img/researchers/unknown.png",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Machine learning / data science",
       "university": "Johns Hopkins University",
       "linkedin": "https://www.linkedin.com/in/naresh-nandakumar-3b4322ba/",
@@ -249,7 +249,7 @@
     {
       "name": "Ruwandi Kariyawasam",
       "image": "../assets/img/researchers/ruwandi.jpeg",
-      "title": "PhD Student",
+      "title": "PhD Candidate",
       "field": "Tropical Infectious Diseases",
       "university": "Institute of Medical Sciences-University of Toronto",
       "linkedin": "https://www.linkedin.com/in/ruwandikariyawasam/",
@@ -265,7 +265,7 @@
       "twitter": ""
     },
     {
-      "name": "Dr. Kalhari Goonewardene",
+      "name": "Kalhari Goonewardene",
       "image": "../assets/img/researchers/unknown.png",
       "title": "PhD",
       "field": "Innate immune stimulation in poultry birds as an alternative to antibiotics",
@@ -283,7 +283,7 @@
       "twitter": ""
     },
     {
-      "name": "Dr. Chamod Hettiarachchi",
+      "name": "Chamod Hettiarachchi",
       "image": "../assets/img/researchers/chamod.jpeg",
       "title": "PhD",
       "field": "Advanced pavement materials, Warm mix asphalt, Reclaimed asphalt materials",
