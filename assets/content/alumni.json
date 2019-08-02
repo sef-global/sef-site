@@ -1,7 +1,7 @@
 [
   {
-    "heading": "Former Executive Committee",
-    "description": "The head team which handles the functionality of the foundation.",
+    "heading": "Alumni 2018",
+    "description": "",
     "people": [
       {
         "name": "Naveen Cooray",
@@ -52,7 +52,7 @@
       {
         "name": "Rashmi Ratnayaka",
         "image": "../assets/img/team/rashmi.jpg",
-        "post": "Product Manager - Onelive",
+        "post": "Operations Executive",
         "social": [
           {
             "name": "facebook",
@@ -84,7 +84,29 @@
           }
         ],
         "br": "<br>"
-      }, 
+      },{
+        "name": "Charith Samarakoon ",
+        "image": "../assets/img/team/charith.jpg",
+        "post": "Chief Executive Officer",
+        "social": [
+          {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/charithsamarakoon/",
+            "button": "default"
+          },
+          {
+            "name": "twitter",
+            "link": "https://twitter.com/ChariSamarakoon",
+            "button": "twitter"
+          },
+          {
+            "name": "facebook",
+            "link": "https://www.facebook.com/charith.samarakoon",
+            "button": "facebook"
+          }
+        ],
+        "br": "<br>"
+      },
       {
         "name": "Dinithi Dharmapala",
         "image": "../assets/img/team/dinithi.jpg",
@@ -176,13 +198,7 @@
           }
         ],
         "br": "<br><br>"
-      }
-    ]
-  },
-  {
-    "heading": "Alumni 2018",
-    "description": "",
-    "people": [
+      },
       {
         "name": "Anjana Wijekoon",
         "image": "../assets/img/team/Anjana.jpg",
@@ -376,19 +392,6 @@
         "br": ""
       },
       {
-        "name": "Sanduni Perera",
-        "image": "../assets/img/team/sanduniM.jpg",
-        "post": "Digital Marketing Executive",
-        "social": [
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/sandunimahinsala",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
         "name": "Gihani Gamage",
         "image": "../assets/img/team/gihani.jpg",
         "post": "Public Relations Executive",
@@ -401,29 +404,6 @@
           {
             "name": "facebook",
             "link": "https://www.facebook.com/gihani.gamage.90",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
-        "name": "Isuru Sachitha",
-        "image": "../assets/img/team/isurusachitha.jpg",
-        "post": "Public Relations Executive",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/isurusachitha/",
-            "button": "default"
-          },
-          {
-            "name": "twitter",
-            "link": "https://twitter.com/IsuruSachithax`",
-            "button": "twitter"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/isurusachitha",
             "button": "facebook"
           }
         ],
@@ -446,29 +426,6 @@
           }
         ],
         "br": ""
-      },
-      {
-        "name": "Navin Thamindu",
-        "image": "../assets/img/team/navin.jpg",
-        "post": "Creative Design Executive",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/navin-chandrasiri/",
-            "button": "default"
-          },
-          {
-            "name": "twitter",
-            "link": "https://twitter.com/Navin_Thamindu",
-            "button": "twitter"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/navin.thamindu",
-            "button": "facebook"
-          }
-        ],
-        "br": "<br>"
       },
       {
         "name": "Uddeepa Wijerathna",
@@ -617,93 +574,6 @@
         "br": ""
       },
       {
-        "name": "Thamindu Wickramasinghe",
-        "image": "../assets/img/team/thamindu.jpg",
-        "post": "Software Engineer",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/thamindu-wickramasinghe-aa3931161/",
-            "button": "default"
-          },
-          {
-            "name": "twitter",
-            "link": "https://twitter.com/Dtamindu",
-            "button": "twitter"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/thamindu.wickramasinghe",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
-        "name": "Naveen Rajan",
-        "image": "../assets/img/team/naveenR.jpg",
-        "post": "Software Engineer - Full Stack",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/naveen-r-292539103/",
-            "button": "default"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/ntr.sack",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
-        "name": "Suresh Peiris",
-        "image": "../assets/img/team/suresh.jpg",
-        "post": "Software Engineer - Cross Platform",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/sureshmichael/",
-            "button": "default"
-          },
-          {
-            "name": "twitter",
-            "link": "https://twitter.com/TSMPeiris",
-            "button": "twitter"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/TSMPeiris",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
-        "name": "Thinura Laksara",
-        "image": "../assets/img/team/thinura.jpeg",
-        "post": "Software Engineer - Cross Platform",
-        "social": [
-          {
-            "name": "linkedin",
-            "link": "https://www.linkedin.com/in/thinura-laksara/",
-            "button": "default"
-          },
-          {
-            "name": "twitter",
-            "link": "https://twitter.com/thinuralaksara",
-            "button": "twitter"
-          },
-          {
-            "name": "facebook",
-            "link": "https://www.facebook.com/thinura.laksara",
-            "button": "facebook"
-          }
-        ],
-        "br": ""
-      },
-      {
         "name": "Vithursan Raveendran",
         "image": "../assets/img/team/vithu.jpeg",
         "post": "UI & UX Designer",
@@ -829,8 +699,6 @@
         ],
         "br": ""
       }
-      
-
     ]
   }
 ]
