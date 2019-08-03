@@ -18,132 +18,132 @@
   ],
   "speakers": [
     {
-      "Name": "Dr.Hasini Jayatilaka",
-      "Title": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
-      "Photo": "https://sefglobal.org/assets/img/mentors/hasini.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
-      "Twitter": "https://twitter.com/HasiniJt",
-      "Facebook": ""
+      "name": "Dr.Hasini Jayatilaka",
+      "title": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
+      "image": "https://sefglobal.org/assets/img/mentors/hasini.jpeg",
+      "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
+      "twitter": "https://twitter.com/HasiniJt",
+      "facebook": ""
     },
     {
-      "Name": "Dr. Yasantha Rajakarunanayake",
-      "Title": "Senior Director,Technology at MediaTek",
-      "Photo": "https://sefglobal.org/assets/img/team/yasantha.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/yasantha-rajakarunanayake-aa23568/",
-      "Twitter": "https://twitter.com/yasantha62",
-      "Facebook": "https://www.facebook.com/yasanthar"
+      "name": "Dr. Yasantha Rajakarunanayake",
+      "title": "Senior Director,Technology at MediaTek",
+      "image": "https://sefglobal.org/assets/img/team/yasantha.jpg",
+      "linkedin": "https://www.linkedin.com/in/yasantha-rajakarunanayake-aa23568/",
+      "twitter": "https://twitter.com/yasantha62",
+      "facebook": "https://www.facebook.com/yasanthar"
     },
     {
-      "Name": "Yasith Vidanaarachchi",
-      "Title": "Software Engineer at Google, Ex — Software Engineer at Amazon",
-      "Photo": "https://sefglobal.org/assets/img/mentors/yasith.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/yasithv/",
-      "Twitter": "https://twitter.com/tuxv",
-      "Facebook": "https://www.facebook.com/yasith"
+      "name": "Yasith Vidanaarachchi",
+      "title": "Software Engineer at Google, Ex — Software Engineer at Amazon",
+      "image": "https://sefglobal.org/assets/img/mentors/yasith.jpeg",
+      "linkedin": "https://www.linkedin.com/in/yasithv/",
+      "twitter": "https://twitter.com/tuxv",
+      "facebook": "https://www.facebook.com/yasith"
     },
     {
-      "Name": "Kavindya Thennakoon",
-      "Title": "Civic Entertainment Researcher at MIT Media Lab",
-      "Photo": "https://sefglobal.org/assets/img/team/kavindya.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/kavindyathennakoon/",
-      "Twitter": "https://twitter.com/kavindya_T",
-      "Facebook": "https://www.facebook.com/kavindya.thennakoon"
+      "name": "Kavindya Thennakoon",
+      "title": "Civic Entertainment Researcher at MIT Media Lab",
+      "image": "https://sefglobal.org/assets/img/team/kavindya.jpg",
+      "linkedin": "https://www.linkedin.com/in/kavindyathennakoon/",
+      "twitter": "https://twitter.com/kavindya_T",
+      "facebook": "https://www.facebook.com/kavindya.thennakoon"
     },
     {
-      "Name": "Isuru Daulagala",
-      "Title": "Software Engineer at NVIDA",
-      "Photo": "https://sefglobal.org/assets/img/speakers/isuru.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/isurudaulagala/",
-      "Twitter": "",
-      "Facebook": "https://www.facebook.com/isuru.daulagala"
+      "name": "Isuru Daulagala",
+      "title": "Software Engineer at NVIDA",
+      "image": "https://sefglobal.org/assets/img/speakers/isuru.jpeg",
+      "linkedin": "https://www.linkedin.com/in/isurudaulagala/",
+      "twitter": "",
+      "facebook": "https://www.facebook.com/isuru.daulagala"
     },
     {
-      "Name": "Biman Liyanage",
-      "Title": "Forbes 30 Under 30 Asia Founder CirQ of Technologies",
-      "Photo": "https://sefglobal.org/assets/img/speakers/biman.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/biman-liyanage-49221648/",
-      "Twitter": "https://twitter.com/biman_liyanage",
-      "Facebook": "https://www.facebook.com/biman.liyanage"
+      "name": "Biman Liyanage",
+      "title": "Forbes 30 Under 30 Asia Founder CirQ of Technologies",
+      "image": "https://sefglobal.org/assets/img/speakers/biman.jpeg",
+      "linkedin": "https://www.linkedin.com/in/biman-liyanage-49221648/",
+      "twitter": "https://twitter.com/biman_liyanage",
+      "facebook": "https://www.facebook.com/biman.liyanage"
     },
     {
-      "Name": "Samin Khan",
-      "Title": "Microsoft Imagine Cup World Champion 2018",
-      "Photo": "https://sefglobal.org/assets/img/speakers/samin.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/samin-khan/",
-      "Twitter": "https://twitter.com/samin_k",
-      "Facebook": "https://www.facebook.com/samin.waitforit.khan"
+      "name": "Samin Khan",
+      "title": "Microsoft Imagine Cup World Champion 2018",
+      "image": "https://sefglobal.org/assets/img/speakers/samin.jpg",
+      "linkedin": "https://www.linkedin.com/in/samin-khan/",
+      "twitter": "https://twitter.com/samin_k",
+      "facebook": "https://www.facebook.com/samin.waitforit.khan"
     },
     {
-      "Name": "Nipuna Ambanpola",
-      "Title": "Co-Founder & Executive Director at IVolunteer International",
-      "Photo": "https://sefglobal.org/assets/img/speakers/nipuna.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/nipunaambanpola/",
-      "Twitter": "https://twitter.com/NAmbanpola",
-      "Facebook": "https://www.facebook.com/nipunaambanpola"
+      "name": "Nipuna Ambanpola",
+      "title": "Co-Founder & Executive Director at IVolunteer International",
+      "image": "https://sefglobal.org/assets/img/speakers/nipuna.jpg",
+      "linkedin": "https://www.linkedin.com/in/nipunaambanpola/",
+      "twitter": "https://twitter.com/NAmbanpola",
+      "facebook": "https://www.facebook.com/nipunaambanpola"
     },
     {
-      "Name": "Bernadine Jayasinghe",
-      "Title": "News Anchor at MTV/MBC Networks Sri Lanka",
-      "Photo": "https://sefglobal.org/assets/img/speakers/bernadine.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/bernadine-jayasinghe-8276a230/",
-      "Twitter": "https://twitter.com/Bernadine_Jaya",
-      "Facebook": "https://www.facebook.com/bernadine.jayasinghe"
+      "name": "Bernadine Jayasinghe",
+      "title": "News Anchor at MTV/MBC Networks Sri Lanka",
+      "image": "https://sefglobal.org/assets/img/speakers/bernadine.jpg",
+      "linkedin": "https://www.linkedin.com/in/bernadine-jayasinghe-8276a230/",
+      "twitter": "https://twitter.com/Bernadine_Jaya",
+      "facebook": "https://www.facebook.com/bernadine.jayasinghe"
     },
     {
-      "Name": "Alagan Mahalingam",
-      "Title": "Chief Executive Officer at 01 Tech",
-      "Photo": "https://sefglobal.org/assets/img/team/alagan.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/alaganmahalingam/",
-      "Twitter": "https://twitter.com/_alagan",
-      "Facebook": "https://www.facebook.com/alaganm"
+      "name": "Alagan Mahalingam",
+      "title": "Chief Executive Officer at 01 Tech",
+      "image": "https://sefglobal.org/assets/img/team/alagan.jpg",
+      "linkedin": "https://www.linkedin.com/in/alaganmahalingam/",
+      "twitter": "https://twitter.com/_alagan",
+      "facebook": "https://www.facebook.com/alaganm"
     },
     {
-      "Name": "CD Athuraliya",
-      "Title": "Co-Founder at Conscient AI",
-      "Photo": "https://sefglobal.org/assets/img/speakers/cd.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/cdathuraliya/",
-      "Twitter": "https://twitter.com/cdathuraliya",
-      "Facebook": "https://www.facebook.com/cdathuraliya"
+      "name": "CD Athuraliya",
+      "title": "Co-Founder at Conscient AI",
+      "image": "https://sefglobal.org/assets/img/speakers/cd.jpeg",
+      "linkedin": "https://www.linkedin.com/in/cdathuraliya/",
+      "twitter": "https://twitter.com/cdathuraliya",
+      "facebook": "https://www.facebook.com/cdathuraliya"
     },
     {
-      "Name": "Chethiya Abeysinghe",
-      "Title": "Principal Software Engineer at Wave Computing",
-      "Photo": "https://sefglobal.org/assets/img/speakers/chethiya.jpeg",
-      "LinkedIn": "https://www.linkedin.com/in/chethiya/",
-      "Twitter": "https://twitter.com/chethiyaa",
-      "Facebook": "https://www.facebook.com/chethiyaa"
+      "name": "Chethiya Abeysinghe",
+      "title": "Principal Software Engineer at Wave Computing",
+      "image": "https://sefglobal.org/assets/img/speakers/chethiya.jpeg",
+      "linkedin": "https://www.linkedin.com/in/chethiya/",
+      "twitter": "https://twitter.com/chethiyaa",
+      "facebook": "https://www.facebook.com/chethiyaa"
     },
     {
-      "Name": "Shadir Hisham",
-      "Title": "Chief Executive Officer at RevPort",
-      "Photo": "https://sefglobal.org/assets/img/speakers/shadir.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/shadirhisham/",
-      "Twitter": "https://twitter.com/shadirhisham",
-      "Facebook": "https://www.facebook.com/shadirhisham"
+      "name": "Shadir Hisham",
+      "title": "Chief Executive Officer at RevPort",
+      "image": "https://sefglobal.org/assets/img/speakers/shadir.jpg",
+      "linkedin": "https://www.linkedin.com/in/shadirhisham/",
+      "twitter": "https://twitter.com/shadirhisham",
+      "facebook": "https://www.facebook.com/shadirhisham"
     },
     {
-      "Name": "Anish Wijesinghe",
-      "Title": "Founder at Motion Miricales,Wibble & Crytec",
-      "Photo": "https://sefglobal.org/assets/img/team/anish.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/anishwij/",
-      "Twitter": "https://twitter.com/CybleApp",
-      "Facebook": "https://www.facebook.com/anish.wijesinghe"
+      "name": "Anish Wijesinghe",
+      "title": "Founder at Motion Miricales,Wibble & Crytec",
+      "image": "https://sefglobal.org/assets/img/team/anish.jpg",
+      "linkedin": "https://www.linkedin.com/in/anishwij/",
+      "twitter": "https://twitter.com/CybleApp",
+      "facebook": "https://www.facebook.com/anish.wijesinghe"
     },
     {
-      "Name": "Keet Sugathadasa",
-      "Title": "Software Engineer at Sysco LABS",
-      "Photo": "https://sefglobal.org/assets/img/speakers/keet.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/keetmalin/",
-      "Twitter": "https://twitter.com/keetmalin",
-      "Facebook": "https://www.facebook.com/Keetmalin"
+      "name": "Keet Sugathadasa",
+      "title": "Software Engineer at Sysco LABS",
+      "image": "https://sefglobal.org/assets/img/speakers/keet.jpg",
+      "linkedin": "https://www.linkedin.com/in/keetmalin/",
+      "twitter": "https://twitter.com/keetmalin",
+      "facebook": "https://www.facebook.com/Keetmalin"
     },
     {
-      "Name": "Harshi Samarasekera",
-      "Title": "Founder of PlanMash",
-      "Photo": "https://sefglobal.org/assets/img/speakers/harshi.jpg",
-      "LinkedIn": "https://www.linkedin.com/in/harshi-samarasekera/",
-      "Twitter": "https://twitter.com/FillyRider",
-      "Facebook": "https://www.facebook.com/HarshiSamarasekera"
+      "name": "Harshi Samarasekera",
+      "title": "Founder of PlanMash",
+      "image": "https://sefglobal.org/assets/img/speakers/harshi.jpg",
+      "linkedin": "https://www.linkedin.com/in/harshi-samarasekera/",
+      "twitter": "https://twitter.com/FillyRider",
+      "facebook": "https://www.facebook.com/HarshiSamarasekera"
     }
   ],
   "FAQ": [
