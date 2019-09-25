@@ -308,7 +308,7 @@
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="d-flex">
-                                        <a href="test2.html" class="h6 text-success">{{name}}</a>
+                                        <a href="test2.html/{{id}}" class="h6 text-success">{{name}}</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -316,7 +316,8 @@
                                                         <span class="progress">
                                                             <span class="progress-bar bg-default" role="progressbar"
                                                                   aria-valuenow="{{percentage}}" aria-valuemin="0"
-                                                                  aria-valuemax="100" style="width: {{percentage}}%;"></span>
+                                                                  aria-valuemax="100"
+                                                                  style="width: {{percentage}}%;"></span>
                                                         </span>
                                                     </span>
                                 </div>
@@ -348,27 +349,19 @@
         dataType: 'json',
         success: function (data) {
 
-            //function to rank
-            function SortByEngagement(x, y) {
-                return y.engagement - x.engagement;
-            }
-
             //preprocess
             function preProcessData(data) {
-
-                //ranking
-                data.sort(SortByEngagement);
 
                 //get total engagement
                 let totalEngagement = 0;
                 data.forEach(function (item) {
-                    totalEngagement+=item.engagement;
+                    totalEngagement += item.engagement;
                 });
 
                 //append rank and percentage
                 data.forEach(function (item) {
-                    item.rank = data.indexOf(item)+1;
-                    item.percentage = item.engagement*100/totalEngagement;
+                    item.rank = data.indexOf(item) + 1;
+                    item.percentage = item.engagement * 100 / totalEngagement;
                 });
 
                 return data;

@@ -67,6 +67,9 @@
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
 
+<!-- Script for common functions -->
+<script src="assets/js/common-functions.js"></script>
+
 
 <script>
     $(function () {
@@ -175,22 +178,16 @@
 
 <!--Script for load Alumni data-->
 <script>
+    const id= getUrlParameter('id');
+
     $.ajax({
         type: 'get',
-        url: 'https://167.71.232.26/partnership/v1/engagements/university/7',
+        url: 'https://167.71.232.26/partnership/v1/engagements/university/'+id,
         dataType: 'json',
         success: function (data) {
 
-            //function to rank
-            function SortByEngagement(x, y) {
-                return y.engagement - x.engagement;
-            }
-
             //preprocess
             function preProcessData(data) {
-
-                //ranking
-                data.societies.sort(SortByEngagement);
 
                 //get total engagement
                 let totalEngagement = 0;
