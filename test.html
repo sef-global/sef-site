@@ -316,7 +316,8 @@
                                                         <span class="progress">
                                                             <span class="progress-bar bg-default" role="progressbar"
                                                                   aria-valuenow="{{percentage}}" aria-valuemin="0"
-                                                                  aria-valuemax="100" style="width: {{percentage}}%;"></span>
+                                                                  aria-valuemax="100"
+                                                                  style="width: {{percentage}}%;"></span>
                                                         </span>
                                                     </span>
                                 </div>
@@ -354,13 +355,13 @@
                 //get total engagement
                 let totalEngagement = 0;
                 data.forEach(function (item) {
-                    totalEngagement+=item.engagement;
+                    totalEngagement += item.engagement;
                 });
 
                 //append rank and percentage
                 data.forEach(function (item) {
-                    item.rank = data.indexOf(item)+1;
-                    item.percentage = item.engagement*100/totalEngagement;
+                    item.rank = data.indexOf(item) + 1;
+                    item.percentage = item.engagement * 100 / totalEngagement;
                 });
 
                 return data;
