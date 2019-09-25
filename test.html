@@ -308,7 +308,7 @@
                             <div class="row text-left">
                                 <div class="col-sm-12">
                                     <div class="d-flex">
-                                        <a href="test2.html" class="h6 text-success">{{name}}</a>
+                                        <a href="test2.html/{{id}}" class="h6 text-success">{{name}}</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -348,16 +348,8 @@
         dataType: 'json',
         success: function (data) {
 
-            //function to rank
-            function SortByEngagement(x, y) {
-                return y.engagement - x.engagement;
-            }
-
             //preprocess
             function preProcessData(data) {
-
-                //ranking
-                data.sort(SortByEngagement);
 
                 //get total engagement
                 let totalEngagement = 0;
