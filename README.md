@@ -1,15 +1,6 @@
-# Official Website for Sustainable Education Foundation [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/SustainableEducationFoundation/LiveWeb/issues)  [![HitCount](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb.svg)](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb)
+# Official Website for Sustainable Education Foundation [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/SustainableEducationFoundation/LiveWeb/issues)  [![HitCount](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb.svg)](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
-
-<p align="center">
- <a href="https://travis-ci.org/SustainableEducationFoundation/LiveWeb">
-<img src="https://travis-ci.org/SustainableEducationFoundation/LiveWeb.svg?branch=master" alt="Build - Master Branch">
-</a>
-<a href="https://opensource.org/licenses/MIT">
-<img alt="" src="https://img.shields.io/badge/license-MIT-green.svg">
- </a>
-</p>
 
 ###### Theme : Argon
 
