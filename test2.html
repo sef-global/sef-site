@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Volunteer driven organisation which empowers students, education institutes and education as a whole in Sri Lanka.">
+    <meta name="author" content="Sustainable Education Foundation">
+    <title>Sustainable Education Foundation</title>
+    <!-- Favicon -->
+    <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- Global custom CSS -->
+    <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<main class="profile-page">
+    <section class="section-profile-cover section-shaped my-0">
+        <!-- Circles background -->
+        <div class="shape shape-style-1 shape-primary alpha-4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+    <section class="section">
+
+        <div id="uniData"></div>
+
+    </section>
+</main>
+
+
+<div id="footer"></div>
+
+<!-- Core -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/popper/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="assets/vendor/headroom/headroom.min.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!-- Argon JS -->
+<script src="assets/js/argon.js?v=1.0.1"></script>
+
+<!-- Script for static navbar and footer -->
+<script src="assets/js/navigation.js"></script>
+
+<!-- Script for common functions -->
+<script src="assets/js/common-functions.js"></script>
+
+
+<script>
+    $(function () {
+        loadNavAndFooter('assets/content')  //relative path to content directory
+        // link to the navbar, footer content goes here
+    })
+</script>
+
+
+<!--Mustache template for content-->
+<script type="text/html" id="templateUni">
+    {{#universityData}}
+    <div class="container">
+        <div class="card card-profile shadow mt--300">
+            <div class="px-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 order-lg-2">
+                        <div class="card-profile-image">
+                            <a href="#">
+                                <img src="{{imageUrl}}"
+                                     class="rounded-circle">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
+                        <div class="card-profile-actions py-4 mt-lg-0">
+                            <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-1">
+                        <div class="card-profile-stats d-flex justify-content-center">
+                            <div>
+                                <span class="heading">{{engagement}}</span>
+                                <span class="description">Engagement</span>
+                            </div>
+                            <div>
+                                <span class="heading">{{totalSocieties}}</span>
+                                <span class="description">Societies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <h3>{{name}}
+                    </h3>
+                    <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Sri Lanka</div>
+                    <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Ambassador - {{ambassadorName}}</div>
+                </div>
+                <div class="mt-5 py-5 border-top text-center">
+
+                    {{#societies}}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card shadow shadow-lg--hover">
+                                <div class="card-body testimonial">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <div class="d-flex px-3 mt-3">
+                                                <div class="text-center">
+                                                    <span class="h6 text-success">{{rank}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-9">
+                                            <div class="row text-left">
+                                                <div class="col-sm-12">
+                                                    <div class="d-flex">
+                                                        <a href="test2.html" class="h6 text-success">{{name}}</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                    <span class="progress-wrapper">
+                                        <span class="progress">
+                                            <span class="progress-bar bg-default" role="progressbar"
+                                                  aria-valuenow="{{percentage}}" aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                  style="width: {{percentage}}%;"></span>
+                                        </span>
+                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="d-flex px-3 mt-3">
+                                                <div class="text-right">
+                                                    <span class="h6 text-success" style="margin-bottom: 0;">{{engagement}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/societies}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/universityData}}
+</script>
+
+
+<!--Script for load Alumni data-->
+<script>
+    const id= getUrlParameter('id');
+
+    $.ajax({
+        type: 'get',
+        url: 'https://167.71.232.26/partnership/v1/engagements/university/'+id,
+        dataType: 'json',
+        success: function (data) {
+
+            //preprocess
+            function preProcessData(data) {
+
+                //get total engagement
+                let totalEngagement = 0;
+                let totalSocieties = 0;
+                data.societies.forEach(function (item) {
+                    totalEngagement += item.engagement;
+                    totalSocieties+=1;
+                });
+
+                data.totalSocieties = totalSocieties;
+
+
+                //append rank and percentage
+                data.societies.forEach(function (item) {
+                    item.rank = data.societies.indexOf(item) + 1;
+                    item.percentage = item.engagement * 100 / totalEngagement;
+                });
+
+                return data;
+            }
+
+            let preProcessedData = preProcessData(data);
+
+            let content = Mustache.render($("#templateUni").html(), {"universityData": preProcessedData});
+            $("#uniData").html(content);
+
+            console.log(preProcessedData);
+
+        }
+    })
+</script>
+
+</body>
+
+</html>

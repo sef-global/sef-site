@@ -1,4 +1,4 @@
-# Official Website for Sustainable Education Foundation
+# Official Website for Sustainable Education Foundation [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/SustainableEducationFoundation/LiveWeb/issues)  [![HitCount](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb.svg)](http://hits.dwyl.io/SustainableEducationFoundation/LiveWeb)
 
 This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
 

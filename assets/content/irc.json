@@ -1,0 +1,360 @@
+{
+  "contents": [
+    {
+      "heading": "What is IRC ?",
+      "description": "The International Research Council (IRC) is a community created by the Sustainable Education Foundation (SEF) to showcase the work of Sri Lankan researchers. One of the main goals of IRC is to provide a digital platform to connect our community of researchers who are actively pursuing research projects in various fields all over the world.",
+      "image": "#"
+    },
+    {
+      "heading": "Why IRC ?",
+      "description": "SEF attracts a strong following of undergraduate and postgraduate students who are mostly confined to our local education system that encourage traditional careers. The IRC can act as a catalyst for these students to get insight to the wide array of possibilities available in the research space and even steer towards an academic career. Having a strong community of researchers can also assist students to find or connect with higher studies and research opportunities all over the world.",
+      "image": "#"
+    }
+  ],
+  "researchers": [
+    {
+      "name": "Yadurshini Raveendran",
+      "image": "../assets/img/researchers/yudharshini.jpeg",
+      "title": "Masters Student",
+      "field": "Pediatric Oncology and Nutrition in LMIC",
+      "university": "Duke University - Duke Global Health Institute",
+      "linkedin": "https://www.linkedin.com/in/yraveendran",
+      "twitter": ""
+    },
+    {
+      "name": "Kasun Gayan Bandara",
+      "image": "../assets/img/researchers/kasun.jpeg",
+      "title": "PhD Candidate",
+      "field": "Neural Networks for Time series Forecasting",
+      "university": "Monash University, Australia",
+      "linkedin": "https://www.linkedin.com/in/bandarakasun/",
+      "twitter": ""
+    },
+    {
+      "name": "Pramodh Chandrasinghe",
+      "image": "../assets/img/researchers/pramodh.jpeg",
+      "title": "PhD",
+      "field": "Cancer genetics/colorectal cancer",
+      "university": "Imperial College  London",
+      "linkedin": "https://www.linkedin.com/in/pramodh-chandrasinghe-34491133/",
+      "twitter": ""
+    },
+    {
+      "name": "Amila Jayasinghe",
+      "image": "../assets/img/researchers/amila.jpeg",
+      "title": "PhD Candidate",
+      "field": "Civil and Structural engineering- Structural Optimisations",
+      "university": "University of Cambridge",
+      "linkedin": "https://www.linkedin.com/in/amila-jayasinghe-343148136/",
+      "twitter": ""
+    },
+    {
+      "name": "Haritha Thilakarathne",
+      "image": "../assets/img/researchers/haritha.jpeg",
+      "title": "PhD Candidate",
+      "field": "Deep Learning",
+      "university": "La Trobe University",
+      "linkedin": "https://www.linkedin.com/in/hthilakarathne/",
+      "twitter": ""
+    },
+    {
+      "name": "Nivanthika Wimalasena",
+      "image": "../assets/img/researchers/nivanthika.jpeg",
+      "title": "PhD Candidate",
+      "field": "Sensory neurobiology, mechanisms of itch and pain",
+      "university": "Harvard University",
+      "linkedin": "https://www.linkedin.com/in/nivanthika-wimalasena-aa84a699/",
+      "twitter": ""
+    },
+    {
+      "name": "Sitara Weerakoon",
+      "image": "../assets/img/researchers/sitara.jpeg",
+      "title": "PhD Candidate",
+      "field": "Child & adolescent health, obesity prevention, data analysis, international health",
+      "university": "University of Texas Health Science Center School of Public Health",
+      "linkedin": "https://www.linkedin.com/in/sitaraweerakoon/",
+      "twitter": ""
+    },
+    {
+      "name": "Iromi Wanigasuriya",
+      "image": "../assets/img/researchers/iromi.jpeg",
+      "title": "PhD Candidate",
+      "field": "Epigenetics, Light microscopy, genomics",
+      "university": "University of Melbourne",
+      "linkedin": "https://www.linkedin.com/in/iromiw",
+      "twitter": ""
+    },
+    {
+      "name": "Vishvapali Kobbekaduwa",
+      "image": "../assets/img/researchers/vishvapali.jpeg",
+      "title": "PhD Candidate",
+      "field": "Disease ecology and epidemiology of tick borne pathogen, Anaplasma phagocytophilum",
+      "university": "Michigan State University ",
+      "linkedin": "https://www.linkedin.com/in/vishvapali-kobbekaduwa-6b775680/",
+      "twitter": ""
+    },
+    {
+      "name": "Dakshitha Weerasinghe",
+      "image": "../assets/img/researchers/dakshitha.jpeg",
+      "title": "PhD Candidate",
+      "field": "Finite Element Analysis | Protective Structures",
+      "university": "University of Sydney,  School of Civil Engineering",
+      "linkedin": "https://www.linkedin.com/in/dakshitha92/",
+      "twitter": ""
+    },
+    {
+      "name": "Suren Rajakaruna",
+      "image": "../assets/img/researchers/suren.jpg",
+      "title": "Masters",
+      "field": "CAR-T immunotherapy for cancer",
+      "university": "University of Pennsylvania",
+      "linkedin": "https://www.linkedin.com/in/suren-rajakaruna-41138516/",
+      "twitter": ""
+    },
+    {
+      "name": "Sandun M Dassanayake",
+      "image": "../assets/img/researchers/sandun.jpeg",
+      "title": "Bachelor",
+      "field": "Fines migration induced Geohazards and Georisks",
+      "university": "Monash University",
+      "linkedin": "https://www.linkedin.com/in/sandun-m-dassanayake-145a9842/",
+      "twitter": ""
+    },
+    {
+      "name": "Yasun Y. Kannangara",
+      "image": "../assets/img/researchers/yasun.jpeg",
+      "title": "PhD Candidate",
+      "field": "Energy storage, Energy nano-materials, Smart applications",
+      "university": "Sungkyunkwan University (Korea), University of Peradeniya, University of Colombo",
+      "linkedin": "https://www.linkedin.com/in/yasun-kannangara-19181641/",
+      "twitter": ""
+    },
+    {
+      "name": "Chathura Sarathchandra",
+      "image": "../assets/img/researchers/chathura.jpeg",
+      "title": "PhD",
+      "field": "Mobile and Distributed Computing",
+      "university": "InterDigital Inc. (International Labs)",
+      "linkedin": "https://www.linkedin.com/in/chathura77",
+      "twitter": ""
+    },
+    {
+      "name": "Manoranjan Muthusamy",
+      "image": "../assets/img/researchers/manoranjan.jpg",
+      "title": "PhD",
+      "field": "Hydrology",
+      "university": "Cranfield University",
+      "linkedin": "https://www.linkedin.com/in/manomuthu/",
+      "twitter": ""
+    },
+    {
+      "name": "C D Tharindu Mathew",
+      "image": "../assets/img/researchers/tharindu.jpeg",
+      "title": "PhD Candidate",
+      "field": "Computer Graphics and Simulation",
+      "university": "Purdue University",
+      "linkedin": "https://www.linkedin.com/in/tharindu-mathew-5305b114/",
+      "twitter": ""
+    },
+    {
+      "name": "Imalka Matarage ",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "PhD Candidate",
+      "field": "Transportation Safety ",
+      "university": "Kansas State University",
+      "linkedin": "https://www.linkedin.com/in/imalka-matarage-24781561/",
+      "twitter": ""
+    },
+    {
+      "name": "Rivindu Weerasekera",
+      "image": "../assets/img/researchers/rivindu.jpeg",
+      "title": "PhD Candidate",
+      "field": "Machine Learning",
+      "university": "University of Auckland",
+      "linkedin": "https://www.linkedin.com/in/rivinduw/",
+      "twitter": ""
+    },
+    {
+      "name": "Nirmali Sivapragasam",
+      "image": "../assets/img/researchers/nirmali.jpeg",
+      "title": "Masters",
+      "field": "Health policy, health economics, decision modelling, system dynamics, health statistics, cost-effectiveness analysis",
+      "university": "Duke-NUS Medical School",
+      "linkedin": "https://www.linkedin.com/in/nirmalisivapragasam/",
+      "twitter": ""
+    },
+    {
+      "name": "Vinuri Fernando",
+      "image": "../assets/img/researchers/vinuri.jpeg",
+      "title": "PhD",
+      "field": "Mindfulness training for pre-school children, in search for impact in prosociality and cooperation in the classroom. ",
+      "university": "University of Portsmouth",
+      "linkedin": "https://www.linkedin.com/in/m-a-vinuri-fernando-468134115/",
+      "twitter": ""
+    },
+    {
+      "name": "Mirantha Jayathilaka",
+      "image": "../assets/img/researchers/mirantha.jpeg",
+      "title": "PhD Candidate",
+      "field": "Artificial Intelligence (Machine Learning)",
+      "university": "University of Manchester",
+      "linkedin": "https://www.linkedin.com/in/miranthajayathilaka/",
+      "twitter": ""
+    },
+    {
+      "name": "Iroshan Aberathne",
+      "image": "../assets/img/researchers/iroshan.jpeg",
+      "title": "Masters Student",
+      "field": "Mobile Click Fraud Detection, Behavioral Analysis, Machine Learning",
+      "university": "University of Peradeniya, Sri Lanka",
+      "linkedin": "https://www.linkedin.com/in/iroshan-aberathne/",
+      "twitter": ""
+    },
+    {
+      "name": "Prasan Yapa (Y.H.P.P Priyadarshana)",
+      "image": "../assets/img/researchers/prasan.jpeg",
+      "title": "BSc (Hons)",
+      "field": "Machine Learning",
+      "university": "University of Moratuwa",
+      "linkedin": "https://www.linkedin.com/in/prasan-yapa-b0610935",
+      "twitter": ""
+    },
+    {
+      "name": "Naresh Nandakumar",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "PhD Candidate",
+      "field": "Machine learning / data science",
+      "university": "Johns Hopkins University",
+      "linkedin": "https://www.linkedin.com/in/naresh-nandakumar-3b4322ba/",
+      "twitter": ""
+    },
+    {
+      "name": "Aruna Kananka Liyanage",
+      "image": "../assets/img/researchers/aruna.jpeg",
+      "title": "Masters",
+      "field": "Industrial IOT Automation and MES",
+      "university": "University of British Columbia and Open University of Sri Lanka",
+      "linkedin": "https://ca.linkedin.com/in/aruna-arunasiri-k-liyanage-09741527",
+      "twitter": ""
+    },
+    {
+      "name": "Himal Shankana Wijekoon",
+      "image": "../assets/img/researchers/himal.jpeg",
+      "title": "Masters Student",
+      "field": "Materials Science",
+      "university": "National Institute of Fundamental Studies",
+      "linkedin": "https://www.linkedin.com/in/himal-wijekoon/",
+      "twitter": ""
+    },
+    {
+      "name": "Ruwandi Kariyawasam",
+      "image": "../assets/img/researchers/ruwandi.jpeg",
+      "title": "PhD Candidate",
+      "field": "Tropical Infectious Diseases",
+      "university": "Institute of Medical Sciences-University of Toronto",
+      "linkedin": "https://www.linkedin.com/in/ruwandikariyawasam/",
+      "twitter": ""
+    },
+    {
+      "name": "Harshani Deepa Kumari Nainanayaka",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "Masters Student",
+      "field": "Marine Science/ Fisheries and Aquaculture ",
+      "university": "Jeju National University, South Korea/ University of Ruhuna, Sri Lanka",
+      "linkedin": "https://www.linkedin.com/in/harshani-deepakumari-nainanayaka-7006a914b/",
+      "twitter": ""
+    },
+    {
+      "name": "Kalhari Goonewardene",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "PhD",
+      "field": "Innate immune stimulation in poultry birds as an alternative to antibiotics",
+      "university": "Western College of Veterinary Medicine, University of Saskatchewan, Canada",
+      "linkedin": "https://www.linkedin.com/in/kalhari-goonewardene-9abb4321/",
+      "twitter": ""
+    },
+    {
+      "name": "Gathsaurie Neelika Malavige",
+      "image": "../assets/img/researchers/gathsaurie.jpeg",
+      "title": "PhD",
+      "field": "Dengue and immunology",
+      "university": "University of Sri Jayewardenapura",
+      "linkedin": "https://www.linkedin.com/in/gathsaurie-neelika-malavige-85b7b727/",
+      "twitter": ""
+    },
+    {
+      "name": "Chamod Hettiarachchi",
+      "image": "../assets/img/researchers/chamod.jpeg",
+      "title": "PhD",
+      "field": "Advanced pavement materials, Warm mix asphalt, Reclaimed asphalt materials",
+      "university": "Tongji University, Shanghai, China",
+      "linkedin": "https://www.linkedin.com/in/chamod-hettiarachchi-639373145/",
+      "twitter": ""
+    },
+    {
+      "name": "Thisum Buddhika",
+      "image": "../assets/img/researchers/thisum.jpeg",
+      "title": "Masters Student",
+      "field": "Human Computer Interaction - Assistive Augmentation",
+      "university": "University of Auckland",
+      "linkedin": "https://www.linkedin.com/in/thisumbuddhika/",
+      "twitter": ""
+    },
+    {
+      "name": "Yvanka de Soysa",
+      "image": "../assets/img/researchers/unknown.png",
+      "title": "PhD Candidate",
+      "field": "Developmental Biology",
+      "university": "University of California, San Francisco/ Gladstone Institutes",
+      "linkedin": "https://www.linkedin.com/in/yvankadesoysa/",
+      "twitter": ""
+    },
+    {
+      "name": "Priyadharshany Sandanapitchai",
+      "image": "../assets/img/researchers/priyadharshany.jpeg",
+      "title": "Masters",
+      "field": "Cultural Predictors of Mental Health",
+      "university": "Rutgers University ",
+      "linkedin": "https://www.linkedin.com/in/psandanapitchai",
+      "twitter": ""
+    },
+    {
+      "name": "Nilushka Perera",
+      "image": "../assets/img/researchers/nilushka.jpeg",
+      "title": "Masters",
+      "field": "Digital health, mental health and behavioral health interventions ",
+      "university": "Best Beginnings /University of West London/The Ohana Project ",
+      "linkedin": "https://www.linkedin.com/in/nilushkaperera/",
+      "twitter": ""
+    },
+    {
+      "name": "Sohani Pramoodha Liyanage",
+      "image": "../assets/img/researchers/sohani.jpeg",
+      "title": "Masters",
+      "field": "Smart Urban Mobility / Artificial Intelligence ",
+      "university": "Swinburne University of Technology",
+      "linkedin": "https://www.linkedin.com/in/sohani-liyanage-69589355/",
+      "twitter": ""
+    }
+  ],
+
+  "FAQ": [
+    {
+      "quiz": "WHO CAN JOIN THE IRC?",
+      "ans": "Any researcher of Sri Lankan origin who have completed or are currently working on an approved research proposal ideally pursuing postgraduate studies or a doctoral degree."
+    },
+    {
+      "quiz": "DO I NEED TO HAVE POSTGRADUATE STUDIES TO ENTER THE IRC?",
+      "ans": "No, But in order to be featured on our social media channels, we expect you to be conducting impactful research that cover one or more of the UN Sustainable Development Goals."
+    },
+    {
+      "quiz": "WILL IT COST ME A MEMBERSHIP FEE?",
+      "ans": "No, it won’t cost you anything other than your valuable time."
+    },
+    {
+      "quiz": "HOW CAN I JOIN IRC?",
+      "ans": "Submit your details via our online form or drop us an email at sustainableedufoundation@gmail.com We look forward to hearing from you!"
+    }
+  ]
+}
+
