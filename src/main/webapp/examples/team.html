@@ -37,7 +37,7 @@
 
             <div id="teamContent"></div>
 
-            <button id="btn" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+            <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </section>
 </main>
@@ -88,44 +88,43 @@
 
 <!--Script for load team data-->
 <script>
-    $.ajax({
-        type: 'get',
-        url: '../assets/content/json/dummy-profiles.json',
-        dataType: 'json',
-        success: function (data) {
+    function loadProfiles() {
+        $.ajax({
+            type: 'get',
+            url: '../assets/content/json/dummy-profiles.json',
+            dataType: 'json',
+            success: function (data) {
 
-            //slice array to two parts
-            if(data.length>=8){
-                let partOne = data.slice(0, 8);
-                let partTwo = data.slice(8);
+                //slice array to two parts
+                if(data.length>=8){
+                    let partOne = data.slice(0, 8);
+                    let partTwo = data.slice(8);
 
-                //mustache render
-                let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": partOne});
-                let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
+                    //mustache render - part one
+                    let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": partOne});
 
-                //display first 8 profiles
-                $("#teamContent").html(contentPartOne);
+                    //display first 8 profiles
+                    $("#teamContent").html(contentPartOne);
 
-                //hide button
-                $("#btn").click(function () {
-                    $("#teamContent").append(contentPartTwo);
-                    document.getElementById("btn").style.display = "none";
-                });
-            }else{
-                //mustache render
-                let content = Mustache.render($("#templateTeam").html(), {"data": data});
+                    //hide button
+                    $("#btnShowMore").click(function () {
+                        let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
+                        $("#teamContent").append(contentPartTwo);
+                        document.getElementById("btnShowMore").style.display = "none";
+                    });
+                }else{
+                    //mustache render
+                    let content = Mustache.render($("#templateTeam").html(), {"data": data});
 
-                //display first 8 profiles
-                $("#teamContent").html(content);
+                    //display first 8 profiles
+                    $("#teamContent").html(content);
 
-                //hide button
-                document.getElementById("btn").style.display = "none";
+                    //hide button
+                    $("#btnShowMore").style.display = "none";
+                }
             }
-
-
-
-        }
-    });
+        });
+    }
 
 </script>
 
@@ -135,8 +134,10 @@
 
 <script>
     $(function () {
-        loadNavAndFooter('assets/content')  //relative path to content directory
+        loadNavAndFooter('assets/content');  //relative path to content directory
         // link to the navbar, footer content goes here
+
+        loadProfiles();
     })
 </script>
 
