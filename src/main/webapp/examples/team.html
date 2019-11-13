@@ -108,7 +108,7 @@
             success: function (data) {
 
                 //slice array to two parts
-                if(data.length>=8){
+                if (data.length >= 8) {
                     let partOne = data.slice(0, 8);
                     let partTwo = data.slice(8);
 
@@ -124,7 +124,7 @@
                         $("#teamContent").append(contentPartTwo);
                         document.getElementById("btnShowMore").style.display = "none";
                     });
-                }else{
+                } else {
                     //mustache render
                     let content = Mustache.render($("#templateTeam").html(), {"data": data});
 
@@ -136,6 +136,7 @@
                 }
             }
         });
+    }
 </script>
 
 
