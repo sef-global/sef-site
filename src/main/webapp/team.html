@@ -10,7 +10,7 @@
     <!-- Favicon -->
     <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -18,8 +18,6 @@
     <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
     <!-- global CSS -->
     <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body style="font-family: 'Montserrat', sans-serif; color: black">
@@ -179,68 +177,21 @@
 
 <section class="section pb-0 bg-gradient-white">
     <div class="container">
-        <div class="row row-grid align-items-center">
-            <div class="col-lg-5 order-lg-1">
-                <div class="d-flex px-3">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <div class="px-3">
                     <div class="pl-4">
-                        <p class="display-2 pb-3" style="line-height: 1.2;">International Research Center</p>
-                        <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. </p>
+                        <p class="display-2">Meet Our Team</p>
+                        <p class="pb-5">Success of every organization depends on the team<br> and we got the "right" team</p>
+                        <img class="img-fluid" style="width: 70%" src="assets/img/examples/team.jpg">
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 order-lg-2 ml-lg-auto col-sm-12">
-                <div class="position-relative pl-md-5 pb-5 mt--100 mr--100">
-                    <img src="assets/img/multiverse-01.svg" class="img-center img-fluid">
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="section pb-0 bg-gradient-white text-center">
-    <div class="container">
-        <p class="display-3">Lorem ipsum</p>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="assets/img/2048-200.png">
-                <p class="display-4">Lorem ipsum</p>
-                <p>The International Research
-                    Council (IRC) is a community created by the Sustainable Education Foundation</p>
-            </div>
-            <div class="col-md-4">
-                <img src="assets/img/2048-200.png">
-                <p class="display-4">Lorem ipsum</p>
-                <p>The International Research
-                    Council (IRC) is a community created by the Sustainable Education Foundation</p>
-            </div>
-            <div class="col-md-4">
-                <img src="assets/img/2048-200.png">
-                <p class="display-4">Lorem ipsum</p>
-                <p>The International Research
-                    Council (IRC) is a community created by the Sustainable Education Foundation</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section pb-0 mt-5" style="background : #e3f6fa">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/img/multiverse-01.svg">
-            </div>
-            <div class="col-md-6 mb-5">
-                <p class="display-2 pb-3" style="line-height: 1.2;">International Research Center</p>
-                <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. </p>
-                <a class="btn btn-primary text-white">PRIMARY</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section pb-0 bg-gradient-white">
+<section class="section pb-0" style="background-color: #f8fdff">
     <div class="container">
         <p class="display-3">Lorem ipsum dolor sit amet</p>
         <div class="row justify-content-center">
@@ -248,6 +199,42 @@
             <div id="teamContent"></div>
 
             <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0">
+    <div class="container">
+        <p class="display-3">Lorem ipsum dolor sit amet</p>
+        <div class="row justify-content-center">
+            <!--Profile cards goes here-->
+            <div id="teamContent1"></div>
+
+            <button id="btnShowMore1" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0" style="background-color: #f8fdff">
+    <div class="container">
+        <p class="display-3">Lorem ipsum dolor sit amet</p>
+        <div class="row justify-content-center">
+            <!--Profile cards goes here-->
+            <div id="teamContent2"></div>
+
+            <button id="btnShowMore2" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0">
+    <div class="container">
+        <p class="display-3">Lorem ipsum dolor sit amet</p>
+        <div class="row justify-content-center">
+            <!--Profile cards goes here-->
+            <div id="teamContent3"></div>
+
+            <button id="btnShowMore3down" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
 </section>
@@ -329,9 +316,27 @@
 
                     //display first 8 profiles
                     $("#teamContent").html(contentPartOne);
+                    $("#teamContent1").html(contentPartOne);
+                    $("#teamContent2").html(contentPartOne);
+                    $("#teamContent3").html(contentPartOne);
 
                     //hide button
                     $("#btnShowMore").click(function () {
+                        let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
+                        $("#teamContent").append(contentPartTwo);
+                        document.getElementById("btnShowMore").style.display = "none";
+                    });
+                    $("#btnShowMore1").click(function () {
+                        let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
+                        $("#teamContent").append(contentPartTwo);
+                        document.getElementById("btnShowMore").style.display = "none";
+                    });
+                    $("#btnShowMore2").click(function () {
+                        let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
+                        $("#teamContent").append(contentPartTwo);
+                        document.getElementById("btnShowMore").style.display = "none";
+                    });
+                    $("#btnShowMore3").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
                         $("#teamContent").append(contentPartTwo);
                         document.getElementById("btnShowMore").style.display = "none";
@@ -342,9 +347,15 @@
 
                     //display first 8 profiles
                     $("#teamContent").html(content);
+                    $("#teamContent1").html(content);
+                    $("#teamContent2").html(content);
+                    $("#teamContent3").html(content);
 
                     //hide button
                     $("#btnShowMore").style.display = "none";
+                    $("#btnShowMore1").style.display = "none";
+                    $("#btnShowMore2").style.display = "none";
+                    $("#btnShowMore3").style.display = "none";
                 }
             }
         });
