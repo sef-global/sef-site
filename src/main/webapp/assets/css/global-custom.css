@@ -269,3 +269,13 @@ h2 {
 	margin: 0 auto;
 	float: none !important;
 }
+.text-onelive{
+    color: #3d317c !important;
+}
+.btn-onelive
+{
+    color: #fff !important;
+    border-color: #fbc53b;
+    background-color: #fbc53b;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
