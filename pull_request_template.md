@@ -13,8 +13,12 @@
 ## Screenshots
 <!---  Include an animated GIF or screenshot if the change affects the UI.  -->
 
-## Security checks
-- [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
+##  Checklist
+- [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
 
 ## Related PRs
 <!--- List any other related PRs --> 
