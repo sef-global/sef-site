@@ -10,8 +10,12 @@
 ## Approach
 <!--- Describe how you are implementing the solutions. Include a link to a Markdown file or Google doc if the feature write-up is too long to paste here. -->
 
-## Screenshots
+### Screenshots
 <!---  Include an animated GIF or screenshot if the change affects the UI.  -->
+  
+### Preview Link
+<!---  Publish your project to github pages and add the preview link  -->
+<!---  go to repo settings > options > git hub pages  > chose master branch > navigate to https://{username}.github.io/{repo-name}  -->
 
 ##  Checklist
 - [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
