@@ -14,7 +14,7 @@
 <!---  Include an animated GIF or screenshot if the change affects the UI.  -->
 
 ## Security checks
- - Confirmed that this PR doesn't commit any keys, passwords, tokens, usernames, or other secrets? yes/no
+- [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
 
 ## Related PRs
 <!--- List any other related PRs --> 
