@@ -122,7 +122,6 @@
                     $("#btnShowMore").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
                         $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
-
                         $("#btnShowMore").hide();
                     });
                 } else {
