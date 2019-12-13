@@ -3,155 +3,127 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.testimonial .testimonial-photo{
+/* custom styling for testimonials section*/
+.testimonial .testimonial-photo {
     width: 100px;
     display: block;
     margin: 10px auto -70px;
 }
-.testimonial .icon{
+
+.testimonial .icon {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img-full{
+/* end testimonial section*/
+
+/* class to add full images*/
+.img-full {
     width: 100%;
 }
 
-.blog-card .card-body{
+/* custom Styling for cards*/
+.blog-card .card-body {
     padding: 24px 0;
 }
-.blog-card .card-description{
+
+.blog-card .card-description {
     font-size: 0.8em;
     text-align: justify;
 }
 
-/* START added by naveen  */
+.card .author, .card .stats {
+    display: inline-flex;
+}
 
-.btn-linkedin
-{
+.card .author a {
+    color: #3c4858;
+    text-decoration: none;
+}
+
+.card .author .avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .card-footer .stats .fa {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.card .card-footer {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.card .card-body + .card-footer {
+    padding-top: 0;
+    border: 0;
+    border-radius: 6px;
+}
+
+.card .card-footer .stats {
+    color: #6f81a4;
+}
+
+/* end of cards*/
+/* styling for linkedin button*/
+.btn-linkedin {
     color: #fff;
     border-color: #0077B5;
     background-color: #0077B5;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
-.btn-linkedin:hover
-{
+
+.btn-linkedin:hover {
     color: #fff;
-    border-color: #0077B5; 
+    border-color: #0077B5;
     background-color: #0077B5;
 }
+
 .btn-linkedin:focus,
-.btn-linkedin.focus
-{
+.btn-linkedin.focus {
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgba(234, 76, 137, .5);
 }
+
 .btn-linkedin.disabled,
-.btn-linkedin:disabled
-{
+.btn-linkedin:disabled {
     color: #fff;
-    border-color: #0077B5; 
+    border-color: #0077B5;
     background-color: #0077B5;
 }
+
 .btn-linkedin:not(:disabled):not(.disabled):active,
 .btn-linkedin:not(:disabled):not(.disabled).active,
-.show > .btn-linkedin.dropdown-toggle
-{
+.show > .btn-linkedin.dropdown-toggle {
     color: #fff;
-    border-color: #0077B5; 
+    border-color: #0077B5;
     background-color: #0077B5;
 }
+
 .btn-linkedin:not(:disabled):not(.disabled):active:focus,
 .btn-linkedin:not(:disabled):not(.disabled).active:focus,
-.show > .btn-linkedin.dropdown-toggle:focus
-{
-    box-shadow: none, 0 0 0 0 rgba(234, 76, 137, .5);
-}
-/* END added by naveen */
-
-/*added by Jaye*/
-.shape-dark-blue{
-    background:  #172b4d;
-}
-.section-shaped .shape-dark-blue :nth-child(1)
-{
-    background: #2e2e57;
-}
-.section-shaped .shape-dark-blue :nth-child(2)
-{
-    background: #2b2b58;
-}
-.section-shaped .shape-dark-blue :nth-child(3)
-{
-    background: #25254d;
-}
-.section-shaped .shape-dark-blue :nth-child(4)
-{
-    background: #d782d9;
-}
-.section-shaped .shape-dark-blue :nth-child(5)
-{
-    background: #008169;
+.show > .btn-linkedin.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 rgba(234, 76, 137, .5);
 }
 
-.section-shaped .shape-style-1 :nth-child(1)
-{
-    background: rgba(255, 255, 255, .1);
-}
-.section-shaped .shape-style-1 :nth-child(2)
-{
-    background: rgba(255, 255, 255, .1);
-}
-.section-shaped .shape-style-1 :nth-child(3)
-{
-    background: rgba(255, 255, 255, .1);
-}
-.section-shaped .shape-style-1 :nth-child(4)
-{
-    background: rgba(255, 255, 255, .1);
-}
-.section-shaped .shape-style-1 :nth-child(5)
-{
-    background: rgba(255, 255, 255, .1);
-}
-.section-shaped .shape-style-1 :nth-child(6)
-{
-    background: rgba(255, 255, 255, .1);
-}
-/*end added by jaye*/
+/* end linkedin button styling*/
 
-/* added by tiagopedutti */
-
-.partners img{
-    opacity: 0.5;
-    transition: opacity 0.2s, transform 0.2s;
+/* styling for icon buttons*/
+.btn-icon-rounded {
+    padding-top: 0;
 }
 
-.partners img:hover{
-    opacity: 1;
-    transform: scale(1.15);
-}
-
-/* END added by tiagopedutti */
-
-
-/*event cards*/
-
-.event-card .date{
-    text-align: right;
-    margin-bottom: -20px;
-    margin-top: 15px;
-}
-
-.event-card .card-img-top{
-    object-fit: cover;
-    object-position: 100% 5px;
-    width: 490px;
-    height: 162px;
-}
-
-
-/*image hover icon*/
+/* styling for hover profile card*/
 .imgIcon {
     transition: .5s ease;
     opacity: 0;
@@ -162,7 +134,8 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-.imgContainer {
+
+.hover-profile-card {
     opacity: 1;
     display: block;
     width: 100%;
@@ -170,102 +143,119 @@ body{
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.imgHover {
+
+.hover-profile-card .imgHover {
     width: 150px;
 }
 
-.imgContainer:hover .imgHover {
+.hover-profile-card:hover .imgHover {
     opacity: 0.3;
 }
 
-.imgContainer:hover .imgIcon {
+.hover-profile-card:hover .imgIcon {
     opacity: 1;
 }
 
-/*testimonial component*/
+/*end hover profile card*/
 
-h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
+/* styling for testimonial-carousel */
+.testimonial-carousel .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
 }
 
-.carousel {
-	margin: 50px auto;
-	padding: 0 70px;
-}
-.carousel .item {
-	color: #999;
-	font-size: 14px;
+.testimonial-carousel .carousel .item {
+    color: #999;
+    font-size: 14px;
     text-align: center;
-	overflow: hidden;
+    overflow: hidden;
     min-height: 290px;
 }
-.carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
+
+.testimonial-carousel .carousel .item .img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
 }
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
+
+.testimonial-carousel .carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
 }
-.carousel .testimonial {
-	padding: 30px 0 10px;
+
+.testimonial-carousel .carousel .testimonial {
+    padding: 30px 0 10px;
 }
-.carousel .overview {
-	font-style: italic;
+
+.testimonial-carousel .carousel .overview {
+    font-style: italic;
 }
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
+
+.testimonial-carousel .carousel .overview b {
+    text-transform: uppercase;
+    color: #7AA641;
 }
-.carousel .carousel-control {
-	width: 40px;
+
+.testimonial-carousel .carousel .testimonial-carousel .carousel-control {
+    width: 40px;
     height: 40px;
     margin-top: -80px;
     top: 50%;
-	background: none;
+    background: none;
 }
-.carousel-control i {
+
+.testimonial-carousel .carousel-control i {
     font-size: 68px;
-	line-height: 42px;
+    line-height: 42px;
     position: absolute;
     display: inline-block;
-	color: rgba(105, 26, 189,0.9);
-    <!--text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;-->
-}
-.carousel-control i:hover {
-	color: rgba(105, 26, 189,0.9);
-}
-.carousel .carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 10px;
-	height: 10px;
-	margin: 1px 3px;
-	border-radius: 50%;
-}
-.carousel-indicators li {
-	background: #999;
-	border-color: transparent;
-
-}
-.carousel-indicators li.active {
-	background: #555;
-
+    color: rgba(105, 26, 189, 0.9);
 }
 
-.col-center {
-	margin: 0 auto;
-	float: none !important;
+.testimonial-carousel .carousel-control i:hover {
+    color: rgba(105, 26, 189, 0.9);
 }
+
+.testimonial-carousel .carousel .testimonial-carousel .carousel-indicators {
+    bottom: -40px;
+}
+
+.testimonial-carousel .carousel-indicators li, .testimonial-carousel .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: 0
+}
+
+.testimonial-carousel .carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+
+}
+
+.testimonial-carousel .carousel-indicators li.active {
+    background: #555;
+}
+
+/* end of testimonial-carousel*/
+
+/* custom gradients*/
+.bg-gradient-dark-green {
+    background: linear-gradient(60deg, #66bb6a, #388e3c) !important;
+}
+
+.bg-gradient-dark-cyan {
+    background: linear-gradient(60deg, #26c6da, #0097a7) !important;
+}
+
+.bg-gradient-dark-yellow {
+    background: linear-gradient(60deg,#ffa726,#f57c00) !important;
+}
+
+/* end of custom gradients*/
