@@ -1,0 +1,410 @@
+[
+    {
+        "heading": "Advisory Pannel",
+        "description": "Every organisation needs someone to guide them. Our advisory panel consist of exceptional industry experts to guide us with our direction and strategy.",
+        "people": [
+            {
+                "name": "Alagan Mahalingam",
+                "image": "../assets/img/team/alagan.jpg",
+                "post": "Chief Executive Officer at 01 Tech",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/alaganmahalingam/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/_alagan",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/alaganm",
+                        "buttonColor": "facebook"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Anjana Wijekoon",
+                "image": "../assets/img/team/Anjana.jpg",
+                "post": "Postgraduate Student at Robert Gordon University",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/anjanawijekoon/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/Anjana_Wijekoon",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/anjana.wijekoon",
+                        "buttonColor": "facebook"
+                    }
+                ]
+                
+            },
+            {
+                "name": "Bhagya Nirmaan Silva",
+                "image": "../assets/img/team/bhagya.jpg",
+                "post": "Chief Technology Officer at Loftux",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/bhagyas/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/bhagyas",
+                        "buttonColor": "facebook"
+                    }
+                ]
+                
+            },
+            {
+                "name": "Dinal Kurukulasooriya",
+                "image": "../assets/img/team/dinal.jpg",
+                "post": "Co-Founder at Autochatic",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/dinalkurukulasooriya/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/dinal.kurukulasooriya",
+                        "buttonColor": "facebook"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Heminda Jayaweera",
+                "image": "../assets/img/team/heminda.jpg",
+                "post": "Co-Founder at Venture Frontier Lanka",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/heminda/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/heminda",
+                        "buttonColor": "facebook"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Rohan Jayaweera",
+                "image": "../assets/img/team/rohan.jpeg",
+                "post": "Country General Manager at Palo Alto Networks",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/rohan-jayaweera-9b42a95/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/rohan205",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/rohan.jayaweera",
+                        "buttonColor": "facebook"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Ramindu Deshapriya",
+                "image": "../assets/img/team/ramindu.jpg",
+                "post": "Senior Consultant at Virtusa",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/rdeshapriya/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/RamdeshLota",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/ramdeshlota",
+                        "buttonColor": "facebook"
+                    }
+                ]
+                
+            },
+            {
+                "name": "Shenal Senarath",
+                "image": "../assets/img/team/shenal.jpg",
+                "post": "Senior Software Engineer at Infor",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/shenalsenarath/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/ShenalSenarath",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/shenal.senarath",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Dr.Yasantha Rajakarunanayake",
+                "image": "../assets/img/team/yasantha.jpg",
+                "post": "Senior Director,Technology at MediaTek",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/yasantha-rajakarunanayake-aa23568/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/yasantha62",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/yasanthar",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "Consultants",
+        "description": "Our panel of consultants play a similar role to the advisory panel, but they work very closely with the teams to make sure everything runs smoothly.",
+        "people": [
+            {
+                "name": "Anish Wijesinghe",
+                "image": "../assets/img/team/anish.jpg",
+                "post": "Founder at Motion Miricales,Wibble & Crytec",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/anishwij/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/anish.wijesinghe",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Charith Samarakoon",
+                "image": "../assets/img/team/charith.jpg",
+                "post": "Former Chief Executive Officer at Sustainable Education Foundation",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/charithsamarakoon/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/ChariSamarakoon",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/charith.samarakoon",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Kavindya Thennakoon",
+                "image": "../assets/img/team/kavindya.jpg",
+                "post": "Civic Entertainment Researcher at MIT Media Lab",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/kavindyathennakoon/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/kavindya_T",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/kavindya.thennakoon",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Yasiru Kassapa",
+                "image": "../assets/img/team/yasiru.jpg",
+                "post": "Co Founder at Sustainable Education Foundation",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/yasiruk/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/wik2kassa",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "Executive Commitee",
+        "description": "The head team which handles the functionality of the foundation.",
+        "people": [
+            {
+                "name": "Akshika Wijesundara",
+                "image": "../assets/img/team/akshika.jpg",
+                "post": "Chairman",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/akshika/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/AkshikaW",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/ak.wijesundara",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Buwaneka De Silva",
+                "image": "../assets/img/team/buwaneka.jpg",
+                "post": "Deputy Chairman",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/bpdesilva/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/bpdesilva",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/Buwaneka.DeSilva",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Hasitha Senevirathne",
+                "image": "../assets/img/team/hasitha.jpg",
+                "post": "Deputy Chairman",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/hasithasenevirathne/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/IamHasitha95",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/senevirathnehasitha",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Suresh Peiris",
+                "image": "../assets/img/team/suresh.jpg",
+                "post": "Software Engineer - Cross Platform",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/sureshmichael/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "twitter",
+                        "link": "https://twitter.com/TSMPeiris",
+                        "buttonColor": "twitter"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/TSMPeiris",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Tharika Weerakoon",
+                "image": "../assets/img/team/tharika.jpeg",
+                "post": "Chief Human Resource Officer",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/tharika-weerakoon-888b1487/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/tharika.weerakoon.3",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            },
+            {
+                "name": "Jayasanka Weerasinghe",
+                "image": "../assets/img/team/jayasanka.jpeg",
+                "post": "Chief Technology Officer",
+                "social": [
+                    {
+                        "name": "linkedin",
+                        "link": "https://www.linkedin.com/in/jayasanka-sack/",
+                        "buttonColor": "default"
+                    },
+                    {
+                        "name": "facebook",
+                        "link": "https://www.facebook.com/jayasanka.sack",
+                        "buttonColor": "facebook"
+                    }
+                ]
+            }
+        ]
+    }
+]

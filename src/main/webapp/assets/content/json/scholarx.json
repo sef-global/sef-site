@@ -1,0 +1,128 @@
+{
+  "logo": "../assets/img/brand/scholarx.png",
+  "title": "Premium Mentoring by Sri Lankans for Sri Lankans",
+  "mentors": [
+    {
+      "name": "Dr Hasini Jayatilaka",
+      "image": "../assets/img/mentors/hasini.jpeg",
+      "intro": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
+      "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
+      "twitter": "https://twitter.com/HasiniJt"
+    },
+    {
+      "name": "Dr Jeewika Ranaweera",
+      "image": "../assets/img/mentors/jeewika.jpeg",
+      "intro": "Principal Hardware Engineer at Oracle, PhD at University of Toronto.",
+      "linkedin": "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/",
+      "twitter": "https://twitter.com/JeewikaR",
+      "facebook": "https://www.facebook.com/jeewika.ranaweera"
+    },
+    {
+      "name": "Dr Rukshan Batuwita",
+      "image": "../assets/img/mentors/rukshan.jpeg",
+      "intro": "Data Scientist at Google, PhD at University of Oxford.",
+      "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/",
+      "facebook": "https://www.facebook.com/rukshan.batuwita"
+    },
+    {
+      "name": "Dr Savithru Jayasinghe",
+      "image": "../assets/img/mentors/savithru.jpeg",
+      "intro": "PhD at Massachusetts Institute of Technology (MIT), MEng at University of Cambridge.",
+      "linkedin": "https://www.linkedin.com/in/savithru/",
+      "facebook": "https://www.facebook.com/savithru.j"
+    },
+    {
+      "name": "Sumudu Herath",
+      "image": "../assets/img/mentors/sumudu.jpeg",
+      "intro": "Ph.D. candidate at University of Cambridge, Best Engineering Undergraduate of University of Moratuwa.",
+      "linkedin": "https://www.linkedin.com/in/sumudu-herath-6618b855/",
+      "twitter": "https://twitter.com/sumuduherath",
+      "facebook": "https://www.facebook.com/sumudu.t.herath"
+    },
+    {
+      "name": "Yasith Vidanaarachchi",
+      "image": "../assets/img/mentors/yasith.jpeg",
+      "intro": "Software Engineer at Google, Ex — Software Engineer at Amazon",
+      "linkedin": "https://www.linkedin.com/in/yasithv/",
+      "twitter": "https://twitter.com/tuxv",
+      "facebook": "https://www.facebook.com/yasith"
+    }
+  ],
+  "video": {
+    "title": "ScholarX Premium Mentoring",
+    "link": "https://www.youtube.com/embed/OSCus9R5M3s"
+  },
+  "apply": {
+    "title": "Find a mentor for me",
+    "description": "The deadline for the first phase of the program is on 14/04/2019, \n Application link can be found below For more information and to be added to the waiting list for the next phase of the program, \n please write to us via sustainableedufoundation@gmail.com"
+  },
+  "general": [
+    {
+      "question": "What is ScholarX?",
+      "answer": "ScholarX is an exclusive 3-month program aimed at providing mentoring support to a selected pool of High Potential undergraduate students based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of the world’s top universities or Fortune 500 companies. It’s our free premium mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture of knowledge and expertise sharing without the limitation of geographical borders."
+    },
+    {
+      "question": "What is the duration of the program?",
+      "answer": "The program will require a 3-month commitment from both mentor and mentee. The number of meetings during this time will be up to the mentor and mentee to negotiate. However, based on past program effectiveness we recommend 12 meetings with the mentor."
+    },
+    {
+      "question": "What is the cost of the program?",
+      "answer": "ScholarX is a free program conducted by volunteer mentors who generously offer their time to support the next generation of change makers in Sri Lanka."
+    },
+    {
+      "question": "What topics are covered?",
+      "answer": "We acknowledge that each individual mentee is at a different stage of their career and learning pathway. So we encourage both parties to have an open and honest conversation to identify the direction and expertise required to customize their mentoring. Topics past groups have requested include: <br><br><ul><li>Collaborating with the mentor on a project</li><li>General career advice</li><li>Higher study options to align with career path in academia or professional line of work. </li></ul>"
+    }
+  ],
+  "mentee": [
+    {
+      "title": "How to be a ScholarX Mentee?"
+    },
+    {
+      "question": "What are the eligibility requirements?",
+      "answer": "Our priority is given to applicants of Sri Lankan origin. However, if we have an excess of mentors, we will look at expanding the offering to foreign students as well. *) You must be atleast 18 years of age when you register\n*)You must currently be a full time or part-time student undertaking an undergraduate or postgraduate course.\n*)You have not already been accepted as a mentee in ScholarX more than once"
+    },
+    {
+      "question": "How do I apply?",
+      "answer": "Follow us on our Facebook, Linkedin , Instagram and Twitter pages and also keep an eye on the ScholarX page on our website for the application link. We will share more information closer to the launch of the next intake."
+    },
+    {
+      "question": "What is the selection criteria?",
+      "answer": "We require all applicants to demonstrate, a high standard of English proficiency and a genuine curiosity to learn and innovate. In their responses, applicants must also show ambition to achieve their career goals and articulately express how the mentoring program will assist with achieving their overall academic and/or professional objectives."
+    },
+    {
+      "question": "How do I contact the mentors?",
+      "answer": "Mentor contact details will only be shared once you have been successful in securing a place in the program as a ScholarX mentee."
+    },
+    {
+      "question": "Can I continue my mentorship relationship at the end of the 3-month program?",
+      "answer": "At the end of the official mentorship program, if you and your mentor wish to continue your mentoring relationship, we encourage you to do so."
+    }
+  ],
+  "mentor": [
+    {
+      "title": "How to be a Mentor?"
+    },
+    {
+      "question": "What are the eligibility requirements?",
+      "answer": "We look for industry experts and academics who have excelled in their careers ideally with recognition from industry bodies/international agencies for their work or have demonstrated exceptional performance in their industry where they represent a minority group (e.g.: women in STEM industry, entrepreneurs of niche industries). \n\nWhile we have been very fortunate to host a high calibre of Sri Lankan mentors in our past program offerings, we are always on the lookout for exceptional mentors regardless of nationality."
+    },
+    {
+      "question": "How do I apply to be a mentor?",
+      "answer": "Submit your CV and expression of interest to sustainableedufoundation@gmail.com"
+    },
+    {
+      "question": "Do mentors receive any money for participating in ScholarX as a mentor?",
+      "answer": "No, this is a volunteer run program."
+    },
+    {
+      "question": "Can I participate in ScholarX as both a mentor and a student?",
+      "answer": "No. We do not encourage a dual hat approach as this will deteriorate the quality of the offering. Please choose whether participation as a mentor or a mentee achieve your career objectives the best and apply for the most suitable role."
+    },
+    {
+      "question": "I want to learn more about participating as a mentor in ScholarX. Where can I find more information?",
+      "answer": "If you have specific queries regarding the role of the mentor , please reach out to us via sustainableedufoundation@gmail.com"
+    }
+  ]
+}
+

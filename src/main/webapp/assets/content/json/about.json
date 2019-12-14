@@ -1,0 +1,20 @@
+{
+  "mainDescription": "Sustainable Education Foundation (SEF) is a volunteer driven organization founded by the former Google Student Ambassador and an alumni of University of Moratuwa, Akshika Wijesundara. SEF was founded with the short term goal of making the Sri Lankan education system the most effective and the most dynamic education system in the world. SEF’s final goal is to disrupt and democratize the global education system where it is available for everyone, in doing so foundation contributes to the United Nations’ sustainable development goal of “Quality Education”.",
+
+  "programsDescription": "One of the interesting and powerful qualities of SEF is that they have utilized social media to carry out of most their programs. In order to achieve their goals, SEF has conducted many programs to empower students, educational institutes and education as a whole in Sri Lanka. Some of the programs SEF has done are as follows.",
+
+  "programs": [
+    {
+      "name": "ONELIVE",
+      "description": "“OneLive” is an interactive webinar series done every weekend with the experts in their fields. “OneLive” is a trademark program of SEF with the vision to expand the knowledge of Sri Lankan students and it will allow you to interact with the speaker via asking questions live. “OneLive” is the future of knowledge sharing and it is a popular medium for Sri Lankan students who seek for inspiration."
+    },
+    {
+      "name" : "MENTOR PROGRAM",
+      "description": "SEF mentor program is conceptualized to make a ripple effect across the society. We pair students from universities and schools with academics and industry experts for mentoring. The program lasts for 3 months with a minimum of 12 interactions between the mentor and mentee. The mentees will blog/vlog about their experience and they will mentor another mentee in 4 years time. This way SEF’s mentor program is sustainable and impactful."
+    },
+    {
+      "name" : "SCHOOL/UNIVERSITY OUTREACH PROGRAM",
+      "description": "SEF organizes outreach programs in schools and universities depending on their requirements. SEF’s pool of resource people will conduct these talks/workshops depending on the institutes requirement. Alongside these sessions, SEF also organizes public talks on the latest topics in education."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "introduction": {
+      "mission": "To empower students, education institutes and education as a whole in Sri Lanka.",
+      "heading": "Brief introduction about us",
+      "description": "Sustainable Education Foundation (SEF) is a volunteer driven organisation founded by the former Google Student Ambassador and an alumni of University of Moratuwa, Akshika Wijesundara.",
+      "descriptionGoal": "SEF was founded with the short term goal of making the Sri Lankan education system the most effective and the most dynamic education system in the world. SEF’s long term goal is to disrupt and democratise the global education system where it is available for everyone, in doing so, foundation contributes to the United Nations’ sustainable development goal of “Quality Education”."
+    }
+  },
+  {
+    "testimonials": [
+      {
+        "name": "Sanmugathasan Prasanthan",
+        "occupation": "CEO/ Founder, IT Signature",
+        "image": "../assets/img/testimonial/sanmugathasan.jpg",
+        "description": "Its great to work with your team and I wish you good luck. Its a great opportunity for me to share my stories with upcoming entrepreneurs and I believe you will keep your great service to motivate the rest."
+      },
+      {
+        "name": "Nimesha Ranasinghe",
+        "occupation": "Assistant Professor, University of Maine, USA",
+        "image": "../assets/img/testimonial/nimesha.jpg",
+        "description": "I believe that education should be free and accessible to everyone! Great to see many initiatives by the SEF community - especially their efforts to encourage the young generation in Sri Lanka to achieve not only in the domestic settings but also in the international level. I wish SEF all the best, keep up the good work!"
+      },
+      {
+        "name": "Vladimir Kovacevic",
+        "occupation": "Bioinformatics Analyst, Seven Bridges Genomics",
+        "image": "../assets/img/testimonial/vladmir.jpg",
+        "description": "SEF professionally organized a lecture I held about Advancements in DNA Sequencing, Bioinformatics and Cancer research. I was more than satisfied and amazed, especially about their strong efforts, devotion and philosophy of providing free education to the wide range of population. Hope the idea will be spread world wide."
+      }
+    ]
+  },
+  {
+    "partners": {
+      "heading": "Our Partners and Collaborators",
+      "logos": [
+        {
+          "image": "./assets/img/partners/venture.png",
+          "link": "https://ovibees.com/venturefrontierlanka/"
+        },
+        {
+          "image": "./assets/img/partners/thuru.png",
+          "link": "https://thuru.lk/"
+        },
+        {
+          "image": "./assets/img/partners/surfedge.png",
+          "link": "https://www.surfedge.lk/"
+        },
+        {
+          "image": "./assets/img/partners/autochatic.png",
+          "link": "https://autochatic.com"
+        },
+        {
+          "image": "/assets/img/partners/JPixel.jpg",
+          "link": "https://www.facebook.com/J4pixel/"
+        },
+        {
+          "image": "./assets/img/partners/rotract.png",
+          "link": "http://www.rotaractclubofcolombo.org/"
+        },
+        {
+          "image": "./assets/img/partners/ieeein.png",
+          "link": "https://in.ieee.lk/"
+        },
+        {
+          "image": "./assets/img/partners/LOGO_HAPPYSRILANKANS.jpg",
+          "link": "https://www.happysrilankans.com/"
+        },
+        {
+          "image": "./assets/img/partners/srilankansoftwarefoundation.jpeg",
+          "link": "https://opensource.lk/"
+        },
+        {
+          "image": "./assets/img/partners/fosslogo2.png",
+          "link": "https://foss.lk/"
+        },
+        {
+          "image": "./assets/img/partners/mozilla-logo-transparent.png",
+          "link": "https://campus.mozilla.community/"
+        },
+        {
+          "image": "./assets/img/partners/udecideLogo.png",
+          "link": "https://udecidemediation.com"
+        },
+        {
+          "image": "./assets/img/partners/Without.png",
+          "link": "https://www.withoutborderslk.org/"
+        },
+        {
+          "image": "./assets/img/partners/coursenet2.png",
+          "link": "https://www.coursenet.lk/"
+        },
+        {
+          "image": "./assets/img/partners/logos-03.png",
+          "link": ""
+        },
+        {
+          "image": "./assets/img/partners/SGLOGO.jpg",
+          "link": ""
+        }
+      ]
+    }
+  }
+]
