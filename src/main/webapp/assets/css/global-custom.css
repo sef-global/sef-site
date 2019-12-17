@@ -259,3 +259,23 @@ body{
 }
 
 /* end of custom gradients*/
+
+/*SA HERO IMAGE (Background image and text) */
+.hero-image {
+  background-image: url(../img/SA/asset0.png);
+  height: 600px;
+  right:40px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 850px 550px;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
