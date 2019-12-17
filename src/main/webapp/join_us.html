@@ -31,10 +31,13 @@
 <!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
 
 <main>
+    <!--    Hero section-->
     <section class="section mt-5">
         <div class="container">
-            <div class="position-absolute mt-5 py-4">
-                <div class="display-1 font-weight-bold my-auto d-flex text-default">Lorem Ipsum&nbsp;<span class="font-weight-light">dolar</span> </div>
+            <!--            For bigger screens-->
+            <div class="position-absolute d-none d-md-block mt-5 py-4">
+                <div class="display-1 font-weight-bold my-auto d-flex text-default">Lorem Ipsum&nbsp;<span
+                        class="font-weight-light">dolar</span></div>
                 <div class="display-3 font-weight-light text-darker pt-4">CAREERS AT <span
                         class="font-weight-bold d-inline">SEF</span></div>
                 <p class="lead text-darker mt-auto mb-auto">Lorem Ipsum Dolar Sit Amet</p>
@@ -42,12 +45,41 @@
                     <button class="btn btn-purple text-uppercase mt-3" href="examples">Apply now!</button>
                 </a>
             </div>
+
+            <!--            For mobile view-->
+            <div class="d-block d-md-none mt-5 py-4">
+                <div class="display-1 font-weight-bold my-auto d-flex text-default">Lorem Ipsum&nbsp;<span
+                        class="font-weight-light">dolar</span></div>
+                <div class="display-3 font-weight-light text-darker pt-4">CAREERS AT <span
+                        class="font-weight-bold d-inline">SEF</span></div>
+                <p class="lead text-darker mt-auto mb-auto">Lorem Ipsum Dolar Sit Amet</p>
+                <a href="#">
+                    <button class="btn btn-purple text-uppercase mt-3" href="examples">Apply now!</button>
+                </a>
+            </div>
+
         </div>
-        <div class="col-8 offset-4" style="z-index: -1">
+
+        <!--        Hero image-->
+        <div class="col-12 col-md-8 offset-md-4" style="z-index: -1">
             <img src="assets/img/join_us/hero.svg" style="alignment: right">
         </div>
     </section>
 
+    <!--    Description section-->
+    <section class="section">
+        <div class="container text-center">
+            <div class="col-6 offset-3">
+                <img src="assets/img/join_us/img1.svg">
+            </div>
+            <h2 class="text-center mt-3"><span class="font-weight-bold">Lorem</span> Ipsum Dolar</h2>
+            <div class="col-8 offset-2">
+                <p class="text-darker font-weight-bold mt-auto mb-auto">Lorem Ipsum Dolar Sit Amet Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--    Testimonial section-->
     <section class="section section-secondary">
         <div class="container">
             <h2 class="text-center">Frequently Asked Questions</h2>
@@ -170,11 +202,12 @@
         </div>
     </section>
 
+    <!--    Sign up section-->
     <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/join_us/img4.svg">
+                    <img src="assets/img/join_us/img2.svg">
                 </div>
                 <div class="col-md-6 mt-auto mb-auto pl-5">
                     <div class="display-3 font-weight-light text-darker">CAREERS AT <span
