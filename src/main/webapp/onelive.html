@@ -35,14 +35,14 @@
                     Real Life Heroes</h1>
                 <h1 class="mb-0 text-darker font-weight-lighter text-uppercase">one <span
                         class="font-weight-bold">Live</span></h1>
-                <p class="text-darker">Lorem ipsum dolor sit amet</p>
+<!--                <p class="text-darker">Lorem ipsum dolor sit amet</p>-->
                 <a class="btn btn-onelive text-uppercase">Learn more</a>
             </div>
             <div class="mt-md-5 d-md-none">
                 <h1 class="mt-md-5 display-1">Meet the Real Life Heroes</h1>
                 <h1 class="mb-0 text-darker font-weight-lighter text-uppercase">one <span
                         class="font-weight-bold">Live</span></h1>
-                <p class="text-darker">Lorem ipsum dolor sit amet</p>
+<!--                <p class="text-darker">Lorem ipsum dolor sit amet</p>-->
                 <a class="btn btn-onelive text-uppercase">Learn more</a>
             </div>
         </div>
@@ -334,8 +334,8 @@
                     //hide button
                     $("#btnShowMore").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
-                        $("#teamContent").append(contentPartTwo);
-                        document.getElementById("btnShowMore").style.display = "none";
+                        $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
+                        $("#btnShowMore").hide();
                     });
                 } else {
                     //mustache render
@@ -345,7 +345,7 @@
                     $("#teamContent").html(content);
 
                     //hide button
-                    $("#btnShowMore").style.display = "none";
+                    $("#btnShowMore").hide();
                 }
             }
         });
