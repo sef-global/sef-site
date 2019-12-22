@@ -2282,6 +2282,98 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <h2 class="mb-5">
+                <span>FAQ Section Style 2</span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col accordian-title">
+                    <button class="btn btn-link text-dark w-100" data-toggle="collapse" data-target="#faq-one">
+                        <div class="row justify-content-center">
+                            <div class="col-6 text-left">
+                                <p class="text-capitalize flex-wrap">How to be a member?</p>
+                            </div>
+                            <div class="col-6 text-right mt-1">
+                                <i class="fa fa-plus-circle text-primary"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse" id="faq-one">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-left">
+                                <p class="text-muted">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                    sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda shoreditch et.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col accordian-title">
+                    <button class="btn btn-link text-dark w-100" data-toggle="collapse" data-target="#faq-two">
+                        <div class="row justify-content-center">
+                            <div class="col-6 text-left">
+                                <p class="text-capitalize">How to be a member?</p>
+                            </div>
+                            <div class="col-6 text-right mt-1">
+                                <i class="fa fa-plus-circle text-primary"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse" id="faq-two">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-left">
+                                <p class="text-muted">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                    sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda shoreditch et.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col accordian-title">
+                    <button class="btn btn-link text-dark w-100" data-toggle="collapse" data-target="#faq-three">
+                        <div class="row justify-content-center">
+                            <div class="col-6 text-left">
+                                <p class="text-capitalize">How to be a member?</p>
+                            </div>
+                            <div class="col-6 text-right mt-1">
+                                &nbsp;<i class="fa fa-plus-circle text-primary"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse" id="faq-three">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-left">
+                                <p class="text-muted">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                    sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda shoreditch et.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- end of FAQ Accordion-->
     <!-- Cards section   -->
     <section class="section section-lg section-secondary">
@@ -2741,6 +2833,23 @@
 <!-- Argon JS -->
 <script src="../assets/js/argon.js?v=1.0.1"></script>
 <script src="../assets/js/global-custom-js.js"></script>
+<script>
+    $('.accordian-title').click(function () {
+        if($(this).children('div').hasClass('show')){
+            $(this).removeClass('card shadow rounded');
+            $(this).children('button').children('div').children('div').children('i').removeClass('fa-minus-circle');
+            $(this).children('button').children('div').children('div').children('i').addClass('fa-plus-circle');
+        }else{
+            $('.accordian-title').not(this).children('div').removeClass('show');
+            $('.accordian-title').not(this).removeClass('card shadow rounded');
+            $('.accordian-title').not(this).children('button').children('div').children('div').children('i').removeClass('fa-minus-circle');
+            $('.accordian-title').not(this).children('button').children('div').children('div').children('i').addClass('fa-plus-circle');
+            $(this).addClass('card shadow rounded');
+            $(this).children('button').children('div').children('div').children('i').removeClass('fa-plus-circle');
+            $(this).children('button').children('div').children('div').children('i').addClass('fa-minus-circle');
+        }
+    })
+</script>
 </body>
 
 </html>
