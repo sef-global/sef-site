@@ -271,6 +271,41 @@ body{
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
+.text-orange{
+    color: #f5954d !important;
+}
+
+.btn-orange
+{
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.4;
+
+    display: inline-block;
+
+    padding: .625rem 1.25rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    border-radius: 1rem;
+
+    color: #fff;
+    border-color: #f38357;
+    background-color: #f38357;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
 /*custom button styles*/
 
 .btn-purple {
