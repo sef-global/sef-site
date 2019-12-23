@@ -224,7 +224,7 @@
 
 <section class="section pb-0 bg-gradient-white">
     <div class="container">
-        <p class="display-3">Lorem ipsum dolor sit amet</p>
+        <p class="display-3">Mentors</p>
         <div class="row justify-content-center">
             <!--Profile cards goes here-->
             <div id="teamContent"></div>
@@ -425,19 +425,13 @@
                 <div class="pt-4 text-center">
                     <h5 class="title">
                         <span class="d-block mb-1">{{name}}</span>
-                        <small class="h6 text-muted">{{city}}</small>
+                        <small class="h6 text-muted">{{intro}}</small>
                     </h5>
                 </div>
             </div>
         </div>
         {{/data}}
     </div>
-</script>
-
-<script>
-    $(function () {
-        loadNavAndFooter('assets/content/static')  //relative path to content directory
-    })
 </script>
 
 <script>
@@ -452,7 +446,7 @@
     function loadProfiles() {
         $.ajax({
             type: 'get',
-            url: 'assets/content/json/dummy-profiles.json',
+            url: 'assets/content/json/v3.0.0/scholarx.json',
             dataType: 'json',
             success: function (data) {
 
@@ -470,8 +464,8 @@
                     //hide button
                     $("#btnShowMore").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
-                        $("#teamContent").append(contentPartTwo);
-                        document.getElementById("btnShowMore").style.display = "none";
+                        $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
+                        $("#btnShowMore").hide();
                     });
                 } else {
                     //mustache render
@@ -481,7 +475,7 @@
                     $("#teamContent").html(content);
 
                     //hide button
-                    $("#btnShowMore").style.display = "none";
+                    $("#btnShowMore").hide();
                 }
             }
         });
