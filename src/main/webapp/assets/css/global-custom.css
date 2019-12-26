@@ -404,20 +404,22 @@ body{
         position: absolute;
         left: 3%;
         text-align: center;
-        top: 71rem;
+        top: 62rem;
 
+    }
+
+    #panelimage{
+         display: none;
     }
 
     #skillsheading{
         position: absolute;
-        left: 26%;
-        text-align: center;
-        top: 6rem;
-
+        top: 24rem;
+        left: 12%;
     }
 
     #skillspics{
-        margin-top: 6rem;
+        margin-top: 24rem;
         text-align: center;
     }
     .res .card-text{
@@ -451,11 +453,11 @@ body{
 
     .res{
         position: absolute;
-        top: 100rem;
+        top: 95rem;
         left: 5%;
     }
 
-    .card-text{
+    .res p{
         font-size: 1rem;
     }
 
