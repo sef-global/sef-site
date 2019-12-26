@@ -404,6 +404,7 @@ body{
         margin-bottom: 23px;
     }
 
+
     #responsibleh{
         position: absolute;
         left: 3%;
@@ -423,7 +424,7 @@ body{
     }
 
     #skillspics{
-        margin-top: 24rem;
+        margin-top: 26rem;
         text-align: center;
     }
     .res .card-text{
