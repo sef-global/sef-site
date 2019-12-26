@@ -305,6 +305,7 @@ body{
     left: 30%;
     text-align: center;
     top: 63.8rem;
+
 }
 
 .res{
@@ -403,7 +404,7 @@ body{
         position: absolute;
         left: 5%;
         text-align: center;
-        top: 62rem;
+        top: 67rem;
     }
 
     #skillsheading{
@@ -449,7 +450,7 @@ body{
 
     .res{
         position: absolute;
-        top: 88rem;
+        top: 90rem;
         left: 12%;
     }
 
