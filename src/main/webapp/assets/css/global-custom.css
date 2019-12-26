@@ -400,6 +400,10 @@ body{
         margin-top: 12rem;
     }
 
+    .section{
+        margin-bottom: 23px;
+    }
+
     #responsibleh{
         position: absolute;
         left: 3%;
