@@ -408,8 +408,6 @@ body{
 
     }
 
-
-
     #skillsheading{
         position: absolute;
         left: 26%;
@@ -453,7 +451,7 @@ body{
 
     .res{
         position: absolute;
-        top: 96rem;
+        top: 98rem;
         left: 5%;
     }
 
