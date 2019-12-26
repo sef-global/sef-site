@@ -402,10 +402,13 @@ body{
 
     #responsibleh{
         position: absolute;
-        left: 5%;
+        left: 3%;
         text-align: center;
-        top: 67rem;
+        top: 71rem;
+
     }
+
+
 
     #skillsheading{
         position: absolute;
@@ -450,8 +453,8 @@ body{
 
     .res{
         position: absolute;
-        top: 90rem;
-        left: 12%;
+        top: 96rem;
+        left: 5%;
     }
 
     .card-text{
@@ -498,6 +501,9 @@ body{
         margin: auto;
     }
 
+    #responsibleh .h2{
+        font-size: 1.9rem !important;
+    }
 
 
 }
