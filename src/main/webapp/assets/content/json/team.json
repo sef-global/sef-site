@@ -57,7 +57,7 @@
             }
         }
     ],
-    "Design Team": [
+    "designTeam": [
         {
             "name": "add_name",
             "description": "add_description",
