@@ -37,7 +37,8 @@
                             <img src="assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-5" style="width: 40%">
                             <p class="pb-5">ScholarX is an exclusive 3-month program aimed at providing mentoring support to a selected pool of High Potential undergraduate students based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of the world’s
                                 top universities or Fortune 500 companies. It’s our free premium mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture of knowledge and expertise sharing without the limitation of geographical
-                                borders.</p>
+                                borders.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +161,7 @@
 
     <section class="section pb-0 bg-gradient-white">
         <div class="container">
-            <p class="display-3">Lorem ipsum dolor sit amet</p>
+            <p class="display-3">Mentors</p>
             <div class="row justify-content-center">
                 <!--Profile cards goes here-->
                 <div id="teamContent"></div>
@@ -303,7 +304,7 @@
                 <div class="pt-4 text-center">
                     <h5 class="title">
                         <span class="d-block mb-1">{{name}}</span>
-                        <small class="h6 text-muted">{{city}}</small>
+                        <small class="h6 text-muted">{{intro}}</small>
                     </h5>
                 </div>
             </div>
@@ -314,13 +315,7 @@
 
 <script>
     $(function() {
-        loadNavAndFooter('assets/content/static') //relative path to content directory
-    })
-</script>
-
-<script>
-    $(function() {
-        loadNavAndFooter('assets/content'); //relative path to content directory
+        loadNavAndFooter('assets/content/static'); //relative path to content directory
         // link to the navbar, footer content goes here
 
         loadProfiles(); // call function to load profiles
@@ -330,7 +325,7 @@
     function loadProfiles() {
         $.ajax({
             type: 'get',
-            url: 'assets/content/json/dummy-profiles.json',
+            url: 'assets/content/json/v3.0.0/scholarx.json',
             dataType: 'json',
             success: function(data) {
 
@@ -352,8 +347,8 @@
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {
                             "data": partTwo
                         });
-                        $("#teamContent").append(contentPartTwo);
-                        document.getElementById("btnShowMore").style.display = "none";
+                        $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
+                        $("#btnShowMore").hide();
                     });
                 } else {
                     //mustache render
@@ -365,7 +360,7 @@
                     $("#teamContent").html(content);
 
                     //hide button
-                    $("#btnShowMore").style.display = "none";
+                    $("#btnShowMore").hide();
                 }
             }
         });

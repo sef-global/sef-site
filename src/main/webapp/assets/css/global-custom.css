@@ -259,3 +259,62 @@ body{
 }
 
 /* end of custom gradients*/
+
+.text-onelive{
+    color: #3d317c !important;
+}
+.btn-onelive
+{
+    color: #fff !important;
+    border-color: #fbc53b;
+    background-color: #fbc53b;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.text-orange{
+    color: #f5954d !important;
+}
+
+.btn-orange
+{
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.4;
+
+    display: inline-block;
+
+    padding: .625rem 1.25rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    border-radius: 1rem;
+
+    color: #fff;
+    border-color: #f38357;
+    background-color: #f38357;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*custom button styles*/
+
+.btn-purple {
+    color: #fff;
+    border-color: #CEA4F5;
+    background-color: #CEA4F5;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.navbar-toggler-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(50,50,93, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

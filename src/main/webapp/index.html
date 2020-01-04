@@ -2,336 +2,309 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Volunteer driven organisation which empowers students, education institutes and education as a whole in Sri Lanka." />
-    <meta name="author" content="Creative Tim" />
-    <title>SEF - Sustainable Education Foundation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>SEF site</title>
     <!-- Favicon -->
-    <link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
+    <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Argon CSS -->
-    <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet" />
-    <!-- Global custom CSS -->
-    <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet" />
+    <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- global CSS -->
+    <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <div id="navbar"></div>
+<body style="background-size: contain; overflow-x: hidden">
+    <header class="header-global">
+        <!--nav bar goes here-->
+        <div id="navbar"></div>
+    </header>
+    <!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
+
     <main>
-        <div class="position-relative">
-            <!-- shape Hero -->
-            <section class="section section-lg section-shaped pb-250">
-                <div class="shape shape-style-1 shape-default" style="background:url(assets/img/sefbg.jpg);background-size:cover;">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <!--main content goes here-->
+        <section class="section bg-secondary">
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-md-7 mb-3">
+                        <img src="assets/img/brand/logo.png" class="img-fluid py-md-3 mb-4">
+                        <p class="text-orange text-capitalize">sustainable education foundation</p>
+                        <h1 class="font-weight-900 text-dark text-roboto">From Brain Drain to Brain Gain</h1>
+                        <p class="text-muted">Helping local students connect with industry experts and academics around the world
+                        </p>
+                        <a class="btn btn-orange text-white text-uppercase px-5 py-3 badge-pill my-md-4 text-roboto" href="#explore">explore</a>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/homepage/home%20illus.png" class="img-fluid">
+                    </div>
                 </div>
-                <div class="container py-lg-md d-flex">
-                    <div class="col px-0" style="margin-top: 63px;">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h1 class="display-3  text-white">
-                                    Sustainable
-                                    <span>Education Foundation</span>
-                                </h1>
-                                <p class="lead  text-white">
-                                    We empower students, education institutes and education as a whole in Sri Lanka.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="btn-wrapper">
-                                            <a href="about/about.html" class="btn btn-default btn-icon mb-3 mb-sm-0">
-                                                <span class="btn-inner--icon"><i class="fa fa-info"></i
-                          ></span>
-                                                <span class="btn-inner--text">Learn About Us</span>
-                                            </a>
-                                        </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <img src="assets/img/homepage/Polygon%207.png" class="d-none d-md-block" style="position: absolute; left: -270px; top: 0px; max-width: 50%">
+            <div class="container">
+                <div class="row justify-content-center py-md-5">
+                    <div class="col-md-4 text-center">
+                        <p class="display-3 text-dark">250 000+</p>
+                        <p class="text-dark font-weight-700">
+                            Students reached via our Onelive interactive webinar series
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="display-3 text-dark">2 400+</p>
+                        <p class="text-dark font-weight-700">
+                            Hours of mentoring provided via our ScholarX program
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="display-3 text-dark">100+</p>
+                        <p class="text-dark font-weight-700">
+                            Researchers of Sri Lankan origin representing the world's top universities
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="explore">
+            <img src="assets/img/homepage/Polygon%209.png" class="d-none d-md-block" style="position: absolute; right: -420px; top: 0px; max-width: 50%">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col">
+                        <h2 class="font-weight-900 text-dark text-roboto text-center text-uppercase">Our flagship programs
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-3 card shadow mx-3 my-2">
+                        <img src="assets/img/brand/onelive.png" class="img-fluid">
+                        <p class="text-center small text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="col-md-3 card shadow mx-3 my-2">
+                        <img src="assets/img/brand/scholarx.png" class="img-fluid my-5">
+                        <p class="text-center small text-dark my-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="col-md-3 card shadow mx-3 my-2">
+                        <img src="assets/img/brand/irc.png" class="img-fluid">
+                        <p class="text-center small text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <img src="assets/img/homepage/Group%203.png" class="d-none d-md-block" style="position: absolute; max-width: 60%; left: 20%; top: 0%">
+            <img src="assets/img/homepage/Polygon%2010.png" class="d-none d-md-block" style="position: absolute; max-width: 40%; left: -10%; top: 70%">
+            <div class="container my-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-10">
+                        <div class="nav-wrapper py-5">
+                            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0 active py-3" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">
+                                        <span class="display-4 py-2 text-uppercase text-roboto">students</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0 py-3" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">
+                                        <span class="display-4 py-2 text-uppercase text-roboto">EXperts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0 py-3" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">
+                                        <span class="display-4 py-2 text-roboto text-uppercase">volunteers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active px-5 py-3" id="tabs-text-1" role="tabpanel" aria-labelledby="tabs-text-1-tab">
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Interact directly with industry experts and academics that are hard to reach and exclusive via OneLive to gain valuable perspective and insight on how to customise and innovate a new career path for you.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            1 to 1 premium mentoring by industry experts and academics across the world
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Exposure to postgraduate, internship and job opportunities.
+                                        </p>
                                     </div>
-                                    <div class="col-md-5 col-md-offset-2">
-                                        <div class="btn-wrapper">
-                                            <a href="events.html" class="btn btn-info btn-icon mb-3 mb-sm-0">
-                                                <span class="btn-inner--icon"><i class="fa fa-calendar"></i
-                          ></span>
-                                                <span class="btn-inner--text">Events</span>
-                                            </a>
-                                        </div>
+                                    <div class="tab-pane fade px-5 py-3" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Gain exposure to your work and projects.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Teaching/mentoring experience.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Ability to make an impact on the Sri Lankan education system.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Chance to connect with young talent in Sri Lanka.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade px-5 py-3" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Develop In demand, skills needed for the job market when you graduate.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Working with a diverse international community/experience in managing a diverse international community.
+                                        </p>
+                                        <p class="description text-center text-dark font-weight-900">
+                                            Exposure to startup work culture.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SVG separator -->
-                <div class="separator separator-bottom separator-skew">
-                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polygon
-                            class="fill-white"
-                            points="2560 0 2560 100 0 100"
-                    ></polygon>
-                </svg>
-                </div>
-            </section>
-            <!-- 1st Hero Variation -->
-        </div>
-
-        <section class="section bg-secondary" style="background-color: #fff !important;">
-            <div class="container">
-                <div class="row row-grid align-items-center">
-                    <div class="col-md-6">
-                        <div class="card bg-default shadow border-0">
-                            <img src="assets/img/group.jpg" class="card-img-top" />
-                            <blockquote class="card-blockquote">
-                                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                                <polygon points="0,52 583,95 0,95" class="fill-default"/>
-                                <polygon
-                                        points="0,42 583,95 683,0 0,95"
-                                        opacity=".2"
-                                        class="fill-default"
-                                />
-                            </svg>
-                                <h4 class="display-3 font-weight-bold text-white">Mission</h4>
-                                <p class="lead text-italic text-white">
-                                    To empower students, education institutes and education as a whole in Sri Lanka.
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pl-md-5">
-                            <div class="icon icon-lg icon-shape icon-shape-info shadow rounded-circle mb-5">
-                                <i class="fa fa-info"></i>
-                            </div>
-                            <h3>Brief introduction about us</h3>
-                            <p class="lead">
-                                Sustainable Education Foundation (SEF) is a volunteer driven organisation founded by the former Google Student Ambassador and an alumni of University of Moratuwa, Akshika Wijesundara.
-                            </p>
-                            <p>
-                                SEF was founded with the short term goal of making the Sri Lankan education system the most effective and the most dynamic education system in the world. SEF’s long term goal is to disrupt and democratise the global education system where it is available
-                                for everyone, in doing so, foundation contributes to the United Nations’ sustainable development goal of “Quality Education”.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section-lg bg-secondary">
+
+        <section class="section bg-secondary">
             <div class="container">
-                <h3 style="text-align:center">
-                    Testimonials from our guest speakers
-                </h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card shadow shadow-lg--hover mt-5">
-                            <div class="card-body testimonial">
-                                <div class="d-flex px-3">
-                                    <div class="text-center">
-                                        <div class="icon">
-                                            <i class="fa fa-quote-right"></i>
-                                        </div>
-                                        <p>
-                                            Its great to work with your team and I wish you good luck. Its a great opportunity for me to share my stories with upcoming entrepreneurs and I believe you will keep your great service to motivate the rest.
-                                        </p>
-                                        <h6 class="text-success">Sanmugathasan Prasanthan</h6>
-                                        <small>CEO/ Founder, IT Signature</small>
-                                        <div class="testimonial-photo">
-                                            <img src="./assets/img/testimonial/sanmugathasan.jpg" alt="Raised circle image" class="img-fluid rounded-circle shadow-lg" />
-                                        </div>
-                                    </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-md-3">
+                                    <img src="assets/img/homepage/profile-picture-avatars-6.png" class="img-fluid rounded-circle">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow shadow-lg--hover mt-5">
-                            <div class="card-body testimonial">
-                                <div class="d-flex px-3">
-                                    <div class="text-center">
-                                        <div class="icon">
-                                            <i class="fa fa-quote-right"></i>
-                                        </div>
-                                        <p>
-                                            I believe that education should be free and accessible to everyone! Great to see many initiatives by the SEF community - especially their efforts to encourage the young generation in Sri Lanka to achieve not only in the domestic settings but also in the
-                                            international level. I wish SEF all the best, keep up the good work!
-                                        </p>
-                                        <h6 class="text-success">Nimesha Ranasinghe</h6>
-                                        <small>Assistant Professor, University of Maine, USA
-                                    </small
-                                    >
-                                    <div class="testimonial-photo">
-                                        <img
-                                                src="./assets/img/testimonial/nimesha.jpg"
-                                                alt="Raised circle image"
-                                                class="img-fluid rounded-circle shadow-lg"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow shadow-lg--hover mt-5">
-                        <div class="card-body testimonial">
-                            <div class="d-flex px-3">
-                                <div class="text-center">
-                                    <div class="icon">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        SEF professionally organized a lecture I held about
-                                        Advancements in DNA Sequencing, Bioinformatics and
-                                        Cancer research. I was more than satisfied and amazed,
-                                        especially about their strong efforts, devotion and
-                                        philosophy of providing free education to the wide range
-                                        of population. Hope the idea will be spread world wide.
+                                <div class="col-md-8">
+                                    <p class="text-dark text-left font-weight-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Molestie a iaculis at erat pellentesque adipiscing commodo
+                                        elit. Urna nunc id cursus metus aliquam eleifend mi.
                                     </p>
-                                    <h6 class="text-success">Vladimir Kovacevic</h6>
-                                    <small
-                                    >Bioinformatics Analyst, Seven Bridges Genomics
-                                    </small
-                                    >
-                                    <div class="testimonial-photo">
-                                        <img
-                                                src="./assets/img/testimonial/vladmir.jpg"
-                                                alt="Raised circle image"
-                                                class="img-fluid rounded-circle shadow-lg"
-                                        />
-                                    </div>
+                                    <p class="text-right text-dark font-weight-900">
+                                        -Lorem ipsum dolor-
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-md-3">
+                                    <img src="assets/img/homepage/profile-picture-avatars-6.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="text-dark text-left font-weight-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Molestie a iaculis at erat pellentesque adipiscing commodo
+                                        elit. Urna nunc id cursus metus aliquam eleifend mi.
+                                    </p>
+                                    <p class="text-right text-dark font-weight-900">
+                                        -Lorem ipsum dolor-
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-md-3">
+                                    <img src="assets/img/homepage/profile-picture-avatars-6.png" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="text-dark text-left font-weight-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Molestie a iaculis at erat pellentesque adipiscing commodo
+                                        elit. Urna nunc id cursus metus aliquam eleifend mi.
+                                    </p>
+                                    <p class="text-right text-dark font-weight-900">
+                                        -Lorem ipsum dolor-
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-6">
-                  <div class="card shadow shadow-lg--hover mt-5">
-                    <div class="card-body testimonial">
-                      <div class="d-flex px-3">
-                        <div class="text-center">
-                          <div class="icon">
-                            <i class="fa fa-quote-right"></i>
-                          </div>
-                          <p>Through SEF dissemination of knowledge happens via the internet which is available for anyone. When it comes to social impact regarding education a medium without discrimination and a medium that provides access to everyone interested is important. That is what SEF offers. When it comes to live, tech related talks I saw SEF's potential. Therefore, I accepted their invitation for the first live session I had with Ilona Budapesti, president of Oxford Entrepreneurs to talk about 1 Million Women To Tech Summer of Code. And also they helped us with promoting the 1mwtt SOC. I am grateful for the contribution provided by SEF. </p>
-                          <h6 class="text-success">Rameela Azeez</h6>
-                          <small>University Team Leader, Girls in Technology, University of Kelaniya</small>
-                                        <div class="testimonial-photo">
-                                            <img src="./assets/img/testimonial/rameela.jpg" alt="Raised circle image" class="img-fluid rounded-circle shadow-lg">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card shadow shadow-lg--hover mt-5">
-                                <div class="card-body testimonial">
-                                    <div class="d-flex px-3">
-                                        <div class="text-center">
-                                            <div class="icon">
-                                                <i class="fa fa-quote-right"></i>
-                                            </div>
-                                            <p>I have been in touch with SEF since its inception and I saw the desire they had towards making Education accessible to everyone. It is indeed inspiring to see the amount initiatives that SEF taking to share
-                                                and open up the knowledge that different individuals have in various segments and I am truly grateful to the team and the leadership behind SEF for consistently doing these activities while maintaining a
-                                                High level of quality. </p>
-                                            <h6 class="text-success">Adhisha Gammanpila</h6>
-                                            <small>Co Founder, SurfEdge (Pvt) Ltd</small>
-                                            <div class="testimonial-photo">
-                                                <img src="./assets/img/testimonial/adisha.jpg" alt="Raised circle image" class="img-fluid rounded-circle shadow-lg">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
         </section>
 
-        <section class="section section-lg bg-secondary" style="background-color: #fff !important;">
+        <section class="section">
             <div class="container">
-                <h3 style="text-align:center">Our Partners and Collaborators</h3>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="partners">
-                            <div style="margin-top:3em;text-align: center;">
-                                <a href="https://ovibees.com/venturefrontierlanka/" target="_blank"><img src="./assets/img/partners/venture.png" height="80px" style="margin-right:35px;" /></a>
-                                <a href="https://thuru.lk/" target="_blank"><img src="./assets/img/partners/thuru.png" height="80px" style="margin-right:35px;" /></a>
-                                <a href="https://www.surfedge.lk/" target="_blank"><img src="./assets/img/partners/surfedge.png" height="80px" style="margin-right:35px;" /></a>
-                                <a href="https://autochatic.com" target="_blank"><img src="./assets/img/partners/autochatic.png" height="80px" /></a>
-                                <a href="https://www.facebook.com/J4pixel/" target="_blank"><img src="./assets/img/partners/JPixel.jpg" height="80px" /></a>
-                                <!-- <a href="https://aiesec.org/" target="_blank"><img src="./assets/img/partners/Aiesec.png"  width="120px"/></a> -->
-                                <a href="http://www.rotaractclubofcolombo.org/" target="_blank"><img src="./assets/img/partners/rotract.png" height="80px" /></a>
-                                <a href="https://in.ieee.lk/" target="_blank"><img src="./assets/img/partners/ieeein.png" height="80px" /></a>
-                                <!-- <a href="https://wso2.com/" target="_blank"><img src="./assets/img/partners/wso2.png" width="100px"/></a> -->
-                                <a href="https://www.happysrilankans.com/" target="_blank"><img src="./assets/img/partners/LOGO_HAPPYSRILANKANS.jpg" width="120px" /></a>
-                                <!-- <a href="https://hatch.lk/" target="_blank"><img src="./assets/img/partners/Hatch_logo_600x600.png" height="100px" /></a> -->
-                                <!-- <a href="https://odoc.life/" target="_blank"><img src="./assets/img/partners/oDoc-Logo-Black-1.png"  width="120px" style="margin-right:35px;"/></a> -->
-                                <a href="https://opensource.lk/" target="_blank"><img src="./assets/img/partners/srilankansoftwarefoundation.jpeg" class="rounded-circle" height="80px" style="margin-right:35px;" /></a>
-                                <a href="https://foss.lk/" target="_blank"><img src="./assets/img/partners/fosslogo2.png" height="80px" /></a>
-                                <a href="https://campus.mozilla.community/" target="_blank"><img src="./assets/img/partners/mozilla-logo-transparent.png" width="120px" /></a>
-                                <a href="https://udecidemediation.com" target="_blank"><img src="./assets/img/partners/udecideLogo.png" width="120px" style="margin-right:35px;" /></a>
-                                <a href="https://www.withoutborderslk.org/" target="_blank"><img src="./assets/img/partners/Without.png" height="80px" style="margin-right:35px;" /></a>
-                                <a href="https://www.coursenet.lk/" target="_blank"><img src="./assets/img/partners/coursenet2.png" height="65px" style="margin-right:35px;" /></a>
-                                <!-- <a href="https://www.motionmiracles.com/" target="_blank"><img src="./assets/img/partners/motion.png"  height="80px" /></a> -->
-                                <a href="" target="_blank"><img src="./assets/img/partners/logos-03.png" height="80px" /></a>
-                                <!-- <a href="http://www.pulse.lk/" target="_blank"><img src="./assets/img/partners/pulse.png"  height="80px" /></a> -->
-                                <!-- <a href="http://www.readme.lk/" target="_blank"><img src="./assets/img/partners/readme1.png"  height="80px" /></a> -->
-                                <!-- <a href="http://www.ideadmart.lk/" target="_blank"><img src="./assets/img/partners/ideamart.png"  height="80px" style="margin-top:20px;"/></a> -->
-                                <!-- <a href="https://likuid.business.site/" target="_blank"><img src="./assets/img/partners/likuid.png"  height="80px" style="margin-top:20px;"/></a> -->
-                                <a href="" target="_blank"><img src="./assets/img/partners/SGLOGO.jpg" height="80px" style="margin-top:20px;" /></a>
-                                <!-- <a href="" target="_blank"><img src="./assets/img/partners/WhatsApp%20Image%202019-02-13%20at%2018.10.02%20(1).png" class="rounded-circle" height="80px" style="margin-top:20px;"/></a> -->
-                                <!-- <a href="http://www.iit.ac.lk/" target="_blank"><img src="./assets/img/partners/Iit.png"  height="80px" style="margin-top:20px;"/></a> -->
-                            </div>
-                        </div>
+                    <div class="col text-center">
+                        <h2 class="font-weight-900 text-dark text-roboto text-center">
+                            Become one of the Volunteers!
+                        </h2>
+                        <p class="text-muted text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a class="btn btn-orange text-white text-uppercase px-5 py-3 badge-pill my-md-4 text-roboto">volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col text-center">
+                        <h4 class="font-weight-900 text-muted text-roboto text-center">Lorem ipsum dolor sit amet</h4>
+                        <p class="text-muted text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="assets/img/examples/test-img.png">
-                </div>
-                <div class="col-md-6">
-                    <h1>Find a mentor for me</h1>
-                    <p>
-                        The deadline for the first phase of the program is on 14/04/2019, Application link can be found below For more information and to be added to the waiting list for the next phase of the program, please write to us via sustainableedufoundation@gmail.com
-                    </p>
-                    <a class="btn btn-outline-success">Apply</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="footer"></div>
 
-    <!-- Core -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/vendor/headroom/headroom.min.js"></script>
-    <!-- Argon JS -->
-    <script src="assets/js/argon.js?v=1.0.1"></script>
-    <!--Script for nav and footer-->
-    <script src="assets/js/navigation.js"></script>
+    <footer class="footer">
+        <div id="footer"></div>
+        <!--footer goes here -->
+    </footer>
 
-    <script>
-        $(function() {
-            loadNavAndFooter("assets/content");
-        });
-    </script>
+    <!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
+
+
 </body>
+
+<!-- Core -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/popper/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="assets/vendor/headroom/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="assets/vendor/onscreen/onscreen.min.js"></script>
+<script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<!-- Argon JS -->
+<script src="assets/js/argon.js?v=1.0.1"></script>
+<script src="assets/js/global-custom-js.js"></script>
+<!-- Script for static navbar and footer -->
+<script src="assets/js/navigation.js"></script>
+<script>
+    $(function() {
+        loadNavAndFooter('assets/content/static') //relative path to content directory
+            // link to the navbar, footer content goes here
+    })
+</script>
 
 </html>
