@@ -76,7 +76,8 @@
             <!--Profile cards goes here-->
             <div id="externalCollaborators"></div>
 
-            <button id="btnShowMore_externalCollaborators" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+            <button id="btnShowMore_externalCollaborators" class="btn btn-link btn-outline-white btn-info">SEE MORE
+            </button>
         </div>
     </div>
 </section>
@@ -190,45 +191,39 @@
                 let techTeam = payload.techTeam;
                 let designTeam = payload.designTeam;
 
-                loadData(advisoryPanel, "advisoryPanel");
-                loadData(consultants, "consultants");
-                loadData(externalCollaborators, "externalCollaborators");
-                loadData(executiveCommitee, "executiveCommitee");
-                loadData(techTeam, "techTeam");
-                loadData(designTeam, "designTeam");
-
-                function loadData(data, contentId) {
-                    //slice array to two parts
-                    if (data.length >= 8) {
-                        let partOne = data.slice(0, 8);
-                        let partTwo = data.slice(8);
-
-                        //mustache render - part one
-                        let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": partOne});
-
-                        //display first 8 profiles
-                        $("#"+contentId).html(contentPartOne);
-
-                        //hide button
-                        $("#btnShowMore_"+contentId).click(function () {
-                            let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
-                            $(contentPartTwo).appendTo("#"+contentId).hide().fadeIn(1000);
-                            $("#btnShowMore_"+contentId).hide();
-                        });
-                    } else {
-                        //mustache render
-                        let content = Mustache.render($("#templateTeam").html(), {"data": data});
-
-                        //display first 8 profiles
-                        $("#"+contentId).html(content);
-
-                        //hide button
-                        $("#btnShowMore_"+contentId).hide();
-                    }
-                }
+                loadData("advisoryPanel", advisoryPanel);
+                loadData("consultants", consultants);
+                loadData("externalCollaborators", externalCollaborators);
+                loadData("executiveCommitee", executiveCommitee);
+                loadData("techTeam", techTeam);
+                loadData("designTeam", designTeam);
 
             }
         });
     }
+
+    function loadData(id, profiles) {
+        
+        //mustache render - part one
+        let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": profiles.slice(0, 8)});
+
+        //display first 8 profiles
+        $("#" + id).html(contentPartOne);
+
+        if (profiles.length >= 8) {
+            
+            //hide button
+            $("#btnShowMore_" + id).click(function () {
+                let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": profiles.slice(8)});
+                $(contentPartTwo).appendTo("#" + id).hide().fadeIn(1000);
+                $("#btnShowMore_" + id).hide();
+            });
+        } else {
+
+            //hide button
+            $("#btnShowMore_" + id).hide();
+        }
+    }
+
 </script>
 </html>
