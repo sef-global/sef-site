@@ -1,70 +1,70 @@
 {
-    "advisoryPanel": [
-        {
-            "name": "Dr.Hasini Jayatilaka",
-            "description": "Postdoctoral Researcher at Stanford University School of Medicine",
-            "image": "hasini.jpeg",
-            "social": {
-                "linkedin": "hasini-jayatilaka-3026456a"
-            }
-        },
-        {
-            "name": "Bhagya Nirmaan Silva",
-            "description": "CTO at Loftux",
-            "image": "hasini.jpeg",
-            "social": {
-                "linkedin": "bhagyas"
-            }
-        }
-    ],
-    "consultants": [
-        {
-            "name": "add_name",
-            "description": "add_description",
-            "image": "image_name",
-            "social": {
-                "linkedin": "linkdin_username"
-            }
-        }
-    ],
-    "externalCollaborators": [
-        {
-            "name": "add_name",
-            "description": "add_description",
-            "image": "image_name",
-            "social": {
-                "linkedin": "linkdin_username"
-            }
-        }
-    ],
-    "executiveCommitee": [
-        {
-            "name": "add_name",
-            "description": "add_description",
-            "image": "image_name",
-            "social": {
-                "linkedin": "linkdin_username"
-            }
-        }
-    ],
-    "techTeam" : [
-        {
-            "name": "add_name",
-            "description": "add_description",
-            "image": "image_name",
-            "social": {
-                "linkedin": "linkdin_username"
-            }
-        }
-    ],
-    "designTeam": [
-        {
-            "name": "add_name",
-            "description": "add_description",
-            "image": "image_name",
-            "social": {
-                "linkedin": "linkdin_username"
-            }
-        }
-    ]
+  "advisoryPanel": [
+    {
+      "name": "Dr.Hasini Jayatilaka",
+      "description": "Postdoctoral Researcher at Stanford University School of Medicine",
+      "image": "hasini.jpeg",
+      "social": {
+        "linkedin": "hasini-jayatilaka-3026456a"
+      }
+    },
+    {
+      "name": "Bhagya Nirmaan Silva",
+      "description": "CTO at Loftux",
+      "image": "hasini.jpeg",
+      "social": {
+        "linkedin": "bhagyas"
+      }
+    }
+  ],
+  "consultants": [
+    {
+      "name": "add_name",
+      "description": "add_description",
+      "image": "image_name",
+      "social": {
+        "linkedin": "linkdin_username"
+      }
+    }
+  ],
+  "externalCollaborators": [
+    {
+      "name": "add_name",
+      "description": "add_description",
+      "image": "image_name",
+      "social": {
+        "linkedin": "linkdin_username"
+      }
+    }
+  ],
+  "executiveCommitee": [
+    {
+      "name": "add_name",
+      "description": "add_description",
+      "image": "image_name",
+      "social": {
+        "linkedin": "linkdin_username"
+      }
+    }
+  ],
+  "techTeam" : [
+    {
+      "name": "add_name",
+      "description": "add_description",
+      "image": "image_name",
+      "social": {
+        "linkedin": "linkdin_username"
+      }
+    }
+  ],
+  "designTeam": [
+    {
+      "name": "add_name",
+      "description": "add_description",
+      "image": "image_name",
+      "social": {
+        "linkedin": "linkdin_username"
+      }
+    }
+  ]
 }
