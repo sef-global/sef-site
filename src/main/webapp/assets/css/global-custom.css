@@ -318,3 +318,131 @@ body{
 .navbar-toggler-icon{
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(50,50,93, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.carousel-custom-control-prev,
+.carousel-custom-control-next
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 15%;
+
+    text-align: center;
+
+    opacity: .9;
+    color: #fff;
+
+    align-items: center;
+    justify-content: center;
+}
+.carousel-custom-control-prev:hover,
+.carousel-custom-control-prev:focus,
+.carousel-custom-control-next:hover,
+.carousel-custom-control-next:focus
+{
+    text-decoration: none;
+
+    opacity: 1;
+    color: #fff;
+    outline: 0;
+}
+
+.carousel-custom-control-prev
+{
+    left: -10%;
+}
+
+.carousel-custom-control-next
+{
+    right: -10%;
+}
+
+.carousel-custom-control-prev-icon,
+.carousel-custom-control-next-icon
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.carousel-custom-control-prev-icon
+{
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' stroke=\'rgb(243,131,87)\' fill=\'rgb(243,131,87)\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z\'/%3E%3C/svg%3E');
+}
+
+.carousel-custom-control-next-icon
+{
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' stroke=\'rgb(243,131,87)\' fill=\'rgb(243,131,87)\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z\'/%3E%3C/svg%3E');
+}
+
+.carousel-custom-indicators
+{
+    position: absolute;
+    z-index: 15;
+    right: 0;
+    bottom: -10%;
+    left: 0;
+
+    display: flex;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 0;
+
+    list-style: none;
+
+    justify-content: center;
+}
+.carousel-custom-indicators li
+{
+    position: relative;
+
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    cursor: pointer;
+    text-indent: -999px;
+
+    background-color: rgb(243,131,87);
+
+    flex: 0 1 auto;
+}
+.carousel-custom-indicators li::before
+{
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 10px;
+
+    content: '';
+}
+.carousel-custom-indicators li::after
+{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 10px;
+
+    content: '';
+}
+.carousel-custom-indicators .active
+{
+    background-color: rgb(243, 151, 120);
+}
