@@ -1,6 +1,6 @@
 #  Development Best Practices at SEF
 
-##Culture and Communication
+##  Culture and Communication
 
 - Please adapt your language to non-native English speakers and be super friendly. We are not used to swearing and will 
 mostly understand words literally. At all times ensure your tone stays appropriate and friendly in the SEF 
