@@ -17,8 +17,7 @@ The purpose of this PR is to fix #<issue-number>
 
 ##  Checklist
 - [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
-- [ ] I have read and understood the development best practices guidelines 
-<!---  Visit https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md  -->
+- [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
