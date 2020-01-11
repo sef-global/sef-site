@@ -1,8 +1,6 @@
-<!--- Provide a general summary of the PR in the Title above -->
-
 ## Purpose
-
-<!--- Describe the problems, issues, or needs driving this feature/fix and include links to related issues in the following format: Resolves issue1, issue2, etc. -->
+<!--- Describe the problems, issues, or needs driving this feature/fix and include links to related issues -->
+The purpose of this PR is to fix #<issue-number>
 
 ## Goals
 <!---  Describe the solutions that this feature/fix will introduce to resolve the problems described above -->
@@ -19,6 +17,7 @@
 
 ##  Checklist
 - [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
+- [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
