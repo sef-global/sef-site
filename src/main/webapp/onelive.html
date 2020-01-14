@@ -20,34 +20,19 @@
 </head>
 
 <body>
-<header class="header-global">
-    <!--nav bar goes here-->
-    <div id="navbar"></div>
-</header>
-<!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
 
 <main>
     <!--main content goes here-->
-    <section class="section">
+    <section style="background: url('assets/img/onelive/header-onelive.svg') right bottom no-repeat; height: 100vh">
+        <!--Navbar is placed here to align the background image correctly-->
+        <div id="navbar"></div>
         <div class="container">
-            <div class="container mt-md-5 d-none d-md-block" style="position: absolute; z-index: 1000">
-                <h1 class="mt-md-5 mb-md-5" style="font-size: 3.3rem; line-height: 1.5;"><span class="font-weight-700">ONE</span>
-                    LIVE</h1>
-<!--                <p class="text-darker">Lorem ipsum dolor sit amet</p>-->
-                <a class="btn btn-onelive text-uppercase" href="#past-onelives">Learn more</a>
-            </div>
-            <div class="mt-md-5 d-md-none">
-                <h1 class="mt-md-5 display-1">Meet the Real Life Heroes</h1>
-                <h1 class="mb-0 text-darker font-weight-lighter text-uppercase">one <span
-                        class="font-weight-bold">Live</span></h1>
-<!--                <p class="text-darker">Lorem ipsum dolor sit amet</p>-->
-                <a class="btn btn-onelive text-uppercase" href="#past-onelives">Learn more</a>
-            </div>
+            <h1 class="mt-md-5 mb-md-5 text-onelive" style="font-size: 3.3rem; line-height: 1.5;"><span class="font-weight-700">Meet the</span>
+                Real Life Heros</h1>
+            <h1 class="mt-5 text-dark" style="font-size: 3.3rem; line-height: 1.5;"><span class="font-weight-700">ONE</span>
+                LIVE</h1>
+            <a class="btn btn-onelive text-uppercase" href="#past-onelives">Learn more</a>
         </div>
-        <div class="d-flex justify-content-end">
-            <img src="assets/img/onelive/header.svg" class="d-none d-md-block img-fluid w-75">
-        </div>
-        <img src="assets/img/onelive/header%20clipped.svg" class="d-md-none img-fluid">
     </section>
 
     <section class="section" id="explore">
