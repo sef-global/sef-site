@@ -10,8 +10,7 @@ if [ -z "$SURGE_LOGIN" ] || [ -z "$SURGE_TOKEN" ]; then
 fi
 # Install surge
 npm i -g surge
-cd src/main/webapp
 # Create a domain to the PR
 export DEPLOY_DOMAIN=https://pr-${TRAVIS_PULL_REQUEST}-sef-site.surge.sh
 # Upload to surge.sh
-surge --project ./build --domain $DEPLOY_DOMAIN;
+surge --project ./src/main/webapp --domain $DEPLOY_DOMAIN;
