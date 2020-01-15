@@ -1,0 +1,9 @@
+language: java
+sudo: true
+matrix:
+  include:
+    # Build the project using maven
+    - script:
+        - mvn install
+    # Deploy PR to surge
+    - script: bash ./surge_deploy.sh
