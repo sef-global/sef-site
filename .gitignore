@@ -78,3 +78,7 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+.DS_Store
+node_modules/
+package-lock.json
