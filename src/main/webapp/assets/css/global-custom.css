@@ -66,7 +66,7 @@ body{
 }
 
 .card .card-body + .card-footer {
-    padding-top: 0;
+    padding: 15px;
     border: 0;
     border-radius: 6px;
 }
