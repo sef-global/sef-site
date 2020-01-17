@@ -446,3 +446,15 @@ body{
 {
     background-color: rgb(243, 151, 120);
 }
+
+/* tab section */
+a.nav-link.mb-sm-3.mb-md-0.py-3{
+    color : #000000 ;
+    background-color:#FFFFFF;
+}
+a.nav-link.mb-sm-3.mb-md-0.py-3.active{
+    color : #FFFFFF !important;
+    background-color:#8741bb;
+}
+
+
