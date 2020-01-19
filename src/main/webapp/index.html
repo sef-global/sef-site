@@ -23,15 +23,15 @@
 </head>
 
 <body style="background-size: contain; overflow-x: hidden">
-<header class="header-global">
-    <!--nav bar goes here-->
-    <div id="navbar"></div>
-</header>
 <!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
 
 <main>
     <!--main content goes here-->
-    <section class="section bg-secondary">
+    <section class="bg-secondary">
+        <header class="header-global">
+            <!--nav bar goes here-->
+            <div id="navbar"></div>
+        </header>
         <div class="container">
             <div class="row align-items-center py-3">
                 <div class="col-md-7 mb-3">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 px-2 my-2">
-                    <div class="card shadow p-2">
+                    <div class="card shadow ">
                         <a href="irc.html">
                             <img src="assets/img/brand/irc.png" class="img-fluid">
                         </a>
@@ -111,7 +111,7 @@
                 <div class="col-md-3 px-2 my-2">
                     <div class="card shadow p-2">
                         <a href="SA.html">
-                            <img src="assets/img/brand/SA.png" class="img-fluid my-5">
+                            <img src="assets/img/brand/SA.png" class="img-fluid py-5 mb-1">
                         </a>
                     </div>
                 </div>
@@ -127,64 +127,68 @@
         <div class="container my-5">
             <div class="row justify-content-center py-5">
                 <div class="col-md-10">
-                    <div class="nav-wrapper py-5">
+                    <div class="text-justify">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 active py-3" id="tabs-text-1-tab" data-toggle="tab"
+                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 active py-4" id="tabs-text-1-tab"
+                                   data-toggle="tab"
                                    href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">
-                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto" style="font-size: 20px;">students</span>
+                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto">students</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 py-3" id="tabs-text-2-tab" data-toggle="tab"
+                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 py-4" id="tabs-text-2-tab"
+                                   data-toggle="tab"
                                    href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">
-                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto" style="font-size: 20px;">Experts</span>
+                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto">Experts</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 py-3" id="tabs-text-3-tab" data-toggle="tab"
+                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 py-4" id="tabs-text-3-tab"
+                                   data-toggle="tab"
                                    href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">
-                                    <span class="display-4 py-2 px-3 text-roboto text-uppercase" style="font-size: 20px;">volunteers</span>
+                                    <span class="display-4 py-2 px-3 text-roboto text-uppercase">volunteers</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card shadow">
+                    <div class="card shadow mt-3">
                         <div class="card-body">
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active px-5 py-3" id="tabs-text-1" role="tabpanel"
                                      aria-labelledby="tabs-text-1-tab">
-                                    <p class="description text-center text-dark font-weight-600" style="font-size:18px;">
-                                        Interact directly with industry experts and academics that are hard to reach and
-                                        exclusive via OneLive to gain valuable perspective and insight on how to
-                                        customise and innovate a new career path for you.
-                                        <br>
-                                        1 to 1 premium mentoring by industry experts and academics across the world Exposure to postgraduate, internship and job opportunities. 
-                                    </p>
+                                    <ul class="description text-justify text-dark font-weight-400">
+                                        <li>
+                                            Interact directly with industry experts and academics that are hard to reach
+                                            and
+                                            exclusive via OneLive to gain valuable perspective and insight on how to
+                                            customise and innovate a new career path for you.
+                                        </li>
+                                        <li>
+                                            1 to 1 premium mentoring by industry experts and academics across the world
+                                            Exposure to postgraduate, internship and job opportunities. 
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="tab-pane fade px-5 py-3" id="tabs-text-2" role="tabpanel"
                                      aria-labelledby="tabs-text-2-tab">
-                                    <p class="description text-center text-dark font-weight-600" style="font-size:18px;">
-                                        Gain exposure to your work and projects.
-                                        <br>
-                                        Teaching/mentoring experience.
-                                        <br>
-                                        Ability to make an impact on the Sri Lankan education system.
-                                        <br>
-                                        Chance to connect with young talent in Sri Lanka.
-
-                                    </p>
+                                    <ul class="description text-justify text-dark font-weight-400">
+                                        <li>Gain exposure to your work and projects.</li>
+                                        <li>Teaching/mentoring experience.</li>
+                                        <li>Ability to make an impact on the Sri Lankan education system.</li>
+                                        <li>Chance to connect with young talent in Sri Lanka.</li>
+                                    </ul>
                                 </div>
                                 <div class="tab-pane fade px-5 py-3" id="tabs-text-3" role="tabpanel"
                                      aria-labelledby="tabs-text-3-tab">
-                                    <p class="description text-center text-dark font-weight-600" style="font-size:18px;" >
-                                        Develop In demand, skills needed for the job market when you graduate.
-                                        <br>
-                                        Working with a diverse international community/experience in managing a diverse
-                                        international community.
-                                        <br>
-                                        Exposure to startup work culture.
-                                    </p>
+                                    <ul class="description text-justify text-dark font-weight-400">
+                                        <li>Develop In demand, skills needed for the job market when you graduate.</li>
+
+                                        <li>Working with a diverse international community/experience in managing a diverse
+                                            international community.</li>
+
+                                        <li>Exposure to startup work culture.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +210,8 @@
                     <div class="carousel-item active">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-2 text-center mb-3">
-                                <img src="assets/img/homepage/testimonial/sanmugathasan.jpg" class="img-fluid rounded-circle ">
+                                <img src="assets/img/homepage/testimonial/sanmugathasan.jpg"
+                                     class="img-fluid rounded-circle ">
                             </div>
                             <div class="col-md-8">
                                 <p class="text-dark text-left font-weight-300 " style="font-size: 1.50ch">
@@ -224,7 +229,8 @@
                     <div class="carousel-item">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-2 text-center mb-3">
-                                <img src="assets/img/homepage/testimonial/nimesha.jpg" class="img-fluid rounded-circle " >
+                                <img src="assets/img/homepage/testimonial/nimesha.jpg"
+                                     class="img-fluid rounded-circle ">
                             </div>
                             <div class="col-md-8">
                                 <p class="text-dark text-left font-weight-300 " style="font-size: 1.50ch">
@@ -243,7 +249,7 @@
                     <div class="carousel-item">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-2 text-center mb-3">
-                                <img src="assets/img/homepage/testimonial/vladmir.jpg" class="img-fluid rounded-circle" >
+                                <img src="assets/img/homepage/testimonial/vladmir.jpg" class="img-fluid rounded-circle">
                             </div>
                             <div class="col-md-8">
                                 <p class="text-dark text-left font-weight-300 " style="font-size: 1.50ch">
@@ -283,7 +289,8 @@
                     <h2 class="font-weight-900 text-dark text-roboto text-center">
                         Become one of the Volunteers!
                     </h2>
-                    <a class="btn btn-orange text-white text-uppercase px-5 py-3 badge-pill my-md-4 text-roboto" href="join_us.html">Join the Team</a>
+                    <a class="btn btn-orange text-white text-uppercase px-5 py-3 badge-pill my-md-4 text-roboto"
+                       href="join_us.html">Join the Team</a>
                 </div>
             </div>
         </div>
