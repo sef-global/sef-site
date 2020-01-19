@@ -448,13 +448,14 @@ body{
 }
 
 /* tab section */
-a.nav-link.mb-sm-3.mb-md-0.py-3{
-    color : #000000 ;
-    background-color:#FFFFFF;
+.tab-switcher{
+    font-weight: bolder !important;
+    border-radius: 15px !important;
+    color : #000000 !important;
+    background-color:#FFFFFF !important;
 }
-a.nav-link.mb-sm-3.mb-md-0.py-3.active{
+.tab-switcher.active{
     color : #FFFFFF !important;
-    background-color:#8741bb;
+    background-color:#8741bb !important;
 }
-
 
