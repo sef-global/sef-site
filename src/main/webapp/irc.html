@@ -245,7 +245,7 @@
                     $("#btnShowMore").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
                         $("#teamContent").append(contentPartTwo);
-                        document.getElementById("btnShowMore").hide();
+                        $("#btnShowMore").hide();
                     });
                 } else {
                     //mustache render
