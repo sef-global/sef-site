@@ -82,3 +82,6 @@ local.properties
 .DS_Store
 node_modules/
 package-lock.json
+
+.travis/deploy_rsa
+.travis/deploy_rsa.pub
