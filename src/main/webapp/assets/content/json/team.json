@@ -31,14 +31,6 @@
       "social": {
         "linkedin": "rohan-jayaweera-9b42a95"
       }
-    },
-    {
-      "name": "Minuri Adasuriya",
-      "description": "Diversity & Inclusion Lead, Asia at Lendlease",
-      "image": "minuri.jpeg",
-      "social": {
-        "linkedin": "minuri"
-      }
     }
   ],
   "consultants": [
@@ -64,14 +56,6 @@
       "image": "yasiru.jpg",
       "social": {
         "linkedin": "yasiruk"
-      }
-    },
-    {
-      "name": "Suresh Peiris",
-      "description": "Consultant",
-      "image": "suresh.jpg",
-      "social": {
-        "linkedin": "sureshmichael"
       }
     }
   ],
@@ -119,6 +103,14 @@
       }
     },
     {
+      "name": "Suresh Peiris",
+      "description": "Chief Executive Officer",
+      "image": "suresh.jpg",
+      "social": {
+        "linkedin": "sureshmichael"
+      }
+    },
+    {
       "name": "Tharika Weerakoon",
       "description": "Program Manager",
       "image": "tharika.jpeg",
@@ -156,6 +148,14 @@
       "image": "janarthan.jpeg",
       "social": {
         "linkedin": "janarthan-jeyachandran-42249b148"
+      }
+    },
+    {
+      "name": "Minuri Adasuriya",
+      "description": "Secretary",
+      "image": "minuri.jpeg",
+      "social": {
+        "linkedin": "minuri"
       }
     },
     {
