@@ -185,19 +185,19 @@
       }
     },
     {
+      "name": "Heshan Andrews",
+      "description": "Senior Software Engineer",
+      "image": "heshanandrews.png",
+      "social": {
+        "linkedin": "heshan-andrews-427028182"
+      }
+    },
+    {
       "name": "Bhathiya Kariyawasam",
       "description": "Software Engineer",
       "image": "bhathiya.jpg",
       "social": {
         "linkedin": "bhathiya-kariyawasam-a77235142"
-      }
-    },
-    {
-      "name": "Nandika Jeevantha",
-      "description": "Software Engineer",
-      "image": "nandika.jpeg",
-      "social": {
-        "linkedin": "nandika-jeevantha-96850a164"
       }
     },
     {
@@ -217,19 +217,11 @@
       }
     },
     {
-      "name": "Heshan Andrews",
+      "name": "Anjula Samarasinghe",
       "description": "Software Engineer",
-      "image": "heshanandrews.png",
+      "image": "anjula.jpg",
       "social": {
-        "linkedin": "heshan-andrews-427028182"
-      }
-    },
-    {
-      "name": "Janith Gamage",
-      "description": "Software Engineer",
-      "image": "janithgamage.jpg",
-      "social": {
-        "linkedin": "thejrav"
+        "linkedin": "anjula-sack"
       }
     }
   ],
