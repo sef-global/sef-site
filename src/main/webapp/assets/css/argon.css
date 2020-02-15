@@ -14761,6 +14761,46 @@ a.btn-icon-only
     box-shadow: none, 0 0 0 0 rgba(34, 34, 34, .5);
 }
 
+.btn-gitter
+{
+    color: #fff;
+    border-color: #ed1965;
+    background-color: #ed1965;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+.btn-gitter:hover
+{
+    color: #fff;
+    border-color: #ed1965;
+    background-color: #ed1965;
+}
+.btn-gitter:focus,
+.btn-gitter.focus
+{
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgba(34, 34, 34, .5);
+}
+.btn-gitter.disabled,
+.btn-gitter:disabled
+{
+    color: #fff;
+    border-color: #222; 
+    background-color: #222;
+}
+.btn-gitter:not(:disabled):not(.disabled):active,
+.btn-gitter:not(:disabled):not(.disabled).active,
+.show > .btn-gitter.dropdown-toggle
+{
+    color: #fff;
+    border-color: #222; 
+    background-color: #090909;
+}
+.btn-gitter:not(:disabled):not(.disabled):active:focus,
+.btn-gitter:not(:disabled):not(.disabled).active:focus,
+.show > .btn-gitter.dropdown-toggle:focus
+{
+    box-shadow: none, 0 0 0 0 rgba(34, 34, 34, .5);
+}
+
 .card
 {
     position: relative;
