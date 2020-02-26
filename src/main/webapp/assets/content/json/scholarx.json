@@ -3,36 +3,81 @@
     "name": "Dr Hasini Jayatilaka",
     "image": "assets/img/scholarx/mentors/hasini.jpeg",
     "intro": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
-    "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/"
+    "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/",
+    "twitter": "https://twitter.com/HasiniJt",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   },
   {
     "name": "Dr Jeewika Ranaweera",
     "image": "assets/img/scholarx/mentors/jeewika.jpeg",
     "intro": "Principal Hardware Engineer at Oracle, PhD at University of Toronto.",
-    "linkedin": "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/"
+    "linkedin": "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/",
+    "twitter": "https://twitter.com/JeewikaR",
+    "facebook": "https://www.facebook.com/jeewika.ranaweera",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   },
   {
     "name": "Dr Rukshan Batuwita",
     "image": "assets/img/scholarx/mentors/rukshan.jpeg",
     "intro": "Data Scientist at Google, PhD at University of Oxford.",
-    "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/"
+    "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/",
+    "facebook": "https://www.facebook.com/rukshan.batuwita",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   },
   {
     "name": "Dr Savithru Jayasinghe",
     "image": "assets/img/scholarx/mentors/savithru.jpeg",
     "intro": "PhD at Massachusetts Institute of Technology (MIT), MEng at University of Cambridge.",
-    "linkedin": "https://www.linkedin.com/in/savithru/"
+    "linkedin": "https://www.linkedin.com/in/savithru/",
+    "facebook": "https://www.facebook.com/savithru.j",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   },
   {
     "name": "Sumudu Herath",
     "image": "assets/img/scholarx/mentors/sumudu.jpeg",
     "intro": "Ph.D. candidate at University of Cambridge, Best Engineering Undergraduate of University of Moratuwa.",
-    "linkedin": "https://www.linkedin.com/in/sumudu-herath-6618b855/"
+    "linkedin": "https://www.linkedin.com/in/sumudu-herath-6618b855/",
+    "twitter": "https://twitter.com/sumuduherath",
+    "facebook": "https://www.facebook.com/sumudu.t.herath",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   },
   {
     "name": "Yasith Vidanaarachchi",
     "image": "assets/img/scholarx/mentors/yasith.jpeg",
     "intro": "Software Engineer at Google, Ex — Software Engineer at Amazon",
-    "linkedin": "https://www.linkedin.com/in/yasithv/"
+    "linkedin": "https://www.linkedin.com/in/yasithv/",
+    "twitter": "https://twitter.com/tuxv",
+    "facebook": "https://www.facebook.com/yasith",
+    "Bio" : "",
+    "Area" : "",
+    "Academic Expertise" : "",
+    "Industry Expertise" : "",
+    "General Expertise" : "",
+    "Project" : ""
   }
 ]
