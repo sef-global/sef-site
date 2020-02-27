@@ -2,8 +2,8 @@
   {
     "name": "Dinithi Sumanaweera",
     "image": "dinithi.jpeg",
-    "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areas of expertise lie in academic research focused on computational biology.",
-    "Areas of expertise" : [
+    "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main AreasOfExpertise lie in academic research focused on computational biology.",
+    "AreasOfExpertise" : [
       "Bioinformatics and Computational Biology"
     ],
     "Projects" : [
@@ -18,7 +18,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -26,14 +26,13 @@
     "name": "Ganindu Nanayakkara",
     "image": "ganindu.jpeg",
     "bio": "Ganindu Nanayakkara is currently obtaining a Master of Business Adminstration at the University of Kelaniya. He also has a BSc in Information Technology from Curtin University and was a former researcher at NASA Ames Research Center. He can provide mentorship and assistance with topics relating to innovation, IT, business and finance.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Innovation",
       "Information technology",
       "Business",
       "Finance"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -43,7 +42,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -51,14 +50,13 @@
     "name": "Hasini Jayathilaka",
     "image": "hasini.jpeg",
     "bio": "Hasini was a Postdoctoral researcher at Stanford University’s School of Medicine and is a Johns Hopkins University alum. She has extensive knowledge on cancer biology, pre-clinical and clinical trials for drug development and is the author of numerous peer-reviewed publications. She is also a recipient of Forbes 30 under 30 in 2019 for her discovery of a signaling pathway that controls how cancer cells metastasize through the body and a way to block that pathway.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Cancer biology, pre-clinical and clinical trials for drug development",
       "Biotech",
       "biopharma",
       "Fundamental research"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -68,7 +66,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -76,10 +74,9 @@
     "name": "Iromi Wanigasuriya",
     "image": "iromi.jpeg",
     "bio": "Iromi Wanigasuriya is a final year PhD candidate at University of Melbourne and is currently working on a epigenetic modifier known as Smchd1. She also works as a Teaching Assistant at University of Melbourne and the Gene Technology Access Centre in Victoria, Australia.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -89,7 +86,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -97,7 +94,7 @@
     "name": "Isuru Daulagala",
     "image": "isuru.jpeg",
     "bio": "Isuru Daulagala is currently a Software Engineer at NVIDIA and has a background in Electronic Design Automation, Optimizing Machine Learning Algorithms and Reinforcement Learning. He can provide guidance in topics surrounding Machine Learning and is looking to assist students with Machine Learning competitions as part of the mentorship.",
-    "Areas of expertise" : ["Electronic Design Automation",
+    "AreasOfExpertise" : ["Electronic Design Automation",
       "Optimizing Machine Learning algorithms",
       "Reinforcement Learning"
     ],
@@ -114,7 +111,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -122,10 +119,9 @@
     "name": "Jeewika Ranaweera",
     "image": "jeewika.jpeg",
     "bio": "Isuru Daulagala is currently a Software Engineer at NVIDIA and has a background in Electronic Design Automation, Optimizing Machine Learning Algorithms and Reinforcement Learning. He can provide guidance in topics surrounding Machine Learning and is looking to assist students with Machine Learning competitions as part of the mentorship.",
-    "Areas of expertise" : ["Hardware engineering"
+    "AreasOfExpertise" : ["Hardware engineering"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -135,7 +131,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -143,7 +139,7 @@
     "name": "Lahiru Maramba",
     "image": "lahiru.jpeg",
     "bio":"Lahiru Maramba is a Software Engineer at Google and has extensive experience in Human Computer Interaction (HCI), UX, research methodology and data structures and algorithms. He has industry experience in design, prototyping and user testing and can guide students in topics relating to hardware prototyping, applied science and computing.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Software engineering",
       "Human Computer Interaction (HCI)",
       "UX",
@@ -151,8 +147,7 @@
       "User studies",
       "Data structures and algorithms"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -162,7 +157,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -170,12 +165,11 @@
     "name": "Nadeera Nilupamali",
     "image": "nadeera.jpeg",
     "bio":"Nadeera Nilupamali has a PhD in Virology from the University of Peradeniya and was a Postdoctoral Researcher at at the International Centre for Genetic Engineering and Biotechnology.  She is the author of numerous peer reviewed publications and is also the cofounder of Immunify.me, an organization that leverages technology for vaccination and immunization monitoring and eliminates manual intervention in record keeping.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Virology",
       "Immunology"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -185,7 +179,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -193,7 +187,7 @@
     "name": "Nadeesha Chandrasena",
     "image": "nadeesha.jpeg",
     "bio":"Nadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.\nScreen reader support enabled.\n \n \nhttps://www.li...ranilupamali/\n \t\t\n\nNadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.\n2 collaborators have joined the document.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Urban Planning",
       "Civil Engineering",
       "Environment",
@@ -213,7 +207,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -221,12 +215,11 @@
     "name": "Nivanthika Wimalasena ",
     "image": "niwanthika.jpeg",
     "bio":"Nivanthika Wimalasena is a PhD candidate in neuroscience at Harvard University and has experience in industry with research relating to chemical biology and translational research. She can provide mentorship in scientific writing, public speaking, and provide guidance with application essays and writing effective resumes.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Neuroscience",
       "Translational research"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -236,7 +229,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -244,7 +237,7 @@
     "name": "Nushelle de Silva",
     "image": "nushelle.jpeg",
     "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.\nScreen reader support enabled.\n \n \n \t\t\n\nNushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.\n2 collaborators have joined the document.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "History of art",
       "Architecture",
       "Design",
@@ -266,7 +259,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -274,11 +267,10 @@
     "name": "Ruwandi Kariyawasam",
     "image": "ruwandi.jpeg",
     "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.\nScreen reader support enabled.\n \n \n \t\t\n\nRuwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.\n2 collaborators have joined the document.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Clinical microbiology"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -288,7 +280,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -296,13 +288,12 @@
     "name": "Sajani Amarasiri ",
     "image": "sajani.jpeg",
     "bio":"Sajani Amarasiri is the founder and CEO of Colombo Cooperative an entrepreneur hub and coworking space in Colombo, Sri Lanka with a mission to help everyone achieve their full potential. She has industry experience in supply chain management and business and can provide guidance and mentorship in entrepreneurship and personal development and branding.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Supply Chain Management and Business",
       "Entrepreneurship",
       "Personal development and branding"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -312,7 +303,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -320,7 +311,7 @@
     "name": "Yadurshini Raveendran",
     "image": "yadurshini.jpeg",
     "bio": "Yadurshini Raveendran is currently pursuing an MSc. in Global Health at Duke University and has a background in biology. She has research experience in global health from past projects in India, US and Tanzania. She also has a deep interest in human rights and women empowerment research.  She can provide guidance on research methodologies, preparation for university application and scientific writing.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Global public health",
       "Quantitative and qualitative research pertaining to nutrition",
       "family planning",
@@ -330,8 +321,7 @@
       "pediatric oncology and health policy",
       "Human rights and women empowerment research"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -341,7 +331,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -349,11 +339,10 @@
     "name": "Rukshan Batuwita ",
     "image": "rukshan.jpeg",
     "bio": "Rukshan Batuwita is currently a Data Scientist at Google and has a PhD in Applied Machine Learning from the University of Oxford. He has extensive experience in Applied Machine Learning and Data Science and can provide mentorship in topics surrounding this field as well as statistics and computer science. ",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Applied Machine Learning and Data Science"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -363,7 +352,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -371,15 +360,14 @@
     "name": "Chethiya Abeysingha",
     "image": "",
     "bio": "Chethiya Abeysingha is looking specifically to mentor student for Software Engineering Interviews focused on companies like Google, Amazon, FB etc and other companies following a similar recruitment model. Prerequisites required by mentor: \n1. Have previous programming experience \n2. Know basic data structures &  algorithms like binary search, DFS, BFS, Queues, Stacks, Hash-tables, Binary Search Trees, Heaps, Dynamic programming (optional), \n3. Know basic computer science concepts. e.g. OS, can do time/memory complexity analysis for above algorithms and data structures, distributed systems (optional)",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Software engineering",
       "Startups",
       "Building software products",
       "Programming",
       "Competitive programming"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -389,7 +377,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   },
@@ -397,7 +385,7 @@
     "name": "Nishantha Rajakaruna",
     "image": "",
     "bio": "Nishantha Rajakaruna has over 15 years of teaching botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University living in residence first year undergrads and providing academic advising and mentoring as needed.",
-    "Areas of expertise" : [
+    "AreasOfExpertise" : [
       "Botany",
       "Ecology",
       "Environmental Science",
@@ -407,8 +395,7 @@
       "Ethnobotany",
       "GeoBotany"
     ],
-    "Projects" : [
-    ],
+    "Projects" : [],
     "socialLinks" : [
       {
         "platform" : "Linkedin",
@@ -418,7 +405,7 @@
       {
         "platform" : "Facebook",
         "icon" : "fa-linkedin",
-        "url" : "..."
+        "url" : "#"
       }
     ]
   }
