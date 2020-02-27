@@ -522,6 +522,23 @@
     </div>
 </section>
 
+<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" idprofileleMod">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolor earum est eum ex harum incidunt non praesentium quisquam sequi.
+            </div>
+        </div>
+    </div>
+</div>
+
 </main>
 
 <footer class="footer">
@@ -553,13 +570,9 @@
             <div class="px-4">
                 <div class="hover-profile-card">
                     <img src="images/{{image}}"
-                         class="rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover"
+                         class="rounded-circle img img-center img-fluid shadow shadow-lg--hover imgHover"
+                         data-toggle="modal" data-target="#profileModal"
                     >
-                    <div class="imgIcon">
-                        <a href="{{linkedin}}" class="btn btn-default btn-icon-only rounded-circle">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="pt-4 text-center">
                     <h5 class="title">

@@ -30,3 +30,7 @@
     height: 20px;
     z-index: 400;
 }
+
+.hover-profile-card .img {
+    cursor: pointer;
+}
