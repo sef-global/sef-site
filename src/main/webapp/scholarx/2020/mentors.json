@@ -358,7 +358,7 @@
   },
   {
     "name": "Chethiya Abeysingha",
-    "image": "",
+    "image": "chethiya.jpeg",
     "bio": "Chethiya Abeysingha is looking specifically to mentor student for Software Engineering Interviews focused on companies like Google, Amazon, FB etc and other companies following a similar recruitment model. Prerequisites required by mentor: \n1. Have previous programming experience \n2. Know basic data structures &  algorithms like binary search, DFS, BFS, Queues, Stacks, Hash-tables, Binary Search Trees, Heaps, Dynamic programming (optional), \n3. Know basic computer science concepts. e.g. OS, can do time/memory complexity analysis for above algorithms and data structures, distributed systems (optional)",
     "areasOfExpertise" : [
       "Software engineering",
@@ -383,7 +383,7 @@
   },
   {
     "name": "Nishantha Rajakaruna",
-    "image": "",
+    "image": "nishantha.jpg",
     "bio": "Nishantha Rajakaruna has over 15 years of teaching botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University living in residence first year undergrads and providing academic advising and mentoring as needed.",
     "areasOfExpertise" : [
       "Botany",
