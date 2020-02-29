@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing 
-                                      mentoring support to a selected pool of high Potential undergraduate students 
-                                      based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of 
-                                      the world’s top universities or Fortune 500 companies. It’s our free premium 
-                                      mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture 
+    <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
+                                      mentoring support to a selected pool of high Potential undergraduate students
+                                      based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
+                                      the world’s top universities or Fortune 500 companies. It’s our free premium
+                                      mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
                                       of knowledge and expertise sharing without the limitation of geographical borders.">
     <meta name="author" content="Sustainable Education Foundation">
     <meta property="og:image" content="assets/img/brand/scholarx.png">
@@ -308,6 +308,17 @@
         </div>
     </div>
 </section>
+<!-- Featured stories section -->
+<section>
+    <div class="container mt-5 mb-5">
+        <h1 class="mb-5 text-center font-weight-bold">Featured stories</h1>
+        <!--Featured stories goes here-->
+        <div id="featured-stories" class="featured-stories"></div>
+        <div class="row justify-content-center">
+            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
 
 <section class="section" style="background-color: #f8fdff">
     <div class="container">
@@ -480,6 +491,7 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 <section class="section pb-5 mt-5" style="background : #e3f6fa">
@@ -491,7 +503,7 @@
                         <p class="display-3 pb-3 text-center" style="line-height: 1.2;">Find a mentor for me</p>
 
                         <p class="pb-3 text-justify">The deadline for the first phase of the program is on 14th April 2020, Application link can
-                            be found below For more information and to be added to the waiting list for the next phase 
+                            be found below For more information and to be added to the waiting list for the next phase
                             program, please write to us via sustainableedufoundation@gmail.com
                         </p>
                         <a class="btn btn-primary text-white" href="https://docs.google.com/forms/d/1rVN3fOy9YhTad1_uuDaoL30R-YM0IGI12Yu3I9W1vng/edit">Apply</a>
@@ -565,12 +577,40 @@
     </div>
 </script>
 
+<script type="text/html" id="template-featured-stories">
+    <div class="row">
+        {{#data}}
+        <div class="col-md-4 mb-5">
+            <a href="{{url}}" target="_blank">
+                <div class="card shadow featured-story mb-4">
+                    <img src="images/featured-stories/{{image}}" alt="Rounded image"
+                         class="img-fluid rounded shadow img-full">
+                    <div class="card-body">
+                        <h6>{{title}}</h6>
+                    </div>
+                    <div class="card-footer">
+                        <div class="author">
+                                <img src="images/featured-stories/{{author.image}}" alt="..."
+                                     class="avatar img-raised">
+                                <span>{{author.name}}</span>
+                        </div>
+                        <div class="stats ml-auto">
+                            <i class="far fa-clock"></i> {{readingTime}} min read
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/data}}
+    </div>
+</script>
+
 <script>
     $(function () {
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
-        // link to the navbar, footer content goes here
 
-        loadProfiles(); // call function to load profiles
+        loadProfiles(); // load profiles
+        loadFeaturedStories(); // load featured stories
     });
 
     //function to load profile data
@@ -607,6 +647,48 @@
 
                     //hide button
                     $("#btnShowMore").hide();
+                }
+            }
+        });
+    }
+
+    //function to load profile data
+    function loadFeaturedStories() {
+        $.ajax({
+            type: 'get',
+            url: 'featured-stories.json',
+            dataType: 'json',
+            success: function (data) {
+
+                //slice array to two parts
+                if (data.length >= 6) {
+                    let partOne = data.slice(0, 6);
+                    let partTwo = data.slice(6);
+
+                    //mustache render - part one
+                    let contentPartOne = Mustache.render(
+                      $('#template-featured-stories').html(), {'data': partOne});
+
+                    //display first 8 profiles
+                    $('#featured-stories').html(contentPartOne);
+
+                    //hide button
+                    $('#btn-featured-stories-show-more').click(function () {
+                        let contentPartTwo = Mustache.render(
+                          $('#template-featured-stories').html(), {'data': partTwo});
+                        $(contentPartTwo).appendTo('#featured-stories').hide().fadeIn(1000);
+                        $('#btn-featured-stories-show-more').hide();
+                    });
+                } else {
+                    //mustache render
+                    let content = Mustache.render(
+                      $('#template-featured-stories').html(), {'data': data});
+
+                    //display first 8 profiles
+                    $('#featured-stories').html(content);
+
+                    //hide button
+                    $('#btn-featured-stories-show-more').hide();
                 }
             }
         });
