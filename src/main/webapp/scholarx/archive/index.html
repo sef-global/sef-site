@@ -42,6 +42,7 @@
 </head>
 
 <body style="font-family: 'Montserrat', sans-serif; color: black">
+
 <header class="header-global">
     <!--nav bar goes here-->
     <div id="navbar"></div>
@@ -116,5 +117,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="/assets/js/navigation.js"></script>
+
+<script>
+    $(function () {
+        loadNavAndFooter('/assets/content/static');  //relative path to content directory
+    })
+</script>
 
 </html>
