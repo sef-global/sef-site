@@ -1,14 +1,13 @@
 [
   {
     "name": "Dinithi Sumanaweera",
+    "title": "PhD Candidate, Monash University ",
     "image": "dinithi.jpeg",
     "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areas of expertise lie in academic research focused on computational biology.",
     "areasOfExpertise" : [
       "Bioinformatics and Computational Biology"
     ],
-    "projects" : [
-      "A set of assignments designed to introduce mentee to different models and techniques."
-    ],
+    "projects" : [],
     "socialLinks" : [
       {
         "platform" : "linkedin",
@@ -20,6 +19,7 @@
   {
     "name": "Ganindu Nanayakkara",
     "image": "ganindu.jpeg",
+    "title" : "Forbes Asia 30 under 30: Consumer Tech" ,
     "bio": "Ganindu Nanayakkara is currently obtaining a Master of Business Adminstration at the University of Kelaniya. He also has a BSc in Information Technology from Curtin University and was a former researcher at NASA Ames Research Center. He can provide mentorship and assistance with topics relating to innovation, IT, business and finance.",
     "areasOfExpertise" : [
       "Innovation",
@@ -39,6 +39,7 @@
   {
     "name": "Hasini Jayathilaka",
     "image": "hasini.jpeg",
+    "title" : "Postdoctoral Researcher, Stanford University,Forbes 30 under 30 " ,
     "bio": "Hasini was a Postdoctoral researcher at Stanford University’s School of Medicine and is a Johns Hopkins University alum. She has extensive knowledge on cancer biology, pre-clinical and clinical trials for drug development and is the author of numerous peer-reviewed publications. She is also a recipient of Forbes 30 under 30 in 2019 for her discovery of a signaling pathway that controls how cancer cells metastasize through the body and a way to block that pathway.",
     "areasOfExpertise" : [
       "Cancer biology, pre-clinical and clinical trials for drug development",
@@ -58,6 +59,7 @@
   {
     "name": "Iromi Wanigasuriya",
     "image": "iromi.jpeg",
+    "title" : "PhD Candidate, University of Melbourne" ,
     "bio": "Iromi Wanigasuriya is a final year PhD candidate at University of Melbourne and is currently working on a epigenetic modifier known as Smchd1. She also works as a Teaching Assistant at University of Melbourne and the Gene Technology Access Centre in Victoria, Australia.",
     "areasOfExpertise" : [
     ],
@@ -73,6 +75,7 @@
   {
     "name": "Isuru Daulagala",
     "image": "isuru.jpeg",
+    "title" : "Software Engineer, NVIDIA",
     "bio": "Isuru Daulagala is currently a Software Engineer at NVIDIA and has a background in Electronic Design Automation, Optimizing Machine Learning Algorithms and Reinforcement Learning. He can provide guidance in topics surrounding Machine Learning and is looking to assist students with Machine Learning competitions as part of the mentorship.",
     "areasOfExpertise" : ["Electronic Design Automation",
       "Optimizing Machine Learning algorithms",
@@ -93,7 +96,8 @@
   {
     "name": "Jeewika Ranaweera",
     "image": "jeewika.jpeg",
-    "bio": "Isuru Daulagala is currently a Software Engineer at NVIDIA and has a background in Electronic Design Automation, Optimizing Machine Learning Algorithms and Reinforcement Learning. He can provide guidance in topics surrounding Machine Learning and is looking to assist students with Machine Learning competitions as part of the mentorship.",
+    "title" : "Principal Hardware Engineer, Oracle",
+    "bio": "Jeewika Ranaweera is the Principal Hardware Engineer at Oracle based in Santa Clara, California and is a University of Toronto alum. Her expertise lies in hardware engineering and she can provide guidance and mentorship on pursuing graduate studies.",
     "areasOfExpertise" : ["Hardware engineering"
     ],
     "projects" : [],
@@ -108,6 +112,7 @@
   {
     "name": "Lahiru Maramba",
     "image": "lahiru.jpeg",
+    "title" : "Software Engineer, Google" ,
     "bio":"Lahiru Maramba is a Software Engineer at Google and has extensive experience in Human Computer Interaction (HCI), UX, research methodology and data structures and algorithms. He has industry experience in design, prototyping and user testing and can guide students in topics relating to hardware prototyping, applied science and computing.",
     "areasOfExpertise" : [
       "Software engineering",
@@ -129,6 +134,7 @@
   {
     "name": "Nadeera Nilupamali",
     "image": "nadeera.jpeg",
+    "title" : "Cofounder, ImmunifyMe",
     "bio":"Nadeera Nilupamali has a PhD in Virology from the University of Peradeniya and was a Postdoctoral Researcher at at the International Centre for Genetic Engineering and Biotechnology.  She is the author of numerous peer reviewed publications and is also the cofounder of Immunify.me, an organization that leverages technology for vaccination and immunization monitoring and eliminates manual intervention in record keeping.",
     "areasOfExpertise" : [
       "Virology",
@@ -146,7 +152,8 @@
   {
     "name": "Nadeesha Chandrasena",
     "image": "nadeesha.jpeg",
-    "bio":"Nadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.\nScreen reader support enabled.\n \n \nhttps://www.li...ranilupamali/\n \t\t\n\nNadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.\n2 collaborators have joined the document.",
+    "title" : "PhD, Civil Engineering GSP. Singularity University - NASA Research Park Finalist, MIT 35 Under 35",
+    "bio":"Nadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.",
     "areasOfExpertise" : [
       "Urban Planning",
       "Civil Engineering",
@@ -169,6 +176,7 @@
   {
     "name": "Nivanthika Wimalasena ",
     "image": "niwanthika.jpeg",
+    "title" : "PhD candidate, Harvard University" ,
     "bio":"Nivanthika Wimalasena is a PhD candidate in neuroscience at Harvard University and has experience in industry with research relating to chemical biology and translational research. She can provide mentorship in scientific writing, public speaking, and provide guidance with application essays and writing effective resumes.",
     "areasOfExpertise" : [
       "Neuroscience",
@@ -186,7 +194,8 @@
   {
     "name": "Nushelle de Silva",
     "image": "nushelle.jpeg",
-    "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.\nScreen reader support enabled.\n \n \n \t\t\n\nNushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.\n2 collaborators have joined the document.",
+    "title" : "PhD Candidate, MIT",
+    "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.",
     "areasOfExpertise" : [
       "History of art",
       "Architecture",
@@ -211,7 +220,8 @@
   {
     "name": "Ruwandi Kariyawasam",
     "image": "ruwandi.jpeg",
-    "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.\nScreen reader support enabled.\n \n \n \t\t\n\nRuwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.\n2 collaborators have joined the document.",
+    "title" : "PhD Candidate, University of Toronto",
+    "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.",
     "areasOfExpertise" : [
       "Clinical microbiology"
     ],
@@ -227,6 +237,7 @@
   {
     "name": "Sajani Amarasiri ",
     "image": "sajani.jpeg",
+    "title" : "Founder & CEO, Colombo Cooperative Microsoft Alumni",
     "bio":"Sajani Amarasiri is the founder and CEO of Colombo Cooperative an entrepreneur hub and coworking space in Colombo, Sri Lanka with a mission to help everyone achieve their full potential. She has industry experience in supply chain management and business and can provide guidance and mentorship in entrepreneurship and personal development and branding.",
     "areasOfExpertise" : [
       "Supply Chain Management and Business",
@@ -245,6 +256,7 @@
   {
     "name": "Yadurshini Raveendran",
     "image": "yadurshini.jpeg",
+    "title" : "MSc. Candidate, Duke University",
     "bio": "Yadurshini Raveendran is currently pursuing an MSc. in Global Health at Duke University and has a background in biology. She has research experience in global health from past projects in India, US and Tanzania. She also has a deep interest in human rights and women empowerment research.  She can provide guidance on research methodologies, preparation for university application and scientific writing.",
     "areasOfExpertise" : [
       "Global public health",
@@ -268,6 +280,7 @@
   {
     "name": "Rukshan Batuwita ",
     "image": "rukshan.jpeg",
+    "title" : "Data Scientist, Google" ,
     "bio": "Rukshan Batuwita is currently a Data Scientist at Google and has a PhD in Applied Machine Learning from the University of Oxford. He has extensive experience in Applied Machine Learning and Data Science and can provide mentorship in topics surrounding this field as well as statistics and computer science. ",
     "areasOfExpertise" : [
       "Applied Machine Learning and Data Science"
@@ -284,7 +297,8 @@
   {
     "name": "Chethiya Abeysingha",
     "image": "chethiya.jpeg",
-    "bio": "Chethiya Abeysingha is looking specifically to mentor student for Software Engineering Interviews focused on companies like Google, Amazon, FB etc and other companies following a similar recruitment model. Prerequisites required by mentor: \n1. Have previous programming experience \n2. Know basic data structures &  algorithms like binary search, DFS, BFS, Queues, Stacks, Hash-tables, Binary Search Trees, Heaps, Dynamic programming (optional), \n3. Know basic computer science concepts. e.g. OS, can do time/memory complexity analysis for above algorithms and data structures, distributed systems (optional)",
+    "title" : "Software Engineer, Google",
+    "bio": "Chethiya Abeysingha is looking specifically to mentor student for Software Engineering Interviews focused on companies like Google, Amazon, FB etc and other companies following a similar recruitment model. Prerequisites required by mentor: <br/>1. Have previous programming experience <br/>2. Know basic data structures &  algorithms like binary search, DFS, BFS, Queues, Stacks, Hash-tables, Binary Search Trees, Heaps, Dynamic programming (optional), <br/>3. Know basic computer science concepts. e.g. OS, can do time/memory complexity analysis for above algorithms and data structures, distributed systems (optional)",
     "areasOfExpertise" : [
       "Software engineering",
       "Startups",
@@ -304,6 +318,7 @@
   {
     "name": "Nishantha Rajakaruna",
     "image": "nishantha.jpg",
+    "title" : "Faculty in Residence, California Polytechnic State University" ,
     "bio": "Nishantha Rajakaruna has over 15 years of teaching botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University living in residence first year undergrads and providing academic advising and mentoring as needed.",
     "areasOfExpertise" : [
       "Botany",
