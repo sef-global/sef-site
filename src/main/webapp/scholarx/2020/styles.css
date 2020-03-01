@@ -73,7 +73,8 @@
     width: 150px;
     margin-top: 10px;
 }
-.fa-linkedin{
-    margin-left: 100px;
-    margin-right: 300px;
+
+.profile-modal .close {
+    margin: -1.25rem -1.25rem -1.25rem auto;
+    padding: 1.25rem;
 }
