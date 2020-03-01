@@ -2,7 +2,7 @@
   {
     "name": "Dinithi Sumanaweera",
     "image": "dinithi.jpeg",
-    "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areasOfExpertise lie in academic research focused on computational biology.",
+    "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areas of expertise lie in academic research focused on computational biology.",
     "areasOfExpertise" : [
       "Bioinformatics and Computational Biology"
     ],
@@ -11,14 +11,9 @@
     ],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/dinithisumanaweera/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -35,14 +30,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/ganindun/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -59,14 +49,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/hasini-jayatilaka-ph-d-3026456a/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -79,14 +64,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/iromiw/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -104,14 +84,9 @@
     ],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/isurudaulagala/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -124,14 +99,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -150,14 +120,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/llahiru/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -172,14 +137,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/nadeeranilupamali/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -200,14 +160,9 @@
     ],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/nadeesha-chandrasena-9b531526/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -222,14 +177,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/nivanthika-wimalasena-aa84a699/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -252,14 +202,9 @@
     ],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/nushelledesilva/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -273,14 +218,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/ruwandikariyawasam/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -296,14 +236,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/sajaniamarasiri/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -324,14 +259,9 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/yraveendran/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
@@ -345,20 +275,15 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/rukshan-batuwita-3881a526/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
   {
     "name": "Chethiya Abeysingha",
-    "image": "",
+    "image": "chethiya.jpeg",
     "bio": "Chethiya Abeysingha is looking specifically to mentor student for Software Engineering Interviews focused on companies like Google, Amazon, FB etc and other companies following a similar recruitment model. Prerequisites required by mentor: \n1. Have previous programming experience \n2. Know basic data structures &  algorithms like binary search, DFS, BFS, Queues, Stacks, Hash-tables, Binary Search Trees, Heaps, Dynamic programming (optional), \n3. Know basic computer science concepts. e.g. OS, can do time/memory complexity analysis for above algorithms and data structures, distributed systems (optional)",
     "areasOfExpertise" : [
       "Software engineering",
@@ -370,20 +295,15 @@
     "projects" : [],
     "socialLinks" : [
       {
-        "platform" : "Linkedin",
+        "platform" : "linkedin",
         "icon" : "fa-linkedin",
         "url" : "https://www.linkedin.com/in/chethiya/"
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
       }
     ]
   },
   {
     "name": "Nishantha Rajakaruna",
-    "image": "",
+    "image": "nishantha.jpg",
     "bio": "Nishantha Rajakaruna has over 15 years of teaching botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University living in residence first year undergrads and providing academic advising and mentoring as needed.",
     "areasOfExpertise" : [
       "Botany",
@@ -396,17 +316,6 @@
       "GeoBotany"
     ],
     "projects" : [],
-    "socialLinks" : [
-      {
-        "platform" : "Linkedin",
-        "icon" : "fa-linkedin",
-        "url" : ""
-      },
-      {
-        "platform" : "Facebook",
-        "icon" : "fa-linkedin",
-        "url" : "#"
-      }
-    ]
+    "socialLinks" : []
   }
 ]
