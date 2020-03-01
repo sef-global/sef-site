@@ -103,6 +103,29 @@
     </div>
 </section>
 
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <p class="display-3 text-center">Mentors</p>
+        <!--Profile cards goes here-->
+        <div id="teamContent"></div>
+        <div class="row justify-content-center">
+            <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<!-- Featured stories section -->
+<section>
+    <div class="container mt-5 mb-5">
+        <h1 class="mb-5 text-center font-weight-bold">Featured stories</h1>
+        <!--Featured stories goes here-->
+        <div id="featured-stories" class="featured-stories"></div>
+        <div class="row justify-content-center">
+            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
 <section class="section" style="background-color: #f8fdff">
     <div class="container">
         <div class="row justify-content-center mb-md-5">
@@ -298,28 +321,6 @@
     </div>
 </section>
 
-<section class="section pb-0 bg-gradient-white">
-    <div class="container">
-        <p class="display-3 text-center">Mentors</p>
-        <!--Profile cards goes here-->
-        <div id="teamContent"></div>
-        <div class="row justify-content-center">
-            <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
-        </div>
-    </div>
-</section>
-<!-- Featured stories section -->
-<section>
-    <div class="container mt-5 mb-5">
-        <h1 class="mb-5 text-center font-weight-bold">Featured stories</h1>
-        <!--Featured stories goes here-->
-        <div id="featured-stories" class="featured-stories"></div>
-        <div class="row justify-content-center">
-            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
-        </div>
-    </div>
-</section>
-
 <section class="section" style="background-color: #f8fdff">
     <div class="container">
         <div class="row justify-content-center mb-md-5">
@@ -480,17 +481,17 @@
                                                 open on 4th March 2020 and will close 14th April 2020.
                                                 Keep an eye on the ScholarX page on our website for
                                                 the application link.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--FAQ Accordion-->
                 </div>
-                <!--FAQ Accordion-->
             </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -647,9 +648,9 @@
                     </div>
                     <div class="card-footer">
                         <div class="author">
-                                <img src="images/featured-stories/{{author.image}}" alt="..."
-                                     class="avatar img-raised">
-                                <span>{{author.name}}</span>
+                            <img src="images/featured-stories/{{author.image}}" alt="..."
+                                 class="avatar img-raised">
+                            <span>{{author.name}}</span>
                         </div>
                         <div class="stats ml-auto">
                             <i class="far fa-clock"></i> {{readingTime}} min read
