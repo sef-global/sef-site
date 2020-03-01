@@ -1,37 +1,37 @@
 [
   {
     "name": "Dr Hasini Jayatilaka",
-    "image": "assets/img/scholarx/mentors/hasini.jpeg",
+    "image": "hasini.jpeg",
     "intro": "Forbes 30 under 30 — Science Category, Postdoctoral Researcher at Stanford University School of Medicine.",
     "linkedin": "https://www.linkedin.com/in/hasini-jayatilaka-3026456a/"
   },
   {
     "name": "Dr Jeewika Ranaweera",
-    "image": "assets/img/scholarx/mentors/jeewika.jpeg",
+    "image": "jeewika.jpeg",
     "intro": "Principal Hardware Engineer at Oracle, PhD at University of Toronto.",
     "linkedin": "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/"
   },
   {
     "name": "Dr Rukshan Batuwita",
-    "image": "assets/img/scholarx/mentors/rukshan.jpeg",
+    "image": "rukshan.jpeg",
     "intro": "Data Scientist at Google, PhD at University of Oxford.",
     "linkedin": "https://www.linkedin.com/in/rukshan-batuwita-3881a526/"
   },
   {
     "name": "Dr Savithru Jayasinghe",
-    "image": "assets/img/scholarx/mentors/savithru.jpeg",
+    "image": "savithru.jpeg",
     "intro": "PhD at Massachusetts Institute of Technology (MIT), MEng at University of Cambridge.",
     "linkedin": "https://www.linkedin.com/in/savithru/"
   },
   {
     "name": "Sumudu Herath",
-    "image": "assets/img/scholarx/mentors/sumudu.jpeg",
+    "image": "sumudu.jpeg",
     "intro": "Ph.D. candidate at University of Cambridge, Best Engineering Undergraduate of University of Moratuwa.",
     "linkedin": "https://www.linkedin.com/in/sumudu-herath-6618b855/"
   },
   {
     "name": "Yasith Vidanaarachchi",
-    "image": "assets/img/scholarx/mentors/yasith.jpeg",
+    "image": "yasith.jpeg",
     "intro": "Software Engineer at Google, Ex — Software Engineer at Amazon",
     "linkedin": "https://www.linkedin.com/in/yasithv/"
   }
