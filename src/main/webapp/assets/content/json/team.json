@@ -119,6 +119,14 @@
       }
     },
     {
+      "name": "Jayasanka Weerasinghe",
+      "description": "Chief Technology Officer",
+      "image": "jayasanka.jpeg",
+      "social": {
+        "linkedin": "jayasanka-sack"
+      }
+    },
+    {
       "name": "Tharika Weerakoon",
       "description": "Program Manager",
       "image": "tharika.jpeg",
@@ -135,11 +143,11 @@
       }
     },
     {
-      "name": "Jayasanka Weerasinghe",
-      "description": "Chief Technology Officer",
-      "image": "jayasanka.jpeg",
+      "name": "Francisco Hettige Cristian Silva",
+      "description": "Product Manager",
+      "image": "fransisco.jpeg",
       "social": {
-        "linkedin": "jayasanka-sack"
+        "linkedin": "francisco-cristian-silva-159708108"
       }
     },
     {
@@ -172,14 +180,6 @@
       "image": "ganguli.jpeg",
       "social": {
         "linkedin": "ganguli-rajapaksha-59a429164"
-      }
-    },
-    {
-      "name": "Francisco Hettige Cristian Silva",
-      "description": "Product Manager",
-      "image": "fransisco.jpeg",
-      "social": {
-        "linkedin": "francisco-cristian-silva-159708108"
       }
     },
     {
