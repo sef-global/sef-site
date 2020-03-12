@@ -127,11 +127,43 @@
       }
     },
     {
+      "name": "Saumiyaa Pathmarajah",
+      "description": "Program Manager",
+      "image": "saumiyaa.jpeg",
+      "social": {
+        "linkedin": "saumiyaa-pathmarajah-29b988160"
+      }
+    },
+    {
       "name": "Jayasanka Weerasinghe",
       "description": "Chief Technology Officer",
       "image": "jayasanka.jpeg",
       "social": {
         "linkedin": "jayasanka-sack"
+      }
+    },
+    {
+      "name": "Asel Peiris",
+      "description": "Assistant Program Manager",
+      "image": "asel.jpeg",
+      "social": {
+        "linkedin": "asel-peiris-76536158"
+      }
+    },
+    {
+      "name": "Nimesh Ekanayake",
+      "description": "Assistant Program Manager",
+      "image": "nimesh.jpeg",
+      "social": {
+        "linkedin": "nimeshkasun"
+      }
+    },
+    {
+      "name": "Thavarasa Vithusan",
+      "description": "Assistant Program Manager",
+      "image": "vithusan.jpeg",
+      "social": {
+        "linkedin": "vithusan97"
       }
     },
     {
