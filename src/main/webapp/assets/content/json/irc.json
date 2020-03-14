@@ -1,290 +1,218 @@
 [
   {
-    "name": "Amila Jayasinghe",
-    "description": "University of Cambridge",
-    "image": "amila.jpeg",
+    "name": "Arosha K. Bandara",
+    "description": "Software Engineering",
+    "image": "arosha.jpeg",
     "social": {
-      "linkedin": "amila-jayasinghe-343148136"
+      "linkedin": "akbandara"
     }
   },
   {
-    "name": "Aruna Kananka Liyanage",
-    "description": "University of British Columbia and Open University of Sri Lanka",
-    "image": "aruna.jpeg",
+    "name": "Sumali Hewage",
+    "description": "Public Health",
+    "image": "sumali.jpeg",
     "social": {
-      "linkedin": "aruna-arunasiri-k-liyanage-09741527"
+      "linkedin": "sumalih"
     }
   },
   {
-    "name": "C D Tharindu Mathew",
-    "description": "Purdue University",
-    "image": "tharindu.jpeg",
+    "name": "Sachith Gallolu",
+    "description": "Molecular Biology",
+    "image": "sachith.jpeg",
     "social": {
-      "linkedin": "tharindu-mathew-5305b114"
+      "linkedin": "sachith-gallolu-61560360"
     }
   },
   {
-    "name": "Chamod Hettiarachchi",
-    "description": "Tongji University, Shanghai, China",
-    "image": "chamod.jpeg",
+    "name": "Nadeera Nilupamali",
+    "description": "Virology",
+    "image": "nadeera.jpeg",
     "social": {
-      "linkedin": "chamod-hettiarachchi-639373145"
+      "linkedin": "nadeeranilupamali"
     }
   },
   {
-    "name": "Chathura Sarathchandra",
-    "description": "InterDigital Inc. (International Labs)",
-    "image": "chathura.jpeg",
+    "name": "Ashan Musafer",
+    "description": "Cancer diagnostics",
+    "image": "ashan.jpeg",
     "social": {
-      "linkedin": "chathura77"
+      "linkedin": "ashanmusafer"
     }
   },
   {
-    "name": "Dakshitha Weerasinghe",
-    "description": "University of Sydney, School of Civil Engineering",
-    "image": "dakshitha.jpeg",
+    "name": "Krishani Perera",
+    "description": "Pathobiology",
+    "image": "krishani.jpeg",
     "social": {
-      "linkedin": "dakshitha92"
-    }
-  },
-  {
-    "name": "Gathsaurie Neelika Malavige",
-    "description": "University of Sri Jayewardenapura",
-    "image": "gathsaurie.jpeg",
-    "social": {
-      "linkedin": "gathsaurie-neelika-malavige-85b7b727"
-    }
-  },
-  {
-    "name": "Haritha Thilakarathne",
-    "description": "La Trobe University",
-    "image": "haritha.jpeg",
-    "social": {
-      "linkedin": "hthilakarathne"
-    }
-  },
-  {
-    "name": "Harshani Deepa Kumari Nainanayaka",
-    "description": "Jeju National University, South Korea/ University of Ruhuna, Sri Lanka",
-    "image": "unknown.png",
-    "social": {
-      "linkedin": "harshani-deepakumari-nainanayaka-7006a914b"
-    }
-  },
-  {
-    "name": "Himal Shankana Wijekoon",
-    "description": "National Institute of Fundamental Studies",
-    "image": "himal.jpeg",
-    "social": {
-      "linkedin": "himal-wijekoon"
-    }
-  },
-  {
-    "name": "Imalka Matarage",
-    "description": "Kansas State University",
-    "image": "unknown.png",
-    "social": {
-      "linkedin": "imalka-matarage-24781561"
-    }
-  },
-  {
-    "name": "Iromi Wanigasuriya",
-    "description": "University of Melbourne",
-    "image": "iromi.jpeg",
-    "social": {
-      "linkedin": "iromiw"
-    }
-  },
-  {
-    "name": "Iroshan Aberathne",
-    "description": "University of Peradeniya, Sri Lanka",
-    "image": "iroshan.jpeg",
-    "social": {
-      "linkedin": "iroshan-aberathne"
-    }
-  },
-  {
-    "name": "Kalhari Goonewardene",
-    "description": "Western College of Veterinary Medicine, University of Saskatchewan, Canada",
-    "image": "unknown.png",
-    "social": {
-      "linkedin": "kalhari-goonewardene-9abb4321"
-    }
-  },
-  {
-    "name": "Kasun Gayan Bandara",
-    "description": "Monash University, Australia",
-    "image": "kasun.jpeg",
-    "social": {
-      "linkedin": "bandarakasun"
-    }
-  },
-  {
-    "name": "Manoranjan Muthusamy",
-    "description": "Cranfield University",
-    "image": "manoranjan.jpg",
-    "social": {
-      "linkedin": "manomuthu"
-    }
-  },
-  {
-    "name": "Mirantha Jayathilaka",
-    "description": "University of Manchester",
-    "image": "mirantha.jpeg",
-    "social": {
-      "linkedin": "miranthajayathilaka"
-    }
-  },
-  {
-    "name": "Naresh Nandakumar",
-    "description": "Johns Hopkins University",
-    "image": "unknown.png",
-    "social": {
-      "linkedin": "naresh-nandakumar-3b4322ba"
-    }
-  },
-  {
-    "name": "Nilushka Perera",
-    "description": "Best Beginnings /University of West London/The Ohana Project",
-    "image": "nilushka.jpeg",
-    "social": {
-      "linkedin": "nilushkaperera"
-    }
-  },
-  {
-    "name": "Nirmali Sivapragasam",
-    "description": "Duke-NUS Medical School",
-    "image": "nirmali.jpeg",
-    "social": {
-      "linkedin": "nirmalisivapragasam"
-    }
-  },
-  {
-    "name": "Nivanthika Wimalasena",
-    "description": "Harvard University",
-    "image": "nivanthika.jpeg",
-    "social": {
-      "linkedin": "nivanthika-wimalasena-aa84a699"
-    }
-  },
-  {
-    "name": "Pramodh Chandrasinghe",
-    "description": "Imperial College London",
-    "image": "pramodh.jpeg",
-    "social": {
-      "linkedin": "pramodh-chandrasinghe-34491133"
-    }
-  },
-  {
-    "name": "Prasan Yapa (Y.H.P.P Priyadarshana)",
-    "description": "University of Moratuwa",
-    "image": "prasan.jpeg",
-    "social": {
-      "linkedin": "prasan-yapa-b0610935"
-    }
-  },
-  {
-    "name": "Priyadharshany Sandanapitchai",
-    "description": "Rutgers University",
-    "image": "priyadharshany.jpeg",
-    "social": {
-      "linkedin": "psandanapitchai"
-    }
-  },
-  {
-    "name": "Rivindu Weerasekera",
-    "description": "University of Auckland",
-    "image": "rivindu.jpeg",
-    "social": {
-      "linkedin": "rivinduw"
-    }
-  },
-  {
-    "name": "Ruwandi Kariyawasam",
-    "description": "Institute of Medical Sciences-University of Toronto",
-    "image": "ruwandi.jpeg",
-    "social": {
-      "linkedin": "ruwandikariyawasam"
-    }
-  },
-  {
-    "name": "Sandun M Dassanayake",
-    "description": "Monash University",
-    "image": "sandun.jpeg",
-    "social": {
-      "linkedin": "sandun-m-dassanayake-145a9842"
+      "linkedin": "krishani-dinali-perera-4a94b1129"
     }
   },
   {
     "name": "Sitara Weerakoon",
-    "description": "University of Texas Health Science Center School of Public Health",
+    "description": "Public Health",
     "image": "sitara.jpeg",
     "social": {
       "linkedin": "sitaraweerakoon"
     }
   },
   {
-    "name": "Sohani Pramoodha Liyanage",
-    "description": "Swinburne University of Technology",
-    "image": "sohani.jpeg",
+    "name": "Chamod Hettiarachchi",
+    "description": "Sustainable Roads",
+    "image": "chamod.jpeg",
     "social": {
-      "linkedin": "sohani-liyanage-69589355"
+      "linkedin": "chamod-hettiarachchi"
     }
   },
   {
-    "name": "Suren Rajakaruna",
-    "description": "University of Pennsylvania",
-    "image": "suren.jpg",
+    "name": "Chathura Sarathchandra",
+    "description": "Visulization techniques for next generation devices",
+    "image": "chathura.jpeg",
     "social": {
-      "linkedin": "suren-rajakaruna-41138516"
+      "linkedin": "chathura77"
     }
   },
   {
     "name": "Thisum Buddhika",
-    "description": "University of Auckland",
+    "description": "Human Computer Interaction",
     "image": "thisum.jpeg",
     "social": {
       "linkedin": "thisumbuddhika"
     }
   },
   {
-    "name": "Vinuri Fernando",
-    "description": "University of Portsmouth",
-    "image": "vinuri.jpeg",
+    "name": "Chamindie Punyadeera",
+    "description": "QUT, Saliva and Liquid Biopsy Translational Research Team",
+    "image": "chamindie.jpeg",
     "social": {
-      "linkedin": "m-a-vinuri-fernando-468134115"
+      "linkedin": "chamindie-punyadeera"
     }
   },
   {
-    "name": "Vishvapali Kobbekaduwa",
-    "description": "Michigan State University",
-    "image": "vishvapali.jpeg",
+    "name": "Suren Rajakaruna",
+    "description": "Car-T Immunotherapy",
+    "image": "suren.jpg",
     "social": {
-      "linkedin": "vishvapali-kobbekaduwa-6b775680"
+      "linkedin": "suren-rajakaruna-ms-41138516"
     }
   },
   {
     "name": "Yadurshini Raveendran",
-    "description": "Duke University - Duke Global Health Institute",
+    "description": "Global Health",
     "image": "yudharshini.jpeg",
     "social": {
       "linkedin": "yraveendran"
     }
   },
   {
-    "name": "Yasun Y. Kannangara",
-    "description": "Sungkyunkwan University (Korea), University of Peradeniya, University of Colombo",
-    "image": "yasun.jpeg",
+    "name": "Mirantha Jayathilake",
+    "description": "Ariticial Intelligence/ Machine learning",
+    "image": "mirantha.jpeg",
     "social": {
-      "linkedin": "yasun-kannangara-19181641"
+      "linkedin": "miranthajayathilaka"
     }
   },
   {
-    "name": "Yvanka de Soysa",
-    "description": "University of California, San Francisco/ Gladstone Institutes",
+    "name": "Nivanthika Wimalasena",
+    "description": "Sensory Neurobiology",
+    "image": "nivanthika.jpeg",
+    "social": {
+      "linkedin": "nivanthika-wimalasena-aa84a699"
+    }
+  },
+  {
+    "name": "Neelika Malavige",
+    "description": "Dengue Virus",
+    "image": "gathsaurie.jpeg",
+    "social": {
+      "linkedin": "gathsaurie-neelika-malavige-85b7b727"
+    }
+  },
+  {
+    "name": "Ruwandi Kariyawasam",
+    "description": "Clinical Science",
+    "image": "ruwandi.jpeg",
+    "social": {
+      "linkedin": "ruwandikariyawasam"
+    }
+  },
+  {
+    "name": "Kalhari Goonewardene",
+    "description": "Immunology",
     "image": "unknown.png",
     "social": {
-      "linkedin": "yvankadesoysa"
+      "linkedin": "kalhari-goonewardene-9abb4321"
+    }
+  },
+  {
+    "name": "Pramodh Chandrasinghe",
+    "description": "Cancer research",
+    "image": "pramodh.jpeg",
+    "social": {
+      "linkedin": "pramodh-chandrasinghe-34491133"
+    }
+  },
+  {
+    "name": "Naresh Nandakumar",
+    "description": "Machine learning/ Data science",
+    "image": "naresh.jpeg",
+    "social": {
+      "linkedin": "naresh-nandakumar-3b4322ba"
+    }
+  },
+  {
+    "name": "Vishvapali Kobbekaduwa",
+    "description": "Disease ecology and Epidomiology",
+    "image": "vishvapali.jpeg",
+    "social": {
+      "linkedin": "vishvapali-kobbekaduwa-6b775680"
+    }
+  },
+  {
+    "name": "Dakshitha Weerasinghe",
+    "description": "Civil Engineering",
+    "image": "dakshitha.jpeg",
+    "social": {
+      "linkedin": "dakshitha92"
+    }
+  },
+  {
+    "name": "Dinithi Sumanaweera",
+    "description": "Computational Biology",
+    "image": "dinithi.jpeg",
+    "social": {
+      "linkedin": "dinithisumanaweera"
+    }
+  },
+  {
+    "name": "Iroshan Abeyrathne",
+    "description": "Mathematical modeling/Machine learning",
+    "image": "iroshan.jpeg",
+    "social": {
+      "linkedin": "iroshan-aberathne"
+    }
+  },
+  {
+    "name": "Yomani Sarathkumara",
+    "description": "Molecular Biology/ Omics technologies",
+    "image": "unknown.png",
+    "social": {
+      "linkedin": "yomani-sarathkumara-42076a83"
+    }
+  },
+  {
+    "name": "Sohani Liyanage",
+    "description": "Simulation models for ride sharing",
+    "image": "sohani.jpeg",
+    "social": {
+      "linkedin": "sohani-liyanage-69589355"
+    }
+  },
+  {
+    "name": "Gamalendira Sivapatham",
+    "description": "Biomedical engineering",
+    "image": "unknown.png",
+    "social": {
+      "linkedin": "gamalendira-shivapatham"
     }
   }
 ]
