@@ -332,5 +332,25 @@
     ],
     "projects" : [],
     "socialLinks" : []
+  },
+  {
+    "name": "Aftab Aziz",
+    "image": "aftab.jpg",
+    "title" : "Media Partnerships Lead Counsel, Facebook" ,
+    "bio": "Aftab Aziz is a media lawyer with experience across the APAC region, and is currently part of Facebook’s APAC legal team based in Singapore. He can provide mentorship in topics relating to careers and education in law and media.",
+    "areasOfExpertise" : [
+      "Effective communication",
+      "Career planning",
+      "Working as an in-house lawyer",
+      "Practical application of academic knowledge in a business environment (i.e. how to support a business in your role)."
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fa-linkedin",
+        "url" : "https://www.linkedin.com/in/aftab-aziz-67a6b32a/"
+      }
+    ]
   }
 ]
