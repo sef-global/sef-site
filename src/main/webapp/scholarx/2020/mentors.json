@@ -1,7 +1,7 @@
 [
   {
     "name": "Dinithi Sumanaweera",
-    "title": "PhD Candidate, Monash University ",
+    "title": "PhD Candidate, Computational Biology\nMonash University ",
     "image": "dinithi.jpeg",
     "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areas of expertise lie in academic research focused on computational biology.",
     "areasOfExpertise" : [
@@ -11,7 +11,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/dinithisumanaweera/"
       }
     ]
@@ -31,7 +31,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/ganindun/"
       }
     ]
@@ -39,7 +39,7 @@
   {
     "name": "Hasini Jayathilaka",
     "image": "hasini.jpeg",
-    "title" : "Postdoctoral Researcher, Stanford University,Forbes 30 under 30 " ,
+    "title" : "Postdoctoral Researcher, Stanford University School of Medicine\nForbes 30 under 30 " ,
     "bio": "Hasini was a Postdoctoral researcher at Stanford University’s School of Medicine and is a Johns Hopkins University alum. She has extensive knowledge on cancer biology, pre-clinical and clinical trials for drug development and is the author of numerous peer-reviewed publications. She is also a recipient of Forbes 30 under 30 in 2019 for her discovery of a signaling pathway that controls how cancer cells metastasize through the body and a way to block that pathway.",
     "areasOfExpertise" : [
       "Cancer biology, pre-clinical and clinical trials for drug development",
@@ -51,7 +51,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/hasini-jayatilaka-ph-d-3026456a/"
       }
     ]
@@ -59,7 +59,7 @@
   {
     "name": "Iromi Wanigasuriya",
     "image": "iromi.jpeg",
-    "title" : "PhD Candidate, University of Melbourne" ,
+    "title" : "PhD Candidate, Walter and Eliza Hall Institute of Medical Research\nUniversity of Melbourne" ,
     "bio": "Iromi Wanigasuriya is a final year PhD candidate at University of Melbourne and is currently working on a epigenetic modifier known as Smchd1. She also works as a Teaching Assistant at University of Melbourne and the Gene Technology Access Centre in Victoria, Australia.",
     "areasOfExpertise" : [
     ],
@@ -67,7 +67,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/iromiw/"
       }
     ]
@@ -88,7 +88,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/isurudaulagala/"
       }
     ]
@@ -104,7 +104,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/jeewika-ranaweera-a1846b1/"
       }
     ]
@@ -126,7 +126,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/llahiru/"
       }
     ]
@@ -144,7 +144,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/nadeeranilupamali/"
       }
     ]
@@ -168,7 +168,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/nadeesha-chandrasena-9b531526/"
       }
     ]
@@ -176,7 +176,7 @@
   {
     "name": "Nivanthika Wimalasena ",
     "image": "niwanthika.jpeg",
-    "title" : "PhD candidate, Harvard University" ,
+    "title" : "PhD candidate, Neuroscience\nHarvard University" ,
     "bio":"Nivanthika Wimalasena is a PhD candidate in neuroscience at Harvard University and has experience in industry with research relating to chemical biology and translational research. She can provide mentorship in scientific writing, public speaking, and provide guidance with application essays and writing effective resumes.",
     "areasOfExpertise" : [
       "Neuroscience",
@@ -186,7 +186,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/nivanthika-wimalasena-aa84a699/"
       }
     ]
@@ -194,7 +194,7 @@
   {
     "name": "Nushelle de Silva",
     "image": "nushelle.jpeg",
-    "title" : "PhD Candidate, MIT",
+    "title" : "PhD Candidate, MIT Architechture",
     "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.",
     "areasOfExpertise" : [
       "History of art",
@@ -212,7 +212,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/nushelledesilva/"
       }
     ]
@@ -220,7 +220,7 @@
   {
     "name": "Ruwandi Kariyawasam",
     "image": "ruwandi.jpeg",
-    "title" : "PhD Candidate, University of Toronto",
+    "title" : "PhD Candidate, Parasitology\nUniversity of Toronto",
     "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.",
     "areasOfExpertise" : [
       "Clinical microbiology"
@@ -229,7 +229,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/ruwandikariyawasam/"
       }
     ]
@@ -248,7 +248,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/sajaniamarasiri/"
       }
     ]
@@ -256,7 +256,7 @@
   {
     "name": "Yadurshini Raveendran",
     "image": "yadurshini.jpeg",
-    "title" : "MSc. Candidate, Duke University",
+    "title" : "MSc. Candidate, Global Health\nDuke University",
     "bio": "Yadurshini Raveendran is currently pursuing an MSc. in Global Health at Duke University and has a background in biology. She has research experience in global health from past projects in India, US and Tanzania. She also has a deep interest in human rights and women empowerment research.  She can provide guidance on research methodologies, preparation for university application and scientific writing.",
     "areasOfExpertise" : [
       "Global public health",
@@ -272,7 +272,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/yraveendran/"
       }
     ]
@@ -289,7 +289,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/rukshan-batuwita-3881a526/"
       }
     ]
@@ -310,16 +310,16 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/chethiya/"
       }
     ]
   },
   {
-    "name": "Nishantha Rajakaruna",
+    "name": "Nishanta Rajakaruna",
     "image": "nishantha.jpg",
-    "title" : "Faculty in Residence, California Polytechnic State University" ,
-    "bio": "Nishantha Rajakaruna has over 15 years of teaching botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University living in residence first year undergrads and providing academic advising and mentoring as needed.",
+    "title" : "Assistant Professor Plant Biology\nFaculty in Residence, California Polytechnic State University\n" ,
+    "bio": "Nishanta Rajakaruna has over 15 years of teaching experience in botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University, living in residence with first year undergrads and providing academic advising and mentoring as needed.",
     "areasOfExpertise" : [
       "Botany",
       "Ecology",
@@ -331,7 +331,18 @@
       "GeoBotany"
     ],
     "projects" : [],
-    "socialLinks" : []
+    "socialLinks" : [
+      {
+        "platform" : "facebook",
+        "icon" : "fab fa-facebook",
+        "url" : "https://www.facebook.com/nishanta.rajakaruna.7"
+      },
+      {
+        "platform" : "primary",
+        "icon" : "fas fa-globe",
+        "url" : "https://nishantarajakaruna.com/"
+      }
+    ]
   },
   {
     "name": "Aftab Aziz",
@@ -348,7 +359,7 @@
     "socialLinks" : [
       {
         "platform" : "linkedin",
-        "icon" : "fa-linkedin",
+        "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/aftab-aziz-67a6b32a/"
       }
     ]
