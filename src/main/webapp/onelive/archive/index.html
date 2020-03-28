@@ -44,9 +44,21 @@
     </section>
 
     <section class="section bg-secondary">
-        <div class="container" id="youtube-video">
-        <!--youtube video goes here-->
-        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-9 text-center">
+                    <h1 class="mb-0 text-onelive">Take a look at our past</h1>
+                    <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
+                </div>
+            </div>
+            <div class="row" id="youtube-video">
+                <!--youtube video goes here-->
+            </div>
+            <div class="row justify-content-center mb-md-5">
+                <div class="col-9 text-center">
+                    <a class="btn btn-onelive text-uppercase">See more past onelives</a>
+                </div>
+            </div>
     </section>
 
 </main>
@@ -98,33 +110,22 @@
 
 <script type="text/html"
         id="template-youtube-vidoe">
-    <div class="row justify-content-center">
-        <div class="col-9 text-center">
-            <h1 class="mb-0 text-onelive">Take a look at our past</h1>
-            <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
-        </div>
-    </div>
-    <div class="row">
-        {{#data.items}}
-        <div class="col-md-4 mb-5">
-            <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
-                <div class="card shadow yt-video mb-4">
-                    <img src="{{snippet.thumbnails.medium.url}}" alt="Rounded image"
-                         class="img-fluid rounded shadow img-full">
-                    <div class="card-body">
-                        <h6>{{snippet.title}}</h6>
-                        <p>{{snippet.description}}</p>
-                    </div>
+    {{#data.items}}
+    <div class="col-md-4 mb-5">
+        <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
+           target="_blank">
+            <div class="card shadow youtube-video mb-4">
+                <img src="{{snippet.thumbnails.medium.url}}"
+                     alt="Rounded image"
+                     class="img-fluid rounded shadow img-full">
+                <div class="card-body">
+                    <h6>{{snippet.title}}</h6>
+                    <p>{{snippet.description}}</p>
                 </div>
-            </a>
-        </div>
-        {{/data.items}}
+            </div>
+        </a>
     </div>
-    <div class="row justify-content-center mb-md-5">
-        <div class="col-9 text-center">
-            <a class="btn btn-onelive text-uppercase">show more</a>
-        </div>
-    </div>
+    {{/data.items}}
 </script>
 
 </html>
