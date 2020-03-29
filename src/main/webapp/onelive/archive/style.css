@@ -1,0 +1,14 @@
+.youtube-video img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.youtube-video .card {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.youtube-video .card-body {
+    padding-bottom: 0;
+}
+
