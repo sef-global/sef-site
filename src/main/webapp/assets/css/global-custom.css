@@ -488,3 +488,16 @@ body{
 .faq .accordion .question .question-heading {
     padding-right: 30px;
 }
+
+/*upcoming events card*/
+
+.card-event{
+    border-radius: 1rem;
+}
+
+.card-event .card-body .card-event-date{
+    border: 0.0625rem solid #fbc53b;
+    border-radius: 50%;
+    padding: .5rem .75rem;
+}
+
