@@ -519,3 +519,14 @@ body{
 .rounded-05-rem {
     border-radius: 0.5rem !important;
 }
+
+/*upcoming events card*/
+.card-event{
+    border-radius: 1rem;
+}
+
+.card-event .card-body .card-event-date{
+    border: 0.0625rem solid #fbc53b;
+    border-radius: 50%;
+    padding: .5rem .75rem;
+}
