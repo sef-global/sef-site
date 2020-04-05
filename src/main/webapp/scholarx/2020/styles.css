@@ -104,3 +104,18 @@
 .mentor-title {
     font-size: 0.9em;
 }
+
+.alert-danger
+{
+    color: #fff;
+    border-color: #FFC73D;
+    background-color: #FDC63C;
+}
+.alert-danger hr
+{
+    border-top-color: #FCC63B;
+}
+.alert-danger .alert-link
+{
+    color: #fbc53b;
+}
