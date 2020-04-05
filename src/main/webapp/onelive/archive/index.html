@@ -51,7 +51,7 @@
                     <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
                 </div>
             </div>
-            <div class="row" id="youtube-video">
+            <div class="row" id="youtube-videos">
                 <!--youtube video goes here-->
             </div>
             <div class="row justify-content-center mb-md-5">
@@ -59,6 +59,7 @@
                     <a class="btn btn-onelive text-uppercase">See more past onelives</a>
                 </div>
             </div>
+        </div>
     </section>
 
 </main>
@@ -101,20 +102,20 @@
             success: function (data) {
                 //mustache render
                 let renderedData = Mustache.render(
-                    $('#template-youtube-vidoe').html(), {data: data});
-                $('#youtube-video').html(renderedData);
+                    $('#template-youtube-videos').html(), {data: data});
+                $('#youtube-videos').html(renderedData);
             }
         });
     }
 </script>
 
 <script type="text/html"
-        id="template-youtube-vidoe">
+        id="template-youtube-videos">
     {{#data.items}}
     <div class="col-md-4 mb-5">
         <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
            target="_blank">
-            <div class="card shadow youtube-video mb-4">
+            <div class="card shadow youtube-videos mb-4">
                 <img src="{{snippet.thumbnails.medium.url}}"
                      alt="Rounded image"
                      class="img-fluid rounded shadow img-full">
