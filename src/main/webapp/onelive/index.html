@@ -45,43 +45,23 @@
     </section>
 
     <section class="section bg-secondary">
-        <div id="past-onelives" class="container">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-9 text-center">
                     <h1 class="mb-0 text-onelive">Take a look at our past</h1>
                     <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="https://www.facebook.com/sustainableeducationfoundation/videos/vb.1833231326936705/338708860279593/?type=2&theater" target="_blank">
-                        <img src="images/banner-2.png" class="img-fluid shadow rounded mb-md-4">
-                        <h5 class="text-uppercase">international research council speaker series</h5>
-                        <p>Dr. Hasini Jayathilaka</p>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://www.youtube.com/watch?v=bnKx-1rnEhI" target="_blank">
-                        <img src="images/banner-3.png" class="img-fluid shadow rounded mb-md-4">
-                        <h5 class="text-uppercase">organic user interfaces nonflat, flexible, and ...</h5>
-                        <p>Lahiru Maramba</p>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://p-upload.facebook.com/sustainableeducationfoundation/videos/506389346839762/" target="_blank">
-                        <img src="images/banner-1.png" class="img-fluid shadow rounded mb-md-4">
-                        <h5 class="text-uppercase">Future-proof - what to learn for the future and how?</h5>
-                        <p>Sohan Darmaraja</p>
-                    </a>
-                </div>
+            <div class="row" id="youtube-videos">
+                <!--youtube video goes here-->
             </div>
             <div class="row justify-content-center mb-md-5">
                 <div class="col-9 text-center">
-                    <a href="archive/" class="btn btn-onelive text-uppercase">See More videos</a>
+                    <a href="archive/" class="btn btn-onelive text-uppercase">See more</a>
                 </div>
             </div>
+            <img src="images/Asset%205.svg">
         </div>
-        <img src="images/Asset%205.svg">
     </section>
 
     <section class="section pb-0 bg-gradient-white">
@@ -281,7 +261,23 @@
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
         loadProfiles(); // load profiles
         loadFaqComponent();
+        loadYoutubeVideos();
     });
+
+    //function to load youtube videos
+    function loadYoutubeVideos() {
+        $.ajax({
+            type: 'get',
+            url: 'https://sef-dataholder.herokuapp.com/youtube/onelive?maxResults=3',
+            dataType: 'json',
+            success: function (data) {
+                //mustache render
+                let renderedData = Mustache.render(
+                    $('#template-youtube-videos').html(), {data: data});
+                $('#youtube-videos').html(renderedData);
+            }
+        });
+    }
 
     //function to load profile data
     function loadProfiles() {
@@ -321,5 +317,25 @@
             }
         });
     }
+</script>
+
+<script type="text/html"
+        id="template-youtube-videos">
+    {{#data.items}}
+    <div class="col-md-4 mb-5">
+        <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
+           target="_blank">
+            <div class="card shadow youtube-videos mb-4">
+                <img src="{{snippet.thumbnails.medium.url}}"
+                     alt="Rounded image"
+                     class="img-fluid rounded shadow img-full">
+                <div class="card-body">
+                    <h6>{{snippet.title}}</h6>
+                    <p>{{snippet.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{/data.items}}
 </script>
 </html>
