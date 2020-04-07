@@ -52,7 +52,8 @@
                     <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
                 </div>
             </div>
-            <div class="row" id="youtube-videos">
+            <div class="row"
+                 id="youtube-videos">
                 <!--youtube video goes here-->
             </div>
             <div class="row justify-content-center mb-md-5">
@@ -271,9 +272,16 @@
             url: 'https://sef-dataholder.herokuapp.com/youtube/onelive?maxResults=3',
             dataType: 'json',
             success: function (data) {
+                // Slice if the description if it is very long
+                data.items.forEach((item) => {
+                    const snippet = item.snippet;
+                    if (snippet.description.length > 100) {
+                        snippet.description = snippet.description.slice(0, 80) + "...";
+                    }
+                });
                 //mustache render
                 let renderedData = Mustache.render(
-                    $('#template-youtube-videos').html(), {data: data});
+                    $('#template-youtube-videos').html(), {items: data.items});
                 $('#youtube-videos').html(renderedData);
             }
         });
@@ -321,7 +329,7 @@
 
 <script type="text/html"
         id="template-youtube-videos">
-    {{#data.items}}
+    {{#items}}
     <div class="col-md-4 mb-5">
         <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
            target="_blank">
@@ -336,6 +344,6 @@
             </div>
         </a>
     </div>
-    {{/data.items}}
+    {{/items}}
 </script>
 </html>
