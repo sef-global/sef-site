@@ -336,11 +336,11 @@
                         //get date & time of the event
                         let start = new Date(payload.items[i].start.dateTime);
                         let end = new Date(payload.items[i].end.dateTime);
-                        payload.items[i].day = start.toString().substring(0, 3);
-                        payload.items[i].month = start.toString().substring(4, 7);
-                        payload.items[i].date = start.toString().substring(8, 10);
-                        payload.items[i].startTime = start.toString().substring(16, 21);
-                        payload.items[i].endTime = end.toString().substring(16, 21);
+                        payload.items[i].day = start.toLocaleDateString([], {weekday: 'short'});
+                        payload.items[i].month = start.toLocaleDateString([], {month: 'short'});
+                        payload.items[i].date = start.toLocaleDateString([], {day: '2-digit'});
+                        payload.items[i].startTime = start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
+                        payload.items[i].endTime = end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
                         //Mustache render
                         let content = Mustache.render($("#upcoming-events-template").html(), {"data": payload.items});
                         $("#upcoming-events").html(content);
