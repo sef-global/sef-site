@@ -286,19 +286,19 @@
 </script>
 
 <script id="upcoming-events-template" type="text/html">
-    <div class="col-md-10 offset-1">
+    <div class="col-sm-10 offset-1">
         <h3>Upcoming</h3>
     </div>
 
     {{#data}}
-    <div class="col-md-10 offset-1">
+    <div class="col-10 offset-1">
         <a href="{{facebookLink}}" target="_blank">
             <div class="card card-event shadow shadow-lg--hover mb-1 text-body">
                 <div class="card-body">
                     <span class="h5 mr-1 card-event-date">{{date}}</span>
                     <span class="small text-muted mr-4 text-uppercase">{{month}}, {{day}}</span>
-                    <span class="mr-5"> {{startTime}} - {{endTime}}</span>
-                    <span class="font-weight-bold ml-1">{{summary}}</span>
+                    <div class="mr-sm-5 d-inline-block"> {{startTime}} - {{endTime}}</div>
+                    <div class="font-weight-bold ml-1 d-inline-block mt-3 mt-md-0">{{summary}}</div>
                 </div>
             </div>
         </a>
@@ -325,9 +325,11 @@
                     $("#section-events").hide();
                 } else {
                     for (let i = 0; i < payload.items.length; i++) {
-                        //to get img link (optional)
-                        /*let fileId = payload.items[i].attachments[0].fileId;
-                        payload.items[i].imgLink = "https://drive.google.com/uc?export=view&id=" + fileId;*/
+                        /*todo
+                        * to get img link
+                        * let fileId = payload.items[i].attachments[0].fileId;
+                        * payload.items[i].imgLink = "https://drive.google.com/uc?export=view&id=" + fileId;
+                        * */
 
                         //get fb link and remove it from description (split the part of the description where the fb link is added)
                         let description = payload.items[i].description;
@@ -348,7 +350,6 @@
                 }
             },
             error: function () {
-                console.log("Error occurred while loading upcoming events");
                 $("#section-events").hide();
             }
         });
