@@ -27,43 +27,36 @@
 
 <main>
     <!--main content goes here-->
-    <section style="background: url('../images/header-onelive.svg') right bottom no-repeat; height: 80vh">
+    <section style="background: url('../images/header-onelive.svg') right bottom no-repeat; height: 70vh">
         <!--Navbar is placed here to align the background image correctly-->
         <div id="navbar"></div>
         <div class="container">
-            <h1 class="mt-5 text-onelive" style="font-size: 3.3rem; line-height: 1.5;"><span
-                    class="font-weight-700">ONE</span>
-                LIVE</h1>
+            <h3 class="mt-5 text-onelive" style="font-size: 3rem; line-height: 1.5;"><span
+                    class="font-weight-700">PAST</span>
+                ONE LIVES</h3>
             <div class="col-lg-6 px-0 text-left">
-                <br class="mt-auto mb-auto">"OneLive" is an interactive webinar series done every weekend with the
-                experts in their fields.
-                "OneLive" is a trademark program of SEF with the vision to expand the knowledge of Sri Lankan
-                students and it will allow you to interact with the speaker via asking questions live.</br></p>
+                <h5 class="mb-0 text-muted">Ever miss out on our OneLive event streams? Not to worry – we’ve got it all
+                    saved for you hear to watch. Have a look around!
+                </h5>
             </div>
         </div>
     </section>
-
-    <section class="section bg-secondary">
+    <!--  Video gallery section  -->
+    <section class="section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-9 text-center">
-                    <h1 class="mb-0 text-onelive">Take a look at our past</h1>
-                    <p class="display-3 text-onelive font-weight-bolder">One Lives</p>
-                </div>
-            </div>
             <div class="row" id="youtube-videos">
                 <!--youtube video goes here-->
             </div>
             <div class="row justify-content-center mb-md-5">
                 <div class="col-9 text-center">
                     <button class="btn btn-onelive text-uppercase" id="btnLoadMore" onclick="loadYoutubeVideos()">
-                        See more past onelives
+                        Load More
                     </button>
                 </div>
             </div>
         </div>
     </section>
-
+    <!--  End of video gallery section  -->
 </main>
 
 <footer class="footer">
@@ -87,6 +80,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="/assets/js/navigation.js"></script>
+<!-- Moment JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="/assets/js/functions.js"></script>
 <script src="functions.js"></script>
 
@@ -100,19 +95,40 @@
 <script type="text/html"
         id="template-youtube-videos">
     {{#items}}
-    <div class="col-md-4 mb-5">
-        <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
-           target="_blank">
-            <div class="card shadow youtube-videos mb-4">
-                <img src="{{snippet.thumbnails.medium.url}}"
-                     alt="Rounded image"
-                     class="img-fluid rounded shadow img-full">
-                <div class="card-body">
-                    <h6>{{snippet.title}}</h6>
-                    <p>{{snippet.description}}</p>
+    <div class="row justify-content-center my-3 youtube-videos">
+        <div class="col-md-12">
+            <div class="card video-card rounded-05-rem shadow p-4 position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="{{snippet.thumbnails.medium.url}}"
+                             alt="title"
+                             class="img-fluid rounded-05-rem shadow d-inline-block">
+                    </div>
+                    <div class="col-md-8">
+                        <h5 class="font-weight-900 text-dark">
+                            {{snippet.title}}
+                        </h5>
+                        <span class="text-dark small">
+                            {{snippet.publishedAt}}
+                        </span>
+                        <p class="text-muted small video-description">
+                            {{snippet.description}}
+                        </p>
+                    </div>
                 </div>
+                <!-- Change button style by changing btn-youtube into anything you like ex: btn-onelive -->
+                <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
+                        style="right: 20px; bottom: 20px"
+                        href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
+                            <span class="original-content">
+                                <i class="fas fa-play"></i>
+                            </span>
+                    <span class="content-on-hover">
+                                Watch Now &nbsp;<i class="fas fa-play fa-sm"></i>
+                            </span>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
     {{/items}}
 </script>

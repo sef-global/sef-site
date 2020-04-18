@@ -19,9 +19,9 @@ function loadYoutubeVideos() {
             // Slice if the description if it is very long
             data.items.forEach((item) => {
                 const snippet = item.snippet;
-                if (snippet.description.length > 100) {
-                    snippet.description = snippet.description.slice(0, 80) + "...";
-                }
+                let date = snippet.publishedAt;
+                date = moment(date).format('LL');
+                snippet.publishedAt = date;
             });
             // Mustache render
             let renderedHtmlContent = Mustache.render(

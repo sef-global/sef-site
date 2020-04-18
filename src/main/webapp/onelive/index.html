@@ -228,6 +228,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="/assets/js/navigation.js"></script>
+<!-- Moment JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="/assets/js/functions.js"></script>
 <script src="functions.js"></script>
 
@@ -278,8 +280,9 @@
                      alt="Rounded image"
                      class="img-fluid rounded shadow img-full">
                 <div class="card-body">
-                    <h6>{{snippet.title}}</h6>
-                    <p>{{snippet.description}}</p>
+                    <h6 class="font-weight-bold">{{snippet.title}}</h6>
+                    <h6 class="small">{{snippet.publishedAt}}</h6>
+                    <p class="text-muted">{{snippet.description}}</p>
                 </div>
             </div>
         </a>
