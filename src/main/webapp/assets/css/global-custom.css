@@ -488,3 +488,23 @@ body{
 .faq .accordion .question .question-heading {
     padding-right: 30px;
 }
+
+.video-card:hover .content-on-hover {
+    display: block;
+}
+
+.video-card:hover .original-content, .video-card .content-on-hover {
+    display: none;
+}
+
+.video-card .video-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.rounded-05-rem {
+    border-radius: 0.5rem !important;
+}
