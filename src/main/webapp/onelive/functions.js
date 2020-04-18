@@ -11,6 +11,9 @@ function loadYoutubeVideos() {
                 if (snippet.description.length > 100) {
                     snippet.description = snippet.description.slice(0, 80) + "...";
                 }
+                let date = snippet.publishedAt;
+                date = moment(date).format('LL');
+                snippet.publishedAt = date;
             });
             // Mustache render
             let renderedData = Mustache.render(
