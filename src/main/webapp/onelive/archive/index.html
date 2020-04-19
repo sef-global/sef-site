@@ -95,39 +95,36 @@
 <script type="text/html"
         id="template-youtube-videos">
     {{#items}}
-    <div class="row justify-content-center my-3 youtube-videos">
-        <div class="col-md-12">
-            <div class="card video-card rounded-05-rem shadow p-4 position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <img src="{{snippet.thumbnails.medium.url}}"
-                             alt="title"
-                             class="img-fluid rounded-05-rem shadow d-inline-block">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="font-weight-900 text-dark">
-                            {{snippet.title}}
-                        </h5>
-                        <span class="text-dark small">
+    <div class="col-md-12 my-3 youtube-videos">
+        <div class="card video-card rounded-05-rem shadow p-4 position-relative">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="{{snippet.thumbnails.medium.url}}"
+                         alt="title"
+                         class="img-fluid rounded-05-rem shadow d-inline-block">
+                </div>
+                <div class="col-md-8">
+                    <h5 class="font-weight-900 text-dark">
+                        {{snippet.title}}
+                    </h5>
+                    <span class="text-dark small">
                             {{snippet.publishedAt}}
                         </span>
-                        <p class="text-muted small video-description">
-                            {{snippet.description}}
-                        </p>
-                    </div>
+                    <p class="text-muted small video-description">
+                        {{snippet.description}}
+                    </p>
                 </div>
-                <!-- Change button style by changing btn-youtube into anything you like ex: btn-onelive -->
-                <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
-                        style="right: 20px; bottom: 20px"
-                        href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
+            </div>
+            <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
+               style="right: 20px; bottom: 20px"
+               href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
                             <span class="original-content">
                                 <i class="fas fa-play"></i>
                             </span>
-                    <span class="content-on-hover">
+                <span class="content-on-hover">
                                 Watch Now &nbsp;<i class="fas fa-play fa-sm"></i>
                             </span>
-                </a>
-            </div>
+            </a>
         </div>
     </div>
     {{/items}}
