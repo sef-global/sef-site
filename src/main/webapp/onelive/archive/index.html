@@ -41,8 +41,15 @@
             </div>
         </div>
     </section>
+    <section id="youtubeVideoPlayer" style="display: none;padding-top: 25px">
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9" id="iframe">
+                <!-- video player goes here-->
+            </div>
+        </div>
+    </section>
     <!--  Video gallery section  -->
-    <section class="section">
+    <section style="padding-top: 10px">
         <div class="container">
             <div class="row" id="youtube-videos">
                 <!--youtube video goes here-->
@@ -115,9 +122,9 @@
                     </p>
                 </div>
             </div>
-            <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
-               style="right: 20px; bottom: 20px"
-               href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
+            <a class="btn btn-onelive position-absolute hover-element rounded-05-rem" href="#youtubeVideoPlayer"
+               onclick="loadYoutubeVideoPlayer('{{snippet.resourceId.videoId}}')"
+               style="right: 20px; bottom: 20px;">
                             <span class="original-content">
                                 <i class="fas fa-play"></i>
                             </span>

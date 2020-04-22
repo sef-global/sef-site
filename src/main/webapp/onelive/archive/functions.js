@@ -11,7 +11,7 @@ function loadYoutubeVideos() {
         url: url,
         dataType: 'json',
         success: function (data) {
-            fetchedItemCount = fetchedItemCount + data.items.length;
+            fetchedItemCount += data.items.length;
             if(fetchedItemCount === data.pageInfo.totalResults){
                 $("#btnLoadMore").hide();
             }
@@ -29,4 +29,10 @@ function loadYoutubeVideos() {
             $('#youtube-videos').append(renderedHtmlContent);
         }
     });
+}
+
+function loadYoutubeVideoPlayer(videoId) {
+    $("#youtubeVideoPlayer").show();
+    let iframeTag = '<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + videoId + '"></iframe>';
+    $('#iframe').html(iframeTag);
 }
