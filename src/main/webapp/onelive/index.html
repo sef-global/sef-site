@@ -318,7 +318,7 @@
     function loadUpcomingEvents() {
         $.ajax({
             type: 'GET',
-            url: 'https://sef-dataholder.herokuapp.com/calendar/onelive',
+            url: 'https://sef-dataholder.herokuapp.com/calendar/onelive?maxResults=3',
             dataType: 'json',
             success: function (payload) {
                 if (payload.items == null) {
