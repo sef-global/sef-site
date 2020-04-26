@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -45,9 +46,17 @@
     </section>
 
     <!--  upcoming events section  -->
-    <section class="section section-secondary mb-0 pb-100" id="section-events">
+    <section class="section section-secondary mb-0 pb-5" id="section-events">
         <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-9 text-center">
+                    <h1 class="mb-0 text-onelive">Upcoming Events</h1>
+                </div>
+            </div>
             <div class="row" id="upcoming-events">
+                <div class="col-md-12">
+                    <div class="h5 font-weight-normal text-muted text-center mt-4 status-text">Loading...</div>
+                </div>
             </div>
         </div>
     </section>
@@ -257,6 +266,7 @@
 <!-- Script for static navbar and footer -->
 <script src="/assets/js/navigation.js"></script>
 <script src="/assets/js/functions.js"></script>
+<script src="functions.js"></script>
 
 <script type="text/html" id="templateTeam">
     <div class="row">
@@ -286,10 +296,6 @@
 </script>
 
 <script id="upcoming-events-template" type="text/html">
-    <div class="col-sm-10 offset-1">
-        <h3>Upcoming</h3>
-    </div>
-
     {{#data}}
     <div class="col-10 offset-1">
         <a href="{{facebookLink}}" target="_blank">
@@ -313,47 +319,6 @@
         loadProfiles(); // load profiles
         loadFaqComponent();
     });
-
-    //function to load upcoming events
-    function loadUpcomingEvents() {
-        $.ajax({
-            type: 'GET',
-            url: 'https://sef-dataholder.herokuapp.com/calendar/onelive?maxResults=3',
-            dataType: 'json',
-            success: function (payload) {
-                if (payload.items == null) {
-                    $("#section-events").hide();
-                } else {
-                    for (let i = 0; i < payload.items.length; i++) {
-                        /*todo
-                        * to get img link
-                        * let fileId = payload.items[i].attachments[0].fileId;
-                        * payload.items[i].imgLink = "https://drive.google.com/uc?export=view&id=" + fileId;
-                        * */
-
-                        //get fb link and remove it from description (split the part of the description where the fb link is added)
-                        let description = payload.items[i].description;
-                        payload.items[i].facebookLink = description.substring(description.lastIndexOf('<a href') + 9, description.lastIndexOf('" id='));
-                        payload.items[i].description = description.substring(0, description.lastIndexOf('<a href'));
-                        //get date & time of the event
-                        let start = new Date(payload.items[i].start.dateTime);
-                        let end = new Date(payload.items[i].end.dateTime);
-                        payload.items[i].day = start.toLocaleDateString([], {weekday: 'short'});
-                        payload.items[i].month = start.toLocaleDateString([], {month: 'short'});
-                        payload.items[i].date = start.toLocaleDateString([], {day: '2-digit'});
-                        payload.items[i].startTime = start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
-                        payload.items[i].endTime = end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
-                        //Mustache render
-                        let content = Mustache.render($("#upcoming-events-template").html(), {"data": payload.items});
-                        $("#upcoming-events").html(content);
-                    }
-                }
-            },
-            error: function () {
-                $("#section-events").hide();
-            }
-        });
-    }
 
     //function to load profile data
     function loadProfiles() {
