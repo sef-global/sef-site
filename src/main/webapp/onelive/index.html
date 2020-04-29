@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -40,6 +41,22 @@
                 "OneLive" is a trademark program of SEF with the vision to expand the knowledge of Sri Lankan
                 students and it will allow you to interact with the speaker via asking questions live.</br></p>
                 <a class="btn btn-onelive text-uppercase" href="#past-onelives">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--  upcoming events section  -->
+    <section class="section section-secondary mb-0 pb-5" id="section-events">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-9 text-center">
+                    <h1 class="mb-0 text-onelive">Upcoming Events</h1>
+                </div>
+            </div>
+            <div class="row" id="upcoming-events">
+                <div class="col-md-12">
+                    <div class="h5 font-weight-normal text-muted text-center mt-4 status-text">Loading...</div>
+                </div>
             </div>
         </div>
     </section>
@@ -261,9 +278,27 @@
     </div>
 </script>
 
+<script id="upcoming-events-template" type="text/html">
+    {{#data}}
+    <div class="col-10 offset-1">
+        <a href="{{facebookLink}}" target="_blank">
+            <div class="card card-event shadow shadow-lg--hover mb-1 text-body">
+                <div class="card-body">
+                    <span class="h5 mr-1 card-event-date">{{date}}</span>
+                    <span class="small text-muted mr-4 text-uppercase">{{month}}, {{day}}</span>
+                    <div class="mr-sm-5 d-inline-block"> {{startTime}} - {{endTime}}</div>
+                    <div class="font-weight-bold ml-1 d-inline-block mt-3 mt-md-0">{{summary}}</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{/data}}
+</script>
+
 <script>
     $(function () {
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
+        loadUpcomingEvents(); //load upcoming events
         loadProfiles(); // load profiles
         loadFaqComponent();
         loadYoutubeVideos();
