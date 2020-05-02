@@ -96,6 +96,7 @@
     $(function () {
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
         loadYoutubeVideos();
+        loadVideoIfParamExists();
     });
 </script>
 
@@ -108,7 +109,7 @@
                 <div class="col-md-4">
                     <img src="{{snippet.thumbnails.medium.url}}"
                          alt="title"
-                         class="img-fluid rounded-05-rem shadow d-inline-block">
+                         class="img-fluid rounded-05-rem shadow d-inline-block"/>
                 </div>
                 <div class="col-md-8">
                     <h5 class="font-weight-900 text-dark">
