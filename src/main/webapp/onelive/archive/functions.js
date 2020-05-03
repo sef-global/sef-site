@@ -36,3 +36,10 @@ function loadYoutubeVideoPlayer(videoId) {
     let iframeTag = '<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + videoId + '"></iframe>';
     $('#iframe').html(iframeTag);
 }
+
+function loadVideoIfParamExists() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('videoId')) {
+        loadYoutubeVideoPlayer(urlParams.get('videoId'));
+    }
+}

@@ -309,30 +309,26 @@
         id="template-youtube-videos">
     {{#items}}
     <div class="col-md-4 mb-5">
-        <a href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}"
-           target="_blank">
-            <div class="card video-card shadow youtube-videos mb-4">
-                <img src="{{snippet.thumbnails.medium.url}}"
-                     alt="Rounded image"
-                     class="img-fluid rounded shadow img-full">
-                <div class="card-body">
-                    <h6 class="font-weight-bold">{{snippet.title}}</h6>
-                    <h6 class="small">{{snippet.publishedAt}}</h6>
-                    <p class="text-muted">{{snippet.description}}</p>
-                </div>
-                <!-- Change button style by changing btn-youtube into anything you like ex: btn-onelive -->
-                <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
-                   style="right: 20px; bottom: 20px"
-                   href="https://www.youtube.com/watch?v={{snippet.resourceId.videoId}}" target="_blank">
-                            <span class="original-content">
-                                <i class="fas fa-play"></i>
-                            </span>
-                    <span class="content-on-hover">
-                                Watch Now &nbsp;<i class="fas fa-play fa-sm"></i>
-                            </span>
-                </a>
+        <div class="card video-card shadow youtube-videos mb-4">
+            <img src="{{snippet.thumbnails.medium.url}}"
+                 alt="Rounded image"
+                 class="img-fluid rounded shadow img-full"/>
+            <div class="card-body">
+                <h6 class="font-weight-bold">{{snippet.title}}</h6>
+                <h6 class="small">{{snippet.publishedAt}}</h6>
+                <p class="text-muted">{{snippet.description}}</p>
             </div>
-        </a>
+            <a class="btn btn-onelive position-absolute hover-element rounded-05-rem"
+               style="right: 20px; bottom: 20px"
+               href="/onelive/archive/?videoId={{snippet.resourceId.videoId}}">
+                <span class="original-content">
+                    <i class="fas fa-play"></i>
+                </span>
+                <span class="content-on-hover">
+                    Watch Now &nbsp;<i class="fas fa-play fa-sm"></i>
+                </span>
+            </a>
+        </div>
     </div>
     {{/items}}
 </script>
