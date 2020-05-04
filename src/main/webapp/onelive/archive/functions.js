@@ -16,13 +16,6 @@ function loadYoutubeVideos() {
                 $("#btnLoadMore").hide();
             }
             nextPageToken = data.nextPageToken;
-            // Slice if the description if it is very long
-            data.items.forEach((item) => {
-                const snippet = item.snippet;
-                let date = snippet.publishedAt;
-                date = moment(date).format('LL');
-                snippet.publishedAt = date;
-            });
             // Mustache render
             let renderedHtmlContent = Mustache.render(
                 $('#template-youtube-videos').html(), {items: data.items});
