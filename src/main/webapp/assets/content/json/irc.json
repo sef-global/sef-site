@@ -214,5 +214,93 @@
     "social": {
       "linkedin": "gamalendira-shivapatham"
     }
+  },
+  {
+    "name": "Hasini Jayathilake",
+    "description": "Cancer research",
+    "image": "hasini.jpeg",
+    "social": {
+      "linkedin": "hasini-jayatilaka-ph-d-3026456a"
+    }
+  },
+  {
+    "name": "Nilushka Perera",
+    "description": "Health and Psychology",
+    "image": "nilushka.jpeg",
+    "social": {
+      "linkedin": "nilushkaperera"
+    }
+  },
+  {
+    "name": "Priyadharshany Sandanapitchai",
+    "description": "Clinical and Counseling Psychology",
+    "image": "priyadharshany.jpeg",
+    "social": {
+      "linkedin": "psandanapitchai"
+    }
+  },
+  {
+    "name": "Gayani Gunasekera",
+    "description": "Management and business",
+    "image": "gayani.jpeg",
+    "social": {
+      "linkedin": "gayani-gunasekera"
+    }
+  },
+  {
+    "name": "Prasangi Rajapaksha",
+    "description": "Chemistry",
+    "image": "prasangi.jpeg",
+    "social": {
+      "linkedin": "prasangi-rajapaksha-93099a72"
+    }
+  },
+  {
+    "name": "Heshan Jayawardane",
+    "description": "Sustainable Engineering",
+    "image": "heshanjayawardane.jpeg",
+    "social": {
+      "linkedin": "heshan-jayawardane-25a388aa"
+    }
+  },
+  {
+    "name": "Harshani Nainanayaka",
+    "description": "Invertebrates aquaculture",
+    "image": "harshani.jpeg",
+    "social": {
+      "linkedin": "harshani-nainanayaka-7006a914b"
+    }
+  },
+  {
+    "name": "Nirupama Abeysekara",
+    "description": "Parasitology and Genetics",
+    "image": "nirupama.jpeg",
+    "social": {
+      "linkedin": "nirupama-abeysekara-b4028818b"
+    }
+  },
+  {
+    "name": "Chandima Narangoda",
+    "description": "Chemistry",
+    "image": "chandima.jpeg",
+    "social": {
+      "linkedin": "chandima-narangoda-ab4083166"
+    }
+  },
+  {
+    "name": "Janindu Arukgoda",
+    "description": "Natural Language Processing",
+    "image": "janindu.jpeg",
+    "social": {
+      "linkedin": "janinduarukgoda"
+    }
+  },
+  {
+    "name": "Chirath Hettiarachchi",
+    "description": "Machine Learning & Health Informatics",
+    "image": "chirath.jpeg",
+    "social": {
+      "linkedin": "chirathyh"
+    }
   }
 ]
