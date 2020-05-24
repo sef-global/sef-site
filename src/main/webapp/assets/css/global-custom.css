@@ -530,3 +530,14 @@ body{
     border-radius: 50%;
     padding: .5rem .75rem;
 }
+
+/*logo display section*/
+.section-logo img:hover {
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.section-logo img{
+    height: 50px;
+    opacity: 0.5;
+}
