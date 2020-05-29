@@ -8,11 +8,19 @@
     }
   },
   {
-    "name": "Sumali Hewage",
-    "description": "Public Health",
-    "image": "sumali.jpeg",
+    "name": "Chamindie Punyadeera",
+    "description": "Cancer Diagnostic",
+    "image": "chamindie.jpeg",
     "social": {
-      "linkedin": "sumalih"
+      "linkedin": "chamindie-punyadeera"
+    }
+  },
+  {
+    "name": "Neelika Malavige",
+    "description": "Dengue Virus",
+    "image": "gathsaurie.jpeg",
+    "social": {
+      "linkedin": "gathsaurie-neelika-malavige-85b7b727"
     }
   },
   {
@@ -21,38 +29,6 @@
     "image": "sachith.jpeg",
     "social": {
       "linkedin": "sachith-gallolu-61560360"
-    }
-  },
-  {
-    "name": "Nadeera Nilupamali",
-    "description": "Virology",
-    "image": "nadeera.jpeg",
-    "social": {
-      "linkedin": "nadeeranilupamali"
-    }
-  },
-  {
-    "name": "Ashan Musafer",
-    "description": "Cancer diagnostics",
-    "image": "ashan.jpeg",
-    "social": {
-      "linkedin": "ashanmusafer"
-    }
-  },
-  {
-    "name": "Krishani Perera",
-    "description": "Pathobiology",
-    "image": "krishani.jpeg",
-    "social": {
-      "linkedin": "krishani-dinali-perera-4a94b1129"
-    }
-  },
-  {
-    "name": "Sitara Weerakoon",
-    "description": "Public Health",
-    "image": "sitara.jpeg",
-    "social": {
-      "linkedin": "sitaraweerakoon"
     }
   },
   {
@@ -65,10 +41,26 @@
   },
   {
     "name": "Chathura Sarathchandra",
-    "description": "Visulization techniques for next generation devices",
+    "description": "Visulization Techniques for Next Generation Devices",
     "image": "chathura.jpeg",
     "social": {
       "linkedin": "chathura77"
+    }
+  },
+  {
+    "name": "Hasini Jayathilake",
+    "description": "Cancer Research",
+    "image": "hasini.jpeg",
+    "social": {
+      "linkedin": "hasini-jayatilaka-ph-d-3026456a"
+    }
+  },
+  {
+    "name": "Kalhari Goonewardene",
+    "description": "Immunology",
+    "image": "kalhari.jpeg",
+    "social": {
+      "linkedin": "kalhari-goonewardene-9abb4321"
     }
   },
   {
@@ -80,14 +72,6 @@
     }
   },
   {
-    "name": "Chamindie Punyadeera",
-    "description": "Cancer Diagnostic",
-    "image": "chamindie.jpeg",
-    "social": {
-      "linkedin": "chamindie-punyadeera"
-    }
-  },
-  {
     "name": "Suren Rajakaruna",
     "description": "Car-T Immunotherapy",
     "image": "suren.jpg",
@@ -96,16 +80,56 @@
     }
   },
   {
-    "name": "Yadurshini Raveendran",
-    "description": "Global Health",
-    "image": "yudharshini.jpeg",
+    "name": "Priyadharshany Sandanapitchai",
+    "description": "Clinical and Counseling Psychology",
+    "image": "priyadharshany.jpeg",
     "social": {
-      "linkedin": "yraveendran"
+      "linkedin": "psandanapitchai"
+    }
+  },
+  {
+    "name": "Pramodh Chandrasinghe",
+    "description": "Cancer Research",
+    "image": "pramodh.jpeg",
+    "social": {
+      "linkedin": "pramodh-chandrasinghe-34491133"
+    }
+  },
+  {
+    "name": "Sumali Hewage",
+    "description": "Public Health",
+    "image": "sumali.jpeg",
+    "social": {
+      "linkedin": "sumalih"
+    }
+  },
+  {
+    "name": "Nadeera Nilupamali",
+    "description": "Virology",
+    "image": "nadeera.jpeg",
+    "social": {
+      "linkedin": "nadeeranilupamali"
+    }
+  },
+  {
+    "name": "Nilushka Perera",
+    "description": "Health and Psychology",
+    "image": "nilushka.jpeg",
+    "social": {
+      "linkedin": "nilushkaperera"
+    }
+  },
+  {
+    "name": "Ashan Musafer",
+    "description": "Cancer Diagnostics",
+    "image": "ashan.jpeg",
+    "social": {
+      "linkedin": "ashanmusafer"
     }
   },
   {
     "name": "Mirantha Jayathilake",
-    "description": "Ariticial Intelligence/ Machine learning",
+    "description": "Artificial Intelligence/ Machine Learning",
     "image": "mirantha.jpeg",
     "social": {
       "linkedin": "miranthajayathilaka"
@@ -120,14 +144,6 @@
     }
   },
   {
-    "name": "Neelika Malavige",
-    "description": "Dengue Virus",
-    "image": "gathsaurie.jpeg",
-    "social": {
-      "linkedin": "gathsaurie-neelika-malavige-85b7b727"
-    }
-  },
-  {
     "name": "Ruwandi Kariyawasam",
     "description": "Clinical Science",
     "image": "ruwandi.jpeg",
@@ -136,24 +152,8 @@
     }
   },
   {
-    "name": "Kalhari Goonewardene",
-    "description": "Immunology",
-    "image": "kalhari.jpeg",
-    "social": {
-      "linkedin": "kalhari-goonewardene-9abb4321"
-    }
-  },
-  {
-    "name": "Pramodh Chandrasinghe",
-    "description": "Cancer research",
-    "image": "pramodh.jpeg",
-    "social": {
-      "linkedin": "pramodh-chandrasinghe-34491133"
-    }
-  },
-  {
     "name": "Naresh Nandakumar",
-    "description": "Machine learning/ Data science",
+    "description": "Machine Learning/ Data Science",
     "image": "naresh.jpeg",
     "social": {
       "linkedin": "naresh-nandakumar-3b4322ba"
@@ -161,7 +161,7 @@
   },
   {
     "name": "Vishvapali Kobbekaduwa",
-    "description": "Disease ecology and Epidomiology",
+    "description": "Disease Ecology and Epidemiology",
     "image": "vishvapali.jpeg",
     "social": {
       "linkedin": "vishvapali-kobbekaduwa-6b775680"
@@ -185,7 +185,7 @@
   },
   {
     "name": "Iroshan Abeyrathne",
-    "description": "Mathematical modeling/Machine learning",
+    "description": "Mathematical Modeling/Machine Learning",
     "image": "iroshan.jpeg",
     "social": {
       "linkedin": "iroshan-aberathne"
@@ -193,7 +193,7 @@
   },
   {
     "name": "Yomani Sarathkumara",
-    "description": "Molecular Biology/ Omics technologies",
+    "description": "Molecular Biology/ Omics Technologies",
     "image": "yomani.jpeg",
     "social": {
       "linkedin": "yomani-sarathkumara-42076a83"
@@ -201,7 +201,7 @@
   },
   {
     "name": "Sohani Liyanage",
-    "description": "Simulation models for ride sharing",
+    "description": "Simulation Models for Ride Sharing",
     "image": "sohani.jpeg",
     "social": {
       "linkedin": "sohani-liyanage-69589355"
@@ -209,39 +209,15 @@
   },
   {
     "name": "Gamalendira Sivapatham",
-    "description": "Biomedical engineering",
+    "description": "Biomedical Engineering",
     "image": "gamalendira.jpeg",
     "social": {
       "linkedin": "gamalendira-shivapatham"
     }
   },
   {
-    "name": "Hasini Jayathilake",
-    "description": "Cancer research",
-    "image": "hasini.jpeg",
-    "social": {
-      "linkedin": "hasini-jayatilaka-ph-d-3026456a"
-    }
-  },
-  {
-    "name": "Nilushka Perera",
-    "description": "Health and Psychology",
-    "image": "nilushka.jpeg",
-    "social": {
-      "linkedin": "nilushkaperera"
-    }
-  },
-  {
-    "name": "Priyadharshany Sandanapitchai",
-    "description": "Clinical and Counseling Psychology",
-    "image": "priyadharshany.jpeg",
-    "social": {
-      "linkedin": "psandanapitchai"
-    }
-  },
-  {
     "name": "Gayani Gunasekera",
-    "description": "Management and business",
+    "description": "Management and Business",
     "image": "gayani.jpeg",
     "social": {
       "linkedin": "gayani-gunasekera"
@@ -253,22 +229,6 @@
     "image": "prasangi.jpeg",
     "social": {
       "linkedin": "prasangi-rajapaksha-93099a72"
-    }
-  },
-  {
-    "name": "Heshan Jayawardane",
-    "description": "Sustainable Engineering",
-    "image": "heshanjayawardane.jpeg",
-    "social": {
-      "linkedin": "heshan-jayawardane-25a388aa"
-    }
-  },
-  {
-    "name": "Harshani Nainanayaka",
-    "description": "Invertebrates aquaculture",
-    "image": "harshani.jpeg",
-    "social": {
-      "linkedin": "harshani-nainanayaka-7006a914b"
     }
   },
   {
@@ -288,6 +248,14 @@
     }
   },
   {
+    "name": "Chirath Hettiarachchi",
+    "description": "Machine Learning & Health Informatics",
+    "image": "chirath.jpeg",
+    "social": {
+      "linkedin": "chirathyh"
+    }
+  },
+  {
     "name": "Janindu Arukgoda",
     "description": "Natural Language Processing",
     "image": "janindu.jpeg",
@@ -296,11 +264,51 @@
     }
   },
   {
-    "name": "Chirath Hettiarachchi",
-    "description": "Machine Learning & Health Informatics",
-    "image": "chirath.jpeg",
+    "name": "Krishani Perera",
+    "description": "Pathobiology",
+    "image": "krishani.jpeg",
     "social": {
-      "linkedin": "chirathyh"
+      "linkedin": "krishani-dinali-perera-4a94b1129"
+    }
+  },
+  {
+    "name": "Sitara Weerakoon",
+    "description": "Public Health",
+    "image": "sitara.jpeg",
+    "social": {
+      "linkedin": "sitaraweerakoon"
+    }
+  },
+  {
+    "name": "Heshan Jayawardane",
+    "description": "Sustainable Engineering",
+    "image": "heshanjayawardane.jpeg",
+    "social": {
+      "linkedin": "heshan-jayawardane-25a388aa"
+    }
+  },
+  {
+    "name": "Yadurshini Raveendran",
+    "description": "Global Health",
+    "image": "yudharshini.jpeg",
+    "social": {
+      "linkedin": "yraveendran"
+    }
+  },
+  {
+    "name": "Harshani Nainanayaka",
+    "description": "Invertebrates Aquaculture",
+    "image": "harshani.jpeg",
+    "social": {
+      "linkedin": "harshani-nainanayaka-7006a914b"
+    }
+  },
+  {
+    "name": "Vinuri Fernando",
+    "description": "Psychology",
+    "image": "vinuri.jpeg",
+    "social": {
+      "linkedin": "vinuri-fernando-360b121a6"
     }
   }
 ]
