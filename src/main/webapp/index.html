@@ -58,6 +58,76 @@
         </div>
     </section>
 
+    <section class="section section-logo">
+        <div class="container-fluid text-center">
+            <h4 class="font-weight-900 text-dark text-center text-capitalize mb-5">Our mentors and speakers are from*</h4>
+            <div class="row pb-3">
+                <div class="col-lg-2 offset-lg-1 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/google.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/facebook.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/microsoft.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/apple.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/linkedin.png">
+                    </a>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-2 offset-lg-1 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/mit.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/stanford.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/harvard.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/oxford.png">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-4 pr-5">
+                    <a href="#">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/cambridge.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <img src="assets/img/homepage/Polygon%207.png" class="d-none d-md-block"
              style="position: absolute; left: -270px; top: 0px; max-width: 50%">
@@ -366,10 +436,20 @@
 <script src="assets/js/global-custom-js.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
+<script id="star-note-content" type="text/html">
+    <p class="small text-muted text-left mb-0"> *Our mentors and speakers engage in mentoring and speaking voluntarily
+        in their leisure time<br> and we don't have a direct affiliation with the mentioned organisations</p>
+</script>
 <script>
     $(function () {
         loadNavAndFooter('assets/content/static')  //relative path to content directory
         // link to the navbar, footer content goes here
+    });
+
+    $(document).ajaxComplete(function () {
+        $("#star-note").html(
+            $("#star-note-content").html()
+        )
     })
 </script>
 </html>
