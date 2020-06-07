@@ -201,6 +201,14 @@
   ],
   "techTeam" : [
     {
+      "name": "Yohan Ediriweera",
+      "description": "Tech Lead",
+      "image": "yohan.jpeg",
+      "social": {
+        "linkedin": "ya-ediriweera-b99b7b175"
+      }
+    },
+    {
       "name": "Piumal Rathnayaka",
       "description": "Senior Software Engineer",
       "image": "piumal.jpg",
@@ -222,6 +230,14 @@
       "image": "anjula.jpg",
       "social": {
         "linkedin": "anjula-sack"
+      }
+    },
+    {
+      "name": "Gimhan Wijayawardana",
+      "description": "Associate Software Engineer",
+      "image": "gimhan.jpeg",
+      "social": {
+        "linkedin": "gimhan-wijayawardana-7b983b196"
       }
     }
   ],
