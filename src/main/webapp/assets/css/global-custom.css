@@ -540,3 +540,24 @@ body{
 .section-logo img{
     opacity: 0.5;
 }
+
+/*our projects display section*/
+.project-img {
+    padding: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.project-card {
+    border-radius: 1.5rem;
+}
+
+.project-stat {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.stats {
+    font-size: 13px;
+}
