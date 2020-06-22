@@ -561,3 +561,9 @@ body{
 .stats {
     font-size: 13px;
 }
+
+@media (min-width: 576px) { 
+    .carousel-item{
+        height: 200px;
+    }
+}
