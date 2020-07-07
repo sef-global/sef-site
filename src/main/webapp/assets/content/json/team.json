@@ -9,6 +9,14 @@
       }
     },
     {
+      "name": "Minuri Adasuriya",
+      "description": "Diversity & Inclusion Lead, Asia at Lendlease",
+      "image": "minuri.jpeg",
+      "social": {
+        "linkedin": "minuri"
+      }
+    },
+    {
       "name": "Bhagya Nirmaan Silva",
       "description": "CTO at Loftux",
       "image": "bhagya.jpg",
@@ -30,14 +38,6 @@
       "image": "rohan.jpeg",
       "social": {
         "linkedin": "rohan-jayaweera-9b42a95"
-      }
-    },
-    {
-      "name": "Minuri Adasuriya",
-      "description": "Diversity & Inclusion Lead, Asia at Lendlease",
-      "image": "minuri.jpeg",
-      "social": {
-        "linkedin": "minuri"
       }
     }
   ],
@@ -136,7 +136,7 @@
     },
     {
       "name": "Francisco Hettige Cristian Silva",
-      "description": "Product Manager",
+      "description": "Program Manager",
       "image": "fransisco.jpeg",
       "social": {
         "linkedin": "francisco-cristian-silva-159708108"
@@ -144,7 +144,7 @@
     },
     {
       "name": "Asel Peiris",
-      "description": "Assistant Program Manager",
+      "description": "Program Manager",
       "image": "asel.jpeg",
       "social": {
         "linkedin": "asel-peiris-76536158"
@@ -164,22 +164,6 @@
       "image": "vithusan.jpeg",
       "social": {
         "linkedin": "vithusan97"
-      }
-    },
-    {
-      "name": "Ganguli Rajapaksha",
-      "description": "Assistant Product Manager",
-      "image": "ganguli.jpeg",
-      "social": {
-        "linkedin": "ganguli-rajapaksha-59a429164"
-      }
-    },
-    {
-      "name": "Janarthan Jeyachandran",
-      "description": "Chief Creative Officer",
-      "image": "janarthan.jpeg",
-      "social": {
-        "linkedin": "janarthan-jeyachandran-42249b148"
       }
     },
     {
