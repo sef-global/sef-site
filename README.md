@@ -35,7 +35,10 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
     ```
     npm install
     ```
-- Start the server with `npm start`
+- Start the server with 
+    ```
+    npm start
+    ```
 
 - Visit your app at http://localhost:9000
 
