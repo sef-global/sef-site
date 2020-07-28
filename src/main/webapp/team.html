@@ -131,6 +131,19 @@
     </div>
 </section>
 
+<section class="section pb-0">
+    <div class="container">
+        <p class="display-3 text-center mb-5 ">Alumni</p>
+
+        <!--Profile cards goes here-->
+        <div id="alumni"></div>
+
+        <div class="row justify-content-center">
+            <button id="btnShowMore_alumni" class="btn btn-link btn-outline-white btn-info mb-3">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div id="footer"></div>
     <!--footer goes here -->
@@ -201,6 +214,7 @@
                 let executiveCommitee = payload.executiveCommitee;
                 let techTeam = payload.techTeam;
                 let designTeam = payload.designTeam;
+                let alumni = payload.alumni
 
                 loadData("advisoryPanel", advisoryPanel);
                 loadData("consultants", consultants);
@@ -208,6 +222,7 @@
                 loadData("executiveCommitee", executiveCommitee);
                 loadData("techTeam", techTeam);
                 loadData("designTeam", designTeam);
+                loadData("alumni", alumni);
 
             }
         });
