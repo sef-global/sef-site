@@ -562,8 +562,35 @@ body{
     font-size: 13px;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 120px) {
     .carousel-item{
         height: 200px;
+    }
+
+    .align-sm-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .hide-sm-image{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .align-md-right {
+        display: block;
+        float: right;
+    }
+
+    .align-md-left {
+        display: block;
+        float: left;
+    }
+
+    .hide-md-image{
+        display: none;
     }
 }
