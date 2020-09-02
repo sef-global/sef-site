@@ -1,4 +1,7 @@
 /*Add custom styles for the scholarx 2020 page here*/
+body {
+    overflow-x: hidden;
+}
 .timeline {
     list-style-type: none;
     position: relative;
