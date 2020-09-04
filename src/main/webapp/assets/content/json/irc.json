@@ -382,5 +382,61 @@
     "social": {
       "linkedin": "vinuri-fernando-360b121a6"
     }
+  },
+  {
+    "name": "Kasun Bandara",
+    "description": "Data Science",
+    "image": "kasunbandara.jpeg",
+    "social": {
+      "linkedin": "bandarakasun"
+    }
+  },
+  {
+    "name": "Ravihansa Rajapakse",
+    "description": "Computer Science (HCI)",
+    "image": "ravihansa.jpg",
+    "social": {
+      "linkedin": "ravihansarajapakse"
+    }
+  },
+  {
+    "name": "Malinga Perera",
+    "description": "Computer Science",
+    "image": "malinga.jpeg",
+    "social": {
+      "linkedin": "malingaperera"
+    }
+  },
+  {
+    "name": "Rangana Shalika",
+    "description": "Eco-Tourism",
+    "image": "rangana.jpeg",
+    "social": {
+      "linkedin": "dr-rangana-shalika-77a77179"
+    }
+  },
+  {
+    "name": "Amali Shanya Fernando",
+    "description": "Molecular Biology",
+    "image": "amali.jpeg",
+    "social": {
+      "linkedin": "amali-fernando-944511108"
+    }
+  },
+  {
+    "name": "Nadun Dissanayake",
+    "description": "Computational and Applied Mathematics",
+    "image": "nadundissanayake.jpeg",
+    "social": {
+      "linkedin": "nadun-dissanayake-46a952a0"
+    }
+  },
+  {
+    "name": "Jerome Dinal Herath",
+    "description": "Computer Science",
+    "image": "jerome.jpeg",
+    "social": {
+      "linkedin": "jerome-dinal-herath"
+    }
   }
 ]
