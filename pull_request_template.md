@@ -1,6 +1,6 @@
 ## Purpose
 <!--- Describe the problems, issues, or needs driving this feature/fix and include links to related issues -->
-The purpose of this PR is to fix #<issue-number>
+The purpose of this PR is to fix #<773>
 
 ## Goals
 <!---  Describe the solutions that this feature/fix will introduce to resolve the problems described above -->
@@ -18,11 +18,11 @@ https://pr-{PR_NUMBER}-sef-site.surge.sh/
 
 ##  Checklist
 - [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
-- [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
+- [X] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
+- [X] My code follows the style guidelines of this project
+- [X] I have performed a self-review of my own code
+- [X] I have commented my code, particularly in hard-to-understand areas
+- [X] I have made corresponding changes to the documentation
 
 ## Related PRs
 <!--- List any other related PRs --> 
