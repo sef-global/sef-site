@@ -19,7 +19,7 @@ function loadYoutubeVideos() {
             // Mustache render
             let renderedHtmlContent = Mustache.render(
                 $('#template-youtube-videos').html(), {items: data.items});
-            $('#youtube-videos').append(renderedHtmlContent);
+          $(renderedHtmlContent).appendTo('#youtube-videos').hide().fadeIn(1500);
         }
     });
 }
