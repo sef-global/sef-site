@@ -31,7 +31,7 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
     git clone https://github.com/USERNAME/sef-site
     cd sef-site
     ```
-- Install all the dependecies
+- Install all the dependencies
     ```
     npm install
     ```
