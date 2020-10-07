@@ -352,6 +352,78 @@
     }
   },
   {
+    "name": "Sanjanee Waniganeththi",
+    "description": "Nuclear Physics",
+    "image": "sanjanee.jpg",
+    "social": {
+      "linkedin": "sanjanee-waniganeththi-92b3a3111"
+    }
+  },
+  {
+    "name": "Scynthya Nirukshan",
+    "description": "Bioscience Engineering",
+    "image": "scynthya.jpg",
+    "social": {
+      "linkedin": "gertrude-scynthya-nirukshan-a213476a"
+    }
+  },
+  {
+    "name": "Sumudu Herath",
+    "description": "Civil Engineering",
+    "image": "sumudu.jpg",
+    "social": {
+      "linkedin": "sumuduherath"
+    }
+  },
+  {
+    "name": "Maneesha Perera",
+    "description": "Engineering",
+    "image": "maneeshaperera.jpg",
+    "social": {
+      "linkedin": "maneeshaperera"
+    }
+  },
+  {
+    "name": "Madhushi Bandara",
+    "description": "Computer Science",
+    "image": "madhushibandara.jpg",
+    "social": {
+      "linkedin": "madhushib"
+    }
+  },
+  {
+    "name": "Udara Abeydeera",
+    "description": "Sustainable Construction",
+    "image": "udara.jpg",
+    "social": {
+      "linkedin": "udara-abeydeera-1797a476"
+    }
+  },
+  {
+    "name": "Sanath Wijesinghe",
+    "description": "Law",
+    "image": "sanath.jpg",
+    "social": {
+      "linkedin": "sanath-sameera-wijesinghe-99699097"
+    }
+  },
+  {
+    "name": "Paranietharan Arunagirinathan",
+    "description": "Electrical Engineering",
+    "image": "paranietharan.jpg",
+    "social": {
+      "linkedin": "paranietharan-arunagirinathan-07162330"
+    }
+  },
+  {
+    "name": "Deshya Wijesundera",
+    "description": "Digital Design and Computer Architecture",
+    "image": "deshya.jpg",
+    "social": {
+      "linkedin": "deshya-wijesundera-phd-2b3850168"
+    }
+  },
+  {
     "name": "Heshan Jayawardane",
     "description": "Sustainable Engineering",
     "image": "heshanjayawardane.jpeg",
