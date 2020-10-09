@@ -17,14 +17,6 @@
       }
     },
     {
-      "name": "Bhagya Nirmaan Silva",
-      "description": "CTO at Loftux",
-      "image": "bhagya.jpg",
-      "social": {
-        "linkedin": "bhagyas"
-      }
-    },
-    {
       "name": "Heminda Jayaweera",
       "description": "Co-Founder at Venture Frontier Lanka",
       "image": "heminda.jpg",
@@ -38,6 +30,14 @@
       "image": "rohan.jpeg",
       "social": {
         "linkedin": "rohan-jayaweera-9b42a95"
+      }
+    },
+    {
+      "name": "Bhagya Nirmaan Silva",
+      "description": "CTO at Loftux",
+      "image": "bhagya.jpg",
+      "social": {
+        "linkedin": "bhagyas"
       }
     }
   ],
@@ -97,7 +97,7 @@
     {
       "name": "Akshika Wijesundara",
       "description": "Chairperson",
-      "image": "akshika.jpg",
+      "image": "akshika.jpeg",
       "social": {
         "linkedin": "akshika"
       }
@@ -111,27 +111,11 @@
       }
     },
     {
-      "name": "Tharika Weerakoon",
-      "description": "Program Manager",
-      "image": "tharika.jpeg",
-      "social": {
-        "linkedin": "tharika-weerakoon-888b1487"
-      }
-    },
-    {
       "name": "Saumiyaa Pathmarajah",
       "description": "Program Manager",
       "image": "saumiyaa.jpeg",
       "social": {
         "linkedin": "saumiyaa-pathmarajah-29b988160"
-      }
-    },
-    {
-      "name": "Francisco Hettige Cristian Silva",
-      "description": "Program Manager",
-      "image": "fransisco.jpeg",
-      "social": {
-        "linkedin": "francisco-cristian-silva-159708108"
       }
     },
     {
@@ -143,27 +127,35 @@
       }
     },
     {
-      "name": "Nimesh Ekanayake",
-      "description": "Assistant Program Manager",
-      "image": "nimesh.jpeg",
+      "name": "Viraj C. Kirinda",
+      "description": "Program Manager",
+      "image": "viraj.jpeg",
       "social": {
-        "linkedin": "nimeshkasun"
+        "linkedin": "viraj-c-kirinda-72250186"
       }
     },
     {
-      "name": "Thavarasa Vithusan",
-      "description": "Assistant Program Manager",
-      "image": "vithusan.jpeg",
+      "name": "Promodini Jayakodi",
+      "description": "Assitant Program Manager",
+      "image": "promodini.jpeg",
       "social": {
-        "linkedin": "vithusan97"
+        "linkedin": "promodini-jayakodi-3408a999"
       }
     },
     {
-      "name": "Ahrane Mahaganapathy",
-      "description": "Assistant Secretary",
-      "image": "ahrane.jpeg",
+      "name": "Aathil Ahamed",
+      "description": "Assitant Program Manager",
+      "image": "aathil.jpeg",
       "social": {
-        "linkedin": "ahrane-mahaganapathy-943b34165"
+        "linkedin": "aathilks"
+      }
+    },
+    {
+      "name": "Shreeharan Hareendran",
+      "description": "Digital Marketing Executive",
+      "image": "shreeharan.jpeg",
+      "social": {
+        "linkedin": "shreeharanhareendran"
       }
     },
     {
@@ -172,6 +164,14 @@
       "image": "janith.jpeg",
       "social": {
         "linkedin": "janith-silva"
+      }
+    },
+    {
+      "name": "Ahrane Mahaganapathy",
+      "description": "Assistant Secretary",
+      "image": "ahrane.jpeg",
+      "social": {
+        "linkedin": "ahrane-mahaganapathy-943b34165"
       }
     }
   ],
@@ -198,6 +198,14 @@
       "image": "heshanandrews.png",
       "social": {
         "linkedin": "heshan-andrews-427028182"
+      }
+    },
+    {
+      "name": "Miluckshan Jalagan",
+      "description": "Senior Software Engineer",
+      "image": "milukshan.jpeg",
+      "social": {
+        "linkedin": "miluckshan-j"
       }
     },
     {
@@ -506,6 +514,38 @@
       "image": "shenal.jpg",
       "social": {
         "linkedin": "shenalsenarath"
+      }
+    },
+    {
+      "name": "Tharika Weerakoon",
+      "description": "Program Manager",
+      "image": "tharika.jpeg",
+      "social": {
+        "linkedin": "tharika-weerakoon-888b1487"
+      }
+    },
+    {
+      "name": "Thavarasa Vithusan",
+      "description": "Assistant Program Manager",
+      "image": "vithusan.jpeg",
+      "social": {
+        "linkedin": "vithusan97"
+      }
+    },
+    {
+      "name": "Francisco Hettige Cristian Silva",
+      "description": "Program Manager",
+      "image": "fransisco.jpeg",
+      "social": {
+        "linkedin": "francisco-cristian-silva-159708108"
+      }
+    },
+    {
+      "name": "Nimesh Ekanayake",
+      "description": "Assistant Program Manager",
+      "image": "nimesh.jpeg",
+      "social": {
+        "linkedin": "nimeshkasun"
       }
     }
   ]
