@@ -95,28 +95,35 @@
     </section>
 
     <!--    FAQ section-->
-    <section id="faq-section" class="section section-secondary">
+    <section class="section faq" id="section-faq" style="background-color: #f8fdff">
         <div class="container">
-            <h2 class="text-center">Frequently Asked Questions</h2>
-
-            <div class="container">
+            <h1 class="mb-0 text-onelive font-weight-bold text-center">Frequently Asked Questions</h1>
+            <!--FAQ Accordion-->
+            <div class="accordion">
                 <div class="row">
-                    <div class="col-md-11 my-4 ml-auto mr-auto">
-                        <div class="accordion" id="accordionExample">
-                            <div class="py-3 card-toggle" style="border-radius: 0.6rem">
-                                <div class="" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link w-100 text-dark text-left collapsed panel text-capitalize"
-                                                type="button"
-                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                                aria-controls="collapseOne">
-                                            Why should I volunteer?
-                                            <i class="plusMinusSign fa float-right fa-plus"></i>
-                                        </button>
-                                    </h5>
+                    <div class="col-md-12 ml-auto">
+                        <div class="accordion my-3" id="accordion-1">
+                            <div class="py-3 card-toggle qa-card">
+                                <div class="" id="heading-1">
+                                    <div
+                                            class="text-dark text-left collapsed panel question"
+                                            data-toggle="collapse"
+                                            data-target="#collapse-1"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-1">
+                                        <div class="question-heading">
+                                            Why Should I Volunteer?
+                                        </div>
+                                        <div class="text-primary collapse-sign">
+                                            <i class="plusMinusSign fa fa-plus float-right"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                     data-parent="#accordionExample">
+                                <div
+                                        id="collapse-1"
+                                        class="collapse"
+                                        aria-labelledby="heading-1"
+                                        data-parent="#accordion-1">
                                     <div class="card-body opacity-8">
                                         <ul>
                                             <li>
@@ -139,43 +146,56 @@
                                                 professionals
                                             </li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
-                            <div class="py-3 card-toggle" style="border-radius: 0.6rem">
-                                <div class="" id="headingTwo">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link w-100 text-dark text-left collapsed panel text-capitalize"
-                                                type="button" data-toggle="collapse" data-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="py-3 card-toggle qa-card">
+                                <div class="" id="heading-2">
+                                    <div
+                                            class="text-dark collapsed panel question"
+                                            data-toggle="collapse"
+                                            data-target="#collapse-2"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-2">
+                                        <div class="question-heading">
                                             Should I be in Sri Lanka to volunteer?
-                                            <i class="plusMinusSign fa float-right fa-plus"></i>
-                                        </button>
-                                    </h5>
+                                        </div>
+                                        <div class="text-primary collapse-sign"><i
+                                                class="plusMinusSign fa fa-plus float-right"></i></div>
+                                    </div>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
-                                     data-parent="#accordionExample">
-                                    <div class="card-body opacity-8">
+                                <div
+                                        id="collapse-2"
+                                        class="collapse"
+                                        aria-labelledby="heading-2"
+                                        data-parent="#accordion-1">
+                                    <div class="card-body opacity-8 text-left">
                                         No, anybody can volunteer from anywhere. 90% of our work happens remotely, we
                                         have volunteers from all around the world working in different time zones.
                                     </div>
                                 </div>
                             </div>
-                            <div class="py-3 card-toggle" style="border-radius: 0.6rem">
-                                <div class="" id="headingThree">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link w-100 text-dark text-left collapsed panel text-capitalize"
-                                                type="button" data-toggle="collapse" data-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
+                            <div class="py-3 card-toggle qa-card">
+                                <div class="" id="heading-3">
+                                    <div
+                                            class="text-dark collapsed panel question"
+                                            data-toggle="collapse"
+                                            data-target="#collapse-3"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-3">
+                                        <div class="question-heading">
                                             Who can volunteer?
-                                            <i class="plusMinusSign fa float-right fa-plus"></i>
-                                        </button>
-                                    </h5>
+                                        </div>
+                                        <div class="text-primary collapse-sign"><i
+                                                class="plusMinusSign fa fa-plus float-right"></i></div>
+                                    </div>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
-                                     data-parent="#accordionExample">
-                                    <div class="card-body opacity-8">
+                                <div
+                                        id="collapse-3"
+                                        class="collapse"
+                                        aria-labelledby="heading-3"
+                                        data-parent="#accordion-1">
+                                    <div class="card-body opacity-8 text-justify">
                                         Submit your application via the application link below. If you have the skills
                                         and
                                         enthusiasm we are looking for, you will be called for a phone interview.
@@ -190,8 +210,10 @@
                     </div>
                 </div>
             </div>
+            <!--FAQ Accordion-->
         </div>
     </section>
+    
 
     <!-- Sign up section -->
     <section class="section">
@@ -239,9 +261,11 @@
 <script src="assets/js/global-custom-js.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
+<script src="assets/js/functions.js"></script>
 <script>
     $(function () {
-        loadNavAndFooter('assets/content/static')  //relative path to content directory
+        loadNavAndFooter('assets/content/static')
+        loadFaqComponent()  //relative path to content directory
         // link to the navbar, footer content goes here
     })
 </script>
