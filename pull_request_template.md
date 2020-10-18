@@ -17,7 +17,7 @@ The purpose of this PR is to fix #<issue-number>
 https://pr-{PR_NUMBER}-sef-site.surge.sh/
 
 ##  Checklist
-- [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
+- [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
 - [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
