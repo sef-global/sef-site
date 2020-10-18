@@ -130,11 +130,11 @@ body{
 .imgIcon {
     transition: .5s ease;
     opacity: 0;
-    position: absolute;
-    top: 45%;
+    position: relative;
+    top: -110%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -110%);
+    -ms-transform: translate(-50%, -110%);
     text-align: center;
 }
 
