@@ -510,5 +510,85 @@
     "social": {
       "linkedin": "jerome-dinal-herath"
     }
+  },
+  {
+    "name": "Kiramage Chathuranga",
+    "description": "Veterinary medicine",
+    "image": "chathuranga.jpeg",
+    "social": {
+      "linkedin": "chathuranga-kiramage-38b3525b"
+    }
+  },
+  {
+    "name": "Asanka Bandara",
+    "description": "Chemistry(Rubber technology)",
+    "image": "asanka.jpeg",
+    "social": {
+      "linkedin": "asanka-roshan-bandara-87012b62"
+    }
+  },
+  {
+    "name": "Charitha Gamlath",
+    "description": "Chemical Engineering",
+    "image": "charitha.jpeg",
+    "social": {
+      "linkedin": "charitha-gamlath-15277759"
+    }
+  },
+  {
+    "name": "Sachinthana Pathiranage",
+    "description": "Electrical and Computer Systems Engineering",
+    "image": "sachinthana.jpeg",
+    "social": {
+      "linkedin": "sachinthana-pathirana"
+    }
+  },
+  {
+    "name": "Sanje Mahasivam",
+    "description": "Applied Chemistry",
+    "image": "sanje.jpeg",
+    "social": {
+      "linkedin": "sanje-mahasivam-069b9818"
+    }
+  },
+  {
+    "name": "Mukunthan Tharmakulasingam",
+    "description": "Machine Learning",
+    "image": "mukunthan.jpeg",
+    "social": {
+      "linkedin": "mukunthant"
+    }
+  },
+  {
+    "name": "Samintha Perera",
+    "description": "Civil Engineering",
+    "image": "samintha.jpeg",
+    "social": {
+      "linkedin": "dr-samintha-perera-8b89648b"
+    }
+  },
+  {
+    "name": "Tharindu Wickramaarachchi",
+    "description": "Mathematical Modeling",
+    "image": "tharinduw.jpeg",
+    "social": {
+      "linkedin": "tharindu-wickramaarachchi-42b1076b"
+    }
+  },
+  {
+    "name": "Majeed Aslam Saja",
+    "description": "Built Environment/Resilience/Risk Management",
+    "image": "saja.jpg",
+    "social": {
+      "linkedin": "sajaaslam"
+    }
+  },
+  {
+    "name": "Jayaruwan Gunathilake",
+    "description": "Chemistry",
+    "image": "jayaruwan.jpeg",
+    "social": {
+      "linkedin": "jayaruwangunathilake"
+    }
   }
 ]
