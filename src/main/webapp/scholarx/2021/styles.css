@@ -1,0 +1,121 @@
+/*Add custom styles for the scholarx 2020 page here*/
+.timeline {
+    list-style-type: none;
+    position: relative;
+    color: #3b53de;
+}
+.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.hover-profile-card .img {
+    cursor: pointer;
+}
+
+.featured-story img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.featured-stories .card {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.featured-story .card-body {
+    padding-bottom: 0;
+}
+
+.featured-story .card-footer .stats i {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.featured-story .card-footer {
+    font-size: 0.9em;
+    padding-top: 0;
+}
+
+.featured-story .author span{
+    color: #6f81a4;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.past-section{
+    background-color: #f8fdff
+}
+
+.profile-image{
+    width: 150px;
+    margin-top: 10px;
+}
+
+.profile-modal .close {
+    margin: -1.25rem -1.25rem -1.25rem auto;
+    padding: 1.25rem;
+}
+
+.faq .accordion .question {
+    font-size: 1.2em;
+    padding-left: 24px;
+    padding-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq .accordion .collapse-sign {
+    margin: -1.25rem -1.25rem -1.25rem auto;
+    padding: 0 50px 1.25rem 1.25rem;
+}
+
+.faq .accordion .qa-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq .accordion .question .question-heading {
+    padding-right: 30px;
+}
+
+.mentor-title {
+    font-size: 0.9em;
+}
+
+.alert-danger
+{
+    color: #fff;
+    border-color: #FFC73D;
+    background-color: #FDC63C;
+}
+.alert-danger hr
+{
+    border-top-color: #FCC63B;
+}
+.alert-danger .alert-link
+{
+    color: #fbc53b;
+}
