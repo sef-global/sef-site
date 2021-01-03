@@ -183,7 +183,7 @@
       "social": {
         "linkedin": "ya-ediriweera-b99b7b175"
       }
-    },
+    },  
     {
       "name": "Piumal Rathnayaka",
       "description": "Senior Software Engineer",
@@ -194,7 +194,7 @@
     },
     {
       "name": "Heshan Andrews",
-      "description": "Senior Software Engineer",
+      "description": "Tech Lead",
       "image": "heshanandrews.png",
       "social": {
         "linkedin": "heshan-andrews-427028182"
@@ -210,7 +210,7 @@
     },
     {
       "name": "Anjula Samarasinghe",
-      "description": "Software Engineer",
+      "description": "Senior Software Engineer",
       "image": "anjula.jpg",
       "social": {
         "linkedin": "anjula-sack"
