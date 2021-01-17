@@ -13,4 +13,4 @@ npm i -g surge
 # Create a domain to the PR
 export DEPLOY_DOMAIN=https://pr-${TRAVIS_PULL_REQUEST}-sef-site.surge.sh
 # Upload to surge.sh
-surge --project ./src/main/webapp --domain $DEPLOY_DOMAIN;
+surge --project ./ --domain $DEPLOY_DOMAIN;
