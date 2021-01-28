@@ -19,7 +19,7 @@
   {
     "name": "Hasini Jayathilaka",
     "image": "hasini.jpeg",
-    "title" : "Postdoctoral Researcher, Stanford University School of Medicine\nForbes 30 under 30 " ,
+    "title" : "Consultant and Data and Analytics Specialist - Scientific and Medical affairs, Syneos Health | Forbes 30 under 30 " ,
     "bio": "Hasini was a Postdoctoral researcher at Stanford University’s School of Medicine and is a Johns Hopkins University alum. She has extensive knowledge on cancer biology, pre-clinical and clinical trials for drug development and is the author of numerous peer-reviewed publications. She is also a recipient of Forbes 30 under 30 in 2019 for her discovery of a signaling pathway that controls how cancer cells metastasize through the body and a way to block that pathway.",
     "areasOfExpertise" : [
       "Cancer biology, pre-clinical and clinical trials for drug development",
@@ -112,24 +112,6 @@
     ]
   },
   {
-    "name": "Nadeera Nilupamali",
-    "image": "nadeera.jpeg",
-    "title" : "Cofounder, ImmunifyMe",
-    "bio":"Nadeera Nilupamali has a PhD in Virology from the University of Peradeniya and was a Postdoctoral Researcher at at the International Centre for Genetic Engineering and Biotechnology.  She is the author of numerous peer reviewed publications and is also the cofounder of Immunify.me, an organization that leverages technology for vaccination and immunization monitoring and eliminates manual intervention in record keeping.",
-    "areasOfExpertise" : [
-      "Virology",
-      "Immunology"
-    ],
-    "projects" : [],
-    "socialLinks" : [
-      {
-        "platform" : "linkedin",
-        "icon" : "fab fa-linkedin",
-        "url" : "https://www.linkedin.com/in/nadeeranilupamali/"
-      }
-    ]
-  },
-  {
     "name": "Nivanthika Wimalasena ",
     "image": "niwanthika.jpeg",
     "title" : "PhD candidate, Neuroscience\nHarvard University" ,
@@ -148,35 +130,9 @@
     ]
   },
   {
-    "name": "Nushelle de Silva",
-    "image": "nushelle.jpeg",
-    "title" : "PhD Candidate, MIT Architechture",
-    "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.",
-    "areasOfExpertise" : [
-      "History of art",
-      "Architecture",
-      "Design",
-      "Material culture",
-      "Familiarity with non-profits and museums",
-      "Grant and proposal writing",
-      "Public speaking",
-      "Teaching methods for secondary and tertiary school students in the arts"
-    ],
-    "projects" : [
-      "Please see www.buildingbridges.lk"
-    ],
-    "socialLinks" : [
-      {
-        "platform" : "linkedin",
-        "icon" : "fab fa-linkedin",
-        "url" : "https://www.linkedin.com/in/nushelledesilva/"
-      }
-    ]
-  },
-  {
     "name": "Ruwandi Kariyawasam",
     "image": "ruwandi.jpeg",
-    "title" : "PhD Candidate, Parasitology\nUniversity of Toronto",
+    "title" : "Postdoctoral Fellow in Clinical Microbiology, University of Alberta",
     "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.",
     "areasOfExpertise" : [
       "Clinical microbiology"
@@ -193,7 +149,7 @@
   {
     "name": "Yadurshini Raveendran",
     "image": "yadurshini.jpeg",
-    "title" : "MSc. Candidate, Global Health\nDuke University",
+    "title" : "MSc. in Global Health, Duke University",
     "bio": "Yadurshini Raveendran is currently pursuing an MSc. in Global Health at Duke University and has a background in biology. She has research experience in global health from past projects in India, US and Tanzania. She also has a deep interest in human rights and women empowerment research.  She can provide guidance on research methodologies, preparation for university application and scientific writing.",
     "areasOfExpertise" : [
       "Global public health",
@@ -277,6 +233,312 @@
         "platform" : "linkedin",
         "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/aftab-aziz-67a6b32a/"
+      }
+    ]
+  },
+  {
+    "name": "Sumudu Herath",
+    "image": "sumudu.jpg",
+    "title" : "Previous PhD Candidate in Computational mechanics at the University of Cambridge" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sumuduherath/?originalSubdomain=uk"
+      }
+    ]
+  },
+  {
+    "name": "Deepesh Jayasekara",
+    "image": "deepesh.jpg",
+    "title" : "Doctoral Researcher in Manufacturing Engineering (PhD) at University of Nottingham (Ningbo, China)" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/deepesh-jayasekara-21382348/"
+      }
+    ]
+  },
+  {
+    "name": "Dulshani Gunawardhana",
+    "image": "dulshani.jpg",
+    "title" : "Former Operations Analyst at Facebook and M.Sc. Studnet - Applied Social Data Science The London School of Economics and Political Science (LSE)" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/dulshanig/"
+      }
+    ]
+  },
+  {
+    "name": "Hasitha Mahabaduge",
+    "image": "hasitha.jpg",
+    "title" : "Assistant Professor of Physics, Georgia College" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/hasitha-mahabaduge"
+      }
+    ]
+  },
+  {
+    "name": "Mahendrini Ariyachandra",
+    "image": "mahendrini.jpg",
+    "title" : "PhD Candidate, Department of Engineering, University of Cambridge" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/mahendrini-fernando-ariyachandra-22374493/"
+      }
+    ]
+  },
+  {
+    "name": "Mirantha Jayathilake",
+    "image": "mirantha.jpg",
+    "title" : "PhD Researcher in Machine Learning University of Manchester" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/miranthajayathilaka/"
+      }
+    ]
+  },
+  {
+    "name": "Navodinee Wikramanayake",
+    "image": "navodinee.jpg",
+    "title" : "Accenture | Co Founder of The Better Tomorrow Movement" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/navowickramanayake/"
+      }
+    ]
+  },
+  {
+    "name": "Shalini Weerasooriya",
+    "image": "shalini.jpg",
+    "title" : "Senior Manager Regulatory Affairs RB" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/shalini-weerasooriya-35a030a7"
+      }
+    ]
+  },
+  {
+    "name": "Nadeesha Chandrasena",
+    "image": "nadeesha.jpg",
+    "title" : "PhD, Civil Engineering / GSP. Singularity University - NASA Research Park / Finalist, MIT 35 Under 35" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/nadeesha-chandrasena-9b531526/?originalSubdomain=lk"
+      }
+    ]
+  },
+  {
+    "name": "Priyadharshany Sandanapitchai",
+    "image": "priyadharshany.jpg",
+    "title" : "Research Associate, Rutgers University" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/psandanapitchai/"
+      }
+    ]
+  },
+  {
+    "name": "Sumali Hewage",
+    "image": "sumali.jpg",
+    "title" : "Real-world Evidence Researcher, Danone (Singapore)" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sumalih"
+      }
+    ]
+  },
+  {
+    "name": "Yomani Sarathkumara",
+    "image": "yomani.jpg",
+    "title" : "Doctoral Researcher, Australian institute of Tropical Health and Medicine" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/yomani-sarathkumara-42076a83"
+      }
+    ]
+  },
+  {
+    "name": "Asara Senaratne",
+    "image": "asara.jpg",
+    "title" : "PhD Candidate, Australian National University" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/asarasenaratne/"
+      }
+    ]
+  },
+  {
+    "name": "Gamalendira  Sivapatham",
+    "image": "gamalendira.jpg",
+    "title" : "PhD Candidate, Queen Mary University of London" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/gamalendira-shivapatham/"
+      }
+    ]
+  },
+  {
+    "name": "Arosha Bandara",
+    "image": "arosha.jpg",
+    "title" : "Professor of Software Engineering, The Open University, UK" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/akbandara/"
+      }
+    ]
+  },
+  {
+    "name": "Charuni Pathmeswaran",
+    "image": "charuni.jpg",
+    "title" : "PhD in Climate Science, Climate Change Research Centre, University of New South Wales, Australia" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/charuni-pathmeswaran/"
+      }
+    ]
+  },
+  {
+    "name": "Lakmal Meegahapola",
+    "image": "lakmal.jpg",
+    "title" : "PhD Candidate, Ecole polytechnique fédérale de lausanne (EPFL)" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/lakmalmeegahapola/"
+      }
+    ]
+  },
+  {
+    "name": "Mohamed Athif",
+    "image": "mohamed.jpg",
+    "title" : "PhD. Biomedical Engineering, Boston University, USA" ,
+    "bio": "",
+    "areasOfExpertise" : [
+      ""
+    ],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/mohamed-athif/"
       }
     ]
   }
