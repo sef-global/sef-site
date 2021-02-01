@@ -1,0 +1,24 @@
+{
+  "name": "sef-site",
+  "version": "3.0.0",
+  "description": "Official Website for Sustainable Education Foundation",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . --port 9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sef-global/sef-site.git"
+  },
+  "author": "Sustainable Education Foundation",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sef-global/sef-site/issues"
+  },
+  "homepage": "https://sefglobal.org/"
+}
