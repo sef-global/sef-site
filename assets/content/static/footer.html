@@ -45,7 +45,7 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy;
-                        2020
+                        <span id="year"></span>
                         <a href="/" target="_blank">Sustainable Education Foundation - SEF</a>.
                     </div>
                 </div>
@@ -73,3 +73,6 @@
         </div>
     </footer>
 </div>
+<script>
+    document.getElementById('year').innerHTML = (new Date().getFullYear());
+</script>
