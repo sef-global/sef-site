@@ -104,10 +104,18 @@
     },
     {
       "name": "Jayasanka Weerasinghe",
-      "description": "Chief Technology Officer",
+      "description": "Chief Executive Officer",
       "image": "jayasanka.jpeg",
       "social": {
         "linkedin": "jayasanka-sack"
+      }
+    },
+    {
+      "name": "Yohan Ediriweera",
+      "description": "Chief Technical Officer",
+      "image": "yohan.jpeg",
+      "social": {
+        "linkedin": "ya-ediriweera-b99b7b175"
       }
     },
     {
@@ -177,27 +185,19 @@
   ],
   "techTeam" : [
     {
-      "name": "Yohan Ediriweera",
+      "name": "Heshan Andrews",
       "description": "Tech Lead",
-      "image": "yohan.jpeg",
+      "image": "heshanandrews.png",
       "social": {
-        "linkedin": "ya-ediriweera-b99b7b175"
+        "linkedin": "heshan-andrews-427028182"
       }
-    },  
+    },
     {
       "name": "Piumal Rathnayaka",
       "description": "Senior Software Engineer",
       "image": "piumal.jpg",
       "social": {
         "linkedin": "piumal1999"
-      }
-    },
-    {
-      "name": "Heshan Andrews",
-      "description": "Tech Lead",
-      "image": "heshanandrews.png",
-      "social": {
-        "linkedin": "heshan-andrews-427028182"
       }
     },
     {
