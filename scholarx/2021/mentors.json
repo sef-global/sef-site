@@ -1,12 +1,13 @@
 [
   {
     "name": "Dinithi Sumanaweera",
-    "title": "PhD Candidate, Computational Biology\nMonash University ",
+    "title": "PhD Candidate, Monash University",
     "image": "dinithi.jpeg",
     "bio": "Dinithi Sumanaweera is a PhD candidate at Monash University with a focus on Bioinformatics and Computational Biology. Her main areas of expertise lie in academic research focused on computational biology.",
     "areasOfExpertise" : [
       "Bioinformatics and Computational Biology"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -17,9 +18,9 @@
     ]
   },
   {
-    "name": "Hasini Jayathilaka",
+    "name": "Dr. Hasini Jayathilaka",
     "image": "hasini.jpeg",
-    "title" : "Postdoctoral Researcher, Stanford University School of Medicine\nForbes 30 under 30 " ,
+    "title" : "Consultant and Data and Analytics Specialist - Scientific and Medical affairs, Syneos Health | Forbes 30 under 30" ,
     "bio": "Hasini was a Postdoctoral researcher at Stanford University’s School of Medicine and is a Johns Hopkins University alum. She has extensive knowledge on cancer biology, pre-clinical and clinical trials for drug development and is the author of numerous peer-reviewed publications. She is also a recipient of Forbes 30 under 30 in 2019 for her discovery of a signaling pathway that controls how cancer cells metastasize through the body and a way to block that pathway.",
     "areasOfExpertise" : [
       "Cancer biology, pre-clinical and clinical trials for drug development",
@@ -27,6 +28,7 @@
       "biopharma",
       "Fundamental research"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -37,12 +39,12 @@
     ]
   },
   {
-    "name": "Iromi Wanigasuriya",
+    "name": "Dr. Iromi Wanigasuriya",
     "image": "iromi.jpeg",
-    "title" : "PhD Candidate, Walter and Eliza Hall Institute of Medical Research\nUniversity of Melbourne" ,
+    "title" : "Previous PhD Candidate, Walter and Eliza Hall Institute of Medical Research, University of Melbourne" ,
     "bio": "Iromi Wanigasuriya is a final year PhD candidate at University of Melbourne and is currently working on a epigenetic modifier known as Smchd1. She also works as a Teaching Assistant at University of Melbourne and the Gene Technology Access Centre in Victoria, Australia.",
-    "areasOfExpertise" : [
-    ],
+    "areasOfExpertise" : ["Molecular biology", "Health Sciences", "Epigenetics"],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -61,6 +63,7 @@
       "Optimizing Machine Learning algorithms",
       "Reinforcement Learning"
     ],
+    "fields" : ["Data Science & AI"],
     "projects" : ["ML competitions live at : https://mlcontests.com/",
       "Neural Informations Processing Systems Competition Track: https://nips.cc/Conferences/2019/CompetitionTrack",
       "Specifically: https://micronet-challenge.github.io/"
@@ -74,12 +77,13 @@
     ]
   },
   {
-    "name": "Jeewika Ranaweera",
+    "name": "Dr. Jeewika Ranaweera",
     "image": "jeewika.jpeg",
     "title" : "Principal Hardware Engineer, Oracle",
     "bio": "Jeewika Ranaweera is the Principal Hardware Engineer at Oracle based in Santa Clara, California and is a University of Toronto alum. Her expertise lies in hardware engineering and she can provide guidance and mentorship on pursuing graduate studies.",
     "areasOfExpertise" : ["Hardware engineering"
     ],
+    "fields" : ["Computer Science"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -102,6 +106,7 @@
       "User studies",
       "Data structures and algorithms"
     ],
+    "fields" : ["Computer Science"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -112,32 +117,15 @@
     ]
   },
   {
-    "name": "Nadeera Nilupamali",
-    "image": "nadeera.jpeg",
-    "title" : "Cofounder, ImmunifyMe",
-    "bio":"Nadeera Nilupamali has a PhD in Virology from the University of Peradeniya and was a Postdoctoral Researcher at at the International Centre for Genetic Engineering and Biotechnology.  She is the author of numerous peer reviewed publications and is also the cofounder of Immunify.me, an organization that leverages technology for vaccination and immunization monitoring and eliminates manual intervention in record keeping.",
-    "areasOfExpertise" : [
-      "Virology",
-      "Immunology"
-    ],
-    "projects" : [],
-    "socialLinks" : [
-      {
-        "platform" : "linkedin",
-        "icon" : "fab fa-linkedin",
-        "url" : "https://www.linkedin.com/in/nadeeranilupamali/"
-      }
-    ]
-  },
-  {
     "name": "Nivanthika Wimalasena ",
     "image": "niwanthika.jpeg",
-    "title" : "PhD candidate, Neuroscience\nHarvard University" ,
+    "title" : "PhD Candidate, Neuroscience, Harvard University" ,
     "bio":"Nivanthika Wimalasena is a PhD candidate in neuroscience at Harvard University and has experience in industry with research relating to chemical biology and translational research. She can provide mentorship in scientific writing, public speaking, and provide guidance with application essays and writing effective resumes.",
     "areasOfExpertise" : [
       "Neuroscience",
       "Translational research"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -148,39 +136,14 @@
     ]
   },
   {
-    "name": "Nushelle de Silva",
-    "image": "nushelle.jpeg",
-    "title" : "PhD Candidate, MIT Architechture",
-    "bio":"Nushelle de Silva is currently a PhD candidate at the Massachusetts Institute of Technology (MIT) with a focus in art history, architecture, design and material culture. She can provide guidnace and mentorship in grant and proposal writing, public speaking and teaching methods for the arts. She is a Forbes 30 Under 30 Asia Fellow, a Queen's Young Leader, and a YouthActionNet Laureate Global Fellow.",
-    "areasOfExpertise" : [
-      "History of art",
-      "Architecture",
-      "Design",
-      "Material culture",
-      "Familiarity with non-profits and museums",
-      "Grant and proposal writing",
-      "Public speaking",
-      "Teaching methods for secondary and tertiary school students in the arts"
-    ],
-    "projects" : [
-      "Please see www.buildingbridges.lk"
-    ],
-    "socialLinks" : [
-      {
-        "platform" : "linkedin",
-        "icon" : "fab fa-linkedin",
-        "url" : "https://www.linkedin.com/in/nushelledesilva/"
-      }
-    ]
-  },
-  {
-    "name": "Ruwandi Kariyawasam",
+    "name": "Dr. Ruwandi Kariyawasam",
     "image": "ruwandi.jpeg",
-    "title" : "PhD Candidate, Parasitology\nUniversity of Toronto",
+    "title" : "Postdoctoral Fellow in Clinical Microbiology, University of Alberta",
     "bio":"Ruwandi Kariyawasam is currently a PhD candidate at the University of Toronto working on her thesis in Parasitology. She will as of Fall 2020 be pursuing a Post Doctoral Fellowship in Clinical Microbiology at the University of Alberta. She can assist and guide students interested in clinical microbiology, research or medicine.",
     "areasOfExpertise" : [
       "Clinical microbiology"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -193,7 +156,7 @@
   {
     "name": "Yadurshini Raveendran",
     "image": "yadurshini.jpeg",
-    "title" : "MSc. Candidate, Global Health\nDuke University",
+    "title" : "MSc. Candidate, Global Health, Duke University",
     "bio": "Yadurshini Raveendran is currently pursuing an MSc. in Global Health at Duke University and has a background in biology. She has research experience in global health from past projects in India, US and Tanzania. She also has a deep interest in human rights and women empowerment research.  She can provide guidance on research methodologies, preparation for university application and scientific writing.",
     "areasOfExpertise" : [
       "Global public health",
@@ -205,6 +168,7 @@
       "pediatric oncology and health policy",
       "Human rights and women empowerment research"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -215,13 +179,14 @@
     ]
   },
   {
-    "name": "Rukshan Batuwita ",
+    "name": "Dr. Rukshan Batuwita ",
     "image": "rukshan.jpeg",
     "title" : "Data Scientist, Google" ,
     "bio": "Rukshan Batuwita is currently a Data Scientist at Google and has a PhD in Applied Machine Learning from the University of Oxford. He has extensive experience in Applied Machine Learning and Data Science and can provide mentorship in topics surrounding this field as well as statistics and computer science. ",
     "areasOfExpertise" : [
       "Applied Machine Learning and Data Science"
     ],
+    "fields" : ["Data Science & AI"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -232,9 +197,9 @@
     ]
   },
   {
-    "name": "Nishanta Rajakaruna",
+    "name": "Prof. Nishanta Rajakaruna",
     "image": "nishantha.jpg",
-    "title" : "Associate Professor Plant Biology\nFaculty in Residence, California Polytechnic State University\n" ,
+    "title" : "Associate Professor Plant Biology Faculty in Residence, California Polytechnic State University " ,
     "bio": "Nishanta Rajakaruna has over 15 years of teaching experience in botany, biology, and environmental sciences at the university level. He has extensive experience in research and has provided mentorship and guidance to hundreds of students over the years and is currently Faculty in Residence at California Polytechnic State University, living in residence with first year undergrads and providing academic advising and mentoring as needed.",
     "areasOfExpertise" : [
       "Botany",
@@ -246,6 +211,7 @@
       "Ethnobotany",
       "GeoBotany"
     ],
+    "fields" : ["Life Sciences"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -271,12 +237,651 @@
       "Working as an in-house lawyer",
       "Practical application of academic knowledge in a business environment (i.e. how to support a business in your role)."
     ],
+    "fields" : ["Other"],
     "projects" : [],
     "socialLinks" : [
       {
         "platform" : "linkedin",
         "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/aftab-aziz-67a6b32a/"
+      }
+    ]
+  },
+  {
+    "name": "Deepesh Jayasekara",
+    "image": "deepesh.jpeg",
+    "title" : "Doctoral Researcher in Manufacturing Engineering (PhD) at University of Nottingham (Ningbo, China)" ,
+    "bio": "Deepesh is a two-time Nottingham Scholar, Doctoral Researcher in Manufacturing Engineering (PhD). He is currently based in China, working with the Composites Research Group, University of Nottingham (Ningbo, China) and Zhejiang Provincial Key Laboratory of Robotics and Intelligent Manufacturing Equipment Technology, Chinese Academy of Sciences (Ningbo, China).   His research interests are in real-world utilization of digital manufacturing and accelerating digital manufacturing transformation. The key focus of his current research is on cloud manufacturing and assessing the readiness of the aerospace composite manufacturing industry in China for cloud manufacturing.",
+    "areasOfExpertise" : ["Industry 4/Cloud Manufacturing", "Manufacturing Engineering", "Industrial Engineering", "Presentation Expert", "Academic Writing"],
+    "fields" : ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/deepesh-jayasekara-21382348/"
+      }
+    ]
+  },
+  {
+    "name": "Dulshani Gunawardhana",
+    "image": "dulshani.jpeg",
+    "title" : "Former Operations Analyst at Facebook | M.Sc. Candidate, The London School of Economics and Political Science (LSE)" ,
+    "bio": "I am a masters student at the London School of Economics and Political Science where I study how computational methods can be used understand political and social phenomena. I am interested in discourse analysis in online communities and income inequality.",
+    "areasOfExpertise" : ["Data Science", "Machine Learning", "Social Research Methods"],
+    "fields" : ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/dulshanig/"
+      }
+    ]
+  },
+  {
+    "name": "Prof. Hasitha Mahabaduge",
+    "image": "hasitha.jpeg",
+    "title" : "Assistant Professor of Physics, Georgia College and State University",
+    "bio": "Dr. Hasitha Mahabaduge is an Associate Professor of Physics at Georgia College and State University and currently serve as the Mary J Cinardo Endowed Chair in the Department of Chemistry and Physics. Dr. Mahabaduge was inducted to the Felton Jenkins, Jr. Hall of Fame for Excellence in Teaching and was named a Fellow of the International Society for the Scholarship of Teaching and Learning in 2020. Dr. Mahabaduge is one of the leading teacher-scholars in the State of Georgia",
+    "areasOfExpertise" : ["Mentoring"],
+    "fields" : ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/hasitha-mahabaduge/"
+      }
+    ]
+  },
+  {
+    "name": "Mahendrini Ariyachandra",
+    "image": "mahendrini.jpg",
+    "title" : "PhD Candidate, Department of Engineering, University of Cambridge" ,
+    "bio": "Mahendrini Ariyachandra is a PhD candidate in Engineering at University of Cambridge with a focus on Construction Automation and Informatics. She also works as a Postgraduate Teaching Assistant at University of Cambridge and as a Principle Supervisor at the Institute of Continuing Education (ICE), University of Cambridge. She can assist and guide students interested in Construction Automation and Informatics, Building Information Modelling (BIM), Smart and Sustainable City, Construction Project Management and Construction Education.",
+    "areasOfExpertise" : ["Construction Automation and Informatics", "IT applications for Built Environment", "Quantity Surveying", "Construction Education"],
+    "fields" : ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/mahendrini-fernando-ariyachandra-22374493/"
+      }
+    ]
+  },
+  {
+    "name": "Mirantha Jayathilake",
+    "image": "mirantha.png",
+    "title" : "PhD Researcher in Machine Learning University of Manchester" ,
+    "bio": "I am a PhD candidate in Computer Science at the University of Manchester, also currently working part-time as a research scientist at a London-based digital healthcare company. I have previously assisted teaching in modules such as machine learning and image processing at the Department of Computer Science in the university. My areas of interest are machine learning, computer vision and natural language processing.",
+    "areasOfExpertise" : ["Machine Learning", "Computer Science", "Research in general"],
+    "fields" : ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/miranthajayathilaka/"
+      }
+    ]
+  },
+  {
+    "name": "Navodinee Wikramanayake",
+    "image": "navodinee.jpeg",
+    "title" : "Technology Consulting Senior Analyst at Accenture, Netherlands | Co Founder of The Better Tomorrow Movement" ,
+    "bio": "Navodinee is a Technology Consultant at Accenture, Netherlands and has a MSc in Cognitive Science and Artificial Intelligence from Tilburg University and a BA with a Major in Marketing from Ritsumeikan Asia Pacific University, Japan. She is the Co-Founder and Lead of The Better Tomorrow Movement, an initiative that is focused on helping young people start and scale social impact projects in their local communities. Navodinee is also a Queen's Young Leader and a World Economic Forum Global Shaper. ",
+    "areasOfExpertise" : ["Automation Strategy", "Artificial Intelligence", "Communications", "Project Management", "Growth Strategies for social impact projects"],
+    "fields" : ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/navowickramanayake/"
+      }
+    ]
+  },
+  {
+    "name": "Shalini Weerasooriya",
+    "image": "shalini.jpg",
+    "title" : "Senior Manager Regulatory Affairs, Reckitt Benckiser (RB)" ,
+    "bio": "I work in a FTSE100 consumer healthcare company in the health regulatory affairs sector. I have nearly 10 years experience working in the industry on healthcare products in partnership with industry associations and health authorities globally. Having a degree in Biomedical Science and a Master's in Public Health, I have a passion for social impact activities that involve health education and have led several projects involving youth and health professionals in Sri Lanka, Tanzania and Vietnam. In my spare time I love hiking in the Peaks and foodie on all things spicy!",
+    "areasOfExpertise" : ["Healthcare", "Pharmaceuticals", "Public Health and Health Policy", "Professional Communications"],
+    "fields" : ["Other"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/shalini-weerasooriya-35a030a7/"
+      }
+    ]
+  },
+  {
+    "name": "Priyadharshany Sandanapitchai",
+    "image": "priyadharshany.jpeg",
+    "title" : "Research Associate, Rutgers, The State University of New Jersey, USA" ,
+    "bio": "Priyadharshany Sandanapitchai is a research associate at the FXB Center of Rutgers University and an intern with the SPSSI-UN team. She graduated with a master’s degree in clinical and counseling psychology. She has over five years of research experience in academic and professional settings, from small-scale studies to national grants. Besides, her work at the UN focuses on promoting psychological science within the contexts of climate change, racism, gender equity, human rights, and public policy.",
+    "areasOfExpertise" : ["Clinical Psychology","Academic Research","HIV prevention and mHealth" ,"Trauma and Culture","UN Sustainable Development Goals"],
+    "fields" : ["Other"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/psandanapitchai/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Sumali Hewage",
+    "image": "sumali.jpeg",
+    "title" : "Former Real-world Evidence Researcher, Danone (Singapore)" ,
+    "bio": "Sumali Hewage is currently a public health consultant. Previously, she was a real-world evidence researcher at Danone Singapore. She has experience in both academia and industry with research on public health and nutrition. She is willing to mentor anyone interested in public health, nutrition, behavioral sciences, scientific research methods, journal publication, and planning to pursue graduate studies.",
+    "areasOfExpertise" : ["public health", "nutrition", "behavioral sciences", "mixed-methods research", "implementation science"],
+    "fields" : ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sumalih/"
+      }
+    ]
+  },
+  {
+    "name": "Yomani Sarathkumara",
+    "image": "yomani.jpeg",
+    "title" : "Doctoral Researcher, Australian institute of Tropical Health and Medicine" ,
+    "bio": "PhD Candidate, Molecular Immunology Australian Institute of Tropical Health & Medicine James Cook University, Australia",
+    "areasOfExpertise" : ["Molecular Immunology", "Research on Infectious diseases", "data analysis and biostats using R", "Experience in manuscript writing", "academic writing (H-index =4)"],
+    "fields" : ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/yomani-sarathkumara-42076a83/"
+      }
+    ]
+  },
+  {
+    "name": "Asara Senaratne",
+    "image": "asara.jpeg",
+    "title" : "PhD Candidate, Australian National University" ,
+    "bio": "I'm a PhD candidate and academic tutor at the College of Engineering and Computer Science, Australian National University. My areas of research include anomaly detection, knowledge representation and visualization, data mining and machine learning. To put into simple words, my research is all about finding ways to identify abnormal cases in data, obtain expert knowledge on those anomalies and store this knowledge for future retrieval.",
+    "areasOfExpertise" : ["Software Engineering", "Machine Learning", "HCI", "Academic Writing", "UX designing"],
+    "fields" : ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/asarasenaratne/"
+      }
+    ]
+  },
+  {
+    "name": "Gamalendira Sivapatham",
+    "image": "gamalendira.png",
+    "title" : "PhD Candidate, Queen Mary University of London" ,
+    "bio": "Gamal holds bachelor’s degree in Radiography from University of Peradeniya, Sri Lanka, and Master’s in Biomedical Engineering from Brunel University London. He worked as a Biomedical Engineer in Sri Lanka, and Malaysia, prior to this he worked for international non-governmental organizations for their humanitarian aid projects in Northern province of Sri Lanka. Currently he is a final year PhD student in medical engineering at Queen Mary University of Sri Lanka. His research investigating novel ultrasound imaging approaches to investigate human Achilles tendon health, ageing and disease. He is also visiting research scientist at the Inst of Cancer Research UK.",
+    "areasOfExpertise" : ["Medical Engineering", "Medical Imaging", "Biomechanics", "Diagnostic Radiography", "Clinical Research"],
+    "fields" : ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/gamalendira-shivapatham/"
+      }
+    ]
+  },
+  {
+    "name": "Prof. Arosha Bandara",
+    "image": "arosha.jpeg",
+    "title" : "Professor of Software Engineering, The Open University, UK" ,
+    "bio": "I am a Professor of Software Engineering at the Open University whose research addresses the practical problems associated with building and maintaining self-managing (adaptive) systems by combining rigorous formal techniques with concrete implementations and applications of those techniques. I completed my PhD at Imperial College London, UK in 2005, prior to which I worked as a software engineer at Sapient Corporation, USA.I can provide support as a mentor for software engineering projects and general research projects, as well as proposal and paper writing.",
+    "areasOfExpertise" : ["Software engineering", "adaptive systems", "human centred computing", "cyber security", "research and academic leadership"],
+    "fields" : ["Computer Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/akbandara/"
+      }
+    ]
+  },
+  {
+    "name": "Lakmal Meegahapola",
+    "image": "lakmal.jpeg",
+    "title" : "Doctoral Student, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland" ,
+    "bio": "Lakmal Meegahapola is currently a PhD candidate in Mobile Computing at the Swiss Federal Institute of Technology Lausanne (EPFL). His research is at the intersection of mobile health, social computing, and applied machine learning. Lakmal has won numerous local and international hackathons, and has led a team to become the runner-up at the Microsoft Imagine Cup 2016 World Finals. He can provide guidance on conducting undergraduate research and applying for graduate studies, in areas related to computer science.",
+    "areasOfExpertise" : ["Ubiquitous and Mobile Computing", "Mobile Sensing", "Smartphone Sensing", "HCI", "Academic Writing"],
+    "fields" : ["Computer Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/lakmalmeegahapola/"
+      }
+    ]
+  },
+  {
+    "name": "Charuni Pathmeswaran",
+    "image": "charuni.jpg",
+    "title" : "PhD Candidate,Change Research Centre, University of New South Wales" ,
+    "bio": "Charuni is a PhD candidate at the Climate Change Research Centre at UNSW, Australia and her research focuses on heatwaves. Besides climate research, Charuni's interests include science communication, climate education and policy. ",
+    "areasOfExpertise" : ["Environmental Science", "Climate Change", "Science Communication" ],
+    "fields" : ["Other"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/charuni-pathmeswaran/"
+      }
+    ]
+  },
+  {
+    "name": "Jathushan Rajasegaran",
+    "image": "jathushan.JPG",
+    "title" : "PhD student, UC Berkeley" ,
+    "bio": "Jathushan Rajasegaran received his BSc in Electronics and Telecommunication Engineering from the University of Moratuwa, Sri Lanka in 2018. Following his undergraduate, he spent 2 years at the Inception Institute of Artificial Intelligence, UAE, working on continual learning, meta-learning, and few-shot learning. After that, he joined the University of California Berkeley, and he is currently a first-year Ph.D. student at BAIR. His research interests are mainly in learning methods for deep neural networks including continual learning, meta-learning, and few-shot learning, and 3D vision.",
+    "areasOfExpertise" : ["Deep learning", "Computer vision", "3D vision", "Continual Learning", "Meta learning"],
+    "fields" : ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : []
+  },
+  {
+    "name": "Mohamed Athif",
+    "image": "athif.jpeg",
+    "title" : "PhD Candidate, Biomedical Engineering, Boston University, USA",
+    "bio": "Currently a PhD candidate in biomedical engineering at Boston University. I am interested in biomedical engineering research. My research experiences include bio-signal processing and machine learning.",
+    "areasOfExpertise" : ["Biomedical engineering", "Computational neuroscience", "Machine learning"],
+    "fields" : ["Data Science & AI","Biomedical"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/mohamed-athif/"
+      }
+    ]
+  },
+  {
+    "name": "Ruwini Cooray",
+    "image": "ruwini.jpeg",
+    "title" : "PhD research student at Deakin University; Research Scientist; Lead - Section of Genetics",
+    "bio": "Ruwini Cooray is a PhD research student at Deakin University, Australia, also contributing as the Research Scientist – Lead, Section of Genetics, Institute for Research & Development, Battaramulla, Sri Lanka. Ruwini’s research focus on neurogenetics and neurobiochemistry integrated with systems biology and biophysical nature of neurodegenerative disorders. Ruwini is also working towards the development of protein overexpression research within Sri Lanka for local drug development. Furthermore, Ruwini’s is actively working for young researcher capacity building and enhancement.",
+    "areasOfExpertise" : ["Neurogenetics", "Neurobiochemistry", "Molecular biology & Genetics", "Academic writing", "Project development"],
+    "fields" : ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/ruwini-n-cooray/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Pramodh Chandrasinghe",
+    "image": "pramodh.jpg",
+    "title" : "Consultant Surgeon and Senior Lecturer in Surgery",
+    "bio": "Consultant General and Colorectal Surgeon and Senior Lecturer in Surgery at the University Surgical Unit, North Colombo Teaching Hospital, Sri Lanka. My research interests are colorectal cancer, IBD and FAP. Currently reading for PhD at the Department of Surgery and Cancer, Imperial College London.",
+    "areasOfExpertise" : ["Medicine", "molecular medicine", "clinical research", "higher education"],
+    "fields" : ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/ruwini-n-cooray/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Dinuka Wijesinghe",
+    "image": "dinuka.jpeg",
+    "title" : "Strategy Lead, Google",
+    "bio": "As an experienced Strategy professional I help address key strategic priorities within large organisations. With experience as an in-house strategy leader, management consultant and an entrepreneur I am able to provide proven skills & experience in addressing strategic business problems, deep quantitative analysis, business transformation, strategy planning, cost-reduction, research, start-ups, online business as well as experience working with major market leading organisations. I'm also able to execute on Machine Learning and Deep Learning solutions and have a passion to explore how Deep Learning can help solve challenging business problems.",
+    "areasOfExpertise" : ["Business Strategy",  "Management Consulting", "Self-development", "Working in Tech", "Leadership"],
+    "fields" : ["Other"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/dinuka-wijesinghe-phd-1bbb334a/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Awanthika Senarath",
+    "image": "awanthika.jpeg",
+    "title" : "Systems engineer at Commonwealth Bank of Australia" ,
+    "bio": "Awanthika Senarath has completed a PhD in cyber security governance from UNSW canberra is an accomplished Systems engineer at Commonwealth bank Australia.",
+    "areasOfExpertise" : ["Cyber governance", "Cloud governance", "Privacy engineering", "Software development", "System engineering"],
+    "fields": ["Computer Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/awanthikasenarath/"
+      }
+    ]
+  },
+  {
+    "name": "Sanath Wijesinghe",
+    "image": "sanath.jpg",
+    "title" : "Lecturer in Law, Open University of Sri Lanka | PhD Researcher at School of Law at the QUT" ,
+    "bio": "Sanath Wijesinghe is a PhD candidate at the Queensland University of Technology. His PhD research focuses on the intersection of intellectual property law and health law in the context of tobacco packaging and labelling regulations. He is also a lecturer in the Department of Legal Studies at the Open University of Sri Lanka. He is interested in providing mentorship in academic writing, legal drafting and legal research. ",
+    "areasOfExpertise" : ["International law", "Intellectual property regulation", "academic writing", "legal research", "policy making"],
+    "fields": ["Other"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sanath-sameera-wijesinghe-99699097/"
+      }
+    ]
+  },
+  {
+    "name": "Malinda de Silva",
+    "image": "malinda.jpeg",
+    "title" : "Doctoral Student in High Energy Physics, Deutsches Elektronen-Sychrotron (DESY), Hamburg, Germany" ,
+    "bio": "I am a Ph.D. candidate at Heidelberg University working at Deutsches Elektronen-Synchrotron (DESY) in the field of experimental particle physics with a primary focus on high granularity calorimeters. I can mentor students interested in particle physics, academic research as well as CV and motivational letter writing for university applications, especially to European universities. ",
+    "areasOfExpertise" : ["High Energy Physics (Particle Physics)", "Academic Writing", "Academic Research" ],
+    "fields": ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/malindasds/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Durga Dharmadana",
+    "image": "durga.jpeg",
+    "title" : "Academic Skills Advisor (STEM), RMIT University, Australia" ,
+    "bio": "Durga is working as an Academic Skills Advisor in Chemistry and Biomedical Sciences at RMIT University. She has extensive research experience in biomedical research and teaching experience in pharmacology and pharmaceutical science. She can provide guidance on scientific writing, graduate studies, job applications, research (areas: biomedical science, chemistry and nanotechnology) and pharmaceutical industry.",
+    "areasOfExpertise" : ["Biomedical Science", "Pharmacy", "pharmaceutical science", "chemistry"],
+    "fields": ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/durga-dharmadana-phd-a8aa6687"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Jayeni Hiti Bandaralage",
+    "image": "jayeni.jpeg",
+    "title" : "Postdoctoral Research Fellow, University of Queensland, Australia" ,
+    "bio": "Jayeni is a Postdoctoral Research Fellow at The University of Queensland Australia. She has earned over 10 years experience, both in academia and biotech industry. Her PhD innovation of 'The world's first high-throughput commercial meristem tissue culture technology for avocado cloning' and R&D on various plant species has equipped her with expertise in industrial plant biotechnology research, scientific publication/grant writing, science communication/networking, research commercialization and industry engagement. She is also an entrepreneur who established a plant biotech company in Sri Lanka in 2019 and looking forward to mentor student to share her experience in academic and industry fronts.",
+    "areasOfExpertise" : ["Academic research in Plant Biotechnology (Tissue culture, Molecular biology, Breeding, Microbiology)", "Academic writing", "Research communication", "Research commercialisation", "Industry engagement"],
+    "fields": ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/jayeni-hiti-bandaralage-44378183/"
+      }
+    ]
+  },
+  {
+    "name": "Nilu Kulatunga",
+    "image": "nilu.jpeg",
+    "title" : "Psychotherapist, Strides Toronto, Canada" ,
+    "bio": "Registered Psychotherapist practicing in Toronto Canada. Experience in the non-profit sector in Sri Lanka and Canada. Advocate in Mental Health. Passionate about sharing knowledge regarding the mental health sector. ",
+    "areasOfExpertise" : ["psychotherapy", "Counselling", "Mental Health", "Non-Profit", "Social Sciences"],
+    "fields": ["Life Sciences"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/nilupulkulatunga/"
+      }
+    ]
+  },
+  {
+    "name": "Vinoj Jayasundara",
+    "image": "vinoj.jpeg",
+    "title" : "Graduate Student (PhD), University of Maryland, USA" ,
+    "bio": "Is a PhD candidate in computer science at the University of Maryland.",
+    "areasOfExpertise" : ["Computer Vision", "Deep Learning", "Machine Learning"],
+    "fields": ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/vinoj-jayasundara-983a81129"
+      }
+    ]
+  },
+  {
+    "name": "Ajani De Vas Gunasekara",
+    "image": "ajani.jpg",
+    "title" : "Ph.D. Research Scholar, Monash University, Australia" ,
+    "bio": "Ajani De Vas Gunasekara is a PhD candidate and Teaching Associate in the School of Mathematics at Monash University with a great interest in discrete mathematics. Her current research project is mainly focused on Combinatorial design theory. She has published several journal articles and conference abstracts related to her field and would like to contribute both in teaching and research.",
+    "areasOfExpertise" : ["Discrete mathematics (Algebra, Number theory, Graph theory, Combinatorics)" , "Mathematical communication"],
+    "fields": ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/ajani-de-vas-gunasekara-7920b266/"
+      }
+    ]
+  },
+  {
+    "name": "Seyon Mierunalan",
+    "image": "seyon.jpeg",
+    "title" : "PhD Candidate, University of Cambridge" ,
+    "bio": "Mierunalan (Mieru) Seyon is a third year PhD in the Advanced Structures Lab at University of Cambridge. His doctoral research investigates geometry of creased shell structures, targeting applications in aerospace and civil engineering. Prior to pursuing a PhD, he received his M.Sc and B.Sc (Hons) degrees in Civil Engineering from University of Moratuwa Sri Lanka, where he worked as a graduate research assistant for a year. He is currently the Graduate Student Representative of Structures Division in Department of Engineering and a member of Christ’s College Cricket team. His hobbies involve travelling and cooking. He can provide guidance on graduate studies, work-life balance during PhD and marriage between aerospace and civil engineering.",
+    "areasOfExpertise" : ["Structural Engineering", "Scientific research and writing", "Scientific presentation"],
+    "fields": ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/ajani-de-vas-gunasekara-7920b266/"
+      }
+    ]
+  },
+  {
+    "name": "Lakmin  Wickremasinghe",
+    "image": "lakmin.jpg",
+    "title" : "PhD Research Student in Particle Physics, Osaka University & CERN",
+    "bio": "I am currently working for the ATLAS experiment at CERN, which is one of the two experiments to discover the Higgs Boson in 2012. From April 2021, I will be a PhD candidate, and my focus will be analyzing data taken from the ATLAS experiment in order to search for new physics beyond the Standard Model. Although particle physics is my specialization, my MSc research involved in developing hardware (electronics), software and firmware for upgrading the ATLAS detector.",
+    "areasOfExpertise" : ["Experimental Particle Physics (High Energy Physics)", "Theoretical Particle Physics", "Electronics",
+      "Software Development", "Firmware Development"],
+    "fields": ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : []
+  },
+  {
+    "name": "Dr. Chathura Sarathchandra",
+    "image": "chathura.jpeg",
+    "title" : "Staff Engineer, InterDigital Inc." ,
+    "bio": "Chathura currently is a staff researcher at InterDigital Inc. He obtained his BSc in Computer Science and his PhD in Computing and Electronic Systems at the School of Computer Science and Electronic Engineering (CSEE), University of Essex, UK. His current interests lie in the areas of mobile and distributed computing systems.",
+    "areasOfExpertise" : ["Distributed Systems", "Mobile Computing", "Advanced Networked Systems", "Telecommunication Systems", "Computer Science"],
+    "fields": ["Computer Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/chathura77/"
+      }
+    ]
+  },
+  {
+    "name": "Thisum Buddhika",
+    "image": "thisum.jpeg",
+    "title" : "Senior Manager,MOHT Singapore" ,
+    "bio": "Software Engineering professional with 8 years of experience in the Industry, Research and Start-up environments.",
+    "areasOfExpertise" : ["Computer science", "HCI"],
+    "fields": ["Computer Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/thisumbuddhika/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Sajith Wijesuriya",
+    "image": "sajith.jpeg",
+    "title" : "Research intern, National Renewable Energy Laboratory " ,
+    "bio": "Sajith was born in Sri Lanka and now resides in Colorado, USA for his research work. He obtained his PhD in Mechanical Engineering with a focus on Energy Storage and Thermal Fluid Sciences. He has expertise in energy storage, thermal sciences, resilient energy systems, hybrid energy generation, building energy modelling, and peak electricity demand shifting strategies. He currently conducts research at the National Renewable Energy Laboratory (NREL) in Colorado, USA. He has won multiple academic excellence awards both at undergraduate level and PhD level including the Mechanical Engineering Emeritus Faculty Choice Exemplary Graduate Student Award of class of 2020 of Colorado School of Mines. He was nominated to the Future Energy Leaders program of the World Energy Council in 2017 and 2020 from Sri Lanka. He founded the organization Science Policy Circle which is now a part of Sustainable Energy for All people-centered accelerator, accredited in the UNCCD process, and was invited to the Climate Action Summit (CAS) convened by the Secretary General of the United Nations in 2019 under the non-governmental organizations category. Science Policy Circle has also been elected the Global Focal Point organization for the SDG7 youth constituency, a dedicated space for youth engagement in UN Energy and other multilateral processes in SDG7. He was nominated to the task force of the UNFCCC Technology Executive Committee (TEC) earlier this year.",
+    "areasOfExpertise" : ["Academic Writing", "Thermal Sciences", "Energy Transition", "Energy Storage", "Laboratory Research"],
+    "fields": ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sajith-wijesuriya/"
+      }
+    ]
+  },
+  {
+    "name": "Hiroshan Gunawardane",
+    "image": "hiroshan.jpeg",
+    "title" : "Graduate Research/Teaching Assistant at UBC, Co-Investigator Soft Robotics Research Group at OUSLs" ,
+    "bio": "I am a graduate research assistant and a teaching assistant at UBC. I am currently working towards my PhD in the are of Soft Robotics focusing surgical applications. My current research interests are in Soft Robotics and their Biomedical applications.",
+    "areasOfExpertise" : ["Soft Robotics", "Biomedical Engineering"],
+    "fields": ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/hiroshan-gunawardane-43924826/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Sumudu Herath",
+    "image": "sumudu.jpeg",
+    "title" : "Former PhD Candidate in Computational Mechanics, University of Cambridge",
+    "bio": "To be updated",
+    "areasOfExpertise" : ["Mathematical Modelling", "Machine Learning", "Research"],
+    "fields": ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sumuduherath/"
+      }
+    ]
+  },
+  {
+    "name": "Kasun Bandara",
+    "image": "kasun.jpeg",
+    "title" : "Research Fellow in Data Science, University of Melbourne" ,
+    "bio": "Kasun Bandara is a Research Fellow at the Melbourne Centre for Data Science, University of Melbourne. He has been developing machine learning based time series forecasting architectures in collaboration with research scientists from Uber, Walmart Labs, Eastern Health Clinical School, Melbourne. His research interests are time series forecasting, machine learning.",
+    "areasOfExpertise" : ["Machine Learning", "Time series Forecasting", "Data Science", "Deep Learning", "Academic Writing"],
+    "fields": ["Data Science & AI"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "http://www.linkedin.com/in/bandarakasun"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Sumudu Tennakoon",
+    "image": "stennakoon.jpeg",
+    "title" : "Data Scientist, Apex Analytix" ,
+    "bio": "Sumudu Tennakoon is currently working as a Data Scientist. After earning his Ph.D. in physics from the University of Mississippi, USA, he worked as a postdoctoral scholar at The Department of Earth, Ocean, and Atmospheric Science, Florida State University, USA. His focus in both Ph.D. and postdoctoral research was investigating elastic properties of materials at elevated temperatures using ultrasonic methods. Throughout his university education, Sumudu took extensive coursework in computer and information technology. He is skilled at working with multiple programming languages and possess good computational work experience in instrumentation and data analysis. In his current role as a Data Scientist at Apex Analytix, Sumudu is responsible for research and develop analytics solutions based on machine learning and predictive analytics. Sumudu can provide mentorships in topics related to data science, machine learning, computer programing, and physics.",
+    "areasOfExpertise" : ["Physics", "Data Science", "Machine Learning", "Information Technology", "Computer Programing"],
+    "fields": ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sptennakoon/"
+      }
+    ]
+  },
+  {
+    "name": "Malsha Udayakantha",
+    "image": "malsha.jpg",
+    "title" : "Graduate Research Assistant, Texas A&M University, SLAKE" ,
+    "bio": "To be updated",
+    "areasOfExpertise" : ["Chemistry", "Academic writing"],
+    "fields": ["Physical Science"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/malsha-udayakantha-16575641/"
+      }
+    ]
+  },
+  {
+    "name": "Chamode Wijayasekera",
+    "image": "sachindra.jpeg",
+    "title" : "Graduate Research Assistant, University of British Columbia, Canada" ,
+    "bio": "Chamode is currently a Graduate Research Assistant of the University of British Columbia, reading for his Masters of Applied Sciences (MASc) degree in Civil Engineering. He is a proud alumni member of the Department of Chemical and Process Engineering of the University of Moratuwa, Sri Lanka.",
+    "areasOfExpertise" : ["Chemical and Process Engineering", "Environmental Engineering", "Sustainability", "Biochemical Engineering"],
+    "fields": ["Engineering"],
+    "projects" : [],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/sachindra-chamode-wijayasekera-083833136/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Nadeesha Chandrasena",
+    "image": "nadeesha.jpeg",
+    "title" : "PhD, Civil Engineering | GSP. Singularity University - NASA Research Park | Finalist, MIT 35 Under 35",
+    "bio":"Nadeesha Chandrasena is an expert in Urban Planning and is adept in Civil Engineering, Environment and Humanities. She was a National Key Consultant for the first ever Multimodal Transport Center Development Project in Sri Lanka. She can guide and mentor students in communication, invention and innovation.",
+    "areasOfExpertise" : [
+      "Urban Planning",
+      "Civil Engineering",
+      "Environment",
+      "Humanities",
+      "Communication",
+      "Invention",
+      "Innovation"
+    ],
+    "projects" : ["Students assigned to Nadeesha will assist her with her research as an independent researcher:\n'The contemporary issue I have been investigating as an independent research professional is, how to interconnect responsible government agencies and the neighborhood community with “Internet of Things” (IoT) technology that adapted to the context of mitigating the urban surface water flood risks in developing countries.'"
+    ],
+    "fields": ["Engineering"],
+    "socialLinks" : [
+      {
+        "platform" : "linkedin",
+        "icon" : "fab fa-linkedin",
+        "url" : "https://www.linkedin.com/in/nadeesha-chandrasena-9b531526/"
       }
     ]
   }

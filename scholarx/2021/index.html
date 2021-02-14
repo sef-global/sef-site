@@ -68,29 +68,22 @@
             <div class="col-md-6 order-lg-1 text-center">
                 <div class="d-flex px-3">
                     <div class="pl-4">
-                        <h1 class="display-3 pb-3 text-center" style="line-height: 1.2;">Register your interest for ScholarX 2021</h1>
+                        <h1 class="display-3 pb-3 text-center" style="line-height: 1.2;">Apply for ScholarX 2021</h1>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
-        <div class="row row-grid align-items-center justify-content-center">
-            <div class="col-md-12 order-lg-1 text-center">
-                <div class="d-flex px-3">
-                    <div class="pl-5">
-                        <p class="pb-3 text-center">If you want to become a ScholarX mentor, please fill the following form</p>
-                        <a class="btn btn-primary text-white"
-                           href="mentor-interest.html">Mentor
-                        </a>                    
-                    </div>
-                    <div class="pl-5">
-                        <p class="pb-3 text-center"> If you are a student and you would like to join the ScholarX 2021, please fill the following form 
-                        </p>
-                        <a class="btn btn-primary text-white"
-                           href="mentee-interest.html">Student
-                        </a>                    
-                    </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center">
+                <div>
+                    <p class="pb-3 text-center"> If you are a student and you would like to join the ScholarX 2021,
+                        please fill the following form
+                    </p>
+                    <a class="btn btn-primary text-white"
+                       href="https://forms.gle/JBqZobUbqoZmcKUB7">Apply
+                    </a>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 </section>
@@ -115,11 +108,11 @@
                     </li>
                     <li>
                         <span>Student applications close</span>
-                        <span class="float-right">14 April, 2021</span>
+                        <span class="float-right">14 March, 2021</span>
                     </li>
                     <li>
                         <span>Publish selected students</span>
-                        <span class="float-right">19 April, 2021 - 30 April, 2021</span>
+                        <span class="float-right">14 April, 2021 - 30 April, 2021</span>
                     </li>
                     <li>
                         <span>Community bonding</span>
@@ -150,8 +143,18 @@
 
 <section class="section pb-0 bg-gradient-white">
     <div class="container">
-      <h1 class="mb-5 text-center font-weight-bold">Mentors</h1>
-       
+        <h1 class="mb-5 text-center font-weight-bold">Mentors</h1>
+        <div class="d-flex-wrap mb-5 justify-content-center">
+            <button class="btn active mb-3" onclick="filterProfiles('all')"> Show all</button>
+            <button class="btn mb-3" onclick="filterProfiles('Computer Science')"> Computer Science</button>
+            <button class="btn mb-3" onclick="filterProfiles('Engineering')"> Engineering</button>
+            <button class="btn mb-3" onclick="filterProfiles('Life Sciences')"> Life Sciences</button>
+            <button class="btn mb-3" onclick="filterProfiles('Data Science & AI')"> Data Science & AI
+            </button>
+            <button class="btn" onclick="filterProfiles('Physical Science')"> Physical Science</button>
+            <button class="btn" onclick="filterProfiles('Other')"> Other</button>
+        </div>
+        <!-- Profile cards goes here -->
         <div id="teamContent"></div>
         <div class="row justify-content-center">
             <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
@@ -240,7 +243,7 @@
                                     data-parent="#accordionExampleOne">
                                 <div class="card-body opacity-8 text-left">
                                     If you have received an email with details of the mentor recruitment for ScholarX 2021, then please fill the <a href="https://forms.gle/nxZBxC52ZRDqhehe8" target="_blank">google form</a> attached to the email. Otherwise, you may also submit your CV, a headshot, and expression of interest to su<a href="mailto:sustainableedufoundation@gmail.com">sustainableedufoundation@gmail.com</a>
-                                
+
                                 </div>
                             </div>
                         </div>
