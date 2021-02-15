@@ -1,13 +1,11 @@
 // Write custom js functions for the scholarx 2020 page here
-
 let mentorProfiles = [];
+let filteredProfiles = [];
 
 $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
-
     loadProfiles(); // load profiles
     loadFeaturedStories(); // load featured stories
-
     // Listner for FAQ
     $('.panel').click(
         function () {
@@ -28,6 +26,34 @@ $(function () {
     );
 });
 
+//slice array to two parts
+function sliceProfiles(profiles) {
+    //slice array to two parts
+    if (profiles.length >= 8) {
+        let partOne = profiles.slice(0, 8);
+        let partTwo = profiles.slice(8);
+        //mustache render - part one
+        let contentPartOne = Mustache.render($("#templateTeam").html(), {"profiles": partOne});
+        //display first 8 profiles
+        $("#teamContent").html(contentPartOne);
+        //show button
+        $("#btnShowMore").show();
+        //hide button
+        $("#btnShowMore").click(function () {
+            let contentPartTwo = Mustache.render($("#templateTeam").html(), {"profiles": partTwo});
+            $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
+            $("#btnShowMore").hide();
+        });
+    } else {
+        //mustache render
+        let content = Mustache.render($("#templateTeam").html(), {"profiles": profiles});
+        //display first 8 profiles
+        $("#teamContent").html(content);
+        //hide button
+        $("#btnShowMore").hide();
+    }
+}
+
 //function to load profile data
 function loadProfiles() {
     $.ajax({
@@ -35,40 +61,31 @@ function loadProfiles() {
         url: 'mentors.json',
         dataType: 'json',
         success: function (profiles) {
-            mentorProfiles = profiles;
             // Add a new key named `index` with the index (To use with moustache template)
             profiles.forEach(function (profile, index) {
                 profile.index = index;
             });
-            //slice array to two parts
-            if (profiles.length >= 8) {
-                let partOne = profiles.slice(0, 8);
-                let partTwo = profiles.slice(8);
-
-                //mustache render - part one
-                let contentPartOne = Mustache.render($("#templateTeam").html(), {"profiles": partOne});
-
-                //display first 8 profiles
-                $("#teamContent").html(contentPartOne);
-
-                //hide button
-                $("#btnShowMore").click(function () {
-                    let contentPartTwo = Mustache.render($("#templateTeam").html(), {"profiles": partTwo});
-                    $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
-                    $("#btnShowMore").hide();
-                });
-            } else {
-                //mustache render
-                let content = Mustache.render($("#templateTeam").html(), {"data": profiles});
-
-                //display first 8 profiles
-                $("#teamContent").html(content);
-
-                //hide button
-                $("#btnShowMore").hide();
-            }
+            mentorProfiles = profiles;
+            filteredProfiles = profiles;
+            sliceProfiles(profiles);
         }
     });
+}
+
+// function to filter profiles based on category
+function filterProfiles(category) {
+    filteredProfiles = mentorProfiles;
+    if(category !== "all" ) {
+        filteredProfiles = filteredProfiles.filter(function (profile) {
+            return profile["fields"].includes(category)
+        });
+    }
+    //mustache render
+    let content = Mustache.render($("#templateTeam").html(), {"profiles": filteredProfiles});
+    //display first 8 profiles
+    $("#teamContent").html(content);
+    //hide button
+    $("#btnShowMore").hide();
 }
 
 //function to load profile data
@@ -124,4 +141,3 @@ function openMentorProfile(index){
     // Open the modal
     $('#profile-modal').modal();
 }
-
