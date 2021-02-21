@@ -1,4 +1,28 @@
 /*Add custom styles for the scholarx 2020 page here*/
+.author {
+    font-size: 1.1rem;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.card-body img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-text {
+    padding: 24px;
+    font-size: 1.2rem;
+}
+
+.fa-clock {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
 .timeline {
     list-style-type: none;
     position: relative;
