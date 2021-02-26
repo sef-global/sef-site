@@ -361,7 +361,7 @@
   },
   {
     "name": "Priyadharshany Sandanapitchai",
-    "image": "priyadharshany.jpeg",
+    "image": "priyadharshany.jpg",
     "title" : "Research Associate, Rutgers, The State University of New Jersey, USA" ,
     "bio": "Priyadharshany Sandanapitchai is a research associate at the FXB Center of Rutgers University and an intern with the SPSSI-UN team. She graduated with a master’s degree in clinical and counseling psychology. She has over five years of research experience in academic and professional settings, from small-scale studies to national grants. Besides, her work at the UN focuses on promoting psychological science within the contexts of climate change, racism, gender equity, human rights, and public policy.",
     "areasOfExpertise" : ["Clinical Psychology","Academic Research","HIV prevention and mHealth" ,"Trauma and Culture","UN Sustainable Development Goals"],
@@ -797,7 +797,7 @@
     ]
   },
   {
-    "name": "Kasun Bandara",
+    "name": "Dr. Kasun Bandara",
     "image": "kasun.jpeg",
     "title" : "Research Fellow in Data Science, University of Melbourne" ,
     "bio": "Kasun Bandara is a Research Fellow at the Melbourne Centre for Data Science, University of Melbourne. He has been developing machine learning based time series forecasting architectures in collaboration with research scientists from Uber, Walmart Labs, Eastern Health Clinical School, Melbourne. His research interests are time series forecasting, machine learning.",
@@ -818,7 +818,7 @@
     "title" : "Data Scientist, Apex Analytix" ,
     "bio": "Sumudu Tennakoon is currently working as a Data Scientist. After earning his Ph.D. in physics from the University of Mississippi, USA, he worked as a postdoctoral scholar at The Department of Earth, Ocean, and Atmospheric Science, Florida State University, USA. His focus in both Ph.D. and postdoctoral research was investigating elastic properties of materials at elevated temperatures using ultrasonic methods. Throughout his university education, Sumudu took extensive coursework in computer and information technology. He is skilled at working with multiple programming languages and possess good computational work experience in instrumentation and data analysis. In his current role as a Data Scientist at Apex Analytix, Sumudu is responsible for research and develop analytics solutions based on machine learning and predictive analytics. Sumudu can provide mentorships in topics related to data science, machine learning, computer programing, and physics.",
     "areasOfExpertise" : ["Physics", "Data Science", "Machine Learning", "Information Technology", "Computer Programing"],
-    "fields": ["Physical Science"],
+    "fields": ["Physical Science", "Data Science & AI"],
     "projects" : [],
     "socialLinks" : [
       {
@@ -882,6 +882,216 @@
         "platform" : "linkedin",
         "icon" : "fab fa-linkedin",
         "url" : "https://www.linkedin.com/in/nadeesha-chandrasena-9b531526/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Sadeep Jayasumana",
+    "image": "sadeep.jpg",
+    "title": "Senior Research Scientist, Google Research",
+    "bio": "",
+    "areasOfExpertise": [],
+    "projects": [],
+    "fields": ["Engineering"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/sadeepj"
+      }
+    ]
+  },
+  {
+    "name": "Erandathie Jayakody",
+    "image": "erandathie.jpg",
+    "title": "Expert Advisor of Royal Commission into Victoria's Mental Health System",
+    "bio": "",
+    "areasOfExpertise": [
+      "Mental Health Law and Disabiility Law Expert",
+      "Conducting hearings and making determinations for tribunals",
+      "Strategic Advice",
+      "Systemic Advocacy"
+    ],
+    "projects": [],
+    "fields": ["Life Sciences"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/ejayakody/"
+      }
+    ]
+  },
+  {
+    "name": "Ishan Karunanayake",
+    "image": "ishan.jpg",
+    "title": "PhD Researcher, University of New South Wales, Sydney",
+    "bio": "Ishan Karunanayake is a PhD Researcher at the School of Computer Science and Engineering, University of New South Wales, Australia. His main research interests are malware detection, anonymity networks, and machine learning. He is also affiliated with the Cyber Security Cooperative Research Centre, Australia. He obtained his BSc. Degree from University of Moratuwa, specialized in Electronic and Telecommunication Engineering. He has more than two years of industry experience in working as a software engineer. ",
+    "areasOfExpertise": [
+      "Computer Science",
+      "Cybersecurity and Networking",
+      "Machine Learning",
+      "Software Development and Startups",
+      "Research and Academic Writing"
+    ],
+    "projects": [],
+    "fields": ["Computer Science", "Engineering"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/ishankarunanayake/"
+      }
+    ]
+  },
+  {
+    "name": "Dr. Anupiya Nugaliyadde",
+    "image": "anupiya.jpg",
+    "title": "Post Doctoral Research Fellow, Murdoch University",
+    "bio": "Anupiya is the Australian Computer Society's Medallist for the most Outstanding PhD in 2020 and working as a Post Doctoral Research Fellow at Murdoch University, Australia.",
+    "areasOfExpertise": [
+      "Natural Language Understanding",
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Machine Learning",
+      "Medical Image Processing"
+    ],
+    "projects": [],
+    "fields": ["Data Science & AI"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/anupiya-nugaliyadde/"
+      }
+    ]
+  },
+  {
+    "name": "Vasuki Silva",
+    "image": "vasuki.jpg",
+    "title": "PhD Student at UTHSC, Children's Research Institute, Le Bonheur Children's Research Institute, US",
+    "bio": "",
+    "areasOfExpertise": [
+      "Immunology",
+      "Pulmonology",
+      "animal science",
+      "food science"
+    ],
+    "projects": [],
+    "fields": ["Life Sciences"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/vasuki-silva-86238010b/"
+      }
+    ]
+  },
+  {
+    "name": "Mukunthan Tharmakulasingam",
+    "image": "mukunthan.png",
+    "title": "PhD Student, University of Surrey, UK",
+    "bio": "Mukunthan Tharmakulasingam is a PhD candidate at the University of Surrey, UK. His research interests are mainly in applying Machine learning and deep learning techniques to predict diseases. Following his undergraduate, He worked for 4 years at LSEG Technology group as a Software Engineer developing mission-critical software for Capital markets. After that, he joined the University of Jaffna as a Lecturer, and he is on study leave now. He is also working as a Tutor and Demonstrator at the University of Surrey, UK and working as a part-time data mining consultant at Senzmate, an IoT based company in Sri Lanka. He can guide students on Machine Learning, IoT and Bioinformatics projects as part of the mentorship.",
+    "areasOfExpertise": [
+      "Machine Learning",
+      "Bioinformatics",
+      "Digital Health",
+      "IoT"
+    ],
+    "projects": [],
+    "fields": ["Data Science & AI"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/mukunthant/"
+      }
+    ]
+  },
+  {
+    "name": "Gihan Mendis",
+    "image": "gihan.jpg",
+    "title": "Research Assistant, Cyber Physical Social System Lab, Purdue University",
+    "bio": "I am a Ph.D. candidate in Technology at Purdue University. I received the MSc. degree in Electrical Engineering from The University of Akron, in 2016, and the BSc. Eng. (Hons) degree in Electronic and Telecommunication Engineering at The University of Moratuwa, Sri Lanka, in 2012. My research interests include deep learning algorithms, decentralize deep learning, encrypted deep learning, cognitive radar sensors, and cognitive radio.",
+    "areasOfExpertise": [
+      "Deep Learning",
+      "Radio frequency analysis with machine learning (RFML)",
+      "decentralized privacy preserving computing, deep learning on edge devices"
+    ],
+    "projects": [],
+    "fields": ["Computer Science", "Engineering"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "http://www.linkedin.com/in/gihan-mendis"
+      }
+    ]
+  },
+  {
+    "name": "Sunanda Gamage",
+    "image": "sunanda.jpg",
+    "title": "Ph.D. Candidate, Western University",
+    "bio": "Sunanda is a Ph.D. candidate at the University of Western Ontario, studying interpretability of neural network models and human-in-the-loop machine learning. Before starting graduate school, he worked as a software engineer for over three years at the London Stock Exchange Technology (Malabe, Sri Lanka). Sunanda is passionate about making research and engineering careers more accessible to Sri Lankan youth. He can guide you on building a strong profile for graduate school applications or engineering positions, especially in machine learning and software engineering.",
+    "areasOfExpertise": [
+      "Machine Learning",
+      "Graduate Applications",
+      "Research Projects",
+      "Academic Writing",
+      "Distributed Systems Category:Computer Science",
+      "Engineering",
+      "Data Science & AI"
+    ],
+    "projects": [],
+    "fields": ["Computer Science", "Engineering"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "http://www.linkedin.com/in/sunandagamage"
+      }
+    ]
+  },
+  {
+    "name": "Ranin Mendis",
+    "image": "ranin.jpg",
+    "title": "Former Head of Revenue and Operations at Joust, Sydney",
+    "bio": "As an experienced entrepreneur I help fellow founders with mentoring and guidance. With over a decade of consumer finance experience with the second largest bank in Australia and as the co-founder of the largest Australian Mortgage marketplace I am able to provide and share rich insights into how to hustle, business planning, research, strategic thinking, solve problems, hack your way through to your next milestone, workflow optimisation, putting teams together, raising capital, and ask the difficult questions.",
+    "areasOfExpertise": [
+      "Leadership",
+      "Self development",
+      "Product Management",
+      "Strategy",
+      "Fintech (Consumer Finance in particular)",
+      "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts"
+    ],
+    "projects": [],
+    "fields": ["Other"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/ranin-mendis/"
+      }
+    ]
+  },
+  {
+    "name": "Sajani Amarasiri",
+    "image": "sajani.jpg",
+    "title": "Founder and CEO, KOLA GOODIES",
+    "bio":"Sajani Amarasiri is the founder and CEO of Colombo Cooperative an entrepreneur hub and coworking space in Colombo, Sri Lanka with a mission to help everyone achieve their full potential. She has industry experience in supply chain management and business and can provide guidance and mentorship in entrepreneurship and personal development and branding.",
+    "areasOfExpertise" : [
+      "Supply Chain Management and Business",
+      "Entrepreneurship",
+      "Personal development and branding"
+    ],
+    "projects": [],
+    "fields": ["Other"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/sajaniamarasiri/"
       }
     ]
   }
