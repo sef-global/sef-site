@@ -1,5 +1,85 @@
 [
   {
+    "name": "Upeka Somarthne",
+    "description": "Information Technology",
+    "image": "upeka_somarathne.jpeg",
+    "social": {
+      "linkedin": "upekasomaratne-83749b4a"
+    }
+  },
+  {
+    "name": "Kajeenthan Kamalaseelan",
+    "description": "Civil Engineering",
+    "image": "kajeenthan_kamalaseelan.jpeg",
+    "social": {
+      "linkedin": "eng-kajeenthan-kamalaseelan"
+    }
+  },
+  {
+    "name": "Rasika Dissanayake",
+    "description": "Chemical Science",
+    "image": "rasika_dissanayake.jpeg",
+    "social": {
+      "linkedin": "rasika-ea-dissanayake"
+    }
+  },
+  {
+    "name": "Lasara Kariyawasam",
+    "description": "Psychology",
+    "image": "lasara_kariyawasam.jpeg",
+    "social": {
+      "linkedin": "lasara-kariyawasam-154373145"
+    }
+  },
+  {
+    "name": "Durga Dharmadana",
+    "description": "Biomedical Science",
+    "image": "durga_dharmadana.jpeg",
+    "social": {
+      "linkedin": "durga-dharmadana-a8aa6687"
+    }
+  },
+  {
+    "name": "Upekha Miriyagalla",
+    "description": "Social Psychology",
+    "image": "upekha_miriyagalla.jpeg",
+    "social": {
+      "linkedin": "upekha-miriyagalla-54754a93"
+    }
+  },
+  {
+    "name": "Biyanka Ekanayake",
+    "description": "Construction Automation",
+    "image": "biyanka_ekanayake.jpeg",
+    "social": {
+      "linkedin": "biyanka-ekanayake-0146a8142"
+    }
+  },
+  {
+    "name": "Pevindu Abeysinghe",
+    "description": "Reproductive Biology",
+    "image": "pevindu_abeysinghe.jpeg",
+    "social": {
+      "linkedin": "pevindu-abeysinghe-a10085138"
+    }
+  },
+  {
+    "name": "Udani Wijewardhana",
+    "description": "Statistics",
+    "image": "udani_wijewardhana.jpeg",
+    "social": {
+      "linkedin": "udani-wijewardhana-2134426b"
+    }
+  },
+  {
+    "name": "Sumudu Mallawaarachchi",
+    "description": "Psychology",
+    "image": "sumudu_mal.jpeg",
+    "social": {
+      "linkedin": "sumudu-mallawaarachchi-10a921133"
+    }
+  },
+  {
     "name": "Arosha K. Bandara",
     "description": "Software Engineering",
     "image": "arosha.jpeg",
@@ -591,4 +671,5 @@
       "linkedin": "jayaruwangunathilake"
     }
   }
+
 ]
