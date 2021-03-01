@@ -544,7 +544,7 @@ body{
 /*our projects display section*/
 .project-img {
     padding: 15px;
-    width: 200px;
+    max-width: 200px;
     height: auto;
 }
 
@@ -562,6 +562,14 @@ body{
     font-size: 13px;
 }
 
+#projects>div>div:nth-child(2)>a:nth-child(3) {
+    display: block;
+}
+
+#projects>div>div:nth-child(4)>a:nth-child(1) {
+    display: none;
+}
+    
 @media (min-width: 120px) {
     .carousel-item{
         height: 200px;
@@ -592,5 +600,14 @@ body{
 
     .hide-md-image{
         display: none;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+    #projects>div>div:nth-child(2)>a:nth-child(3) {
+        display: none;
+    }
+
+    #projects>div>div:nth-child(4)>a:nth-child(1) {
+        display: block;
     }
 }
