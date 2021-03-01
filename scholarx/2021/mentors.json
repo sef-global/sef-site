@@ -992,13 +992,13 @@
     "name": "Dr. Sumudu Herath",
     "image": "sumudu.jpeg",
     "title": "Former PhD Candidate in Computational Mechanics, University of Cambridge",
-    "bio": "To be updated",
+    "bio": "Dr. Sumudu Herath completed his Ph.D. at the University of Cambridge focusing on data-driven non-linear multi-scale strategies for material systems design. He focused on applying machine learning techniques to the computational structural mechanics' domain.Prior to his doctoral studies, Dr. Sumudu obtained a first-class degree and became the batch top at the University of Moratuwa. He has won several other University awards and secured foreign internships and Germany and Switzerland during his tenure as an undergraduate at the University of Moratuwa.",
     "areasOfExpertise": [
       "Mathematical Modelling",
       "Machine Learning",
       "Research"
     ],
-    "fields": ["Engineering"],
+    "fields": ["Engineering", "Data Science & AI"],
     "projects": [],
     "socialLinks": [
       {
@@ -1219,7 +1219,7 @@
   },
   {
     "name": "Mukunthan Tharmakulasingam",
-    "image": "mukunthan.png",
+    "image": "mukunthan.jpg",
     "title": "PhD Student, University of Surrey, UK",
     "bio": "Mukunthan Tharmakulasingam is a PhD candidate at the University of Surrey, UK. His research interests are mainly in applying Machine learning and deep learning techniques to predict diseases. Following his undergraduate, He worked for 4 years at LSEG Technology group as a Software Engineer developing mission-critical software for Capital markets. After that, he joined the University of Jaffna as a Lecturer, and he is on study leave now. He is also working as a Tutor and Demonstrator at the University of Surrey, UK and working as a part-time data mining consultant at Senzmate, an IoT based company in Sri Lanka. He can guide students on Machine Learning, IoT and Bioinformatics projects as part of the mentorship.",
     "areasOfExpertise": [
@@ -1321,6 +1321,28 @@
         "platform": "linkedin",
         "icon": "fab fa-linkedin",
         "url": "https://www.linkedin.com/in/sajaniamarasiri/"
+      }
+    ]
+  },
+  {
+    "name": "Pramodh Senarath Yapa",
+    "image": "Pramodh_Yapa.png",
+    "title": "PhD Student in Theoretical Condensed Matter Physics, the University of Alberta, Canada",
+    "bio": "Pramodh Senarath Yapa (he/his) is a PhD Student in Theoretical Condensed Matter Physics at the University of Alberta. He studies the properties of matter when it is cooled to near absolute zero, and explores how quantum mechanics leads to the formation of new states of matter. His current obsession is superfluid Helium-3, which is liquid that has zero viscosity and thus can flow without friction. In 2019, Pramodh was chosen as the winner of the Dance Your PhD competition sponsored by the American Association for the Advancement of Science for his swing-dancing rendition of electron behaviour, \"Superconductivity: The Musical!\". Outside of various #SciComm activities, Pramodh is playing ultimate frisbee, recording music or out exploring the great outdoors! He can provide mentorship on topics related to physics research, applying to graduate school and science communication.",
+    "areasOfExpertise": [
+      "Physics Research",
+      "Applying to Graduate School",
+      "Science Communication"
+    ],
+    "projects": [
+      "YouTube Channel: https://www.youtube.com/channel/UC501-ejetmWUtwhkkfVhATA",
+      "Twitter: https://twitter.com/PramodhYapa"],
+    "fields": ["Physical Science"],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/pramodhyapa/"
       }
     ]
   }
