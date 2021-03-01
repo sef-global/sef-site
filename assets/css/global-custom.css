@@ -562,6 +562,14 @@ body{
     font-size: 13px;
 }
 
+#projects>div>div:nth-child(2)>a:nth-child(3) {
+    display: block;
+}
+
+#projects>div>div:nth-child(4)>a:nth-child(1) {
+    display: none;
+}
+    
 @media (min-width: 120px) {
     .carousel-item{
         height: 200px;
@@ -595,11 +603,11 @@ body{
     }
 }
 @media (min-width:576px) and (max-width:768px) {
-    .card-body {
-        padding: 1.5rem 0;
+    #projects>div>div:nth-child(2)>a:nth-child(3) {
+        display: none;
     }
 
-    .project-img {
-        padding: 15px 0;
+    #projects>div>div:nth-child(4)>a:nth-child(1) {
+        display: block;
     }
 }
