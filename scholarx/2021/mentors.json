@@ -39,6 +39,7 @@
   {
     "name": "Dr. Iromi Wanigasuriya",
     "image": "iromi.jpeg",
+    "bio": "Iromi Wanigasuriya is a post-doctoral researcher at the Walter and Eliza Hall institute, Department of Medical biology, University of Melbourne, Australia. During her PhD she explored the function of epigenetic modifier Smchd1 using next generation sequencing and advance imaging techniques. She is passionate about advocating for women in science and encouraging girls to enter into STEM. She will be happy to mentor and share her experience on multiple topics, including but not limited to scientific research, networking, career development, and science communication.",
     "title": "Postdoctoral Researcher at Walter and Eliza Hall Institute of Medical Research",
     "areasOfExpertise": ["Molecular biology", "Health Sciences", "Epigenetics"],
     "fields": ["Life Sciences"],
@@ -1119,8 +1120,8 @@
     "name": "Dr. Sadeep Jayasumana",
     "image": "sadeep.jpg",
     "title": "Senior Research Scientist, Google Research",
-    "bio": "",
-    "areasOfExpertise": [],
+    "bio": "Sadeep is a Senior Research Scientist at Google Research, New York. His research interests are in the areas of computer vision, deep learning, and machine learning in general.Before joining Google, Sadeep was a computer vision/deep learning researcher at a UK-based self-driving car startup and a London-based quantitative hedge fund.During his time in academia, Sadeep has completed a Postdoc at the University of Oxford, and a PhD at the Australian National University - both in computer vision.",
+    "areasOfExpertise": ["Deep learning", "computer vision", "machine learning"],
     "projects": [],
     "fields": ["Data Science & AI"],
     "socialLinks": [
@@ -1198,7 +1199,7 @@
   },
   {
     "name": "Vasuki Silva",
-    "image": "vasuki.jpg",
+    "image": "vasuki.jpeg",
     "title": "PhD Student at UTHSC, Children's Research Institute, Le Bonheur Children's Research Institute, US",
     "bio": "To be updated",
     "areasOfExpertise": [
@@ -1336,7 +1337,8 @@
     ],
     "projects": [
       "YouTube Channel: https://www.youtube.com/channel/UC501-ejetmWUtwhkkfVhATA",
-      "Twitter: https://twitter.com/PramodhYapa"],
+      "Twitter: https://twitter.com/PramodhYapa"
+    ],
     "fields": ["Physical Science"],
     "socialLinks": [
       {
