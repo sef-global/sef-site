@@ -37,7 +37,7 @@
     </div>
 </header>
 
-<section class="section pb-0" style="background-color: #f8fdff">
+<section class="section pb-0">
     <div class="container">
         <h2 class="display-3 text-center mb-5" >Advisory Panel</h2>
 
@@ -46,19 +46,6 @@
 
         <div class="row justify-content-center">
             <button id="btnShowMore_advisoryPanel" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
-        </div>
-    </div>
-</section>
-
-<section class="section pb-0">
-    <div class="container">
-        <h2 class="display-3 text-center mb-5" >Consultants</h2>
-
-        <!--Profile cards goes here-->
-        <div id="consultants"></div>
-
-        <div class="row justify-content-center">
-            <button id="btnShowMore_consultants" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
 </section>
@@ -104,19 +91,6 @@
 </section>
 
 <section class="section pb-0">
-    <div class="container">
-        <h2 class="display-3 text-center mb-5 ">Design Team</h2>
-
-        <!--Profile cards goes here-->
-        <div id="designTeam"></div>
-
-        <div class="row justify-content-center">
-            <button id="btnShowMore_designTeam" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
-        </div>
-    </div>
-</section>
-
-<section class="section pb-0" style="background-color: #f8fdff">
     <div class="container">
         <h2 class="display-3 text-center mb-5 ">Alumni</h2>
 
@@ -196,7 +170,6 @@
             dataType: 'json',
             success: function (payload) {
                 let advisoryPanel = payload.advisoryPanel;
-                let consultants = payload.consultants;
                 let externalCollaborators = payload.externalCollaborators;
                 let executiveCommitee = payload.executiveCommitee;
                 let techTeam = payload.techTeam;
@@ -204,7 +177,6 @@
                 let alumni = payload.alumni
 
                 loadData("advisoryPanel", advisoryPanel);
-                loadData("consultants", consultants);
                 loadData("externalCollaborators", externalCollaborators);
                 loadData("executiveCommitee", executiveCommitee);
                 loadData("techTeam", techTeam);
