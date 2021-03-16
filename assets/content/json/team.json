@@ -109,6 +109,22 @@
       }
     },
     {
+      "name": "Ranojaan Mahendran",
+      "description": "Project Cordinator",
+      "image": "ranojaan.jpg",
+      "social": {
+        "linkedin": "ranojaan"
+      }
+    },
+    {
+      "name": "Dharana Jayawardena",
+      "description": "Program Manager",
+      "image": "dharana.jpeg",
+      "social": {
+        "linkedin": "djaya"
+      }
+    },
+    {
       "name": "Asel Peiris",
       "description": "Program Manager",
       "image": "asel.jpeg",
@@ -194,22 +210,6 @@
       "image": "chalani.jpg",
       "social": {
         "linkedin": "chalani-ekanayake-6a7219164"
-      }
-    },
-    {
-      "name": "Ranojaan Mahendran",
-      "description": "Project Cordinator",
-      "image": "ranojaan.jpg",
-      "social": {
-        "linkedin": "ranojaan"
-      }
-    },
-    {
-      "name": "Dharana Jayawardena",
-      "description": "Program Manager",
-      "image": "dharana.jpeg",
-      "social": {
-        "linkedin": "djaya"
       }
     }
   ],
