@@ -31,40 +31,6 @@
       "social": {
         "linkedin": "rohan-jayaweera-9b42a95"
       }
-    },
-    {
-      "name": "Bhagya Nirmaan Silva",
-      "description": "CTO at Loftux",
-      "image": "bhagya.jpg",
-      "social": {
-        "linkedin": "bhagyas"
-      }
-    }
-  ],
-  "consultants": [
-    {
-      "name": "Anish Wijesinghe",
-      "description": "Founder at Motion Miracles,Wibble & Crytec",
-      "image": "anish.jpg",
-      "social": {
-        "linkedin": "anishwij"
-      }
-    },
-    {
-      "name": "Kavindya Thennakoon",
-      "description": "LDT at Stanford Graduate School of Education",
-      "image": "kavindya.jpg",
-      "social": {
-        "linkedin": "kavindyathennakoon"
-      }
-    },
-    {
-      "name": "Yasiru Kassapa",
-      "description": "Software Developer at AirThings",
-      "image": "yasiru.jpg",
-      "social": {
-        "linkedin": "yasiruk"
-      }
     }
   ],
   "externalCollaborators": [
@@ -90,6 +56,30 @@
       "image": "ramindu.jpg",
       "social": {
         "linkedin": "rdeshapriya"
+      }
+    },
+    {
+      "name": "Anish Wijesinghe",
+      "description": "Founder at Motion Miracles,Wibble & Crytec",
+      "image": "anish.jpg",
+      "social": {
+        "linkedin": "anishwij"
+      }
+    },
+    {
+      "name": "Kavindya Thennakoon",
+      "description": "LDT at Stanford Graduate School of Education",
+      "image": "kavindya.jpg",
+      "social": {
+        "linkedin": "kavindyathennakoon"
+      }
+    },
+    {
+      "name": "Yasiru Kassapa",
+      "description": "Software Developer at AirThings",
+      "image": "yasiru.jpg",
+      "social": {
+        "linkedin": "yasiruk"
       }
     }
   ],
@@ -119,11 +109,19 @@
       }
     },
     {
-      "name": "Saumiyaa Pathmarajah",
-      "description": "Program Manager",
-      "image": "saumiyaa.jpeg",
+      "name": "Ranojaan Mahendran",
+      "description": "Project Cordinator",
+      "image": "ranojaan.jpg",
       "social": {
-        "linkedin": "saumiyaa-pathmarajah-29b988160"
+        "linkedin": "ranojaan"
+      }
+    },
+    {
+      "name": "Dharana Jayawardena",
+      "description": "Program Manager",
+      "image": "dharana.jpeg",
+      "social": {
+        "linkedin": "djaya"
       }
     },
     {
@@ -159,14 +157,6 @@
       }
     },
     {
-      "name": "Shreeharan Hareendran",
-      "description": "Digital Marketing Executive",
-      "image": "shreeharan.jpeg",
-      "social": {
-        "linkedin": "shreeharanhareendran"
-      }
-    },
-    {
       "name": "Janith Ravindu Silva",
       "description": "Chief Design Officer",
       "image": "janith.jpeg",
@@ -175,11 +165,51 @@
       }
     },
     {
-      "name": "Ahrane Mahaganapathy",
-      "description": "Assistant Secretary",
-      "image": "ahrane.jpeg",
+      "name": "Amaya Dharmasiri",
+      "description": "Assistant Program Manager",
+      "image": "amaya.jpg",
       "social": {
-        "linkedin": "ahrane-mahaganapathy-943b34165"
+        "linkedin": "amaya-dharmasiri-05558a153"
+      }
+    },
+    {
+      "name": "Fahim Aslam",
+      "description": "Assistant Program Manager",
+      "image": "fahim.jpg",
+      "social": {
+        "linkedin": "fahimaslam08"
+      }
+    },
+    {
+      "name": "Ramith Hettiarachchi",
+      "description": "Assistant Program Manager",
+      "image": "ramithh.jpeg",
+      "social": {
+        "linkedin": "ramithhettiarachchi"
+      }
+    },
+    {
+      "name": "Kithmin Wickremasinghe",
+      "description": "Assistant Program Manager",
+      "image": "kithmin.jpg",
+      "social": {
+        "linkedin": "kithminrw"
+      }
+    },
+    {
+      "name": "Sandani Gunawardane",
+      "description": "Assistant Program Manager",
+      "image": "sandani.jpeg",
+      "social": {
+        "linkedin": "sandani-gunawardane-746108171"
+      }
+    },
+    {
+      "name": "Chalani Ekanayake",
+      "description": "Operations Executive",
+      "image": "chalani.jpg",
+      "social": {
+        "linkedin": "chalani-ekanayake-6a7219164"
       }
     }
   ],
@@ -234,22 +264,7 @@
     }
   ],
   "designTeam": [
-    {
-      "name": "Osusara Kammalawatta",
-      "description": "Creative Designer",
-      "image": "ossa.jpeg",
-      "social": {
-        "linkedin": "osusara"
-      }
-    },
-    {
-      "name": "Sanduni Bhagya",
-      "description": "Graphic Designer",
-      "image": "sanduni.jpeg",
-      "social": {
-        "linkedin": "sanduni-bhagya-a2823b187"
-      }
-    }
+    
   ],
   "alumni": [
     {
@@ -554,6 +569,54 @@
       "image": "nimesh.jpeg",
       "social": {
         "linkedin": "nimeshkasun"
+      }
+    },
+    {
+      "name": "Bhagya Nirmaan Silva",
+      "description": "CTO at Loftux",
+      "image": "bhagya.jpg",
+      "social": {
+        "linkedin": "bhagyas"
+      }
+    },
+    {
+      "name": "Saumiyaa Pathmarajah",
+      "description": "Program Manager",
+      "image": "saumiyaa.jpeg",
+      "social": {
+        "linkedin": "saumiyaa-pathmarajah-29b988160"
+      }
+    },
+    {
+      "name": "Shreeharan Hareendran",
+      "description": "Digital Marketing Executive",
+      "image": "shreeharan.jpeg",
+      "social": {
+        "linkedin": "shreeharanhareendran"
+      }
+    },
+    {
+      "name": "Ahrane Mahaganapathy",
+      "description": "Assistant Secretary",
+      "image": "ahrane.jpeg",
+      "social": {
+        "linkedin": "ahrane-mahaganapathy-943b34165"
+      }
+    },
+    {
+      "name": "Osusara Kammalawatta",
+      "description": "Creative Designer",
+      "image": "ossa.jpeg",
+      "social": {
+        "linkedin": "osusara"
+      }
+    },
+    {
+      "name": "Sanduni Bhagya",
+      "description": "Graphic Designer",
+      "image": "sanduni.jpeg",
+      "social": {
+        "linkedin": "sanduni-bhagya-a2823b187"
       }
     }
   ]
