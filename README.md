@@ -15,6 +15,19 @@ This website was build by a set of enthusiastic developers as part of the Sustai
 
 This repository contains source for Sustainable Education Foundation Website. [View Website](https://sefglobal.org/)
 
+## SEF Group Pages and Other Projects 
+
+* Discourse: https://sef.discourse.group/
+* Leaderboard: https://sefglobal.org/github-leaderboard/
+* Our Projects 
+    * Core: https://github.com/sef-global/sef-core
+    * Academix
+        * Backend: https://github.com/sef-global/sef-core
+        * Frontend: https://github.com/sef-global/academix-frontend
+    * ScholarX
+        * Backend: https://github.com/sef-global/scholarx
+        * Frontend: https://github.com/sef-global/scholarx-frontend
+
 
 ## Contribution
 
