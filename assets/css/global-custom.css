@@ -26,6 +26,10 @@ body{
     width: 100%;
 }
 
+.rounded-24px {
+    border-radius: 24px 24px 0 0;
+}
+
 /* custom Styling for cards*/
 .blog-card .card-body {
     padding: 24px 0;
@@ -500,6 +504,10 @@ body{
     padding: .5rem .75rem;
 }
 
+.height-400px{
+    height: 400px;
+}
+
 .video-card:hover .content-on-hover {
     display: block;
 }
@@ -514,6 +522,10 @@ body{
     display: -webkit-box;
     -webkit-line-clamp: 6; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.video-card {
+    border-radius: 1.5rem;
 }
 
 .rounded-05-rem {
