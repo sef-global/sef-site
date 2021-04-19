@@ -186,6 +186,16 @@
     </div>
 </section>
 
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <h1 class="display-3 text-center mb-5">Mentees</h1>
+        <div class="justify-content-center">
+            <!--Mentees table goes here-->
+            <div id="teamMentees"></div>
+        </div>
+    </div>
+</section>
+
 <section class="section faq"
          style="background-color: #f8fdff">
     <div class="container">
@@ -431,6 +441,31 @@
     </div>
 </script>
 
+<script type="text/html" id="templateMentees">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mentor</th>
+            <th scope="col">University</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#data}}
+          <tr onclick="window.location='{{linkedin}}';">
+            <th scope="row">
+                <img src="images/mentees/{{image}}" class="avatar">
+            </th>
+                <td>{{name}}</td>
+                <td>{{mentor}}</td>
+                <td>{{university}}</td>
+          </tr>
+        {{/data}}
+        </tbody>
+      </table>
+</script>
+
 <script>
     $(function () {
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
@@ -438,6 +473,7 @@
 
         loadProfiles(); // call function to load profiles
         loadFaqComponent();
+        loadMentees();
     });
 
     //function to load profile data
@@ -475,6 +511,19 @@
                     //hide button
                     $("#btnShowMore").hide();
                 }
+            }
+        });
+    }
+
+    function loadMentees() {
+        $.ajax({
+            type: 'get',
+            url: 'mentees.json',
+            dataType: 'json',
+            success: function (data) {
+                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
+                //display mentees
+                $("#teamMentees").html(templateMentees);
             }
         });
     }
