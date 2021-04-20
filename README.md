@@ -1,7 +1,7 @@
 # Official Website for Sustainable Education Foundation 
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/sef-global/sef-site/issues)
-[![HitCount](http://hits.dwyl.io/sef-global/sef-site.svg)](http://hits.dwyl.io/sef-global/sef-site)
+[![HitCount](http://hits.dwyl.com/sef-global/sef-site.svg)](http://hits.dwyl.io/sef-global/sef-site)
 [![version](https://img.shields.io/badge/version-3.0.0-yellow.svg)](https://semver.org)
 [![Build Status](https://travis-ci.org/sef-global/sef-site.svg?branch=master)](https://travis-ci.org/sef-global/sef-site)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sef-global/community)
