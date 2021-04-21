@@ -1,38 +1,38 @@
 [
     {
-      "name": "Nadiya",
+      "name": "Nadiya Azmy",
       "image": "nadiya.jpeg",
       "mentor": "Dr. Hasini",
-      "university": "Spectrum Institute of science and technology affiliated with the Edinburgh Napier University, Scotland",
+      "university": "Spectrum Institute of Science and Technology",
       "linkedin": "https://www.linkedin.com/in/nadiya-azmy-31909973/"
     },
     {
-        "name": "Gallage Nipun Ariyaratne",
+        "name": "Nipun Ariyaratne",
         "image": "gallage.jpeg",
         "mentor": "Dr. Hasini",
-        "university": "Montana State University-Bozeman,USA",
+        "university": "Montana State University-Bozeman, USA",
         "linkedin": "https://www.linkedin.com/in/gallage/"
     },
     {
         "name": "Adhisha Gammanpila",
         "image": "adhisha.jpeg",
         "mentor": "Dr. Jeewika",
-        "university": "University of Sri Jayewardenepura/ SurfEdge (PVT) Ltd",
+        "university": "University of Sri Jayewardenepura",
         "linkedin": "https://www.linkedin.com/in/adhisha-gammanpila/"
     },
     {
-        "name": "Hasini S. Perera",
+        "name": "Hasini Perera",
         "image": "hasinis.jpeg",
         "mentor": "Dr. Jeewika",
-        "university": "",
+        "university": "University of Sri Jayewardenepura",
         "linkedin": "https://www.linkedin.com/in/hasini-s-perera/"
     },
     {
         "name": "Janidu Jaysanka",
-        "image": "maleplaceholder.jpeg",
+        "image": "janidu.jpeg",
         "mentor": "Dr. Jeewika",
-        "university": "Sabaragamuwa University Of Srilanka",
-        "linkedin": ""
+        "university": "Sabaragamuwa University of Sri Lanka",
+        "linkedin": "https://www.linkedin.com/in/janidu-jayasanka-36435a145/"
     },
     {
         "name": "Chathura Devinda",
@@ -42,11 +42,11 @@
         "linkedin": "https://www.linkedin.com/in/chathura-devinda/"
     },
     {
-        "name": "Tharindu Jayathilaka",
-        "image": "tharinduj.jpeg",
+        "name": "Tarindu Jayathilaka",
+        "image": "tarinduj.jpeg",
         "mentor": "Dr. Rukshan",
         "university": "University of Moratuwa",
-        "linkedin": "https://www.linkedin.com/in/tharindujayathilake/"
+        "linkedin": "https://www.linkedin.com/in/tarinduj/"
     },
     {
         "name": "Mohamed Ayoob",
@@ -57,13 +57,13 @@
     },
     {
         "name": "Ramith Hettiarachchi",
-        "image": "maleplaceholder.jpeg",
+        "image": "ramith.jpeg",
         "mentor": "Dr. Rukshan",
         "university": "University of Moratuwa",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/ramithhettiarachchi/"
     },
     {
-        "name": "Savindi Narmada Wijenayaka",
+        "name": "Savindi Wijenayaka",
         "image": "savindi.jpeg",
         "mentor": "Dr. Rukshan",
         "university": "University of Kelaniya",
@@ -78,22 +78,22 @@
     },
     {
         "name": "Matheesha Abesekara",
-        "image": "maleplaceholder.jpeg",
+        "image": "matheesha.jpeg",
         "mentor": "Yasith Vidanaarachchi",
         "university": "University of Moratuwa",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/matheesha-abeysekera/"
     },
     {
         "name": "Mohamed Afham",
         "image": "mohamedafh.jpeg",
-        "mentor": "Savithru Jayasinghe",
+        "mentor": "Dr. Savithru Jayasinghe",
         "university": "University of Moratuwa",
         "linkedin": "https://www.linkedin.com/in/mohamedafham/"
     }, 
     {
         "name": "Dohitha Yapa",
         "image": "dohitha.jpeg",
-        "mentor": "Savithru Jayasinghe",
+        "mentor": "Dr. Savithru Jayasinghe",
         "university": "University of Moratuwa",
         "linkedin": "https://www.linkedin.com/in/dohithayapa/"
     }, 
@@ -112,23 +112,23 @@
         "linkedin": "https://www.linkedin.com/in/nadeeshangimhana/"
     },
     {
-        "name": "I.M Insaf",
-        "image": "maleplaceholder.jpeg",
+        "name": "Insaf Ismath",
+        "image": "insaf.jpeg",
         "mentor": "Sumudu Herath",
         "university": "University of Peradeniya",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/insaf-ismath-59b213138/"
     },
     {
         "name": "Najma Azmy",
-        "image": "maleplaceholder.jpeg",
+        "image": "najma.jpeg",
         "mentor": "Sumudu Herath",
         "university": "General Sir John Kotelawala Defence University",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/najma-azmy-553928134/"
     },
     {
         "name": "Chamika Sudusinghe",
         "image": "chamikas.jpeg",
-        "mentor": "Dr.Jeewika Ranaweera",
+        "mentor": "Dr. Jeewika Ranaweera",
         "university": "University of Moratuwa",
         "linkedin": "https://www.linkedin.com/in/chamikasudusinghe/"
     }
