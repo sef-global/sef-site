@@ -121,6 +121,27 @@
     </div>
 </section>
 
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <h1 class="display-3 text-center mb-5">Mentees</h1>
+        <div class="justify-content-center">
+            <!--Mentees table goes here-->
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">University</th>
+                    <th scope="col">Mentor</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="teamMentees"></tbody>
+            </table>  
+        </div>
+    </div>
+</section>
+
 <!-- Featured stories section -->
 <section>
     <div class="container mt-5 mb-5">
@@ -264,5 +285,39 @@
         </div>
         {{/data}}
     </div>
+</script>
+
+<script type="text/html" id="templateMentees">
+    {{#data}}
+        <tr onclick="window.location='{{linkedin}}';">
+            <th scope="row">
+                <img src="images/mentees/{{image}}" class="avatar">
+            </th>
+                <td>{{name}}</td>
+                <td>{{university}}</td>
+                <td>{{mentor}}</td>
+                
+        </tr>
+    {{/data}}     
+</script>
+
+<script>
+    $(function () {
+        loadMentees();
+    });
+
+    function loadMentees() {
+        $.ajax({
+            type: 'get',
+            url: 'mentees.json',
+            dataType: 'json',
+            success: function (data) {
+                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
+                //display mentees
+                $("#teamMentees").html(templateMentees);
+            }
+        });
+    }  
+    
 </script>
 </html>
