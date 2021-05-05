@@ -584,7 +584,7 @@ body{
     
 @media (min-width: 120px) {
     .carousel-item{
-        height: 200px;
+        height: auto;
     }
 
     .align-sm-center {
