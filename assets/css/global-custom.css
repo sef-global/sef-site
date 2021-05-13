@@ -570,6 +570,18 @@ body{
     font-weight: bold;
 }
 
+/*Archive card section*/
+.archive-card
+{
+    border-radius: 1.5rem;
+    padding: 0px;
+}
+
+.rounded-top25px
+{
+    border-radius: 25px 25px 0px 0px;
+}
+
 .stats {
     font-size: 13px;
 }
