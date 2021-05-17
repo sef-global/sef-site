@@ -1,0 +1,675 @@
+[
+  {
+    "name": "Upeka Somarthne",
+    "description": "Information Technology",
+    "image": "upeka_somarathne.jpeg",
+    "social": {
+      "linkedin": "upekasomaratne-83749b4a"
+    }
+  },
+  {
+    "name": "Kajeenthan Kamalaseelan",
+    "description": "Civil Engineering",
+    "image": "kajeenthan_kamalaseelan.jpeg",
+    "social": {
+      "linkedin": "eng-kajeenthan-kamalaseelan"
+    }
+  },
+  {
+    "name": "Rasika Dissanayake",
+    "description": "Chemical Science",
+    "image": "rasika_dissanayake.jpeg",
+    "social": {
+      "linkedin": "rasika-ea-dissanayake"
+    }
+  },
+  {
+    "name": "Lasara Kariyawasam",
+    "description": "Psychology",
+    "image": "lasara_kariyawasam.jpeg",
+    "social": {
+      "linkedin": "lasara-kariyawasam-154373145"
+    }
+  },
+  {
+    "name": "Durga Dharmadana",
+    "description": "Biomedical Science",
+    "image": "durga_dharmadana.jpeg",
+    "social": {
+      "linkedin": "durga-dharmadana-a8aa6687"
+    }
+  },
+  {
+    "name": "Upekha Miriyagalla",
+    "description": "Social Psychology",
+    "image": "upekha_miriyagalla.jpeg",
+    "social": {
+      "linkedin": "upekha-miriyagalla-54754a93"
+    }
+  },
+  {
+    "name": "Biyanka Ekanayake",
+    "description": "Construction Automation",
+    "image": "biyanka_ekanayake.jpeg",
+    "social": {
+      "linkedin": "biyanka-ekanayake-0146a8142"
+    }
+  },
+  {
+    "name": "Pevindu Abeysinghe",
+    "description": "Reproductive Biology",
+    "image": "pevindu_abeysinghe.jpeg",
+    "social": {
+      "linkedin": "pevindu-abeysinghe-a10085138"
+    }
+  },
+  {
+    "name": "Udani Wijewardhana",
+    "description": "Statistics",
+    "image": "udani_wijewardhana.jpeg",
+    "social": {
+      "linkedin": "udani-wijewardhana-2134426b"
+    }
+  },
+  {
+    "name": "Sumudu Mallawaarachchi",
+    "description": "Psychology",
+    "image": "sumudu_mal.jpeg",
+    "social": {
+      "linkedin": "sumudu-mallawaarachchi-10a921133"
+    }
+  },
+  {
+    "name": "Arosha K. Bandara",
+    "description": "Software Engineering",
+    "image": "arosha.jpeg",
+    "social": {
+      "linkedin": "akbandara"
+    }
+  },
+  {
+    "name": "Chamindie Punyadeera",
+    "description": "Cancer Diagnostic",
+    "image": "chamindie.jpeg",
+    "social": {
+      "linkedin": "chamindie-punyadeera"
+    }
+  },
+  {
+    "name": "Neelika Malavige",
+    "description": "Dengue Virus",
+    "image": "gathsaurie.jpeg",
+    "social": {
+      "linkedin": "gathsaurie-neelika-malavige-85b7b727"
+    }
+  },
+  {
+    "name": "Sachith Gallolu",
+    "description": "Molecular Biology",
+    "image": "sachith.jpeg",
+    "social": {
+      "linkedin": "sachith-gallolu-61560360"
+    }
+  },
+  {
+    "name": "Chamod Hettiarachchi",
+    "description": "Sustainable Roads",
+    "image": "chamod.jpeg",
+    "social": {
+      "linkedin": "chamod-hettiarachchi"
+    }
+  },
+  {
+    "name": "Chathura Sarathchandra",
+    "description": "Visulization Techniques for Next Generation Devices",
+    "image": "chathura.jpeg",
+    "social": {
+      "linkedin": "chathura77"
+    }
+  },
+  {
+    "name": "Hasini Jayathilake",
+    "description": "Cancer Research",
+    "image": "hasini.jpeg",
+    "social": {
+      "linkedin": "hasini-jayatilaka-ph-d-3026456a"
+    }
+  },
+  {
+    "name": "Kalhari Goonewardene",
+    "description": "Immunology",
+    "image": "kalhari.jpeg",
+    "social": {
+      "linkedin": "kalhari-goonewardene-9abb4321"
+    }
+  },
+  {
+    "name": "Thisum Buddhika",
+    "description": "Human Computer Interaction",
+    "image": "thisum.jpeg",
+    "social": {
+      "linkedin": "thisumbuddhika"
+    }
+  },
+  {
+    "name": "Suren Rajakaruna",
+    "description": "Car-T Immunotherapy",
+    "image": "suren.jpg",
+    "social": {
+      "linkedin": "suren-rajakaruna-ms-41138516"
+    }
+  },
+  {
+    "name": "Priyadharshany Sandanapitchai",
+    "description": "Clinical and Counseling Psychology",
+    "image": "priyadharshany.jpeg",
+    "social": {
+      "linkedin": "psandanapitchai"
+    }
+  },
+  {
+    "name": "Pramodh Chandrasinghe",
+    "description": "Cancer Research",
+    "image": "pramodh.jpeg",
+    "social": {
+      "linkedin": "pramodh-chandrasinghe-34491133"
+    }
+  },
+  {
+    "name": "Sumali Hewage",
+    "description": "Public Health",
+    "image": "sumali.jpeg",
+    "social": {
+      "linkedin": "sumalih"
+    }
+  },
+  {
+    "name": "Nadeera Nilupamali",
+    "description": "Virology",
+    "image": "nadeera.jpeg",
+    "social": {
+      "linkedin": "nadeeranilupamali"
+    }
+  },
+  {
+    "name": "Nilushka Perera",
+    "description": "Health and Psychology",
+    "image": "nilushka.jpeg",
+    "social": {
+      "linkedin": "nilushkaperera"
+    }
+  },
+  {
+    "name": "Ashan Musafer",
+    "description": "Cancer Diagnostics",
+    "image": "ashan.jpeg",
+    "social": {
+      "linkedin": "ashanmusafer"
+    }
+  },
+  {
+    "name": "Sajith Wijesuriya",
+    "description": "Mechanical Engineering",
+    "image": "sajith.jpg",
+    "social": {
+      "linkedin": "sajith-wijesuriya-55233b38"
+	}
+  },
+  {
+    "name": "Mirantha Jayathilake",
+    "description": "Artificial Intelligence/ Machine Learning",
+    "image": "mirantha.jpeg",
+    "social": {
+      "linkedin": "miranthajayathilaka"
+    }
+  },
+  {
+    "name": "Nivanthika Wimalasena",
+    "description": "Sensory Neurobiology",
+    "image": "nivanthika.jpeg",
+    "social": {
+      "linkedin": "nivanthika-wimalasena-aa84a699"
+    }
+  },
+  {
+    "name": "Ruwandi Kariyawasam",
+    "description": "Clinical Science",
+    "image": "ruwandi.jpeg",
+    "social": {
+      "linkedin": "ruwandikariyawasam"
+    }
+  },
+  {
+    "name": "Naresh Nandakumar",
+    "description": "Machine Learning/ Data Science",
+    "image": "naresh.jpeg",
+    "social": {
+      "linkedin": "naresh-nandakumar-3b4322ba"
+    }
+  },
+  {
+    "name": "Vishvapali Kobbekaduwa",
+    "description": "Disease Ecology and Epidemiology",
+    "image": "vishvapali.jpeg",
+    "social": {
+      "linkedin": "vishvapali-kobbekaduwa-6b775680"
+    }
+  },
+  {
+    "name": "Dakshitha Weerasinghe",
+    "description": "Civil Engineering",
+    "image": "dakshitha.jpeg",
+    "social": {
+      "linkedin": "dakshitha92"
+    }
+  },
+  {
+    "name": "Dinithi Sumanaweera",
+    "description": "Computational Biology",
+    "image": "dinithi.jpeg",
+    "social": {
+      "linkedin": "dinithisumanaweera"
+    }
+  },
+  {
+    "name": "Iroshan Abeyrathne",
+    "description": "Mathematical Modeling/Machine Learning",
+    "image": "iroshan.jpeg",
+    "social": {
+      "linkedin": "iroshan-aberathne"
+    }
+  },
+  {
+    "name": "Yomani Sarathkumara",
+    "description": "Molecular Biology/ Omics Technologies",
+    "image": "yomani.jpeg",
+    "social": {
+      "linkedin": "yomani-sarathkumara-42076a83"
+    }
+  },
+  {
+    "name": "Sohani Liyanage",
+    "description": "Simulation Models for Ride Sharing",
+    "image": "sohani.jpeg",
+    "social": {
+      "linkedin": "sohani-liyanage-69589355"
+    }
+  },
+  {
+    "name": "Gamalendira Sivapatham",
+    "description": "Biomedical Engineering",
+    "image": "gamalendira.jpeg",
+    "social": {
+      "linkedin": "gamalendira-shivapatham"
+    }
+  },
+  {
+    "name": "Gayani Gunasekera",
+    "description": "Management and Business",
+    "image": "gayani.jpeg",
+    "social": {
+      "linkedin": "gayani-gunasekera"
+    }
+  },
+  {
+    "name": "Prasangi Rajapaksha",
+    "description": "Chemistry",
+    "image": "prasangi.jpeg",
+    "social": {
+      "linkedin": "prasangi-rajapaksha-93099a72"
+    }
+  },
+  {
+    "name": "Nirupama Abeysekara",
+    "description": "Parasitology and Genetics",
+    "image": "nirupama.jpeg",
+    "social": {
+      "linkedin": "nirupama-abeysekara-b4028818b"
+    }
+  },
+  {
+    "name": "Chandima Narangoda",
+    "description": "Chemistry",
+    "image": "chandima.jpeg",
+    "social": {
+      "linkedin": "chandima-narangoda-ab4083166"
+    }
+  },
+  {
+    "name": "Chirath Hettiarachchi",
+    "description": "Machine Learning & Health Informatics",
+    "image": "chirath.jpeg",
+    "social": {
+      "linkedin": "chirathyh"
+    }
+  },
+  {
+    "name": "Janindu Arukgoda",
+    "description": "Natural Language Processing",
+    "image": "janindu.jpeg",
+    "social": {
+      "linkedin": "janinduarukgoda"
+    }
+  },
+  {
+    "name": "Krishani Perera",
+    "description": "Pathobiology",
+    "image": "krishani.jpeg",
+    "social": {
+      "linkedin": "krishani-dinali-perera-4a94b1129"
+    }
+  },
+  {
+    "name": "Sitara Weerakoon",
+    "description": "Public Health",
+    "image": "sitara.jpeg",
+    "social": {
+      "linkedin": "sitaraweerakoon"
+    }
+  },
+  {
+    "name": "Mahendrini Fernando Ariyachandra",
+    "description": "Engineering",
+    "image": "mahendrini.jpg",
+    "social": {
+      "linkedin": "mahendrini-fernando-ariyachandra-22374493"
+    }
+  },
+  {
+    "name": "Zahra Nawaz",
+    "description": "Cell/Cellular and Molecular Biology",
+    "image": "zahra.jpg",
+    "social": {
+      "linkedin": "zahra-nawaz-458b6a26"
+    }
+  },
+  {
+    "name": "Lasith S. Kariyawasam",
+    "description": "Organic Chemistry",
+    "image": "lasith.jpg",
+    "social": {
+      "linkedin": "lasith-s-kariyawasam-941879142"
+    }
+  },
+  {
+    "name": "Madhuranga Rathnayake",
+    "description": "Chemistry",
+    "image": "madhuranga.jpg",
+    "social": {
+      "linkedin": "mrathnayake"
+    }
+  },
+  {
+    "name": "Rakshitha Godahewa",
+    "description": "Computer Engineering and Machine Learning",
+    "image": "rakshitha.jpg",
+    "social": {
+      "linkedin": "rakshithawg"
+    }
+  },
+  {
+  "name": "Heshan Aravinda",
+    "description": "Mathematics",
+    "image": "heshanaravinda.jpg",
+    "social": {
+      "linkedin": "heshan-aravinda-8466b868"
+    }
+  },
+  {
+  "name": "Ashane Fernando",
+    "description": "Chemical Engineering",
+    "image": "ashane.jpg",
+    "social": {
+      "linkedin": "ashane-fernando-4937b051"
+    }
+  },
+  {
+  "name": "Charini Nanayakkara",
+    "description": "Record Linkage (Computer Science)",
+    "image": "charini.jpg",
+    "social": {
+      "linkedin": "charininanayakkara"
+    }
+  },
+  {
+    "name": "Sanjanee Waniganeththi",
+    "description": "Nuclear Physics",
+    "image": "sanjanee.jpg",
+    "social": {
+      "linkedin": "sanjanee-waniganeththi-92b3a3111"
+    }
+  },
+  {
+    "name": "Scynthya Nirukshan",
+    "description": "Bioscience Engineering",
+    "image": "scynthya.jpg",
+    "social": {
+      "linkedin": "gertrude-scynthya-nirukshan-a213476a"
+    }
+  },
+  {
+    "name": "Sumudu Herath",
+    "description": "Civil Engineering",
+    "image": "sumudu.jpg",
+    "social": {
+      "linkedin": "sumuduherath"
+    }
+  },
+  {
+    "name": "Maneesha Perera",
+    "description": "Engineering",
+    "image": "maneeshaperera.jpg",
+    "social": {
+      "linkedin": "maneeshaperera"
+    }
+  },
+  {
+    "name": "Madhushi Bandara",
+    "description": "Computer Science",
+    "image": "madhushibandara.jpg",
+    "social": {
+      "linkedin": "madhushib"
+    }
+  },
+  {
+    "name": "Udara Abeydeera",
+    "description": "Sustainable Construction",
+    "image": "udara.jpg",
+    "social": {
+      "linkedin": "udara-abeydeera-1797a476"
+    }
+  },
+  {
+    "name": "Sanath Wijesinghe",
+    "description": "Law",
+    "image": "sanath.jpg",
+    "social": {
+      "linkedin": "sanath-sameera-wijesinghe-99699097"
+    }
+  },
+  {
+    "name": "Paranietharan Arunagirinathan",
+    "description": "Electrical Engineering",
+    "image": "paranietharan.jpg",
+    "social": {
+      "linkedin": "paranietharan-arunagirinathan-07162330"
+    }
+  },
+  {
+    "name": "Deshya Wijesundera",
+    "description": "Digital Design and Computer Architecture",
+    "image": "deshya.jpg",
+    "social": {
+      "linkedin": "deshya-wijesundera-phd-2b3850168"
+    }
+  },
+  {
+    "name": "Heshan Jayawardane",
+    "description": "Sustainable Engineering",
+    "image": "heshanjayawardane.jpeg",
+    "social": {
+      "linkedin": "heshan-jayawardane-25a388aa"
+    }
+  },
+  {
+    "name": "Yadurshini Raveendran",
+    "description": "Global Health",
+    "image": "yudharshini.jpeg",
+    "social": {
+      "linkedin": "yraveendran"
+    }
+  },
+  {
+    "name": "Harshani Nainanayaka",
+    "description": "Invertebrates Aquaculture",
+    "image": "harshani.jpeg",
+    "social": {
+      "linkedin": "harshani-nainanayaka-7006a914b"
+    }
+  },
+  {
+    "name": "Vinuri Fernando",
+    "description": "Psychology",
+    "image": "vinuri.jpeg",
+    "social": {
+      "linkedin": "vinuri-fernando-360b121a6"
+    }
+  },
+  {
+    "name": "Kasun Bandara",
+    "description": "Data Science",
+    "image": "kasunbandara.jpeg",
+    "social": {
+      "linkedin": "bandarakasun"
+    }
+  },
+  {
+    "name": "Ravihansa Rajapakse",
+    "description": "Computer Science (HCI)",
+    "image": "ravihansa.jpg",
+    "social": {
+      "linkedin": "ravihansarajapakse"
+    }
+  },
+  {
+    "name": "Malinga Perera",
+    "description": "Computer Science",
+    "image": "malinga.jpeg",
+    "social": {
+      "linkedin": "malingaperera"
+    }
+  },
+  {
+    "name": "Rangana Shalika",
+    "description": "Eco-Tourism",
+    "image": "rangana.jpeg",
+    "social": {
+      "linkedin": "dr-rangana-shalika-77a77179"
+    }
+  },
+  {
+    "name": "Amali Shanya Fernando",
+    "description": "Molecular Biology",
+    "image": "amali.jpeg",
+    "social": {
+      "linkedin": "amali-fernando-944511108"
+    }
+  },
+  {
+    "name": "Nadun Dissanayake",
+    "description": "Computational and Applied Mathematics",
+    "image": "nadundissanayake.jpeg",
+    "social": {
+      "linkedin": "nadun-dissanayake-46a952a0"
+    }
+  },
+  {
+    "name": "Jerome Dinal Herath",
+    "description": "Computer Science",
+    "image": "jerome.jpeg",
+    "social": {
+      "linkedin": "jerome-dinal-herath"
+    }
+  },
+  {
+    "name": "Kiramage Chathuranga",
+    "description": "Veterinary medicine",
+    "image": "chathuranga.jpeg",
+    "social": {
+      "linkedin": "chathuranga-kiramage-38b3525b"
+    }
+  },
+  {
+    "name": "Asanka Bandara",
+    "description": "Chemistry(Rubber technology)",
+    "image": "asanka.jpeg",
+    "social": {
+      "linkedin": "asanka-roshan-bandara-87012b62"
+    }
+  },
+  {
+    "name": "Charitha Gamlath",
+    "description": "Chemical Engineering",
+    "image": "charitha.jpeg",
+    "social": {
+      "linkedin": "charitha-gamlath-15277759"
+    }
+  },
+  {
+    "name": "Sachinthana Pathiranage",
+    "description": "Electrical and Computer Systems Engineering",
+    "image": "sachinthana.jpeg",
+    "social": {
+      "linkedin": "sachinthana-pathirana"
+    }
+  },
+  {
+    "name": "Sanje Mahasivam",
+    "description": "Applied Chemistry",
+    "image": "sanje.jpeg",
+    "social": {
+      "linkedin": "sanje-mahasivam-069b9818"
+    }
+  },
+  {
+    "name": "Mukunthan Tharmakulasingam",
+    "description": "Machine Learning",
+    "image": "mukunthan.jpeg",
+    "social": {
+      "linkedin": "mukunthant"
+    }
+  },
+  {
+    "name": "Samintha Perera",
+    "description": "Civil Engineering",
+    "image": "samintha.jpeg",
+    "social": {
+      "linkedin": "dr-samintha-perera-8b89648b"
+    }
+  },
+  {
+    "name": "Tharindu Wickramaarachchi",
+    "description": "Mathematical Modeling",
+    "image": "tharinduw.jpeg",
+    "social": {
+      "linkedin": "tharindu-wickramaarachchi-42b1076b"
+    }
+  },
+  {
+    "name": "Majeed Aslam Saja",
+    "description": "Built Environment/Resilience/Risk Management",
+    "image": "saja.jpg",
+    "social": {
+      "linkedin": "sajaaslam"
+    }
+  },
+  {
+    "name": "Jayaruwan Gunathilake",
+    "description": "Chemistry",
+    "image": "jayaruwan.jpeg",
+    "social": {
+      "linkedin": "jayaruwangunathilake"
+    }
+  }
+
+]

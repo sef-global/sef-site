@@ -78,3 +78,10 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+.DS_Store
+node_modules/
+package-lock.json
+
+.travis/deploy_rsa
+.travis/deploy_rsa.pub

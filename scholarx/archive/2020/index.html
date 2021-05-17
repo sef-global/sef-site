@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-167873271-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
+                                      mentoring support to a selected pool of high Potential undergraduate students
+                                      based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
+                                      the world’s top universities or Fortune 500 companies. It’s our free premium
+                                      mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
+                                      of knowledge and expertise sharing without the limitation of geographical borders.">
+    <meta name="author" content="Sustainable Education Foundation">
+    <meta property="og:image" content="assets/img/brand/scholarx.png">
+    <title>ScholarX | Sustainable Education Foundation</title>
+    <!-- Favicon -->
+    <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- global CSS -->
+    <link type="text/css" href="/assets/css/global-custom.css" rel="stylesheet">
+    <!-- scholarx CSS -->
+    <link type="text/css" href="styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif; color: black">
+<header class="header-global">
+    <!--nav bar goes here-->
+    <div id="navbar"></div>
+</header>
+
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <div class="row row-grid align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="d-flex px-3">
+                    <div class="pl-4">
+                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-5 w-50">
+                        <p>ScholarX is an exclusive 6-month program aimed at providing
+                            mentoring support to a selected pool of high Potential undergraduate students
+                            based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
+                            the world’s top universities or Fortune 500 companies. It’s our free premium
+                            mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
+                            of knowledge and expertise sharing without the limitation of geographical borders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="/assets/img/scholarx/findmentor.png" class="img-fluid align-self-center w-100">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="display-3 text-center mb-5">Program Timeline</h1>
+                <ul class="timeline">
+                    <li>
+                        <span>Application opens</span>
+                        <span href="#" class="float-right">1 March, 2020</span>
+                    </li>
+                    <li>
+                        <span>Application closes</span>
+                        <span class="float-right">4 April, 2020</span>
+                    </li>
+                    <li>
+                        <span>Winners announced</span>
+                        <span class="float-right">21 April, 2020 - 30 April, 2020</span>
+                    </li>
+                    <li>
+                        <span>Mentor-mentee bonding period</span>
+                        <span class="float-right">1 May, 2020 - 8 May, 2020</span>
+                    </li>
+                    <li>
+                        <span>Official start date of ScholarX</span>
+                        <span class="float-right">14 May, 2020</span>
+                    </li>
+                    <li>
+                        <span>Mid Evaluation</span>
+                        <span class="float-right">14 August, 2020</span>
+                    </li>
+                    <li>
+                        <span>End of program</span>
+                        <span class="float-right">14 November, 2020</span>
+                    </li>
+                    <li>
+                        <span>Graduation</span>
+                        <span class="float-right">20 November, 2020</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+      <h1 class="display-3 text-center mb-5">Mentors</h1>
+        <!--Profile cards goes here-->
+        <div id="teamContent"></div>
+        <div class="row justify-content-center">
+            <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <h1 class="display-3 text-center mb-5">Mentees</h1>
+        <div class="justify-content-center">
+            <!--Mentees table goes here-->
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">University</th>
+                    <th scope="col">Mentor</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="teamMentees"></tbody>
+            </table>  
+        </div>
+    </div>
+</section>
+
+<!-- Featured stories section -->
+<section>
+    <div class="container mt-5 mb-5">
+        <h1 class="display-3 text-center mb-5">Featured Stories</h1>
+        <!--Featured stories goes here-->
+        <div id="featured-stories" class="featured-stories"></div>
+        <div class="row justify-content-center">
+            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+
+
+<!--profile modal template-->
+<div class="modal fade profile-modal" id="profile-modal" tabindex="-1" role="dialog" aria-labelledby="profile-modal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"
+         role="document">
+        <!-- Content for the modal goes here -->
+        <div class="modal-content">
+            <div class="pt-3 pr-3">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="profile-modal-content" class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div id="footer"></div>
+    <!--footer goes here -->
+</footer>
+<!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
+</body>
+
+<!-- Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!-- Argon JS -->
+<script src="/assets/js/argon.js?v=1.0.1"></script>
+<!-- Script for static navbar and footer -->
+<script src="/assets/js/navigation.js"></script>
+<!-- External JS file for the JS functions-->
+<script src="./functions.js"></script>
+
+<script type="text/html" id="templateTeam">
+    <div class="row">
+        {{#profiles}}
+        <div class="col-md-3 col-lg-3 mb-5">
+            <div class="px-4">
+                <div class="hover-profile-card" onclick="openMentorProfile('{{index}}')">
+                    <img src="images/{{image}}"
+                         class="rounded-circle img img-center img-fluid shadow shadow-lg--hover imgHover"
+                    >
+                </div>
+                <div class="pt-4 text-center">
+                    <h5 class="title">
+                        <span class="d-block mb-1">{{name}}</span>
+                    </h5>
+                    <span class="text-light mentor-title">{{title}}</span>
+                </div>
+            </div>
+        </div>
+        {{/profiles}}
+    </div>
+</script>
+
+<script type="text/html" id="template-profile-modal-content">
+    <div class="text-center">
+        <img src="images/{{image}}" alt="Rounded image"
+             class="img-fluid rounded-circle profile-image border img-center shadow mb-4">
+        <h4>{{name}}</h4>
+        <span>{{title}}</span>
+        <div class="mt-3">
+            {{#socialLinks}}
+            <a href="{{url}}"
+               target="_blank"
+               class="btn btn-{{platform}} btn-icon-only rounded-circle btn-icon-rounded">
+                <i class="{{icon}}"></i>
+            </a>
+            {{/socialLinks}}
+        </div>
+    </div>
+    <hr/>
+    <p class="text-justify">{{{bio}}}</p>
+    <hr/>
+    <h5>Areas of expertise :</h5>
+    <ul>
+        {{#areasOfExpertise}}
+        <li>
+            {{.}}
+        </li>
+        {{/areasOfExpertise}}
+    </ul>
+    <hr/>
+    <h5>Projects :</h5>
+    <ul>
+        {{#projects}}
+        <li>
+            {{.}}
+        </li>
+        {{/projects}}
+    </ul>
+    <hr/>
+</script>
+
+<script type="text/html" id="template-featured-stories">
+    <div class="row">
+        {{#data}}
+        <div class="col-md-4 mb-5">
+            <a href="{{url}}" target="_blank">
+                <div class="card shadow featured-story mb-4">
+                    <img src="images/featured-stories/{{image}}" alt="Rounded image"
+                         class="img-fluid rounded shadow img-full">
+                    <div class="card-body">
+                        <h6>{{title}}</h6>
+                    </div>
+                    <div class="card-footer">
+                        <div class="author">
+                            <img src="images/featured-stories/{{author.image}}" alt="..."
+                                 class="avatar img-raised">
+                            <span>{{author.name}}</span>
+                        </div>
+                        <div class="stats ml-auto">
+                            <i class="far fa-clock"></i> {{readingTime}} min read
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/data}}
+    </div>
+</script>
+
+<script type="text/html" id="templateMentees">
+    {{#data}}
+        <tr onclick="window.location='{{linkedin}}';">
+            <th scope="row">
+                <img src="images/mentees/{{image}}" class="avatar">
+            </th>
+                <td>{{name}}</td>
+                <td>{{university}}</td>
+                <td>{{mentor}}</td>
+                
+        </tr>
+    {{/data}}     
+</script>
+
+<script>
+    $(function () {
+        loadMentees();
+    });
+
+    function loadMentees() {
+        $.ajax({
+            type: 'get',
+            url: 'mentees.json',
+            dataType: 'json',
+            success: function (data) {
+                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
+                //display mentees
+                $("#teamMentees").html(templateMentees);
+            }
+        });
+    }  
+    
+</script>
+</html>

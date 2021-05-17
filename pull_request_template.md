@@ -12,11 +12,12 @@ The purpose of this PR is to fix #<issue-number>
 <!---  Include an animated GIF or screenshot if the change affects the UI.  -->
   
 ### Preview Link
-<!---  Publish your project to github pages and add the preview link  -->
-<!---  go to repo settings > options > git hub pages  > chose master branch > navigate to https://{username}.github.io/{repo-name}  -->
+<!---  This PR will be automatically deployed to surge. -->
+<!---  Once you submit the PR, replace "{PR_NUMBER}" with your PR number. -->
+https://pr-{PR_NUMBER}-sef-site.surge.sh/
 
 ##  Checklist
-- [x] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
+- [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
 - [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
