@@ -7,7 +7,7 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sef-global/community)
 [![Twitter Follow](https://img.shields.io/twitter/follow/goasksef.svg?style=social&label=Follow&maxAge=2592000?style=flat-square)](https://twitter.com/goasksef)
 
-This website was build by a set of enthusiastic developers as part of the Sustainable Education Foundation.
+This website was built by a set of enthusiastic developers as part of the Sustainable Education Foundation.
 
 <div align="center">
   <img src="https://avatars3.githubusercontent.com/u/31291163?s=200&v=4" />
