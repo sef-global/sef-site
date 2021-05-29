@@ -72,7 +72,15 @@
     </div>
 </section>
 
-<section class="section faq bg-gradient-white">
+<section class="section pb-0 bg-gradient-white">
+    <div class="container">
+        <h1 class="display-3 text-center mb-5">Research Interns In 2020</h1>
+        <!--Profile cards goes here-->
+        <div id="internContent"></div>
+    </div>
+</section>
+
+<section class="section faq bg-secondary">
     <div class="container">
 
         <h1 class="display-3 text-center mb-5">Frequently Asked Questions</h1>
@@ -221,7 +229,7 @@
     </div>
 </section>
 
-<section class="section pb-0 mt-5" style="background : #e3f6fa">
+<section class="section pb-0 mt-5bg-gradient-white">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -293,7 +301,7 @@
         loadNavAndFooter('assets/content/static');  //relative path to content directory
 
         loadProfiles(); // call function to load profiles
-
+        loadResearchInterns(); // call function to load research interns
         loadFaqComponent(); // call function for faq
     });
 
@@ -342,5 +350,48 @@
             }
         });
     }
+
+    function loadResearchInterns() {
+        $.ajax({
+            type: 'get',
+            url: 'assets/content/json/irc_interns_2020.json',
+            dataType: 'json',
+            success: function (data) {
+                let templateInterns = Mustache.render($("#templateInterns").html(), {"data": data});
+                //display interns
+                $("#internContent").html(templateInterns);
+            }
+        });
+    }
 </script>
+
+<script type="text/html" id="templateInterns">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">University</th>
+            <th scope="col">View Blog Article</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#data}}
+          <tr onclick="window.location='{{linkedin}}';">
+            <th scope="row">
+                <img src="assets/img/irc/irc-interns/{{image}}" class="avatar">
+            </th>
+                <td>{{name}}</td>
+                <td>{{university}}</td>
+                <td>
+                    <a class="btn btn-default" href={{mediumUrl}}>
+                        View Blog
+                    </a>
+                </td>
+          </tr>
+        {{/data}}
+        </tbody>
+      </table>
+</script>
+
 </html>
