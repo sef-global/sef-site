@@ -73,6 +73,7 @@
 
         <div class="row justify-content-center">
             <button id="btnShowMore_executiveCommitee" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+            <button id="btnShowLess_executiveCommitee" class="btn btn-link btn-outline-white btn-info">SEE LESS</button>
         </div>
     </div>
 </section>
@@ -99,6 +100,7 @@
 
         <div class="row justify-content-center">
             <button id="btnShowMore_alumni" class="btn btn-link btn-outline-white btn-info mb-3">SEE MORE</button>
+            <button id="btnShowLess_alumni" class="btn btn-link btn-outline-white btn-info mb-3">SEE LESS</button>
         </div>
     </div>
 </section>
@@ -196,17 +198,24 @@
         $("#" + id).html(contentPartOne);
 
         if (profiles.length >= 8) {
-
+            $("#btnShowLess_" + id).hide();
             //hide button
             $("#btnShowMore_" + id).click(function () {
                 let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": profiles.slice(8)});
                 $(contentPartTwo).appendTo("#" + id).hide().fadeIn(1000);
                 $("#btnShowMore_" + id).hide();
+                $("#btnShowLess_" + id).show();
+            });
+            $("#btnShowLess_" + id).click(function () {
+                $("#" + id).html(contentPartOne);
+                $("#btnShowMore_" + id).show();
+                $("#btnShowLess_" + id).hide();
             });
         } else {
 
             //hide button
             $("#btnShowMore_" + id).hide();
+            $("#btnShowLess_" + id).hide();
         }
     }
 

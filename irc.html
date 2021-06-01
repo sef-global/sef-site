@@ -67,6 +67,7 @@
         <div id="teamContent"></div>
         <div class="row justify-content-center">
             <button id="btnShowMore" class="btn btn-link btn-outline-secondary btn-info mb-3">SEE MORE</button>
+            <button id="btnShowLess" class="btn btn-link btn-outline-secondary btn-info mb-3">SEE LESS</button>
         </div>
     </div>
 </section>
@@ -314,12 +315,18 @@
 
                     //display first 8 profiles
                     $("#teamContent").html(contentPartOne);
-
+                    $("#btnShowLess").hide();
                     //hide button
                     $("#btnShowMore").click(function () {
                         let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
                         $("#teamContent").append(contentPartTwo);
                         $("#btnShowMore").hide();
+                        $("#btnShowLess").show();
+                    });
+                    $("#btnShowLess").click(function () {
+                        $("#teamContent").html(contentPartOne);
+                        $("#btnShowMore").show();
+                        $("#btnShowLess").hide();
                     });
                 } else {
                     //mustache render
@@ -330,6 +337,7 @@
 
                     //hide button
                     $("#btnShowMore").hide();
+                    $("#btnShowLess").hide();
                 }
             }
         });

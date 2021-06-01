@@ -36,13 +36,18 @@ function sliceProfiles(profiles) {
         let contentPartOne = Mustache.render($("#templateTeam").html(), {"profiles": partOne});
         //display first 8 profiles
         $("#teamContent").html(contentPartOne);
-        //show button
-        $("#btnShowMore").show();
+        $("#btnShowLess").hide();
         //hide button
         $("#btnShowMore").click(function () {
             let contentPartTwo = Mustache.render($("#templateTeam").html(), {"profiles": partTwo});
             $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
             $("#btnShowMore").hide();
+            $("#btnShowLess").show();
+        });
+        $("#btnShowLess").click(function () {
+            $("#teamContent").html(contentPartOne);
+            $("#btnShowMore").show();
+            $("#btnShowLess").hide();
         });
     } else {
         //mustache render
@@ -51,6 +56,7 @@ function sliceProfiles(profiles) {
         $("#teamContent").html(content);
         //hide button
         $("#btnShowMore").hide();
+        $("#btnShowLess").hide();
     }
 }
 
