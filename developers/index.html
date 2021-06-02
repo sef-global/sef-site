@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-167873271-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Achievement | Open Source Contribution Certificate">
+    <meta name="author" content="Sustainable Education Foundation">
+    <meta property="og:image" content="./images/ogImage.png">
+    <title>Developers | Sustainable Education Foundation</title>
+    <!-- Favicon -->
+    <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- global CSS -->
+    <link type="text/css" href="/assets/css/global-custom.css" rel="stylesheet">
+    <!-- custom CSS -->
+    <link type="text/css" href="styles.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section id="main" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5" id="profile"></div>
+            <div class="col-md-7 row text-center align-content-center" id="current-badge"></div>
+        </div>
+        <h2 class="my-3 text-white">Progress</h2>
+        <div class="row text-center" id="progress"></div>
+    </div>
+</section>
+</body>
+
+<script type="text/html" id="current-badge-template">
+    {{#data}}
+    <div class="col">
+        <img src="images/{{imageUrl}}" class="current-dev-badge" alt="current-badge">
+        <h1 class="text-white mt-3">Level {{level}} - {{name}}</h1>
+        <p class="text-light">{{tagline}}</p>
+        <p class="text-light">Next Badge: {{nextBadge}}</p>
+    </div>
+    {{/data}}
+</script>
+
+<script type="text/html" id="404-template">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center text-white">Error: 404 Page not Found</h3>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="progress-badge-template">
+    {{#data}}
+    <div class="col-md-2">
+        <img src="images/{{imageUrl}}" class="dev-badge">
+        <p class="{{text-color}} mt-3">Level {{level}} - {{name}}</p>
+    </div>
+    {{/data}}
+</script>
+
+<script type="text/html" id="profile-template">
+    <div class="text-left" style="height: 100%">
+        {{#data}}
+            <h1 class="display-1 mt-3 text-white">
+                {{user.name}}'s Latest Dev Badge
+            </h1>
+            <div class="row mt-3">
+                <div class="col-3 text-center">
+                    <img src="{{user.avatar_template}}" class="rounded-circle" alt="user image"/>
+                </div>
+                <div class="col-9">
+                    <p class="text-light">{{user.username}} @ SEF Hive <br/> Open Source Developer</p>
+                </div>
+            </div>
+            <p class="mt-3">Join Sustainable Education Foundation today to earn your badge</p>
+            <a class="text-white text-underline" href="https://sef.discourse.group" target="_blank">SEF HIVE</a>
+        {{/data}}
+    </div>
+</script>
+
+<!-- Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!-- Argon JS -->
+<script src="/assets/js/argon.js?v=1.0.1"></script>
+<!-- Load badges functions -->
+<script src="functions.js"></script>
+
+</html>

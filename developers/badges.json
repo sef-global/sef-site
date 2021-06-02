@@ -1,0 +1,56 @@
+[
+  {
+    "id":0,
+    "name":"Contributor Kraken",
+    "level":0,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'Friendly User' and '1st Contribution'",
+    "nextBadge":"Titan Developer"
+  },
+  {
+    "id":1,
+    "name":"Titan Developer",
+    "level":1,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'Level 0' and '3 Contributions'",
+    "nextBadge":"Git Gojira"
+  },
+  {
+    "id":2,
+    "name":"Git Gojira",
+    "level":2,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'Level 1' and '5 Contributions'",
+    "nextBadge":"SEF Prodigy"
+  },
+  {
+    "id":3,
+    "name":"SEF Prodigy",
+    "level":3,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'Level 2' and passed the 'Quiz'",
+    "nextBadge":"Monster Volunteer"
+  },
+  {
+    "id":4,
+    "name":"Monster Volunteer",
+    "level":4,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'level 3' and 'One Month Standups'",
+    "nextBadge":"Open Source Behemoth"
+  },
+  {
+    "id":5,
+    "name":"Open Source Behemoth",
+    "level":5,
+    "textColor":"text-light",
+    "imageUrl":"0.png",
+    "tagline":"Earned 'level 4' and 'Member of Sprint'",
+    "nextBadge":"Open Source Behemoth"
+  }
+]
