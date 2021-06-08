@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+.current-dev-badge {
+    width: 250px !important;
+    height: auto !important;
+}
+
+.dev-badge {
+    width: 100px;
+    height: auto;
+}
+
+.badge-card {
+    height: 100%;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: black;
+    color: white;
+}

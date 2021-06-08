@@ -79,15 +79,23 @@ function loadProfiles() {
             if (data.length >= 8) {
                 let partOne = data.slice(0, 8);
                 let partTwo = data.slice(8);
+
                 // Mustache render - part one
                 let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": partOne});
                 // Display first 8 profiles
                 $("#teamContent").html(contentPartOne);
                 // Hide button after displaying content part two
+                $("#btnShowLess").hide();
                 $("#btnShowMore").click(function () {
                     let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
                     $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
                     $("#btnShowMore").hide();
+                    $("#btnShowLess").show();
+                });
+                $("#btnShowLess").click(function () {
+                    $("#teamContent").html(contentPartOne);
+                    $("#btnShowMore").show();
+                    $("#btnShowLess").hide();
                 });
             } else {
                 // Mustache render
@@ -96,6 +104,7 @@ function loadProfiles() {
                 $("#teamContent").html(content);
                 // Hide button because there are only 8 profiles to show
                 $("#btnShowMore").hide();
+                $("#btnShowLess").hide();
             }
         }
     });
