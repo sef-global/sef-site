@@ -1,0 +1,22 @@
+/*Add custom styles for the upspeak 2020 page here*/
+.faq .accordion .question {
+    font-size: 1.2em;
+    padding-left: 24px;
+    padding-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq .accordion .collapse-sign {
+    margin: -1.25rem -1.25rem -1.25rem auto;
+    padding: 0 50px 1.25rem 1.25rem;
+}
+
+.faq .accordion .qa-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq .accordion .question .question-heading {
+    padding-right: 30px;
+}
