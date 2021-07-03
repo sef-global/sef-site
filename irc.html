@@ -354,7 +354,7 @@
     function loadResearchInterns() {
         $.ajax({
             type: 'get',
-            url: 'assets/content/json/irc_interns_2020.json',
+            url: 'https://script.google.com/macros/s/AKfycbxgfNN7In4ZDZvR4Ccg6S8WxNwxBP6giopoOjwNb500sd3odeHbmumF7IX17g0n9QwEcw/exec',
             dataType: 'json',
             success: function (data) {
                 let templateInterns = Mustache.render($("#templateInterns").html(), {"data": data});
