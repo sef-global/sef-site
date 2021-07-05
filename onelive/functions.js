@@ -72,7 +72,7 @@ function loadYoutubeVideos() {
 function loadProfiles() {
     $.ajax({
         type: 'get',
-        url: 'speakers.json',
+        url: 'https://script.google.com/macros/s/AKfycbxXl45ziXa7fvBaJzygdBR07eoiT5CsXjlOTonv46_96s-ND-eUMIBEnjcaHRl3GED0/exec',
         dataType: 'json',
         success: function (data) {
             // Slice array to two parts
