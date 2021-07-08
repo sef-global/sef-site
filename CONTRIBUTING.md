@@ -16,6 +16,7 @@ channels (wikipedia, stackoverflow) but also do not hesitate to ask questions to
 
 Currently, we use Slack as our communication channel. [Join SEF Slack Channel](https://sefheadquarters.slack.com)
 
+
 ## Private and Public Chat or Issue Tracker
 
 Chat is a great way to connect with other contributors, but not all contributors are there all the time (consider time 
