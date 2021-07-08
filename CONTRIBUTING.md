@@ -14,7 +14,8 @@ channels (wikipedia, stackoverflow) but also do not hesitate to ask questions to
 
 ## Communication Channels
 
-Currently, we use Slack as our communication channel. [Join SEF Slack Channel](http://sefheadquarters.slack.com)
+Currently, we use Slack as our communication channel. [Join SEF Slack Channel](https://sefheadquarters.slack.com)
+
 
 ## Private and Public Chat or Issue Tracker
 
