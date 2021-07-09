@@ -64,7 +64,7 @@ function sliceProfiles(profiles) {
 function loadProfiles() {
     $.ajax({
         type: 'get',
-        url: 'mentors.json',
+        url: 'https://script.google.com/macros/s/AKfycbzfo3HV14j-SilxPv5X5zLmvBLlhJ-VAZfxcy0ph41toJY-ad5RQ6uHRJRcojpWVyOQ/exec',
         dataType: 'json',
         success: function (profiles) {
             // Add a new key named `index` with the index (To use with moustache template)
