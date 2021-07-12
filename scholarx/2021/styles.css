@@ -119,3 +119,29 @@
 {
     color: #fbc53b;
 }
+/*feature stories cards*/
+.author {
+    font-size: 1.0rem;
+}
+
+.card-body {
+    padding: 0px;
+}
+/*to adjust height and width of cards*/
+.card-body img {
+    height: 300px;
+    width: 500px;
+    padding-bottom: 2%;
+    /*round shaped border*/
+    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
+}
+
+.card-text {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.fa-clock {
+    padding-top: 3px;
+    padding-right: 7px;
+}
