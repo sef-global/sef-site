@@ -36,7 +36,7 @@
 }
 
 .featured-story img{
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -58,11 +58,34 @@
     font-size: 0.9em;
     padding-top: 0;
 }
-
+/*to adjust height and width of cards*/
+.card-body img {
+    height: 200px;
+    width: 1000px;
+    padding-bottom: 2%;
+    /*round shaped border*/
+    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
+}
+.card-body {
+    padding: 0px;
+}
+.author { 
+    font-size: 0.9rem;
+    padding-top: 3px;
+    color: #6f81a4;
+}
+.fa-clock {
+    padding-top: 3px;
+    padding-right: 7px;
+}
 .featured-story .author span{
     color: #6f81a4;
     padding-left: 4px;
     padding-top: 4px;
+}
+.author { 
+    font-size: 0.9rem;
+    padding-top: 3px;
 }
 
 .past-section{

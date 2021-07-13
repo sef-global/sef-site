@@ -655,30 +655,36 @@
 </script>
 
 <script type="text/html" id="template-featured-stories">
-    <div class="row">
+    <section class="section" id="projects">
+        
+        <div class="row ">
         {{#data}}
-        <div class="col-md-4 mb-5">
-            <a href="{{url}}" target="_blank">
-                <div class="card shadow featured-story mb-4">
-                    <img src="images/featured-stories/{{image}}" alt="Rounded image"
-                         class="img-fluid rounded shadow img-full">
-                    <div class="card-body">
-                        <h6>{{title}}</h6>
-                    </div>
-                    <div class="card-footer">
-                        <div class="author">
-                            <img src="images/featured-stories/{{author.image}}" alt="..."
-                                 class="avatar img-raised">
-                            <span>{{author.name}}</span>
+                
+          <div class="col-md-4" > 
+              <div class="card px-0" >
+                  <a href="{{url}}" target="_blank" class="card shadow project-card">
+                     <div class="card-body">
+                        <img src="images/featured-stories/{{image}}" class="img-fluid  img-full" alt="OneLive">
+                        <p class="card-text text-darker text-left" style="padding-left: 5%;">
+                            {{title}}
+                        </p>
+                     </div>
+                        <div class="card-footer">
+                             <div class="author">
+                                    <img src="images/featured-stories/{{author.image}}" alt="..." class="avatar img-raised">
+                                   <span>{{author.name}}</span>
+                             </div>
+                                  <div class="stats ml-auto">
+                                      <i class="far fa-clock"></i> {{readingTime}} min read
+                                  </div>
                         </div>
-                        <div class="stats ml-auto">
-                            <i class="far fa-clock"></i> {{readingTime}} min read
-                        </div>
-                    </div>
+                  </a>
                 </div>
-            </a>
+              </div> 
+        {{/data}}  
+          </div> 
         </div>
-        {{/data}}
-    </div>
+    </div> 
+    </section>       
 </script>
 </html>
