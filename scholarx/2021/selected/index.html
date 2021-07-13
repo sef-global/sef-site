@@ -103,7 +103,7 @@
     function loadMentees() {
         $.ajax({
             type: 'get',
-            url: 'selected-mentees-2021.json',
+            url: 'https://script.google.com/macros/s/AKfycbyvwiBfC04HFKEjV19E_jDGa-5nf9VZQ4KD1fny1DQJmQMmWQ06r-W453fbyhRLR4GQ/exec',
             dataType: 'json',
             success: function (data) {
                 let templateMentees = Mustache.render($("#templateSelectedMentees").html(), {"data": data});
