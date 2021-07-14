@@ -44,6 +44,7 @@
 .featured-stories .card {
     height: 100%;
     margin-bottom: 10px;
+    border: none;
 }
 
 .featured-story .card-body {
@@ -65,7 +66,7 @@
     width: 1000px;
     padding-bottom: 2%;
     /*round shaped border*/
-    border-radius: 1.9rem 1.9rem 0.2rem 0.2rem;
+    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
 }
 .card-body {
     padding: 0px;
