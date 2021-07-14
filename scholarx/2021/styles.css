@@ -49,6 +49,7 @@
 
 .featured-story .card-body {
     padding-bottom: 0;
+    
 }
 
 .featured-story .card-footer .stats i {
@@ -59,6 +60,9 @@
 .featured-story .card-footer {
     font-size: 0.9em;
     padding-top: 0;
+}
+.featured-story .card-footer {
+    padding-left: 5%;
 }
 /*to adjust height and width of cards*/
 .card-body img {
