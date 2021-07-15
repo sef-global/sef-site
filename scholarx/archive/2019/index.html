@@ -174,7 +174,7 @@
     function loadProfiles() {
         $.ajax({
             type: 'get',
-            url: 'mentors.json',
+            url: 'https://script.google.com/macros/s/AKfycbyIXVj_cpckzkl7xN-C7W7wlW7dG2fAwHaYNhgrsqf_E4tySxIXJRifUpX4s5eQPKjo/exec',
             dataType: 'json',
             success: function (data) {
 
@@ -212,7 +212,7 @@
     function loadMentees() {
         $.ajax({
             type: 'get',
-            url: 'mentees.json',
+            url: 'https://script.google.com/macros/s/AKfycbz_Bdaau2mDB6yd00DXNyxaVBg0zddxL96rF5hS6zHSia6GjtzioIy1R057ohqnr-D0_A/exec',
             dataType: 'json',
             success: function (data) {
                 let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
