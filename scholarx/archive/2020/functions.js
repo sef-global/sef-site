@@ -32,7 +32,7 @@ $(function () {
 function loadProfiles() {
     $.ajax({
         type: 'get',
-        url: 'mentors.json',
+        url: 'https://script.google.com/macros/s/AKfycbzBskBGAm_mwR3DYg1PyWB0F4agysO94ytMuKjrS_xgMl3ZD8h8hNKuAVQB7TBIG2-epA/exec',
         dataType: 'json',
         success: function (profiles) {
             mentorProfiles = profiles;

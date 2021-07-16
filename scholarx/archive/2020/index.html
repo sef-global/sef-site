@@ -309,7 +309,7 @@
     function loadMentees() {
         $.ajax({
             type: 'get',
-            url: 'mentees.json',
+            url: 'https://script.google.com/macros/s/AKfycbx_JpPBVggdoBq2wO6NDaP0uvTb9-VZiJF77GbnfUSSQFNdBZ8a7KZKuXEvJXdB2m-FXQ/exec',
             dataType: 'json',
             success: function (data) {
                 let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
