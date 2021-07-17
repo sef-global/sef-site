@@ -37,6 +37,11 @@ This repository contains source for Sustainable Education Foundation Website. [V
 
 Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 
+## Prerequisites
+* Node.js
+* npm 
+
+
 ## Run Locally
 
 - Clone your forked repository
@@ -46,10 +51,7 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
     ```
 
 - Install all the dependencies 
-
-    (Node.Js is used to power up the npm start and run features)
-    Visit : https://nodejs.org/en/ to learn more 
-    
+  
     ```
     npm install 
     ```
