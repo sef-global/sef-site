@@ -44,9 +44,14 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
     git clone https://github.com/USERNAME/sef-site
     cd sef-site
     ```
-- Install all the dependencies
+
+- Install all the dependencies 
+
+    (Node.Js is used to power up the npm start and run features)
+    Visit : https://nodejs.org/en/ to learn more 
+    
     ```
-    npm install
+    npm install 
     ```
 - Start the server with 
     ```
