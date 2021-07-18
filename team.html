@@ -132,7 +132,6 @@
         <div class="col-md-3 col-lg-3 mb-5">
             <div class="px-4">
                 <div class="hover-profile-card">
-                    {{#social}}
                     <a href="https://www.linkedin.com/in/{{linkedin}}" target="_blank">
                         <img src="assets/img/profiles/{{image}}"
                              class="rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover"
@@ -144,7 +143,6 @@
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
-                    {{/social}}
                 </div>
                 <div class="pt-4 text-center">
                     <h5 class="title">
@@ -169,7 +167,7 @@
     function loadProfiles() {
         $.ajax({
             type: 'get',
-            url: 'assets/content/json/team.json',
+            url: 'https://script.google.com/macros/s/AKfycbwlQOQZ8TVREHDxMMY-aFjCw6wqN6knhJdAfrv7yVLSmMoAkqkV-wZEbx6Ujng5P3Os/exec',
             dataType: 'json',
             success: function (payload) {
                 let advisoryPanel = payload.advisoryPanel;
