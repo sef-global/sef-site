@@ -50,12 +50,19 @@ function loadProfiles() {
 
                 //display first 8 profiles
                 $("#teamContent").html(contentPartOne);
+                $("#btnShowLess").hide();
 
                 //hide button
                 $("#btnShowMore").click(function () {
                     let contentPartTwo = Mustache.render($("#templateTeam").html(), {"profiles": partTwo});
                     $(contentPartTwo).appendTo("#teamContent").hide().fadeIn(1000);
                     $("#btnShowMore").hide();
+                    $("#btnShowLess").show();
+                });
+                $("#btnShowLess").click(function () {
+                    $("#teamContent").html(contentPartOne);
+                    $("#btnShowMore").show();
+                    $("#btnShowLess").hide();
                 });
             } else {
                 //mustache render
@@ -66,6 +73,7 @@ function loadProfiles() {
 
                 //hide button
                 $("#btnShowMore").hide();
+                $("#btnShowLess").hide();
             }
         }
     });
