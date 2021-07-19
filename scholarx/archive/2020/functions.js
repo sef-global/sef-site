@@ -75,7 +75,7 @@ function loadProfiles() {
 function loadFeaturedStories() {
     $.ajax({
         type: 'get',
-        url: 'featured-stories.json',
+        url: 'https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec',
         dataType: 'json',
         success: function (data) {
 
