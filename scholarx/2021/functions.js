@@ -98,7 +98,7 @@ function filterProfiles(category) {
 function loadFeaturedStories() {
     $.ajax({
         type: 'get',
-        url: 'featured-stories.json',
+        url: 'https://script.google.com/macros/s/AKfycbzpNJgeah9hpaf4mRWer5U_y27qWdeFArS6j17LhtxxhAKXkg0uaU9iKG5JHmM1RGP_/exec',
         dataType: 'json',
         success: function (data) {
 
