@@ -34,13 +34,10 @@ This repository contains source for Sustainable Education Foundation Website. [V
 #### Want to contribute to this project? 
 
 **Send us a Pull Request**
-
 Read: [Development Best Practices at SEF](CONTRIBUTING.md)
-
 ## Prerequisites
 * Node.js
 * npm 
-
 
 ## Run Locally
 
