@@ -29,7 +29,10 @@
     <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Montserrat', sans-serif;">
+<body style="font-family: 'Montserrat', sans-serif;" onload="preloader()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="content">
+
 <header class="header-global">
     <!--nav bar goes here-->
     <div id="navbar">
@@ -110,6 +113,7 @@
     <!--footer goes here -->
 </footer>
 
+</div>
 </body>
 
 <!-- Core -->
@@ -163,6 +167,18 @@
         loadProfiles(); // call function to load profiles
     });
 
+    //function to play the preloader
+    let isLoading = true;
+    function preloader() {
+        if(isLoading){
+            document.getElementById("loader").style.display = "block";
+            document.getElementById("content").style.display = "none";
+        } else{
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
+    }
+
     //function to load profile data
     function loadProfiles() {
         $.ajax({
@@ -190,6 +206,8 @@
                 document.getElementById('btnDevTeam').style.visibility = "visible";
                 document.getElementById('btnAlumni').style.visibility = "visible";
 
+                isLoading=false;
+                preloader();
             }
         });
     }
