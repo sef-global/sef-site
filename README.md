@@ -42,9 +42,9 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 
 
 ## Tech Stack 
-  * Bootstrap   -  Create responsive websites and web applications
-  * JQuery      -  Simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation
-  * MaustacheJS -  Used for HTML, config files, source code . It works by expanding tags in a template using values provided in a hash or object.
+  * Bootstrap   -  Create responsive websites and web applications (https://getbootstrap.com/)
+  * JQuery      -  Simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation (https://jquery.com/)
+  * MaustacheJS -  Used for HTML, config files, source code . It works by expanding tags in a template using values provided in a hash or object. (https://en.wikipedia.org/wiki/Mustache_%28template_system%29)
 
 ## Run Locally
 
