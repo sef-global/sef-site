@@ -40,6 +40,12 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 * Node.js
 * npm 
 
+
+## Tech Stack 
+  * [Bootstrap](https://getbootstrap.com/)   -  Create responsive websites and web applications 
+  * [JQuery](https://jquery.com/)      -  Simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation 
+  * [MaustacheJS](https://en.wikipedia.org/wiki/Mustache_%28template_system%29) -  Used for HTML, config files, source code . It works by expanding tags in a template using values provided in a hash or object. 
+
 ## Run Locally
 
 - Clone your forked repository
