@@ -37,8 +37,8 @@ This repository contains source for Sustainable Education Foundation Website. [V
 
 Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 ## Prerequisites
-* Node.js
-* npm 
+* [Node.js](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
 
 
 ## Tech Stack 
