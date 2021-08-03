@@ -44,7 +44,7 @@
         <!--Profile cards goes here-->
         <div id="advisoryPanel"></div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnAdvisoryPanel" style="visibility:hidden;">
             <button id="btnShowMore_advisoryPanel" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
@@ -57,7 +57,7 @@
         <!--Profile cards goes here-->
         <div id="externalCollaborators"></div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnExCollaborators" style="visibility:hidden;">
             <button id="btnShowMore_externalCollaborators" class="btn btn-link btn-outline-white btn-info">SEE MORE
             </button>
         </div>
@@ -71,7 +71,7 @@
         <!--Profile cards goes here-->
         <div id="executiveCommitee"></div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnExCommittee" style="visibility:hidden;">
             <button id="btnShowMore_executiveCommitee" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
             <a id="btnShowLess_executiveCommitee" class="btn btn-link btn-outline-white btn-info" href="#exec_com_div">SEE LESS</a>
         </div>
@@ -85,7 +85,7 @@
         <!--Profile cards goes here-->
         <div id="techTeam"></div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnDevTeam" style="visibility:hidden;">
             <button id="btnShowMore_techTeam" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
@@ -98,7 +98,7 @@
         <!--Profile cards goes here-->
         <div id="alumni"></div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnAlumni" style="visibility:hidden;">
             <button id="btnShowMore_alumni" class="btn btn-link btn-outline-white btn-info mb-3">SEE MORE</button>
             <a id="btnShowLess_alumni" class="btn btn-link btn-outline-white btn-info mb-3" href="#alum_div">SEE LESS</a>
         </div>
@@ -183,6 +183,12 @@
                 loadData("techTeam", techTeam);
                 loadData("designTeam", designTeam);
                 loadData("alumni", alumni);
+
+                document.getElementById('btnAdvisoryPanel').style.visibility = "visible";
+                document.getElementById('btnExCollaborators').style.visibility = "visible";
+                document.getElementById('btnExCommittee').style.visibility = "visible";
+                document.getElementById('btnDevTeam').style.visibility = "visible";
+                document.getElementById('btnAlumni').style.visibility = "visible";
 
             }
         });
