@@ -74,6 +74,7 @@ function loadProfiles() {
             mentorProfiles = profiles;
             filteredProfiles = profiles;
             sliceProfiles(profiles);
+            document.getElementById('btnMentors').style.visibility = "visible";
         }
     });
 }
@@ -101,7 +102,7 @@ function loadFeaturedStories() {
         url: 'https://script.google.com/macros/s/AKfycbzpNJgeah9hpaf4mRWer5U_y27qWdeFArS6j17LhtxxhAKXkg0uaU9iKG5JHmM1RGP_/exec',
         dataType: 'json',
         success: function (data) {
-
+            document.getElementById('btnFeaturedStories').style.visibility = "visible";
             //slice array to two parts
             if (data.length >= 6) {
                 let partOne = data.slice(0, 6);
