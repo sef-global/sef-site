@@ -89,6 +89,26 @@ body {
     color: #000000;
 }
 
+@media (max-width:494px) {
+    .testimonial-section .author{
+        grid-template-rows: 25px 50px;
+        height: 85px;
+    }
+    .testimonial-section .img {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:386px) {
+    .testimonial-section .author{
+        grid-template-rows: 45px 50px;
+        height: 105px;
+    }
+    .testimonial-section .img {
+        margin-top: 20px;
+    }
+}
+
 /*end of upspeak testimonial section*/
 
 /* custom styling for testimonials section*/
