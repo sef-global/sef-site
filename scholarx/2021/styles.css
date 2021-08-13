@@ -33,7 +33,7 @@
 
 .hover-profile-card .img {
     cursor: pointer;
-   
+
 }
 
 .featured-story img{
@@ -47,9 +47,9 @@
     border: none;
 }
 
-.featured-story .card-body {
+.featured-story{
     padding-bottom: 0;
-    
+
 }
 
 .featured-story .card-footer .stats i {
@@ -64,18 +64,21 @@
 .featured-story .card-footer {
     padding-left: 5%;
 }
+
+.feature-card-body {
+  padding:0;
+}
+
 /*to adjust height and width of cards*/
-.card-body img {
+.feature-card-body img {
     height: 200px;
     width: 1000px;
     padding-bottom: 2%;
     /*round shaped border*/
     border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
 }
-.card-body {
-    padding: 0px;
-}
-.author { 
+
+.author {
     font-size: 0.9rem;
     padding-top: 3px;
     color: #6f81a4;
@@ -89,7 +92,7 @@
     padding-left: 4px;
     padding-top: 4px;
 }
-.author { 
+.author {
     font-size: 0.9rem;
     padding-top: 3px;
 }
