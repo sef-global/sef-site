@@ -110,6 +110,66 @@ body {
 }
 
 /*end of upspeak testimonial section*/
+/*Skeleton preloader section*/
+.skeleton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.skeleton .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton .profile-name {
+    justify-content: center;
+    max-width: 150px;
+    margin-top: 58px;
+}
+
+.skeleton .line {
+    width: 120px;
+    height: 15px;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton .line-secondary {
+    width: 150px;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #cad6e6;
+    }
+
+    50% {
+        background-color: #dae7f7;
+    }
+
+    100% {
+        background-color: #cad6e6;
+    }
+}
+
+@media (max-width: 992px) {
+    .skeleton .avatar {
+        width: 102px;
+        height: 102px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skeleton .avatar {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*End Skeleton section*/
 
 /* custom styling for testimonials section*/
 .testimonial .testimonial-photo {
