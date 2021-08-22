@@ -111,6 +111,7 @@ body {
 
 /*end of upspeak testimonial section*/
 /*Skeleton preloader section*/
+/*Skeleton profile cards*/
 .skeleton {
     display: flex;
     justify-content: center;
@@ -140,7 +141,23 @@ body {
 .skeleton .line-secondary {
     width: 150px;
 }
+/*End of Skeleton profile cards*/
+/*Skeleton Table*/
+.column-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
 
+.column-content {
+    width: 75%;
+    height: 20px;
+    margin-top: 15px;
+    animation: pulse 2s infinite ease-in-out;
+}
+/*End of Skeleton Table*/
+/*Skeleton media queries*/
 @keyframes pulse {
     0% {
         background-color: #cad6e6;
@@ -168,8 +185,8 @@ body {
         height: 150px;
     }
 }
-
-/*End Skeleton section*/
+/*End of Skeleton media queries*/
+/*End of Skeleton section*/
 
 /* custom styling for testimonials section*/
 .testimonial .testimonial-photo {

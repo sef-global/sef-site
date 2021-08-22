@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnMentors" style="visibility:hidden;">
             <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
@@ -234,7 +234,7 @@
             url: 'https://script.google.com/macros/s/AKfycbyIXVj_cpckzkl7xN-C7W7wlW7dG2fAwHaYNhgrsqf_E4tySxIXJRifUpX4s5eQPKjo/exec',
             dataType: 'json',
             success: function (data) {
-
+                document.getElementById('btnMentors').style.visibility = "visible";
                 //slice array to two parts
                 if (data.length >= 8) {
                     let partOne = data.slice(0, 8);

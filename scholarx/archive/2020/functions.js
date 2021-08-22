@@ -36,6 +36,7 @@ function loadProfiles() {
         dataType: 'json',
         success: function (profiles) {
             mentorProfiles = profiles;
+            document.getElementById('btnMentors').style.visibility = "visible";
             // Add a new key named `index` with the index (To use with moustache template)
             profiles.forEach(function (profile, index) {
                 profile.index = index;
@@ -86,7 +87,7 @@ function loadFeaturedStories() {
         url: 'https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec',
         dataType: 'json',
         success: function (data) {
-
+            document.getElementById('btnFeaturedStories').style.visibility = "visible";
             //slice array to two parts
             if (data.length >= 6) {
                 let partOne = data.slice(0, 6);
