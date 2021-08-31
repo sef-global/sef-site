@@ -17,9 +17,6 @@ body {
 .testimonial-section .main-topic {
     padding-top: 60px;
     padding-bottom: 40px;
-    color: black;
-    font-size: 37px;
-    font-weight: bold;
 }
 
 .testimonial-section .testimonial-box {
@@ -37,18 +34,6 @@ body {
     font-size: 25px;
     padding-bottom: 25px;
     padding-top: 23px;
-}
-
-.testimonial-section .paragraph {
-    color: black;
-}
-
-.testimonial-section .main-topic {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    color: black;
-    font-size: 37px;
-    font-weight: bold;
 }
 
 .testimonial-section .paragraph {
