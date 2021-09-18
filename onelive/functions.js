@@ -106,6 +106,7 @@ function loadProfiles() {
                 $("#btnShowMore").hide();
                 $("#btnShowLess").hide();
             }
+            document.getElementById('btnSpeakers').style.visibility = "visible";
         }
     });
 }

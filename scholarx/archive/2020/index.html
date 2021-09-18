@@ -114,8 +114,67 @@
     <div class="container" id="mentors_div">
       <h1 class="display-3 text-center mb-5">Mentors</h1>
         <!--Profile cards goes here-->
-        <div id="teamContent"></div>
-        <div class="row justify-content-center">
+        <div id="teamContent">
+            <!-- Skeleton Profiles goes here -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row justify-content-center" id="btnMentors" style="visibility:hidden;">
             <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
             <a id="btnShowLess" class="btn btn-link btn-outline-white btn-info" href="#mentors_div">SEE LESS</a>
         </div>
@@ -149,7 +208,7 @@
         <h1 class="display-3 text-center mb-5">Featured Stories</h1>
         <!--Featured stories goes here-->
         <div id="featured-stories" class="featured-stories"></div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnFeaturedStories" style="visibility:hidden;">
             <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
@@ -223,7 +282,7 @@
 
 <script type="text/html" id="template-profile-modal-content">
     <div class="text-center">
-        <img src="images/{{image}}" alt="Rounded image"
+        <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{image}}" alt="Rounded image"
              class="img-fluid rounded-circle profile-image border img-center shadow mb-4">
         <h4>{{name}}</h4>
         <span>{{title}}</span>

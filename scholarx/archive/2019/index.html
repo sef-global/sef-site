@@ -64,9 +64,68 @@
 <section class="section pb-0 bg-gradient-white">
     <div class="container">
         <h1 class="display-3 text-center mb-5">Mentors</h1>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="btnMentors" style="visibility:hidden;">
             <!--Profile cards goes here-->
-            <div id="teamContent"></div>
+            <div id="teamContent">
+                <!-- Skeleton Profiles goes here -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="skeleton">
+                                <div>
+                                    <div class="row" style=" justify-content: center">
+                                        <div class="avatar"></div>
+                                    </div>
+                                    <div class="row profile-name ">
+                                        <div class="line"></div>
+                                        <div class="line line-secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton">
+                                <div>
+                                    <div class="row" style=" justify-content: center">
+                                        <div class="avatar"></div>
+                                    </div>
+                                    <div class="row profile-name ">
+                                        <div class="line"></div>
+                                        <div class="line line-secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton">
+                                <div>
+                                    <div class="row" style=" justify-content: center">
+                                        <div class="avatar"></div>
+                                    </div>
+                                    <div class="row profile-name ">
+                                        <div class="line"></div>
+                                        <div class="line line-secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton">
+                                <div>
+                                    <div class="row" style=" justify-content: center">
+                                        <div class="avatar"></div>
+                                    </div>
+                                    <div class="row profile-name ">
+                                        <div class="line"></div>
+                                        <div class="line line-secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 
             <button id="btnShowMore" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
@@ -177,7 +236,7 @@
             url: 'https://script.google.com/macros/s/AKfycbyIXVj_cpckzkl7xN-C7W7wlW7dG2fAwHaYNhgrsqf_E4tySxIXJRifUpX4s5eQPKjo/exec',
             dataType: 'json',
             success: function (data) {
-
+                document.getElementById('btnMentors').style.visibility = "visible";
                 //slice array to two parts
                 if (data.length >= 8) {
                     let partOne = data.slice(0, 8);

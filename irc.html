@@ -64,8 +64,66 @@
     <div id="researchers" class="container">
         <h1 class="display-3 text-center mb-5">Researchers</h1>
         <!--Profile cards goes here-->
-        <div id="teamContent"></div>
-        <div class="row justify-content-center">
+        <div id="teamContent">
+            <!-- Skeleton Profiles goes here -->
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="skeleton">
+                            <div>
+                                <div class="row" style=" justify-content: center">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="row profile-name ">
+                                    <div class="line"></div>
+                                    <div class="line line-secondary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="btnResearchers" style="visibility:hidden;">
             <button id="btnShowMore" class="btn btn-link btn-outline-secondary btn-info mb-3">SEE MORE</button>
             <a href="#researchers" id="btnShowLess" class="btn btn-link btn-outline-secondary btn-info mb-3">SEE LESS</a>
         </div>
@@ -76,7 +134,63 @@
     <div class="container">
         <h1 class="display-3 text-center mb-5">Research Interns In 2020</h1>
         <!--Profile cards goes here-->
-        <div id="internContent"></div>
+        <div id="internContent">
+            <!-- Skeleton Profiles goes here -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">University</th>
+                    <th scope="col">View Blog Article</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
 
@@ -358,6 +472,7 @@
             dataType: 'json',
             success: function (data) {
                 let templateInterns = Mustache.render($("#templateInterns").html(), {"data": data});
+                document.getElementById('btnResearchers').style.visibility = "visible";
                 //display interns
                 $("#internContent").html(templateInterns);
             }
@@ -393,5 +508,4 @@
         </tbody>
       </table>
 </script>
-
 </html>
