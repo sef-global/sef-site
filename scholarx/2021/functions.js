@@ -103,8 +103,12 @@ function loadFeaturedStories() {
         dataType: 'json',
         success: function (data) {
             document.getElementById('btnFeaturedStories').style.visibility = "visible";
-            //slice array to two parts
-            if (data.length >= 6) {
+
+            //hide section if there are no featured Stories
+            if (data.length == 0){
+              document.getElementById("featured-stories-section").style.display = "none";
+            }else if (data.length >= 6) {
+                //slice array to two parts
                 let partOne = data.slice(0, 6);
                 let partTwo = data.slice(6);
 
