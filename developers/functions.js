@@ -10,7 +10,7 @@ $(function () {
             dataType: 'json',
             success: function (data) {
                 data.user.avatar_template =
-                    "https://sjc2.discourse-cdn.com/free1" + data.user.avatar_template.replace(/{size}/g, "60");
+                    "https://sea1.discourse-cdn.com/free1" + data.user.avatar_template.replace(/{size}/g, "60");
                 let templateProfile = Mustache.render($("#profile-template").html(), {"data": data});
                 $("#profile").html(templateProfile);
             },
