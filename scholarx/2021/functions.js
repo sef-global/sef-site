@@ -1,11 +1,13 @@
 // Write custom js functions for the scholarx 2020 page here
 let mentorProfiles = [];
 let filteredProfiles = [];
+const selectedCategories = new Set();
 
 $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
     loadProfiles(); // load profiles
     loadFeaturedStories(); // load featured stories
+    toggleCategory("all"); // Select all categories
     // Listner for FAQ
     $('.panel').click(
         function () {
@@ -81,18 +83,54 @@ function loadProfiles() {
 
 // function to filter profiles based on category
 function filterProfiles(category) {
-    filteredProfiles = mentorProfiles;
-    if(category !== "all" ) {
-        filteredProfiles = filteredProfiles.filter(function (profile) {
-            return profile["fields"].includes(category)
+    toggleCategory(category);
+    if(category === "all"){
+        filteredProfiles = mentorProfiles;
+    } else {
+        filteredProfiles = [];
+        mentorProfiles.forEach(profile => {
+            for(const field of profile["fields"]) {
+                if(selectedCategories.has(field)) {
+                    filteredProfiles.push(profile);
+                    break;
+                }
+            }
         });
     }
-    //mustache render
-    let content = Mustache.render($("#templateTeam").html(), {"profiles": filteredProfiles});
-    //display first 8 profiles
+
+    let content;
+    if(filteredProfiles.length > 0) {
+        content = Mustache.render($("#templateTeam").html(), {"profiles": filteredProfiles});
+    } else {
+        content = $("#teamFilterError").html();
+    }
+    //display content
     $("#teamContent").html(content);
     //hide button
     $("#btnShowMore").hide();
+}
+
+const availableCategories = ["Computer Science", "Engineering", "Life Sciences", "Data Science & AI", "Physical Science", "Other"];
+
+// If the given category already exists in the selectedCategories set, remove that category,
+// else add the category to the set.
+function toggleCategory(category) {
+    if(category === "all") {
+        availableCategories.forEach(availableCategory => {
+            selectedCategories.add(availableCategory);
+            // selecting all checkboxes
+            const categoryCheckboxID = `#chk${availableCategory.replaceAll(" ", "").replaceAll("&", "n")}`;
+            $(categoryCheckboxID).prop("checked", true);
+        });
+    } else {
+        const categoryCheckboxID = `#chk${category.replaceAll(" ", "").replaceAll("&", "n")}`;
+        if(! selectedCategories.delete(category)) {            
+            selectedCategories.add(category);
+            $(categoryCheckboxID).prop("checked", true);
+        } else {
+            $(categoryCheckboxID).prop("checked", false);
+        }
+    }
 }
 
 //function to load profile data
