@@ -137,7 +137,60 @@
         <h1 class="display-3 text-center mb-5">Mentees</h1>
         <div class="justify-content-center">
             <!--Mentees table goes here-->
-            <div id="teamMentees"></div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">University</th>
+                    <th scope="col">Mentor</th>
+                </tr>
+                </thead>
+                <tbody id="teamMentees">
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="column-avatar"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                    <td>
+                        <div class="column-content"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
@@ -195,28 +248,16 @@
 </script>
 
 <script type="text/html" id="templateMentees">
-    <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Name</th>
-            <th scope="col">University</th>
-            <th scope="col">Mentor</th>
-          </tr>
-        </thead>
-        <tbody>
-        {{#data}}
-          <tr onclick="window.location='{{linkedin}}';">
+    {{#data}}
+        <tr onclick="window.location='{{linkedin}}';">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>
                 <td>{{name}}</td>
                 <td>{{university}}</td>
                 <td>{{mentor}}</td>
-          </tr>
-        {{/data}}
-        </tbody>
-      </table>
+        </tr>
+    {{/data}}     
 </script>
 
 <script>
