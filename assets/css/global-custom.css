@@ -498,6 +498,10 @@ body {
     height: auto;
 }
 
+.project-img-default-height{
+    height: 78.05px;
+}
+
 .project-card {
     border-radius: 1.5rem;
 }
