@@ -194,7 +194,7 @@ body {
     text-align: justify;
 }
 
-.card .author, .card .stats {
+.card .author {
     display: inline-flex;
 }
 
@@ -498,8 +498,13 @@ body {
     height: auto;
 }
 
-.project-img-default-height{
-    height: 78.05px;
+@media (min-width: 1024px) {
+    .project-img-default-height {
+        height: 78.05px;
+    }
+    .project-card-p {
+        height: 216px;
+    }
 }
 
 .project-card {
