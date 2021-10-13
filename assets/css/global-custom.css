@@ -499,8 +499,8 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .project-img-default-height {
-        height: 78.05px;
+    .project-img-default {
+        margin-bottom: 11.5px;
     }
     .project-card-p {
         height: 216px;
