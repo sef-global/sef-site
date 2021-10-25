@@ -27,8 +27,8 @@ body {
   font-size: 24px;
   position: relative;
   border-radius: 1.5rem;
-  border: 1px solid rgb(190, 192, 192);
-  box-shadow: 5px 10px 8px #cecbcb;
+
+  box-shadow: 0 0px 10px 10px rgb(243, 240, 240);
 }
 
 .testimonial-section .title {
