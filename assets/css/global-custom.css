@@ -10,7 +10,6 @@ body {
 
 /* upspeak & Home page testimonial section*/
 .testimonial-section {
-    background-color: #EAECEE;
     padding: 10px 10px 10px 10px;
 }
 
@@ -27,6 +26,7 @@ body {
     font-size: 24px;
     position: relative;
     border-radius: 1.5rem;
+    box-shadow: 1px 10px 10px 1px grey;
 }
 
 .testimonial-section .title {
