@@ -125,7 +125,7 @@
         let id = searchParams.get('id');
         $.ajax({
           type: 'get',
-          url: 'http://apps.sefglobal.org/core/fellowship/certificates/' + id,
+          url: 'https://apps.sefglobal.org/core/fellowship/certificates/' + id,
           dataType: 'json',
           success: function (data) {
             let date = data.createdAt;
