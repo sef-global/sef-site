@@ -125,7 +125,7 @@
         let id = searchParams.get('id');
         $.ajax({
           type: 'get',
-          url: 'https://sef-strapi.herokuapp.com/api/usrs/' + id,
+          url: 'https://sef-strapi.herokuapp.com/api/usr-certificates/' + id,
           dataType: 'json',
           success: function (data) {
             let date = data.data.attributes.createdAt;
