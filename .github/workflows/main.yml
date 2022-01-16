@@ -26,7 +26,7 @@ jobs:
       - name: Comment on the PR with the preview link
         uses: unsplash/comment-on-pr@v1.3.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
           msg: "Hey @${{ github.event.pull_request.user.login }}! 👋\n 
               Here's the live preview link for your PR!\n
