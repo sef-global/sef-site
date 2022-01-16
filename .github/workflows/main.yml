@@ -24,6 +24,7 @@ jobs:
           DEPLOY_DOMAIN: https://pr-${{ github.event.number }}-sef-site.surge.sh
         run: surge ./ $DEPLOY_DOMAIN --token $SURGE_TOKEN
       - name: Comment on the PR with the preview link
+        uses: actions/github-script@v5
         with:
           github-token: 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
           script: |
