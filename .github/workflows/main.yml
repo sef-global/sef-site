@@ -25,6 +25,12 @@ jobs:
         run: surge ./ $DEPLOY_DOMAIN --token $SURGE_TOKEN
       - name: Comment on the PR with the preview link
         uses: actions/github-script@v5
+        env:
+          BODY: "Hey @${{ github.event.pull_request.user.login }}! 👋\n 
+              Here's the live preview link for your PR!\n
+              https://pr-${{ github.event.number }}-sef-site.surge.sh \n\n
+              Thank you very much for opening a pull request at SEF!\n
+              Every little contribution you make, helps us to improve our home crafted instruments that aid the process of making the current education system more sustainable." 
         with:
           github-token: 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
           script: |
@@ -32,9 +38,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Hey @${{ github.event.pull_request.user.login }}! 👋\n 
-              Here's the live preview link for your PR!\n
-              https://pr-${{ github.event.number }}-sef-site.surge.sh \n\n
-              Thank you very much for opening a pull request at SEF!\n
-              Every little contribution you make, helps us to improve our home crafted instruments that aid the process of making the current education system more sustainable.' 
+              body: $BODY
             })
