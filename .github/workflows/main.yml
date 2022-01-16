@@ -24,13 +24,16 @@ jobs:
           DEPLOY_DOMAIN: https://pr-${{ github.event.number }}-sef-site.surge.sh
         run: surge ./ $DEPLOY_DOMAIN --token $SURGE_TOKEN
       - name: Comment on the PR with the preview link
-        uses: unsplash/comment-on-pr@v1.3.0
-        env:
-          GITHUB_TOKEN: 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
         with:
-          msg: "Hey @${{ github.event.pull_request.user.login }}! 👋\n 
+          github-token: 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
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Hey @${{ github.event.pull_request.user.login }}! 👋\n 
               Here's the live preview link for your PR!\n
               https://pr-${{ github.event.number }}-sef-site.surge.sh \n\n
               Thank you very much for opening a pull request at SEF!\n
-              Every little contribution you make, helps us to improve our home crafted instruments that aid the process of making the current education system more sustainable." 
-          check_for_duplicate_msg: true
+              Every little contribution you make, helps us to improve our home crafted instruments that aid the process of making the current education system more sustainable.' 
+            })
