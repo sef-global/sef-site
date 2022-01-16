@@ -10,11 +10,6 @@ The purpose of this PR is to fix #<issue-number>
 
 ### Screenshots
 <!---  Include an animated GIF or screenshot if the change affects the UI.  -->
-  
-### Preview Link
-<!---  This PR will be automatically deployed to surge. -->
-<!---  Once you submit the PR, replace "{PR_NUMBER}" with your PR number. -->
-https://pr-{PR_NUMBER}-sef-site.surge.sh/
 
 ##  Checklist
 - [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
