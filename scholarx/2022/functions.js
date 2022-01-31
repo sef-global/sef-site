@@ -1,6 +1,5 @@
 // Write custom js functions for the scholarx 2020 page here
 
-let mentorProfiles = [];
 
 $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
