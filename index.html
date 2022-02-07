@@ -219,10 +219,71 @@
     </section>
 
     <section class="section">
-        <div class="container-fluid" >
-            <img class="w-100" src="/assets/img/homepage/journey.png">
+        <div class="row py-3">
+                <div class="col">
+                    <h1 class="display-3 text-center mb-5">Our Journey So Far</h1>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="timeline">
+                <ol>
+                    <li>
+                        <div>
+                            <time>2016</time> <h6>We see a problem</h6>
+                            Our Founder Akshika Wijesundara notices a gap in the 
+                            Sri Lankan education system that does not future proof our skills and 
+                            capabilities to compete with emerging markets
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2017</time> <h6>SEF is born</h6>
+                            Together with our deputy co-chairmen, The Sustainable 
+                            Education Foundation is launched with the aim of building a connector 
+                            platform to bring Sri Lankan Subject Matter Experts in academics and 
+                            industry to build a more sustainable education ecosystem in Sri Lanka
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2018</time> <h6>Expanding our reach</h6>
+                            Our three headliner programs, ScholarX, International 
+                            Research Council and OneLive are launched. 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2019</time> <h6>Where we are today</h6>
+                            We continue to deliver our headline programs as we 
+                            refine our operating rhythm and build our 10 year strategy looking 
+                            forward to 2029
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2020</time> <h6>Our long term goal</h6>
+                            Be recognised as the pioneer connector platform aimed 
+                            at providing innovative solutions that bridged the gap in Sri Lanka's 
+                            education system to become the most sustainable learning ecosystem in 
+                            the world
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2021+</time> <h6>Beyond 2021</h6>
+                            Our ultimate goals are to provide an end-to-end digital 
+                            solution for the operations of SEF, Provide suggestions to educational 
+                            policymakers in Sri Lanka to improve the educational landscape, Develop 
+                            a STEM research facility in Sri Lanka that can produce high-tech startups 
+                            with the help of the global Sri Lanka community, and Increase the 
+                            percentage of Sri Lankans in Ivy League Universities and Fortune 500 
+                            companies
+                        </div>
+                    </li>
+                    <li></li>
+                </ol>
+            </div>
         </div>
-
     </section>
 
     <section class="container">
@@ -450,5 +511,33 @@
             $("#star-note-content").html()
         )
     })
+</script>
+<script>
+    (function () {
+        const timeline = document.querySelector(".timeline ol"),
+            elH = document.querySelectorAll(".timeline li > div");
+
+        window.addEventListener("load", init);
+
+        function init() {
+            setEqualHeights(elH);
+        }
+        
+        // SET EQUAL HEIGHTS
+        function setEqualHeights(el) {
+            let counter = 0;
+            for (let i = 0; i < el.length; i++) {
+                const singleHeight = el[i].offsetHeight;
+
+                if (counter < singleHeight) {
+                    counter = singleHeight;
+                }
+            }
+
+            for (let i = 0; i < el.length; i++) {
+                el[i].style.height = `${counter}px`;
+            }
+        }
+    })();
 </script>
 </html>
