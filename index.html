@@ -514,24 +514,24 @@
 </script>
 <script>
     $(function () {
-        const elH = document.querySelectorAll(".timeline li > div");
-        
-        function setEqualHeights(el) {
+        const timelineItemsList = document.querySelectorAll(".timeline li > div");
+
+        function setEqualHeights(itemsList) {
             let counter = 0;
-            for (let i = 0; i < el.length; i++) {
-                const singleHeight = el[i].offsetHeight;
+            for (let i = 0; i < itemsList.length; i++) {
+                const singleHeight = itemsList[i].offsetHeight;
 
                 if (counter < singleHeight) {
                     counter = singleHeight;
                 }
             }
 
-            for (let i = 0; i < el.length; i++) {
-                el[i].style.height = `${counter}px`;
+            for (let i = 0; i < itemsList.length; i++) {
+                itemsList[i].style.height = `${counter}px`;
             }
         }
 
-        setEqualHeights(elH);
+        setEqualHeights(timelineItemsList);
     });
 </script>
 </html>
