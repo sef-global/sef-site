@@ -513,16 +513,9 @@
     })
 </script>
 <script>
-    (function () {
+    $(function () {
         const elH = document.querySelectorAll(".timeline li > div");
-
-        window.addEventListener("load", init);
-
-        function init() {
-            setEqualHeights(elH);
-        }
         
-        // SET EQUAL HEIGHTS
         function setEqualHeights(el) {
             let counter = 0;
             for (let i = 0; i < el.length; i++) {
@@ -537,6 +530,8 @@
                 el[i].style.height = `${counter}px`;
             }
         }
-    })();
+
+        setEqualHeights(elH);
+    });
 </script>
 </html>
