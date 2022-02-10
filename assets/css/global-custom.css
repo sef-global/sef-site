@@ -587,13 +587,12 @@ body {
 
 .timeline {
     white-space: nowrap;    
-    /* overflow-x: hidden; */
 }
 
 .timeline ol {
     font-size: 0;
     width: 100vw;
-    padding: 290px 0;
+    padding: 230px 0 310px 0;
     transition: all 1s;
 }
 
@@ -702,7 +701,7 @@ body {
     }
 
     .timeline ol li:first-child {
-        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .timeline ol li:not(:first-child) {
