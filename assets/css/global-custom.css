@@ -631,6 +631,7 @@ body {
     position: absolute;
     left: calc(100% + 7px);
     width: 360px;
+    min-height: 216px;
     padding: 15px;
     font-size: 0.8rem;
     white-space: normal;
