@@ -700,10 +700,6 @@ li.timeline-element div h6 {
         background: transparent;
     }
 
-    /* .timeline ol li:first-child {
-        margin-bottom: 250px;
-    } */
-
     li.timeline-element:not(:first-child) {
         margin-left: auto;
     }
