@@ -592,7 +592,7 @@ body {
 .timeline ol {
     font-size: 0;
     width: 100vw;
-    padding: 370px 0 290px 0;
+    padding: 420px 0 290px 0;
     transition: all 1s;
 }
 
@@ -600,13 +600,13 @@ body {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 155px;
+    width: 9.3vw;
     height: 3px;
     background: #32325d
 }
 
 li.timeline-element:last-child {
-    width: 100vw;
+    width: 35vw;
 }
 
 li.timeline-element:not(:first-child) {
@@ -629,7 +629,7 @@ li.timeline-element:not(:last-child)::after {
 li.timeline-element div {
     position: absolute;
     left: calc(100% + 7px);
-    width: 300px;
+    width: 19.2vw;
     min-height: 214px;
     padding: 15px;
     font-size: 0.8rem;
