@@ -613,7 +613,6 @@ body {
 li.timeline-element {
     padding: 15px;
     background-color: #f4f5f7;
-    color: Black;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -625,6 +624,7 @@ li.timeline-element:last-child {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 15px;
+    color: #32325d;
 }
 .timeline-content p {
     font-size: 16px;
