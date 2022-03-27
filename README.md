@@ -17,7 +17,7 @@ This repository contains source for Sustainable Education Foundation Website. [V
 ## SEF Group Pages and Other Projects 
 
 * Discourse: https://sef.discourse.group/
-* Leaderboard: https://sefglobal.org/github-leaderboard/
+* Leaderboard: https://sef-github-leaderboard.herokuapp.com
 * Slack channel: https://sefheadquarters.slack.com 
 * Our Projects 
     * Core: https://github.com/sef-global/sef-core
