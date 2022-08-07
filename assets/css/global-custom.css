@@ -694,3 +694,31 @@ li.timeline-element:last-child {
         background-color: #5e72e4;
     }
 }
+
+
+@media only screen and (max-width: 991px) {
+    .footer-elements {
+        position: relative;
+        top: 30px;
+        right: 160px;
+        width: 130%;
+    }
+
+    .copyright {
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-elements {
+        display: block;
+        right: 50px;
+        text-align: center;
+    }
+
+    .copyright {
+       text-align: center;
+       position: relative;
+       right: 15px;
+    }
+}
