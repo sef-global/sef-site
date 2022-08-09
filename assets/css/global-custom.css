@@ -696,29 +696,82 @@ li.timeline-element:last-child {
 }
 
 
+.copyright {
+    text-align: right;
+    position: relative;
+    left: 350px;
+    width: 135%;
+}
+
 @media only screen and (max-width: 991px) {
     .footer-elements {
         position: relative;
-        top: 30px;
-        right: 160px;
+        right: 0px;
         width: 130%;
     }
 
     .copyright {
-        width: 110%;
+        margin-top: 20px;
+        position: relative;
+        left: 240px;
+        width: 156%;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     .footer-elements {
-        display: block;
-        right: 50px;
-        text-align: center;
+        right: 240px;
     }
 
     .copyright {
-       text-align: center;
-       position: relative;
-       right: 15px;
+       left: -250px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-elements {
+        right: 280px;
+    }
+
+    .copyright {
+        left: -270px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .footer-elements {
+        display: block;
+        right: 70px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        left: -350px;
+
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    .footer-elements {
+        display: block;
+        right: 60px;
+    }
+
+    .copyright {
+        left: -330px;
+
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    .footer-elements {
+        display: block;
+        right: 50px;
+    }
+
+    .copyright {
+        left: -300px;
+
     }
 }
