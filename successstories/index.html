@@ -127,12 +127,11 @@
 <script src="functions.js"></script>
 
 <script>
-    const data_url = 'https://script.google.com/macros/s/AKfycbzngFXQxBlsnE6GZ9YeSi5hzFUFuTEBeyy1EgK5w0JN2ixJrtdfPNC6yVOV3gP1VQnGXA/exec'';
+    const data_url = 'https://script.google.com/macros/s/AKfycbzngFXQxBlsnE6GZ9YeSi5hzFUFuTEBeyy1EgK5w0JN2ixJrtdfPNC6yVOV3gP1VQnGXA/exec';
 
     async function getStories() {
         const response = await fetch(data_url);
         const {data} = await response.json();
-        // const {Sheet1} = await data_ss;
         data.forEach(element => {
             const{ mentee_name, mentee_linkedin, programme_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements } = element;
 
