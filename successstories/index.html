@@ -62,17 +62,17 @@
 </body>
 
 <script id="template" type="x-tmpl-mustache">
-    {{#arr}}
+    {{#data}}
     <div class="row story-box shadow">
         <div class="col-md-12">
             <div class="highlight text-justify">{{highlight}}</div>
             <p class="paragraph text-justify">
-                {{paragraph}}
+                {{story}}
             </p>
             <ul class="text-justify">
-                {{#achievements__}} 
+                {{#achievements_arr}} 
                     <li> {{.}} </li> 
-                {{/achievements__}}
+                {{/achievements_arr}}
             </ul>
             <hr>
             <div class="row details-box">
@@ -80,11 +80,11 @@
                     <div class="row mentee-details">
                         <div>
                             <div class="mentee-profile-pic">
-                                <img class="img" src="{{mentee_img_url}}">
+                                <img class="img" src="{{mentee_image}}">
                             </div>
                         </div>
                         <div>
-                            <h5 class="name"><a href="#">{{mentee_name}}</a></h5>
+                            <h5 class="name"><a href="{{mentee_linkedin}}">{{mentee_name}}</a></h5>
                             <p class="details">{{program_year}} Graduate</p>
                         </div>
     
@@ -95,19 +95,19 @@
                     <div class="row mentor-details">
                         <div>
                             <div class="mentor-profile-pic">
-                                <img class="img" src="{{mentor_img_url}}">
+                                <img class="img" src="{{mentor_image}}">
                             </div>
                         </div>
                         <div>
-                            <p class="name"><a href="#">{{mentor_name}}</a></p>
-                            <p class="details">{{mentor_details}}</p>
+                            <p class="name"><a href="{{mentor_linkedin}}">{{mentor_name}}</a></p>
+                            <p class="details">{{mentor_details_occupation}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {{/arr}}
+    {{/data}}
 </script>
 
 <!-- Core -->
@@ -133,16 +133,11 @@
         const response = await fetch(data_url);
         const {data} = await response.json();
         data.forEach(element => {
-            const{ mentee_name, mentee_linkedin, programme_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements } = element;
+            const{ mentee_name, mentee_linkedin, program_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements, mentee_image, mentor_image } = element;
 
-
-            //get from linkedin
-            let mentee_img_url = "https://www.w3schools.com/w3css/img_avatar3.png";
-            let mentor_img_url = "https://www.w3schools.com/w3css/img_avatar3.png";
-
-            let achievements_ = achievements.split("\\n");
+            let achievements_arr = achievements.split("\\n");
             let template = document.getElementById("template").innerHTML;
-            let render = Mustache.render(template, { arr:data, highlight: highlight, paragraph: story, achievements__: achievements_, mentee_name: mentee_name, mentee_img_url: mentee_img_url, program_year: programme_year, mentor_img_url: mentor_img_url, mentor_name: mentor_name, mentor_details: mentor_details_occupation });
+            let render = Mustache.render(template, { data:data, highlight: highlight, story: story, achievements_arr: achievements_arr, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
 
             document.getElementById("cards").innerHTML = render;
         });
