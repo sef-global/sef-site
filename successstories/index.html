@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-167873271-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Over the last few years of delivering SEF initiated programs, we noticed one of the biggest challenges faced by undergraduate
+                            students was their ability to speak in English. While their reading and writing skills were very good, their level of spoken
+                            English was not on par. These were due to a number of reasons including inadequate resources to practice spoken English in
+                            a safe environment and focus on mastering academic English using rigid patterns not transferrable when speaking">
+    <meta property="og:image" content="assets/img/brand/scholarx.png">
+    <title>Success Stories | Sustainable Education Foundation</title>
+    <!-- Favicon -->
+    <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- global CSS -->
+    <link type="text/css" href="/assets/css/global-custom.css" rel="stylesheet">
+
+    <link type="text/css" href="./styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;">
+<header class="header-global">
+    <!--nav bar goes here-->
+    <div id="navbar"></div>
+</header>
+
+
+<section class="story-section ">
+    <div class="container">
+        <h1 class="display-3 text-center main-topic">ScholarX Success Stories</h1>
+        <br>
+        <div id="cards">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div id="footer"></div>
+    <!--footer goes here -->
+</footer>
+<!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
+</body>
+
+<script id="template" type="x-tmpl-mustache">
+    {{#arr}}
+    <div class="row story-box shadow">
+        <div class="col-md-12">
+            <div class="highlight text-justify">{{highlight}}</div>
+            <p class="paragraph text-justify">
+                {{paragraph}}
+            </p>
+            <ul class="text-justify">
+                {{#achievements__}} 
+                    <li> {{.}} </li> 
+                {{/achievements__}}
+            </ul>
+            <hr>
+            <div class="row details-box">
+                <div class="mentee col">
+                    <div class="row mentee-details">
+                        <div>
+                            <div class="mentee-profile-pic">
+                                <img class="img" src="{{mentee_img_url}}">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="name"><a href="#">{{mentee_name}}</a></h5>
+                            <p class="details">{{program_year}} Graduate</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="mentor col">
+                    <h5 class="mentor-details-title">Mentored by :</h5>
+                    <div class="row mentor-details">
+                        <div>
+                            <div class="mentor-profile-pic">
+                                <img class="img" src="{{mentor_img_url}}">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="name"><a href="#">{{mentor_name}}</a></p>
+                            <p class="details">{{mentor_details}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/arr}}
+</script>
+
+<!-- Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!-- Argon JS -->
+<script src="/assets/js/argon.js?v=1.0.1"></script>
+<!-- Script for static navbar and footer -->
+<script src="/assets/js/navigation.js"></script>
+<!-- External JS file for the JS functions-->
+<script src="functions.js"></script>
+
+<script>
+    const ss_data_url = 'https://script.googleusercontent.com/macros/echo?user_content_key=vYNRb_6wLpdAb7yohOGVZ6plAPRQYHj24PwHaRzyPeBAHv_IOO-iTocAcegU32lanTlNXAD5xprr1QcKF6AYOnasyELXO0mgm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGloHkTCAUi4CAqGZJpwR2I9IZqiKSN007f2pT1Z8Vo-bFbrfv4vEmQOrefG-1CINfwjcROloh7GA4MBynjXskzQS_1kBKld8w&lib=M5DrI9BMFrlzrW1XQTqlL3oZDs2x4KkTf';
+
+    async function getStories() {
+        const response_ss = await fetch(ss_data_url);
+        const data_ss = await response_ss.json();
+        const {Sheet1} = await data_ss;
+        Sheet1.forEach(element => {
+            const{ mentee_name, mentee_linkedin, programme_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements } = element;
+
+
+            //get from linkedin
+            let mentee_img_url = "https://www.w3schools.com/w3css/img_avatar3.png";
+            let mentor_img_url = "https://www.w3schools.com/w3css/img_avatar3.png";
+
+            let achievements_ = achievements.split("\\n");
+            let template = document.getElementById("template").innerHTML;
+            let render = Mustache.render(template, { arr:Sheet1, highlight: highlight, paragraph: story, achievements__: achievements_, mentee_name: mentee_name, mentee_img_url: mentee_img_url, program_year: programme_year, mentor_img_url: mentor_img_url, mentor_name: mentor_name, mentor_details: mentor_details_occupation });
+
+            document.getElementById("cards").innerHTML = render;
+
+
+        });
+    }
+    
+    getStories();
+    
+</script>
+</html>

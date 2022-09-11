@@ -1,0 +1,153 @@
+/* ---------------------- Additional styles ------------------------ */
+hr {
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+.story-section {
+    padding: 10px 10px 10px 10px;
+}
+
+.story-section .main-topic {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* ---------------------- Card design ------------------------------ */
+.story-box {
+    padding: 32px 32px 60px 32px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+/* ---------------------- Highlight section ------------------------ */
+.story-section .highlight {
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+}
+
+.story-section .highlight::before {
+    content: open-quote;
+}
+
+.story-section .highlight::after {
+    content: close-quote;
+}
+
+/* --------------------- Paragraph section ------------------------ */
+.story-section .paragraph {
+    color: black;
+}
+
+/* -------------------- Achievements section ---------------------- */
+.story-section ul {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #000000;
+}
+
+
+/* -------------------- mentee and mentor details ------------------ */
+
+.details-box .details {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 0;
+    
+}
+
+.details-box .name {
+    font-weight: bolder;
+}
+
+/* -----------------------------mentee col-------------------------- */
+.mentee-details {
+    display: flex;
+    flex-wrap: inherit;
+    padding: 5px 15px 5px 15px;
+}
+
+.mentee-details .details, .mentee-details .name {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.mentee-details .name {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.mentee-details .details {
+    margin-top: 0px;
+}
+
+.mentee-profile-pic {
+    height: 100%;
+    margin-top: 7px;
+}
+
+.mentee-profile-pic .img {
+    border-radius: 50% !important;
+    width: 92px;
+    height: 92px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #EAECEE;
+}
+
+/* ----------------------------mentor col ------------------------- */
+
+.mentor-details-title {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.mentor-details {
+    display: flex;
+    flex-wrap: inherit;
+    padding: 5px 15px 5px 15px;
+    margin-left: 2px;
+    margin-top: 4px;
+}
+
+.mentor-details .details,
+.mentor-details .name {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.mentor-details .name {
+    font-size: 14px;
+    margin-bottom: -1px;
+}
+
+.mentor-details .details{
+    line-height: 1.2rem;
+    margin-top: 4px;;
+}
+
+.mentor-profile-pic {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.mentor-profile-pic .img {
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #EAECEE;
+}
