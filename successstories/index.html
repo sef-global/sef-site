@@ -62,7 +62,7 @@
 </body>
 
 <script id="template" type="x-tmpl-mustache">
-    {{#data}}
+    {{#stories}}
     <div class="row story-box shadow">
         <div class="col-md-12">
             <div class="highlight text-justify">{{highlight}}</div>
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    {{/data}}
+    {{/stories}}
 </script>
 
 <!-- Core -->
@@ -137,7 +137,7 @@
 
             let achievements_arr = achievements.split("\\n");
             let template = document.getElementById("template").innerHTML;
-            let render = Mustache.render(template, { data:data, highlight: highlight, story: story, achievements_arr: achievements_arr, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
+            let render = Mustache.render(template, { stories:data, highlight: highlight, story: story, achievements_arr: achievements_arr, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
 
             document.getElementById("cards").innerHTML = render;
         });
