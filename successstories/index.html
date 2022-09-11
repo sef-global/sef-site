@@ -127,13 +127,13 @@
 <script src="functions.js"></script>
 
 <script>
-    const ss_data_url = 'https://script.googleusercontent.com/macros/echo?user_content_key=vYNRb_6wLpdAb7yohOGVZ6plAPRQYHj24PwHaRzyPeBAHv_IOO-iTocAcegU32lanTlNXAD5xprr1QcKF6AYOnasyELXO0mgm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGloHkTCAUi4CAqGZJpwR2I9IZqiKSN007f2pT1Z8Vo-bFbrfv4vEmQOrefG-1CINfwjcROloh7GA4MBynjXskzQS_1kBKld8w&lib=M5DrI9BMFrlzrW1XQTqlL3oZDs2x4KkTf';
+    const data_url = 'https://script.googleusercontent.com/macros/echo?user_content_key=vYNRb_6wLpdAb7yohOGVZ6plAPRQYHj24PwHaRzyPeBAHv_IOO-iTocAcegU32lanTlNXAD5xprr1QcKF6AYOnasyELXO0mgm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGloHkTCAUi4CAqGZJpwR2I9IZqiKSN007f2pT1Z8Vo-bFbrfv4vEmQOrefG-1CINfwjcROloh7GA4MBynjXskzQS_1kBKld8w&lib=M5DrI9BMFrlzrW1XQTqlL3oZDs2x4KkTf';
 
     async function getStories() {
-        const response_ss = await fetch(ss_data_url);
-        const data_ss = await response_ss.json();
-        const {Sheet1} = await data_ss;
-        Sheet1.forEach(element => {
+        const response = await fetch(data_url);
+        const {data} = await response.json();
+        // const {Sheet1} = await data_ss;
+        data.forEach(element => {
             const{ mentee_name, mentee_linkedin, programme_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements } = element;
 
 
@@ -143,7 +143,7 @@
 
             let achievements_ = achievements.split("\\n");
             let template = document.getElementById("template").innerHTML;
-            let render = Mustache.render(template, { arr:Sheet1, highlight: highlight, paragraph: story, achievements__: achievements_, mentee_name: mentee_name, mentee_img_url: mentee_img_url, program_year: programme_year, mentor_img_url: mentor_img_url, mentor_name: mentor_name, mentor_details: mentor_details_occupation });
+            let render = Mustache.render(template, { arr:data, highlight: highlight, paragraph: story, achievements__: achievements_, mentee_name: mentee_name, mentee_img_url: mentee_img_url, program_year: programme_year, mentor_img_url: mentor_img_url, mentor_name: mentor_name, mentor_details: mentor_details_occupation });
 
             document.getElementById("cards").innerHTML = render;
         });
