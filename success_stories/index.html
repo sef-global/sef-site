@@ -50,7 +50,7 @@
     <div class="container">
         <h1 class="display-3 text-center main-topic">ScholarX Success Stories</h1>
         <br>
-        <div id="cards">
+        <div id="card_container">
         </div>
     </div>
 </section>
@@ -130,15 +130,15 @@
     async function getStories() {
         const response = await fetch(data_url);
         const {data} = await response.json();
-        let innerhtml = '';
+        let card = '';
         data.forEach(element => {
             const{ mentee_name, mentee_linkedin, program_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements, mentee_image, mentor_image } = element;
 
             let achievements_arr = achievements.split("\\n");
             let template = document.getElementById("template").innerHTML;
             let render = Mustache.render(template, { stories:data, highlight: highlight, story: story, achievements_arr: achievements_arr, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
-            innerhtml += render;
-            document.getElementById("cards").innerHTML = innerhtml;
+            card += render;
+            document.getElementById("card_container").innerHTML = card;
         })
     }
     
