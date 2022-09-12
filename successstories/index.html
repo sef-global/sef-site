@@ -61,8 +61,7 @@
 <!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
 </body>
 
-<script id="template" type="x-tmpl-mustache">
-    {{#stories}}
+<script id="template" type="text/template">
     <div class="row story-box shadow">
         <div class="col-md-12">
             <div class="highlight text-justify">{{highlight}}</div>
@@ -70,8 +69,8 @@
                 {{story}}
             </p>
             <ul class="text-justify">
-                {{#achievements_arr}} 
-                    <li> {{.}} </li> 
+                {{#achievements_arr}}
+                    <li>{{.}}</li>
                 {{/achievements_arr}}
             </ul>
             <hr>
@@ -107,7 +106,6 @@
             </div>
         </div>
     </div>
-    {{/stories}}
 </script>
 
 <!-- Core -->
@@ -132,15 +130,16 @@
     async function getStories() {
         const response = await fetch(data_url);
         const {data} = await response.json();
+        let innerhtml = '';
         data.forEach(element => {
             const{ mentee_name, mentee_linkedin, program_year, mentor_name, mentor_details_occupation, mentor_linkedin, highlight, story, achievements, mentee_image, mentor_image } = element;
 
             let achievements_arr = achievements.split("\\n");
             let template = document.getElementById("template").innerHTML;
             let render = Mustache.render(template, { stories:data, highlight: highlight, story: story, achievements_arr: achievements_arr, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
-
-            document.getElementById("cards").innerHTML = render;
-        });
+            innerhtml += render;
+            document.getElementById("cards").innerHTML = innerhtml;
+        })
     }
     
     getStories();
