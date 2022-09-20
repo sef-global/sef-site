@@ -32,6 +32,7 @@ hr {
     padding-bottom: 25px;
     padding-top: 29px;
     padding-left: 10px;
+    text-align: justify;
 }
 
 .story-section .highlight::before {
