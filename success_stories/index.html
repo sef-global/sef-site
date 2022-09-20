@@ -64,31 +64,35 @@
 <script id="template" type="text/template">
     <div class="row story-box shadow">
         <div class="col-md-12">
-            <div class="highlight text-justify">{{highlight}}</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mentee col">
+                    <div class="row mentee-details">
+
+                            <div class="mentee-profile-pic">
+                                <img class="img" src="{{mentee_image}}">
+                            </div>
+                            <h5 class="name"><a href="{{mentee_linkedin}}">{{mentee_name}}</a></h5>
+                            <p class="details">{{program_year}} Graduate</p>
+
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="highlight text-justify">{{highlight}}</div>
+                </div>
+            </div>
+            
             <p class="paragraph text-justify">
                 {{story}}
             </p>
-            <ul class="text-justify">
+            <ul class="">
                 {{#achievements}}
                     <li>{{.}}</li>
                 {{/achievements}}
             </ul>
             <hr>
             <div class="row details-box">
-                <div class="mentee col">
-                    <div class="row mentee-details">
-                        <div>
-                            <div class="mentee-profile-pic">
-                                <img class="img" src="{{mentee_image}}">
-                            </div>
-                        </div>
-                        <div>
-                            <h5 class="name"><a href="{{mentee_linkedin}}">{{mentee_name}}</a></h5>
-                            <p class="details">{{program_year}} Graduate</p>
-                        </div>
-    
-                    </div>
-                </div>
                 <div class="mentor col">
                     <h5 class="mentor-details-title">Mentored by :</h5>
                     <div class="row mentor-details">

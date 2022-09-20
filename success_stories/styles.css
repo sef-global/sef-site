@@ -15,9 +15,9 @@ hr {
 
 /* ---------------------- Card design ------------------------------ */
 .story-box {
-    padding: 32px 32px 60px 32px;
+    padding: 32px 32px 40px 32px;
     background-color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     padding-top: 25px;
     font-size: 24px;
     position: relative;
@@ -30,7 +30,8 @@ hr {
     color: #000000;
     font-size: 25px;
     padding-bottom: 25px;
-    padding-top: 23px;
+    padding-top: 29px;
+    padding-left: 10px;
 }
 
 .story-section .highlight::before {
@@ -44,6 +45,7 @@ hr {
 /* --------------------- Paragraph section ------------------------ */
 .story-section .paragraph {
     color: black;
+    margin-top: 25px;
 }
 
 /* -------------------- Achievements section ---------------------- */
@@ -52,58 +54,62 @@ hr {
     font-weight: 300;
     line-height: 1.8;
     color: #000000;
+    margin-left: 5px;
 }
 
 
 /* -------------------- mentee and mentor details ------------------ */
 
-.details-box .details {
+.details-box .details, .mentee .details {
     font-size: 13px;
     color: #000000;
     margin-bottom: 0;
     
 }
 
-.details-box .name {
+.details-box .name, .mentee .name {
     font-weight: bolder;
 }
 
-/* -----------------------------mentee col-------------------------- */
+/* -----------------------------mentee -------------------------- */
 .mentee-details {
     display: flex;
-    flex-wrap: inherit;
-    padding: 5px 15px 5px 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .mentee-details .details, .mentee-details .name {
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 0px;
 }
 
 .mentee-details .name {
-    margin-top: 25px;
+    margin-top: 5px;
     font-size: 16px;
 }
 
 .mentee-details .details {
-    margin-top: 0px;
+    margin-top: 4px;
 }
 
 .mentee-profile-pic {
     height: 100%;
-    margin-top: 7px;
+    margin-top: 27px;
+    margin-bottom: 2px;
 }
 
 .mentee-profile-pic .img {
     border-radius: 50% !important;
-    width: 92px;
-    height: 92px;
+    width: 100px;
+    height: 100px;
     padding: 5px;
     border-radius: 50%;
     background-color: #EAECEE;
 }
 
-/* ----------------------------mentor col ------------------------- */
+/* ----------------------------mentor ------------------------- */
 
 .mentor-details-title {
     padding-top: 10px;
@@ -117,7 +123,7 @@ hr {
     display: flex;
     flex-wrap: inherit;
     padding: 5px 15px 5px 15px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-top: 4px;
 }
 
@@ -150,4 +156,8 @@ hr {
     padding: 5px;
     border-radius: 50%;
     background-color: #EAECEE;
+}
+
+.mentor {
+    margin-left: 0px;
 }
