@@ -70,9 +70,9 @@
                     <div class="row mentee-details">
 
                             <div class="mentee-profile-pic">
-                                <img class="img" src="{{mentee_image}}">
+                                <img class="img" src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{mentee_image}}">
                             </div>
-                            <h5 class="name"><a href="{{mentee_linkedin}}">{{mentee_name}}</a></h5>
+                            <h5 class="name"><a href="{{mentee_linkedin}}" target=”_blank”>{{mentee_name}}</a></h5>
                             <p class="details">{{program_year}} Graduate</p>
 
                     </div>
@@ -98,11 +98,11 @@
                     <div class="row mentor-details">
                         <div>
                             <div class="mentor-profile-pic">
-                                <img class="img" src="{{mentor_image}}">
+                                <img class="img" src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{mentor_image}}">
                             </div>
                         </div>
                         <div>
-                            <p class="name"><a href="{{mentor_linkedin}}">{{mentor_name}}</a></p>
+                            <p class="name"><a href="{{mentor_linkedin}}" target=”_blank”>{{mentor_name}}</a></p>
                             <p class="details">{{mentor_details_occupation}}</p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
             achievements = achievements.split("\\n");
 
             let template = document.getElementById("template").innerHTML;
-            let render = Mustache.render(template, { stories:data, highlight: highlight, story: story, achievements: achievements, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation });
+            let render = Mustache.render(template, { stories:data, highlight: highlight, story: story, achievements: achievements, mentee_name: mentee_name, mentee_image: mentee_image, program_year : program_year, mentor_image: mentor_image, mentor_name: mentor_name, mentor_details_occupation: mentor_details_occupation, mentee_linkedin:mentee_linkedin, mentor_linkedin:mentor_linkedin });
             card += render;
             document.getElementById("card_container").innerHTML = card;
         })
