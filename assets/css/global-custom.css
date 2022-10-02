@@ -46,7 +46,7 @@ body {
     height: 60px;
     display: inline-grid;
     grid-template-columns: 55px auto;
-    grid-template-rows: 25px 25px;
+    grid-template-rows: auto 25px;
     padding: 5px 30px 5px 5px;
     border-radius: 30px;
     background-color: #EAECEE;
@@ -62,7 +62,7 @@ body {
 }
 
 .testimonial-section .name {
-    padding-top: 5px;
+    padding-top: 3px;
     font-weight: bold;
     color: #000000;
     font-size: 15px;
@@ -74,9 +74,21 @@ body {
     color: #000000;
 }
 
+@media (max-width:1200px) {
+    .testimonial-section .author {
+        padding: 5px 30px 5px 5px;
+        grid-template-rows: auto 50px;
+        height: 85px;
+    }
+
+    .testimonial-section .img {
+        margin-top: 10px;
+    }
+}
+
 @media (max-width:494px) {
     .testimonial-section .author{
-        grid-template-rows: 25px 50px;
+        grid-template-rows: auto 50px;
         height: 85px;
     }
     .testimonial-section .img {
