@@ -78,11 +78,23 @@ body {
     .testimonial-section .author {
         padding: 5px 30px 5px 5px;
         grid-template-rows: auto 50px;
-        height: 85px;
+        height: auto;
     }
 
     .testimonial-section .img {
-        margin-top: 10px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:990px) {
+    .testimonial-section .author {
+        padding: 5px 30px 5px 5px;
+        grid-template-rows: auto 50px;
+        height: auto;
+    }
+
+    .testimonial-section .img {
+        margin-top: 7px;
     }
 }
 
