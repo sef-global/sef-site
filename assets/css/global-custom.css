@@ -742,7 +742,7 @@ li.timeline-element:last-child {
 .copyright {
     text-align: right;
     position: relative;
-    left: 350px;
+    left: 450px;
     width: 135%;
 }
 
@@ -756,7 +756,7 @@ li.timeline-element:last-child {
     .copyright {
         margin-top: 20px;
         position: relative;
-        left: 240px;
+        left: 320px;
         width: 156%;
     }
 }
