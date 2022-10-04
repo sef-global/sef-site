@@ -28,7 +28,7 @@ hr {
 .story-section .highlight {
     font-weight: bold;
     color: #000000;
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 25px;
     padding-top: 29px;
     padding-left: 10px;
@@ -61,14 +61,16 @@ hr {
 
 /* -------------------- mentee and mentor details ------------------ */
 
-.details-box .details, .mentee .details {
+.details-box .details,
+.mentee .details {
     font-size: 13px;
     color: #000000;
     margin-bottom: 0;
-    
+
 }
 
-.details-box .name, .mentee .name {
+.details-box .name,
+.mentee .name {
     font-weight: bolder;
 }
 
@@ -81,7 +83,8 @@ hr {
     text-align: center;
 }
 
-.mentee-details .details, .mentee-details .name {
+.mentee-details .details,
+.mentee-details .name {
     margin-left: 0px;
     margin-bottom: 0px;
 }
@@ -138,9 +141,10 @@ hr {
     margin-bottom: -1px;
 }
 
-.mentor-details .details{
+.mentor-details .details {
     line-height: 1.2rem;
-    margin-top: 4px;;
+    margin-top: 4px;
+    ;
 }
 
 .mentor-profile-pic {
@@ -169,17 +173,19 @@ hr {
 }
 
 @keyframes skeleton-card-loading {
-    0%{
+    0% {
         background-color: hsl(210, 11%, 85%);
     }
 
-    100%{
+    100% {
         background-color: hsl(210, 11%, 93%);
     }
 }
 
-.skeleton-storycard-text, .skeleton-storycard-text-short, 
-.skeleton-storycard-text-highlight, .skeleton-storycard-text-details {
+.skeleton-storycard-text,
+.skeleton-storycard-text-short,
+.skeleton-storycard-text-highlight,
+.skeleton-storycard-text-details {
     margin-bottom: 0.5rem;
     border-radius: 0.25rem;
 }
