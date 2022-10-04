@@ -31,6 +31,10 @@
     z-index: 400;
 }
 
+.timeline > li.active:before{
+    background-color: #22c0e8;
+}
+
 .hover-profile-card .img {
     cursor: pointer;
 }
