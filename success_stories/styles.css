@@ -65,7 +65,6 @@ hr {
     font-size: 13px;
     color: #000000;
     margin-bottom: 0;
-    
 }
 
 .details-box .name, .mentee .name {
@@ -207,4 +206,10 @@ hr {
 .skeleton-storycard-text:last-child {
     margin-bottom: 0;
     width: 80%;
+}
+
+@media screen and (max-width: 720px) {
+    .story-section .highlight {
+        font-size: 20px;
+    }
 }
