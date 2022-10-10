@@ -43,11 +43,11 @@ body {
 .testimonial-section .author {
     margin-top: -25px;
     padding-left: 5px;
-    height: 60px;
+    height: auto;
     display: inline-grid;
     grid-template-columns: 55px auto;
-    grid-template-rows: 25px 25px;
-    padding: 5px 30px 5px 5px;
+    grid-template-rows: auto 25px;
+    padding: 5px 15px 5px 5px;
     border-radius: 30px;
     background-color: #EAECEE;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .testimonial-section .name {
-    padding-top: 5px;
+    padding-top: 3px;
     font-weight: bold;
     color: #000000;
     font-size: 15px;
@@ -74,23 +74,69 @@ body {
     color: #000000;
 }
 
+@media (max-width:1200px) {
+    .testimonial-section .author {
+        padding: 5px 30px 5px 5px;
+        grid-template-rows: auto auto;
+        height: auto;
+    }
+
+    .testimonial-section .img {
+        margin-top: 0px;
+    }
+
+    .testimonial-section .uni {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:990px) {
+    .testimonial-section .author {
+        grid-template-rows: auto auto;
+        grid-template-columns: 65px auto;
+        height: auto;
+    }
+
+    .testimonial-section .img {
+        margin: 6px 0px 6px 6px;
+    }
+
+    .testimonial-section .uni {
+        margin-bottom: 5px;
+    }
+
+    .testimonial-section .name {
+        padding-top: 7px;
+    }
+}
+
 @media (max-width:494px) {
     .testimonial-section .author{
-        grid-template-rows: 25px 50px;
-        height: 85px;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        height: auto;
     }
     .testimonial-section .img {
-        margin-top: 10px;
+        margin: 10px 10px 6px 10px;
+    }
+
+    .testimonial-section .name {
+        padding-top: 7px;
     }
 }
 
 @media (max-width:386px) {
     .testimonial-section .author{
-        grid-template-rows: 45px 50px;
-        height: 105px;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        height: auto;
+        width: 100%;
     }
     .testimonial-section .img {
-        margin-top: 20px;
+        margin: 10px 10px 10px 10px;
+    }
+    .testimonial-box{
+        padding: 30px 20px 30px 20px !important;
     }
 }
 

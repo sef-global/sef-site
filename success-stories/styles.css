@@ -1,0 +1,214 @@
+/* ---------------------- Additional styles ------------------------ */
+.story-box hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.story-section {
+    padding: 10px 10px 10px 10px;
+}
+
+.story-section .main-topic {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* ---------------------- Card design ------------------------------ */
+.story-box {
+    padding: 32px 32px 40px 32px;
+    background-color: #fff;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    font-size: 24px;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+/* ---------------------- Highlight section ------------------------ */
+.story-section .highlight {
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    padding-bottom: 25px;
+    padding-top: 29px;
+    padding-left: 10px;
+}
+
+.story-section .highlight::before {
+    content: open-quote;
+}
+
+.story-section .highlight::after {
+    content: close-quote;
+}
+
+/* --------------------- Paragraph section ------------------------ */
+.story-section .paragraph {
+    color: black;
+    margin-top: 25px;
+}
+
+/* -------------------- Achievements section ---------------------- */
+.story-section ul {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #000000;
+    margin-left: 5px;
+}
+
+
+/* -------------------- mentee and mentor details ------------------ */
+
+.details-box .details, .mentee .details {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.details-box .name, .mentee .name {
+    font-weight: bolder;
+}
+
+/* -----------------------------mentee -------------------------- */
+.mentee-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mentee-details .details, .mentee-details .name {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.mentee-details .name {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.mentee-details .details {
+    margin-top: 4px;
+}
+
+.mentee-profile-pic {
+    height: 100%;
+    margin-top: 27px;
+    margin-bottom: 2px;
+}
+
+.mentee-profile-pic .img {
+    border-radius: 50% !important;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #EAECEE;
+}
+
+/* ----------------------------mentor ------------------------- */
+
+.mentor-details-title {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.mentor-details {
+    display: flex;
+    flex-wrap: inherit;
+    padding: 5px 15px 5px 15px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.mentor-details .details,
+.mentor-details .name {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.mentor-details .name {
+    font-size: 14px;
+    margin-bottom: -1px;
+}
+
+.mentor-details .details{
+    line-height: 1.2rem;
+    margin-top: 4px;;
+}
+
+.mentor-profile-pic {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.mentor-profile-pic .img {
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    border: 5px solid #EAECEE;
+    border-radius: 50%;
+}
+
+.mentor {
+    margin-left: 0px;
+}
+
+/* --------------------- skeleton loading ----------------------------- */
+.skeleton-storycard-common {
+    opacity: .7;
+    animation: skeleton-card-loading 1s linear infinite alternate;
+
+}
+
+@keyframes skeleton-card-loading {
+    0%{
+        background-color: hsl(210, 11%, 85%);
+    }
+
+    100%{
+        background-color: hsl(210, 11%, 93%);
+    }
+}
+
+.skeleton-storycard-text, .skeleton-storycard-text-short, 
+.skeleton-storycard-text-highlight, .skeleton-storycard-text-details {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.skeleton-storycard-text {
+    width: 100%;
+    height: 1rem;
+}
+
+.skeleton-storycard-text-short {
+    width: 20%;
+    height: 1rem;
+}
+
+.skeleton-storycard-text-highlight {
+    height: 1.5rem;
+}
+
+.skeleton-storycard-text-details {
+    width: 50px;
+    height: 0.8rem;
+    margin-top: 10px;
+}
+
+.skeleton-storycard-text:last-child {
+    margin-bottom: 0;
+    width: 80%;
+}
+
+@media screen and (max-width: 720px) {
+    .story-section .highlight {
+        font-size: 20px;
+    }
+}
