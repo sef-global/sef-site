@@ -3378,16 +3378,16 @@ fieldset:disabled a.btn
 
 .btn-neutral
 {
-    color: #212529;
-    border-color: #fff;
-    background-color: #fff;
+    color: #fff !important;
+    border-color: #5e72e4;
+    background-color: #5e72e4;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .btn-neutral:hover
 {
-    color: #212529;
-    border-color: white;
-    background-color: white;
+    color: #fff !important;
+    border-color: #5e72e4;
+    background-color: #5e72e4;
 }
 .btn-neutral:focus,
 .btn-neutral.focus
