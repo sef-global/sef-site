@@ -1,6 +1,6 @@
 /* ---------------------- Additional styles ------------------------ */
-hr {
-    margin-top: -4px;
+.story-box hr {
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -32,7 +32,6 @@ hr {
     padding-bottom: 25px;
     padding-top: 29px;
     padding-left: 10px;
-    text-align: justify;
 }
 
 .story-section .highlight::before {
@@ -65,7 +64,6 @@ hr {
     font-size: 13px;
     color: #000000;
     margin-bottom: 0;
-    
 }
 
 .details-box .name, .mentee .name {
@@ -207,4 +205,10 @@ hr {
 .skeleton-storycard-text:last-child {
     margin-bottom: 0;
     width: 80%;
+}
+
+@media screen and (max-width: 720px) {
+    .story-section .highlight {
+        font-size: 20px;
+    }
 }
