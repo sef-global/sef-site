@@ -740,3 +740,53 @@ li.timeline-element:last-child {
         background-color: #5e72e4;
     }
 }
+
+
+@media only screen and (max-width: 991px) {
+    .footer-elements {
+        position: relative;
+       top: 40px;
+       width: 130%;
+       right: 100px;
+    }
+
+    .copyright {
+        width: 103%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-elements {
+        top: 20px;
+        right: 150px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-elements {
+        right: 160px;
+    }
+}
+
+
+
+@media only screen and (max-width: 536px) {
+    .footer-elements {
+        left: 110px;
+        width: 70%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+    .footer-elements {
+        left: 40px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
