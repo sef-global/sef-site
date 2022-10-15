@@ -24,17 +24,57 @@
     <!-- Icons -->
     <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
     <!-- Argon CSS -->
     <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
     <!-- global CSS -->
     <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
-
+    <style>
+    #backToTop {
+        display: inline-block;
+        background-color: #b9c8d0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, 
+        opacity .5s, 
+        visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+    #backToTop::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #8898aa;
+    }
+    #backToTop:hover {
+        cursor: pointer;
+        background-color: #333;
+    }
+    #backToTop:active {
+        background-color: #555;
+    }
+    #backToTop.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    </style>
 </head>
-
 <body style="background-size: contain; overflow-x: hidden">
 <!-- to use the dynamic navbar, use this instead of above tag => * <div id="navbar"></div> * -->
-
 <main>
+    
     <!--main content goes here-->
     <section class="bg-secondary">
         <header class="header-global">
@@ -42,6 +82,7 @@
             <div id="navbar"></div>
         </header>
         <div class="container">
+            <a id="backToTop"></a>
             <div class="row align-items-center py-3">
                 <div class="col-md-7 mb-3 text-center text-md-left">
                     <p>From Brain Drain to Brain Gain</p>
@@ -506,6 +547,7 @@
     <p class="small text-muted text-left mb-0"> *Our mentors and speakers engage in mentoring and speaking voluntarily
         in their leisure time<br> and we don't have a direct affiliation with the mentioned organisations</p>
 </script>
+<script src="assets/js/back2top.js"></script>
 <script>
     $(function () {
         loadNavAndFooter('assets/content/static')  //relative path to content directory
