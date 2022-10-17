@@ -772,17 +772,30 @@ li.timeline-element:last-child {
 
 @media only screen and (max-width: 536px) {
     .footer-elements {
-        left: 110px;
-        width: 70%;
-        text-align: center;
+        right: 140px;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .footer-elements {
+        right: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 438px) {
+    .footer-elements {
+        width: 90%;
+        left: 30px;
     }
 
 }
 
 @media only screen and (max-width: 370px) {
     .footer-elements {
-        left: 40px;
-        width: 70%;
+        left: 15px;
+        width: 80%;
         text-align: center;
     }
 
