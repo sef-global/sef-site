@@ -14,21 +14,17 @@ The purpose of this PR is to fix #<issue-number>
 ### Preview Link
 <!---  This PR will be automatically deployed to surge. -->
 <!---  Once you submit the PR, replace "{PR_NUMBER}" with your PR number. -->
+<!---  ex: https://pr-1366-sef-site.surge.sh -->
+<!---  Feel free to modify the link with the exact path -->
 https://pr-{PR_NUMBER}-sef-site.surge.sh/
 
 ##  Checklist
-- [ ] This PR doesn't commit any keys, passwords, tokens, usernames, or other secrets.
-- [ ] I have read and understood the development best practices guidelines ( http://bit.ly/sef-best-practices )
-- [ ] My code follows the style guidelines of this project
+- [ ] I have read and understood the [development best practices](https://handbook.sefglobal.org/organisation/engineering-team#development-best-practices) guidelines
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
 
 ## Related PRs
 <!--- List any other related PRs --> 
-
-## Test environment
-<!--- List all JDK versions, operating systems, databases, and browser/versions on which this feature/fix was tested --> 
 
 ## Learning
 <!--- Describe the research phase and any blog posts, patterns, libraries, or add-ons you used to solve the problem. -->
