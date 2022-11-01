@@ -30,7 +30,7 @@ $(function () {
 function loadFeaturedStories() {
     $.ajax({
         type: 'get',
-        url: 'https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec',
+        url: 'https://script.google.com/macros/s/AKfycbxoEfCuQK2x57cHG0HG0YlljD6FoKbIwygdEz0wkt6ex4YAxEviuLdwJbiXKNZwA-k64g/exec',
         dataType: 'json',
         success: function (data) {
             document.getElementById('btnFeaturedStories').style.visibility = "visible";
