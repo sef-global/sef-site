@@ -1,0 +1,27 @@
+
+.search-bar{
+  
+}
+
+.search-btn{
+  margin-left: 20px;
+}
+
+.input-group{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+hr {
+  margin:0 !important;
+}
+
+.filter-container{
+  margin-top:150px;
+  margin-bottom: 200px;
+}
+
+.btn-checkbox {
+  padding-left: 40px;
+  line-height: 1.7;
+}
