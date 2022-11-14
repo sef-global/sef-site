@@ -1,6 +1,8 @@
-
+.search-filter{
+  display: flex;
+}
 .search-bar{
-  
+  max-width: 350px;
 }
 
 .search-btn{
