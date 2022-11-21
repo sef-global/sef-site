@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
+            mentoring support to a selected pool of high Potential undergraduate students
+            based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
+            the world’s top universities or Fortune 500 companies. It’s our free premium
+            mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
+            of knowledge and expertise sharing without the limitation of geographical borders.">
+    <!-- Favicon -->
+    <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- global CSS -->
+    <link type="text/css" href="/assets/css/global-custom.css" rel="stylesheet">
+
+    <link type="text/css" href="./styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;">
+<header class="header-global">
+    <!--nav bar goes here-->
+    <div id="navbar"></div>
+</header>
+
+<section class="section pb-0 bg-gradient-white mt-5">
+    <div class="container">
+        <div class="row row-grid align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="d-flex px-3">
+                    <div class="pl-4">
+                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-5 w-50">
+                        <p>ScholarX is an exclusive 6-month program aimed at providing
+                            mentoring support to a selected pool of high Potential undergraduate students
+                            based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
+                            the world’s top universities or Fortune 500 companies. It’s our free premium
+                            mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
+                            of knowledge and expertise sharing without the limitation of geographical borders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="/assets/img/scholarx/new-findmentor.png" class="img-fluid align-self-center w-100">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Archive Filter -->
+<div class="container filter-container">
+    <div class="row">
+      <div class="col-6 mt-5">
+        <h6>FILTER</h6>
+        <hr>
+        <div class="dropdown mt-2 mb-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mentees
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <h6>COHORT</h6>
+          <hr>
+        <div class="mt-2 mb-5">
+          <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+            <input class="custom-control-input" id="chk2019" type="checkbox">
+            <label class="custom-control-label" for="chk2019">2019</label>
+        </button>
+        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+            <input class="custom-control-input" id="chk2020" type="checkbox">
+            <label class="custom-control-label" for="chk2020">2020</label>
+        </button>
+        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+            <input class="custom-control-input" id="chk2021" type="checkbox">
+            <label class="custom-control-label" for="chk2021">2021</label>
+        </button>
+        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+            <input class="custom-control-input" id="chk2022" type="checkbox">
+            <label class="custom-control-label" for="chk2022">2022</label>
+        </button>
+        </div>
+        <h6>INDUSTRY</h6>
+        <hr>
+        <div class="mt-2 mb-5">
+            <button class="btn btn-sm active mb-3" onclick="filterProfiles('all')"> Show all</button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Computer Science')">
+                <input class="custom-control-input" id="chkComputerScience" type="checkbox">
+                <label class="custom-control-label" for="chkComputerScience" onclick="filterProfiles('Computer Science')">Computer Science</label>
+            </button>
+            <br>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Engineering')">
+                <input class="custom-control-input" id="chkEngineering" type="checkbox" >
+                <label class="custom-control-label" for="chkEngineering"  onclick="filterProfiles('Engineering')">Engineering</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Life Sciences')">
+                <input class="custom-control-input" id="chkLifeSciences" type="checkbox" >
+                <label class="custom-control-label" for="chkLifeSciences" onclick="filterProfiles('Life Sciences')">Life Sciences</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Data Science & AI')">
+                <input class="custom-control-input" id="chkDataSciencenAI" type="checkbox">
+                <label class="custom-control-label" for="chkDataSciencenAI" onclick="filterProfiles('Data Science & AI')">Data Science & AI</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Physical Science')">
+                <input class="custom-control-input" id="chkPhysicalScience" type="checkbox">
+                <label class="custom-control-label" for="chkPhysicalScience" onclick="filterProfiles('Physical Science')">Physical Science</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Other')">
+                <input class="custom-control-input" id="chkOther" type="checkbox">
+                <label class="custom-control-label" for="chkOther" onclick="filterProfiles('Other')">Other</label>
+            </button>
+        </div> 
+        <h6>UNIVERSITY</h6>
+        <hr>
+        <div class="dropdown mt-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Universities
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="search-filter">
+            <input type="search" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary search-btn">search</button>
+          </div>
+      </div>
+    </div>
+</div>
+<footer class="footer">
+    <div id="footer"></div>
+    <!--footer goes here -->
+</footer>
+<!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
+</body>
+
+
+<!-- Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!-- Argon JS -->
+<script src="/assets/js/argon.js?v=1.0.1"></script>
+<!-- Script for static navbar and footer -->
+<script src="/assets/js/navigation.js"></script>
+<!-- External JS file for the JS functions-->
+<script src="functions.js"></script>  
+</script>
+</html>
