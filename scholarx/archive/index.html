@@ -3,6 +3,24 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- search -->
+    <script>
+        $(document).ready(function () {
+            $("#search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#team tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+            $$('div.tags').find('input:checkbox').live('click', function () {
+                $('#team > tr').hide();
+                $('div.tags').find('input:checked').each(function () {
+                    $('#team > tr.' + $(this).val()).show();
+                });
+            });
+        });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
@@ -59,38 +77,38 @@
 <!-- Archive Filter -->
 <div class="container filter-container">
     <div class="row">
-      <div class="col-6 mt-5">
+      <div class="col-3 mt-5">
         <h6>FILTER</h6>
         <hr>
         <div class="dropdown mt-2 mb-5">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mentees
+                Mentees
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
-          <h6>COHORT</h6>
-          <hr>
+        </div>
+        <h6>COHORT</h6>
+        <hr>
         <div class="mt-2 mb-5">
-          <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-            <input class="custom-control-input" id="chk2019" type="checkbox">
-            <label class="custom-control-label" for="chk2019">2019</label>
-        </button>
-        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-            <input class="custom-control-input" id="chk2020" type="checkbox">
-            <label class="custom-control-label" for="chk2020">2020</label>
-        </button>
-        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-            <input class="custom-control-input" id="chk2021" type="checkbox">
-            <label class="custom-control-label" for="chk2021">2021</label>
-        </button>
-        <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-            <input class="custom-control-input" id="chk2022" type="checkbox">
-            <label class="custom-control-label" for="chk2022">2022</label>
-        </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+                <input class="custom-control-input" id="chk2019" type="checkbox">
+                <label class="custom-control-label" for="chk2019">2019</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+                <input class="custom-control-input" id="chk2020" type="checkbox">
+                <label class="custom-control-label" for="chk2020">2020</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+                <input class="custom-control-input" id="chk2021" type="checkbox">
+                <label class="custom-control-label" for="chk2021">2021</label>
+            </button>
+            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+                <input class="custom-control-input" id="chk2022" type="checkbox">
+                <label class="custom-control-label" for="chk2022">2022</label>
+            </button>
         </div>
         <h6>INDUSTRY</h6>
         <hr>
@@ -134,12 +152,26 @@
             </ul>
           </div>
       </div>
-      <div class="col-6">
-        <div class="search-filter">
-            <input type="search" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary search-btn">search</button>
-          </div>
-      </div>
+        <div class="col-9">
+            <div class="search-filter">
+                <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary search-btn">search</button>
+            </div>
+            <div id="profile-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team">
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 <footer class="footer">
@@ -149,9 +181,21 @@
 <!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
 </body>
 
+<!-- template -->
+<script type="text/html" id="templateMentors">
+    {{#mentorProfiles}}
+        <tr >
+            <th scope="row">
+                <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
+            </th>
+            <td>{{name}}</td>
+            <td>{{title}}</td>
+        </tr>
+    {{/mentorProfiles}}     
+</script>
+
 
 <!-- Core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
