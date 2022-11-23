@@ -79,6 +79,14 @@
     padding: 1.25rem;
 }
 
+.program-timeline-row{
+    width: 100%;
+}
+
+.program-timeline-date{
+    text-align: end !important;
+}
+
 .faq .accordion .question {
     font-size: 1.2em;
     padding-left: 24px;
