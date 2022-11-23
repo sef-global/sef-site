@@ -740,3 +740,11 @@ li.timeline-element:last-child {
         background-color: #5e72e4;
     }
 }
+
+.program-timeline-row{
+    width: 100%;
+}
+
+.program-timeline-date{
+    text-align: end !important;
+}
