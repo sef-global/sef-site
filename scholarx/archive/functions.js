@@ -11,7 +11,6 @@ async function getData() {
 }
 
 async function loadData() {
-    
     const payload = await getData();
 
     const mentorProfiles = payload.mentor2021.concat(payload.mentor2020).concat(payload.mentor2019);
