@@ -1,5 +1,6 @@
 .search-filter{
   display: flex;
+  justify-content: end;
 }
 .search-bar{
   max-width: 350px;
@@ -26,4 +27,27 @@ hr {
 .btn-checkbox {
   padding-left: 40px;
   line-height: 1.7;
+}
+
+#profile-container {
+    height: 850px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+}
+
+#profile-container table {
+    margin: 5px;
+}
+
+#profile-container table th {
+    text-align: center;
+}
+
+#profile-container td,
+#profile-container th {
+    border-top: 1px solid #eeeeee;
+    text-align: left;
+    padding: 8px;
 }
