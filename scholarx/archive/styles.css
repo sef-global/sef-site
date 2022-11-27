@@ -2,6 +2,7 @@
   display: flex;
   justify-content: end;
 }
+
 .search-bar{
   max-width: 350px;
 }
@@ -29,7 +30,7 @@ hr {
   line-height: 1.7;
 }
 
-#profile-container {
+.mentors-table {
     height: 850px;
     overflow-y: auto;
     margin-top: 20px;
@@ -37,17 +38,42 @@ hr {
     border: 1px solid #eeeeee;
 }
 
-#profile-container table {
-    margin: 5px;
+.mentors-table table {
+  margin: 5px !important;
 }
 
-#profile-container table th {
-    text-align: center;
+.mentors-table table th {
+  text-align: center !important;
 }
 
-#profile-container td,
-#profile-container th {
-    border-top: 1px solid #eeeeee;
-    text-align: left;
-    padding: 8px;
+.mentors-table td,
+.mentors-table th {
+  border-top: 1px solid #eeeeee;
+  text-align: left;
+  padding: 8px;
 }
+
+.mentees-table {
+  height: 850px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  display: none;
+}
+
+.mentees-table table {
+  margin: 5px;
+}
+
+.mentees-table table th {
+  text-align: center;
+}
+
+.mentees-table td,
+.mentees-table th {
+  border-top: 1px solid #eeeeee;
+  text-align: left;
+  padding: 8px;
+}
+
