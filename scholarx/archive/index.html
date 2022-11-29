@@ -90,9 +90,9 @@
         <hr>
         <!--mentor mentee selection-->
         <div class="mt-2 mb-5">
-            <select id="myselection" class="btn btn-secondary dropdown-toggle" >
-                <option value="One">Mentors</option>
-                <option value="Two">Mentees</option>
+            <select id="selection" class="btn btn-secondary dropdown-toggle" >
+                <option value="Mentors">Mentors</option>
+                <option value="Mentees">Mentees</option>
             </select>
         </div>
         <h6>COHORT</h6>
@@ -181,7 +181,9 @@
                 <table>
                     <thead>
                         <tr>
+                            <!--<th></th>-->
                             <th>Name</th>
+                            <!--<th>University</th>-->
                             <th>Mentor</th>
                         </tr>
                     </thead>
@@ -216,7 +218,11 @@
 <script type="text/html" id="templateMentees">
     {{#menteeProfiles}}
         <tr >
+            <!--<th scope="row">
+                <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
+            </th> -->           
             <td>{{name}}</td>
+            <!--<td>{{university}}</td>-->
             <td>{{mentor}}</td>
         </tr>
     {{/menteeProfiles}}     
@@ -226,12 +232,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
 <script>
 $(document).ready(function(){
-    $('#myselection').on('change', function(){
-    	var demovalue = $(this).val();
-        if(demovalue === "Two"){
+    $('#selection').on('change', function(){
+    	var selectedValue = $(this).val();
+        if(selectedValue === "Mentees"){
             document.getElementById("showMentors").style.display = "none";
             document.getElementById("showMentees").style.display = "flex";
-        }else if(demovalue === "One"){
+        }else if(selectedValue === "Mentors"){
             document.getElementById("showMentees").style.display = "none";
             document.getElementById("showMentors").style.display = "flex";
         }      
