@@ -18,3 +18,46 @@ function loadFaqComponent() {
         }
     );
 }
+
+
+//function to load blog posts
+function loadBlogPosts() {
+    $.ajax({
+        type: 'get',
+        url: 'https://script.google.com/macros/s/AKfycbyUdfhk9WWFLoMWxQvNIEUNl793RbXGnyo-ZIYRn9K1T6QFN1_9G8Ln9NpTCCJba2dzOg/exec',
+        dataType: 'json',
+        success: function (data) {
+            document.getElementById('btnBlogPosts').style.visibility = "visible";
+            //slice array to two parts
+            if (data.length >= 6) {
+                let partOne = data.slice(0, 6);
+                let partTwo = data.slice(6);
+
+                //mustache render - part one
+                let contentPartOne = Mustache.render(
+                    $('#template-blog-posts').html(), { 'data': partOne });
+
+                //display first 8 profiles
+                $('#blog-posts').html(contentPartOne);
+
+                //hide button
+                $('#btn-blog-posts-show-more').click(function () {
+                    let contentPartTwo = Mustache.render(
+                        $('#template-blog-posts').html(), { 'data': partTwo });
+                    $(contentPartTwo).appendTo('#blog-posts').hide().fadeIn(1000);
+                    $('#btn-blog-posts-show-more').hide();
+                });
+            } else {
+                //mustache render
+                let content = Mustache.render(
+                    $('#template-blog-posts').html(), { 'data': data });
+
+                //display first 8 profiles
+                $('#blog-posts').html(content);
+
+                //hide button
+                $('#btn-blog-posts-show-more').hide();
+            }
+        }
+    });
+}

@@ -750,5 +750,36 @@ li.timeline-element:last-child {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+}
+
+/*Blog posts section*/
+.blog-posts img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-posts .card {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.blog-posts .card-body {
+    padding-bottom: 0;
+}
+
+.blog-posts .card-footer .stats i {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.blog-posts .card-footer {
+    font-size: 0.9em;
+    padding-top: 0;
+}
+
+.blog-posts .author span{
+    color: #6f81a4;
+    padding-left: 4px;
+    padding-top: 4px;
 }

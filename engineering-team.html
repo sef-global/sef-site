@@ -137,7 +137,18 @@
         </div>
     </div>
 </section>
-
+<!-- Blog articles section -->
+<section class="section">
+    <div class="container mt-5 mb-5">
+        <h1 class="display-3 text-center mb-5">Developers' Blog Articles</h1>
+        <!--Blog articles goes here-->
+        <div id="blog-posts" class="blog-posts"></div>
+        <div class="row justify-content-center" id="btnBlogPosts" style="visibility:hidden;">
+            <button id="btn-blog-posts-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+</section>
 <footer class="footer">
     <div id="footer"></div>
     <!--footer goes here -->
@@ -157,9 +168,37 @@
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/functions.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+<script type="text/html" id="template-blog-posts">
+    <div class="row">
+        {{#data}}
+        <div class="col-md-4 mb-5">
+            <a href="{{url}}" target="_blank">
+                <div class="card shadow blog-posts mb-4">
+                    <img src="{{image}}" alt="Rounded image"
+                         class="img-fluid rounded shadow img-full">
+                    <div class="card-body">
+                        <h6>{{title}}</h6>
+                    </div>
+                    <div class="card-footer">
+                        <div class="author">
+                            <img src="{{author_image}}" alt="..."
+                                 class="avatar img-raised overflow-visible">
+                            <span>{{author_name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/data}}
+    </div>
+</script>
 <script>
     $(function () {
-        loadNavAndFooter('assets/content/static')
+        loadNavAndFooter('assets/content/static');
+        loadBlogPosts();
     })
 </script>
 </html>
