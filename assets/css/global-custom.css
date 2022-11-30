@@ -741,7 +741,6 @@ li.timeline-element:last-child {
     }
 }
 
-
 @media only screen and (max-width: 991px) {
     .footer-elements {
         position: relative;
@@ -802,4 +801,11 @@ li.timeline-element:last-child {
     .copyright {
         text-align: center;
     }
+
+.program-timeline-row{
+    width: 100%;
+}
+
+.program-timeline-date{
+    text-align: end !important;
 }
