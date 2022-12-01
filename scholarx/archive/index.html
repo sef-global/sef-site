@@ -9,21 +9,21 @@
         $(document).ready(function () {
             $("#search").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
-                $("#team1 tr").filter(function () {
+                $("#mentorProfiles tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
-                $("#team2 tr").filter(function () {
+                $("#menteeProfiles tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
             $$('div.tags').find('input:checkbox').live('click', function () {
-                $('#team1 > tr').hide();
-                $('#team2 > tr').hide();
+                $('#mentorProfiles > tr').hide();
+                $('#menteeProfiles > tr').hide();
                 $('div.tags').find('input:checked').each(function () {
-                    $('#team1 > tr.' + $(this).val()).show();
+                    $('#mentorProfiles > tr.' + $(this).val()).show();
                 });
                 $('div.tags').find('input:checked').each(function () {
-                    $('#team2 > tr.' + $(this).val()).show();
+                    $('#menteeProfiles > tr.' + $(this).val()).show();
                 });
             });
         });
@@ -91,8 +91,8 @@
         <!--mentor mentee selection-->
         <div class="mt-2 mb-5">
             <select id="selection" class="btn btn-secondary dropdown-toggle" >
-                <option value="Mentors">Mentors</option>
-                <option value="Mentees">Mentees</option>
+                <option value="mentors">Mentors</option>
+                <option value="mentees">Mentees</option>
             </select>
         </div>
         <h6>COHORT</h6>
@@ -172,7 +172,7 @@
                             <th>Details</th>
                         </tr>
                     </thead>
-                    <tbody id="team1">                    
+                    <tbody id="mentorProfiles">                    
                     </tbody>
                 </table>
             </div>
@@ -187,7 +187,7 @@
                             <th>Mentor</th>
                         </tr>
                     </thead>
-                    <tbody id="team2">
+                    <tbody id="menteeProfiles">
                     </tbody>
                 </table>
             </div>         
@@ -234,10 +234,10 @@
 $(document).ready(function(){
     $('#selection').on('change', function(){
     	var selectedValue = $(this).val();
-        if(selectedValue === "Mentees"){
+        if(selectedValue === "mentees"){
             document.getElementById("showMentors").style.display = "none";
             document.getElementById("showMentees").style.display = "flex";
-        }else if(selectedValue === "Mentors"){
+        }else if(selectedValue === "mentors"){
             document.getElementById("showMentees").style.display = "none";
             document.getElementById("showMentors").style.display = "flex";
         }      

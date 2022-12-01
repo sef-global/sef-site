@@ -13,11 +13,11 @@ async function getData() {
 async function loadData() {
     const payload = await getData();
     const mentorProfiles = payload.mentor2021.concat(payload.mentor2020).concat(payload.mentor2019);
-    let content = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
-    $("#team1").html(content);
+    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
+    $("#mentorProfiles").html(mentor_Profiles);
 
     const menteeProfiles = payload.mentee2021.concat(payload.mentee2020).concat(payload.mentee2019);
-    let content2 = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
-    $("#team2").html(content2);
+    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
+    $("#menteeProfiles").html(mentee_Profiles);
 }
 loadData();
