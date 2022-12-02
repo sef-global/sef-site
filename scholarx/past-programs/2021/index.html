@@ -258,9 +258,9 @@
     <div class="container mt-5 mb-5">
         <h1 class="display-3 text-center mb-5">Featured Articles</h1>
         <!--Featured stories goes here-->
-        <div id="featured-stories" class="featured-stories"></div>
-        <div class="row justify-content-center" id="btnFeaturedStories" style="visibility:hidden;">
-            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        <div id="posts" class="posts"></div>
+        <div class="row justify-content-center" id="btnPosts" style="visibility:hidden;">
+            <button id="posts-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
 </section>
@@ -690,6 +690,7 @@
 <script src="/assets/js/navigation.js"></script>
 <!-- External JS file for the JS functions-->
 <script src="./functions.js"></script>
+<script src="/assets/js/functions.js"></script>
 
 <script type="text/html" id="templateTeam">
     <div class="row">
@@ -758,37 +759,38 @@
     <hr/>
 </script>
 
-<script type="text/html" id="template-featured-stories">
-    <section class="section" id="projects">
-
-        <div class="row ">
-        {{#data}}
-
-          <div class="col-md-4" >
-              <div class="card px-0 ">
-                  <a href="{{url}}" target="_blank" class="card shadow project-card">
-                     <div class="card-body feature-card-body">
-                        <img src="../images/featured-stories/{{image}}" class="img-fluid  img-full" alt="OneLive">
-                        <p class="card-text text-darker text-left ml-3">
-                            {{title}}
-                        </p>
-                     </div>
-                        <div class="card-footer">
-                             <div class="author">
-                                    <img src="../images/featured-stories/{{author_image}}" alt="..." class="avatar img-raised">
-                                   <span>{{author_name}}</span>
-                             </div>
-                                  <div class="stats ml-auto">
-                                      <i class="far fa-clock"></i> {{readingTime}} min read
-                                  </div>
-                        </div>
-                  </a>
+<script type="text/html" id="template-posts">
+    <div class="row ">
+    {{#data}}
+      <div class="col-md-4 mb-5" >
+          <div class="card px-0 ">
+              <a href="{{url}}" target="_blank" class="card shadow project-card">
+                <div class="card-body posts-card-body">
+                 <img src="../images/featured-stories/{{image}}" class="img-fluid  img-full" alt="Rounded image">
+                    <p class="card-text text-darker text-left ml-3">
+                    {{title}}
+                 </p>
                 </div>
-              </div>
-        {{/data}}
+                <div class="card-footer">
+                     <div class="author">
+                            <img src="../images/featured-stories/{{author_image}}" alt="..." class="avatar img-raised">
+                           <span>{{author_name}}</span>
+                     </div>
+                      <div class="stats ml-auto">
+                          <i class="far fa-clock"></i> {{readingTime}} min read
+                      </div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-    </div>
-    </section>
+    {{/data}}
+      </div>
+</script>
+
+<script>
+    $(function () {
+        let url = "https://script.google.com/macros/s/AKfycbzpNJgeah9hpaf4mRWer5U_y27qWdeFArS6j17LhtxxhAKXkg0uaU9iKG5JHmM1RGP_/exec";
+        loadPosts(url);
+    });
 </script>
 </html>

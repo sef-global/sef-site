@@ -19,15 +19,14 @@ function loadFaqComponent() {
     );
 }
 
-
-//function to load blog posts
-function loadBlogPosts() {
+//function to load blog posts/featured stories
+function loadPosts(url){
     $.ajax({
         type: 'get',
-        url: 'https://script.google.com/macros/s/AKfycbyUdfhk9WWFLoMWxQvNIEUNl793RbXGnyo-ZIYRn9K1T6QFN1_9G8Ln9NpTCCJba2dzOg/exec',
+        url: url,
         dataType: 'json',
         success: function (data) {
-            document.getElementById('btnBlogPosts').style.visibility = "visible";
+            document.getElementById('btnPosts').style.visibility = "visible";
             //slice array to two parts
             if (data.length >= 6) {
                 let partOne = data.slice(0, 6);
@@ -35,28 +34,28 @@ function loadBlogPosts() {
 
                 //mustache render - part one
                 let contentPartOne = Mustache.render(
-                    $('#template-blog-posts').html(), { 'data': partOne });
+                    $('#template-posts').html(), { 'data': partOne });
 
                 //display first 8 profiles
-                $('#blog-posts').html(contentPartOne);
+                $('#posts').html(contentPartOne);
 
                 //hide button
-                $('#btn-blog-posts-show-more').click(function () {
+                $('#posts-show-more').click(function () {
                     let contentPartTwo = Mustache.render(
-                        $('#template-blog-posts').html(), { 'data': partTwo });
-                    $(contentPartTwo).appendTo('#blog-posts').hide().fadeIn(1000);
-                    $('#btn-blog-posts-show-more').hide();
+                        $('#template-posts').html(), { 'data': partTwo });
+                    $(contentPartTwo).appendTo('#posts').hide().fadeIn(1000);
+                    $('#posts-show-more').hide();
                 });
             } else {
                 //mustache render
                 let content = Mustache.render(
-                    $('#template-blog-posts').html(), { 'data': data });
+                    $('#template-posts').html(), { 'data': data });
 
                 //display first 8 profiles
-                $('#blog-posts').html(content);
+                $('#posts').html(content);
 
                 //hide button
-                $('#btn-blog-posts-show-more').hide();
+                $('#posts-show-more').hide();
             }
         }
     });

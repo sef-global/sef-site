@@ -750,7 +750,7 @@ li.timeline-element:last-child {
 }
 
 body {
-            font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Blog posts section*/
@@ -760,26 +760,22 @@ body {
 }
 
 .blog-posts .card {
+}
+/*Blog posts/Featured stories section*/
+.posts .card {
     height: 100%;
     margin-bottom: 10px;
 }
 
-.blog-posts .card-body {
-    padding-bottom: 0;
+.posts-card-body {
+    padding:0;
 }
 
-.blog-posts .card-footer .stats i {
-    padding-top: 3px;
-    padding-right: 5px;
-}
-
-.blog-posts .card-footer {
-    font-size: 0.9em;
-    padding-top: 0;
-}
-
-.blog-posts .author span{
-    color: #6f81a4;
-    padding-left: 4px;
-    padding-top: 4px;
+/*to adjust height and width of cards*/
+.posts-card-body img {
+    height: 200px;
+    width: 1000px;
+    padding-bottom: 2%;
+    /*round shaped border*/
+    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
 }
