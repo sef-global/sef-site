@@ -748,3 +748,7 @@ li.timeline-element:last-child {
 .program-timeline-date{
     text-align: end !important;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
