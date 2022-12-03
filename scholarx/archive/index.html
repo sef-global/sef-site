@@ -4,30 +4,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- search mentors and mentees--> 
-    <script>
-        $(document).ready(function () {
-            $("#search").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#mentorProfiles tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-                $("#menteeProfiles tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-            $$('div.tags').find('input:checkbox').live('click', function () {
-                $('#mentorProfiles > tr').hide();
-                $('#menteeProfiles > tr').hide();
-                $('div.tags').find('input:checked').each(function () {
-                    $('#mentorProfiles > tr.' + $(this).val()).show();
-                });
-                $('div.tags').find('input:checked').each(function () {
-                    $('#menteeProfiles > tr.' + $(this).val()).show();
-                });
-            });
-        });
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
@@ -227,23 +203,6 @@
         </tr>
     {{/menteeProfiles}}     
 </script>
-
-<!--mentor mentee transition-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
-<script>
-$(document).ready(function(){
-    $('#selection').on('change', function(){
-    	var selectedValue = $(this).val();
-        if(selectedValue === "mentees"){
-            document.getElementById("showMentors").style.display = "none";
-            document.getElementById("showMentees").style.display = "flex";
-        }else if(selectedValue === "mentors"){
-            document.getElementById("showMentees").style.display = "none";
-            document.getElementById("showMentors").style.display = "flex";
-        }      
-    });
-});
-</script> 
 
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
