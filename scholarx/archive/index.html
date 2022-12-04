@@ -4,23 +4,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- search -->
-    <script>
-        $(document).ready(function () {
-            $("#search").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#team tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-            $$('div.tags').find('input:checkbox').live('click', function () {
-                $('#team > tr').hide();
-                $('div.tags').find('input:checked').each(function () {
-                    $('#team > tr.' + $(this).val()).show();
-                });
-            });
-        });
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="ScholarX is an exclusive 6-month program aimed at providing
@@ -83,15 +66,12 @@
       <div class="col-3 mt-5">
         <h6>FILTER</h6>
         <hr>
-        <div class="dropdown mt-2 mb-5">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mentees
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+        <!--mentor mentee selection-->
+        <div class="mt-2 mb-5">
+            <select id="selection" class="btn btn-secondary dropdown-toggle" >
+                <option value="mentors">Mentors</option>
+                <option value="mentees">Mentees</option>
+            </select>
         </div>
         <h6>COHORT</h6>
         <hr>
@@ -160,7 +140,8 @@
                 <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
                 <button type="button" class="btn btn-outline-primary search-btn">search</button>
             </div>
-            <div id="profile-container">
+            <!--mentor details-->
+            <div id="showMentors" class="mentors-table">
                 <table>
                     <thead>
                         <tr>
@@ -169,11 +150,25 @@
                             <th>Details</th>
                         </tr>
                     </thead>
-                    <tbody id="team">
-                
+                    <tbody id="mentorProfiles">                    
                     </tbody>
                 </table>
             </div>
+            <!--mentees details-->
+            <div id="showMentees" class="mentees-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>University</th>
+                            <th>Mentor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menteeProfiles">
+                    </tbody>
+                </table>
+            </div>         
         </div>
     </div>
 </div>
@@ -184,7 +179,7 @@
 <!-- to use the dynamic footer, use this instead of above tag => *<div id="footer"></div>* -->
 </body>
 
-<!-- template -->
+<!-- template mentors-->
 <script type="text/html" id="templateMentors">
     {{#mentorProfiles}}
         <tr >
@@ -197,6 +192,19 @@
     {{/mentorProfiles}}     
 </script>
 
+<!-- template mentees -->
+<script type="text/html" id="templateMentees">
+    {{#menteeProfiles}}
+        <tr >
+            <th scope="row">
+                <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
+            </th>            
+            <td>{{name}}</td>
+            <td>{{university}}</td>
+            <td>{{mentor}}</td>
+        </tr>
+    {{/menteeProfiles}}     
+</script>
 
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -212,5 +220,4 @@
 <script src="/assets/js/navigation.js"></script>
 <!-- External JS file for the JS functions-->
 <script src="functions.js"></script>  
-</script>
 </html>
