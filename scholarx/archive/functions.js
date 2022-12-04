@@ -32,7 +32,7 @@ $(document).ready(function(){
         if(selectedValue === "mentees"){
             document.getElementById("showMentors").style.display = "none";
             document.getElementById("showMentees").style.display = "flex";
-        }else if(selectedValue === "mentors"){
+        } else if(selectedValue === "mentors"){
             document.getElementById("showMentees").style.display = "none";
             document.getElementById("showMentors").style.display = "flex";
         }      
