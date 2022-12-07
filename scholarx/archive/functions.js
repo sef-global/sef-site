@@ -26,16 +26,16 @@ $(document).ready(function () {
 });
 
 //mentor mentee transition
-$(document).ready(function(){
-    $('#selection').on('change', function(){
-    	var selectedValue = $(this).val();
-        if(selectedValue === "mentees"){
+$(document).ready(function () {
+    $('#selection').on('change', function () {
+        var selectedValue = $(this).val();
+        if (selectedValue === "mentees") {
             document.getElementById("showMentors").style.display = "none";
             document.getElementById("showMentees").style.display = "flex";
-        } else if(selectedValue === "mentors"){
+        } else if (selectedValue === "mentors") {
             document.getElementById("showMentees").style.display = "none";
             document.getElementById("showMentors").style.display = "flex";
-        }      
+        }
     });
 });
 
@@ -60,13 +60,13 @@ async function loadData() {
 loadData();
 
 //mentor mentee models
-$(document).ready(function(){
-    $(".profile-model").click(function(){
+$(document).ready(function () {
+    $(".profile-model").click(function () {
         $("#myModal").modal('show');
     });
 });
 
-function openMentorProfile(index){
+function openMentorProfile(index) {
     // Get the selected mentor
     const profile = mentorProfiles[parseInt(index)];
     // Add content to the template

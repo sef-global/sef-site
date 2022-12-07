@@ -1,27 +1,27 @@
-.search-filter{
+.search-filter {
   display: flex;
   justify-content: end;
 }
 
-.search-bar{
+.search-bar {
   max-width: 350px;
 }
 
-.search-btn{
+.search-btn {
   margin-left: 20px;
 }
 
-.input-group{
+.input-group {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
 hr {
-  margin:0 !important;
+  margin: 0 !important;
 }
 
-.filter-container{
-  margin-top:150px;
+.filter-container {
+  margin-top: 150px;
   margin-bottom: 200px;
 }
 
@@ -31,11 +31,11 @@ hr {
 }
 
 .mentors-table {
-    height: 850px;
-    overflow-y: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid #eeeeee;
+  height: 850px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
 }
 
 .mentors-table table {
@@ -78,5 +78,5 @@ hr {
 }
 
 .profile-model:hover {
-cursor: pointer;
+  cursor: pointer;
 }
