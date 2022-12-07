@@ -58,3 +58,22 @@ async function loadData() {
     $("#menteeProfiles").html(mentee_Profiles);
 }
 loadData();
+
+//mentor mentee models
+$(document).ready(function(){
+    $(".profile-model").click(function(){
+        $("#myModal").modal('show');
+    });
+});
+
+function openMentorProfile(index){
+    // Get the selected mentor
+    const profile = mentorProfiles[parseInt(index)];
+    // Add content to the template
+    const template = $('#template-profile-modal-content').html();
+    const content = Mustache.render(template, profile);
+    // Update the modal
+    $('#profile-modal-content').html(content);
+    // Open the modal
+    $('#profile-modal').modal();
+}

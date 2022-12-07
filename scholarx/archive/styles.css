@@ -76,3 +76,7 @@ hr {
   text-align: left;
   padding: 8px;
 }
+
+.profile-model:hover {
+cursor: pointer;
+}
