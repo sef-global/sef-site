@@ -69,14 +69,12 @@ async function loadData() {
     $("#menteeProfiles").html(mentee_Profiles);
 }
 loadData();
-
 function renderData(mentorYear,menteeYear) {
     let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
     let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
     $("#mentorProfiles").html(mentor_Profiles);
     $("#menteeProfiles").html(mentee_Profiles);
 }
-
 function renderAll() {
     const mentorProfiles = mentor2019.concat(mentor2020).concat(mentor2021);
     const menteeProfiles = mentee2019.concat(mentee2020).concat(mentee2021);
@@ -85,7 +83,6 @@ function renderAll() {
     $("#mentorProfiles").html(mentor_Profiles);
     $("#menteeProfiles").html(mentee_Profiles);
 }
-
 function cohort(){
     if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
         renderData(mentor2019,mentee2019);
