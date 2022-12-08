@@ -753,18 +753,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Blog posts section*/
-.blog-posts img{
-    height: 200px;
-    object-fit: cover;
-}
-
-.blog-posts .card {
-}
 /*Blog posts/Featured stories section*/
 .posts .card {
     height: 100%;
     margin-bottom: 10px;
+    border: none;
 }
 
 .posts-card-body {

@@ -18,7 +18,6 @@ function loadFaqComponent() {
         }
     );
 }
-
 //function to load blog posts/featured stories
 function loadPosts(url){
     $.ajax({
@@ -36,7 +35,7 @@ function loadPosts(url){
                 let contentPartOne = Mustache.render(
                     $('#template-posts').html(), { 'data': partOne });
 
-                //display first 8 profiles
+                //display first 8 blog posts/featured stories
                 $('#posts').html(contentPartOne);
 
                 //hide button
@@ -51,7 +50,7 @@ function loadPosts(url){
                 let content = Mustache.render(
                     $('#template-posts').html(), { 'data': data });
 
-                //display first 8 profiles
+                //display first 8 blog posts/featured stories
                 $('#posts').html(content);
 
                 //hide button

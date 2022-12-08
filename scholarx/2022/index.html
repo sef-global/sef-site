@@ -699,10 +699,10 @@
 </script>
 
 <script type="text/html" id="template-posts">
-    <div class="row ">
+    <div class="row">
         {{#data}}
         <div class="col-md-4 mb-5" >
-            <div class="card px-0 ">
+            <div class="card px-0">
                 <a href="{{url}}" target="_blank" class="card shadow project-card">
                     <div class="card-body posts-card-body">
                         <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,w_400/{{image}}" class="img-fluid  img-full" alt="Rounded image">
@@ -715,7 +715,6 @@
                             <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_200,w_200/{{author_image}}" alt="..." class="avatar img-raised">
                             <span>{{author_name}}</span>
                         </div>
-
                     </div>
                 </a>
             </div>
@@ -740,8 +739,7 @@
 
 <script>
     $(function () {
-        let url = "https://script.google.com/macros/s/AKfycbxoEfCuQK2x57cHG0HG0YlljD6FoKbIwygdEz0wkt6ex4YAxEviuLdwJbiXKNZwA-k64g/exec";
-        loadPosts(url)
+        loadPosts('https://script.google.com/macros/s/AKfycbxoEfCuQK2x57cHG0HG0YlljD6FoKbIwygdEz0wkt6ex4YAxEviuLdwJbiXKNZwA-k64g/exec')
         loadMentees();
     });
 

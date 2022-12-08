@@ -393,10 +393,10 @@
 </script>
 
 <script type="text/html" id="template-posts">
-    <div class="row ">
+    <div class="row">
         {{#data}}
         <div class="col-md-4 mb-5" >
-            <div class="card px-0 ">
+            <div class="card px-0">
                 <a href="{{url}}" target="_blank" class="card shadow project-card">
                     <div class="card-body posts-card-body">
                         <img src="images/featured-stories/{{image}}" class="img-fluid  img-full" alt="Rounded image">
@@ -437,8 +437,7 @@
 <script>
     $(function () {
         loadMentees();
-        let url = "https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec";
-        loadPosts(url);
+        loadPosts('https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec');
     });
 
     function loadMentees() {
