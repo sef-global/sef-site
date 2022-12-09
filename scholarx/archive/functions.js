@@ -2,9 +2,16 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-//variables to hold mentor and mentee data
-let mentor2019, mentor2020, mentor2021;
-let mentee2019, mentee2020, mentee2021;
+let mentor = {
+    2019:[],
+    2020:[],
+    2021:[]
+}
+let mentee = {
+    2019:[],
+    2020:[],
+    2021:[]
+}
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -53,18 +60,14 @@ async function getData() {
 
 async function loadData() {
     const payload = await getData();
-    const m2019 = payload.mentor2019, m2020 = payload.mentor2020, m2021 = payload.mentor2021;
-    const n2019 = payload.mentee2019, n2020 = payload.mentee2020, n2021 = payload.mentee2021;
-
-    //save mentor mentee details in global array variables to faster data access.
-    [mentor2019,mentor2020,mentor2021] = [m2019,m2020,m2021];
-    [mentee2019,mentee2020,mentee2021] = [n2019,n2020,n2021];
+    [mentor[2019],mentor[2020],mentor[2021]] = [payload.mentor2019,payload.mentor2020,payload.mentor2021];
+    [mentee[2019],mentee[2020],mentee[2021]] = [payload.mentee2019,payload.mentee2020,payload.mentee2021];
  
-    const mentorProfiles = m2019.concat(m2020).concat(m2021);
+    const mentorProfiles = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
     let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
     $("#mentorProfiles").html(mentor_Profiles);
 
-    const menteeProfiles = n2019.concat(n2020).concat(n2021);
+    const menteeProfiles = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
     let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
     $("#menteeProfiles").html(mentee_Profiles);
 }
@@ -76,8 +79,8 @@ function renderData(mentorYear,menteeYear) {
     $("#menteeProfiles").html(mentee_Profiles);
 }
 function renderAll() {
-    const mentorProfiles = mentor2019.concat(mentor2020).concat(mentor2021);
-    const menteeProfiles = mentee2019.concat(mentee2020).concat(mentee2021);
+    const mentorProfiles = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
+    const menteeProfiles = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
     let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
     let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
     $("#mentorProfiles").html(mentor_Profiles);
@@ -85,17 +88,17 @@ function renderAll() {
 }
 function cohort(){
     if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
-        renderData(mentor2019,mentee2019);
+        renderData(mentor[2019],mentee[2019]);
     } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == false){
-        renderData(mentor2020,mentee2020);
+        renderData(mentor[2020],mentee[2020]);
     } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == true){
-        renderData(mentor2021,mentee2021);
+        renderData(mentor[2021],mentee[2021]);
     } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == true){
-        renderData(mentor2020.concat(mentor2021),mentee2020.concat(mentee2021));
+        renderData(mentor[2020].concat(mentor[2021]),mentee[2020].concat(mentee[2021]));
     } else if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == false){
-        renderData(mentor2019.concat(mentor2020),mentee2019.concat(mentee2020));
+        renderData(mentor[2019].concat(mentor[2020]),mentee[2019].concat(mentee[2020]));
     } else if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == true){
-        renderData(mentor2019.concat(mentor2021),mentee2019.concat(mentee2021));
+        renderData(mentor[2019].concat(mentor[2021]),mentee[2019].concat(mentee[2021]));
     } else{
         renderAll();
     }
