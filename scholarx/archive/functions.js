@@ -3,8 +3,8 @@ $(function () {
 });
 
 //global variables to hold mentor and mentee data
-var mentor2019, mentor2020, mentor2021;
-var mentee2019, mentee2020, mentee2021;
+let mentor2019, mentor2020, mentor2021;
+let mentee2019, mentee2020, mentee2021;
 
 //search mentors and mentees
 $(document).ready(function () {
