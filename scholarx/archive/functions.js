@@ -2,7 +2,7 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-//global variables to hold mentor and mentee data
+//variables to hold mentor and mentee data
 let mentor2019, mentor2020, mentor2021;
 let mentee2019, mentee2020, mentee2021;
 
