@@ -87,19 +87,19 @@ function renderAll() {
     $("#menteeProfiles").html(mentee_Profiles);
 }
 function cohort(){
-    if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
-        renderData(mentor[2019],mentee[2019]);
-    } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == false){
-        renderData(mentor[2020],mentee[2020]);
-    } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == true){
-        renderData(mentor[2021],mentee[2021]);
-    } else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == true){
-        renderData(mentor[2020].concat(mentor[2021]),mentee[2020].concat(mentee[2021]));
-    } else if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == true && document.getElementById("chk2021").checked == false){
-        renderData(mentor[2019].concat(mentor[2020]),mentee[2019].concat(mentee[2020]));
-    } else if(document.getElementById("chk2019").checked == true && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == true){
-        renderData(mentor[2019].concat(mentor[2021]),mentee[2019].concat(mentee[2021]));
-    } else{
-        renderAll();
+    let year = 2019;
+    let mentorsData = [];
+    let menteesData = [];
+    for(let i=0; i<3; i++){
+        if(document.getElementById("chk"+year).checked == true)
+        {
+            mentorsData = mentorsData.concat(mentor[year]),
+            menteesData = menteesData.concat(mentee[year]),
+            renderData(mentorsData,menteesData)
+        }
+        else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
+            renderAll();
+        }
+        year++;
     }
 }
