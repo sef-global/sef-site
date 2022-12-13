@@ -72,13 +72,13 @@ async function loadData() {
     $("#menteeProfiles").html(mentee_Profiles);
 }
 loadData();
-function renderData(mentorYear,menteeYear) {
+function renderProfiles(mentorYear,menteeYear) {
     let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
     let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
     $("#mentorProfiles").html(mentor_Profiles);
     $("#menteeProfiles").html(mentee_Profiles);
 }
-function renderAll() {
+function renderAllProfiles() {
     const mentorProfiles = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
     const menteeProfiles = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
     let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
@@ -86,20 +86,21 @@ function renderAll() {
     $("#mentorProfiles").html(mentor_Profiles);
     $("#menteeProfiles").html(mentee_Profiles);
 }
-function cohort(){
+function filterByYear(){
     let year = 2019;
     let mentorsData = [];
     let menteesData = [];
-    for(let i=0; i<3; i++){
-        if(document.getElementById("chk"+year).checked == true)
-        {
-            mentorsData = mentorsData.concat(mentor[year]),
-            menteesData = menteesData.concat(mentee[year]),
-            renderData(mentorsData,menteesData)
+    if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
+        renderAllProfiles();
+    }else{
+        for(let i=0; i<3; i++){
+            if(document.getElementById("chk"+year).checked)
+            {
+                mentorsData = mentorsData.concat(mentor[year]),
+                menteesData = menteesData.concat(mentee[year]),
+                renderProfiles(mentorsData,menteesData)
+            }
+            year++;
         }
-        else if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
-            renderAll();
-        }
-        year++;
     }
 }
