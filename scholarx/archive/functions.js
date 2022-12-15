@@ -63,38 +63,38 @@ async function loadData() {
     [mentor[2019],mentor[2020],mentor[2021]] = [payload.mentor2019,payload.mentor2020,payload.mentor2021];
     [mentee[2019],mentee[2020],mentee[2021]] = [payload.mentee2019,payload.mentee2020,payload.mentee2021];
  
-    const mentorProfiles = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
-    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
-    $("#mentorProfiles").html(mentor_Profiles);
+    const mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
+    $("#mentorProfiles").html(mentorProfiles);
 
-    const menteeProfiles = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
-    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
-    $("#menteeProfiles").html(mentee_Profiles);
+    const menteeProfilesData = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
+    $("#menteeProfiles").html(menteeProfiles);
 }
 loadData();
 function renderProfiles(mentorYear,menteeYear) {
-    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
-    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
-    $("#mentorProfiles").html(mentor_Profiles);
-    $("#menteeProfiles").html(mentee_Profiles);
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
 }
 function renderAllProfiles() {
-    const mentorProfiles = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
-    const menteeProfiles = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
-    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
-    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
-    $("#mentorProfiles").html(mentor_Profiles);
-    $("#menteeProfiles").html(mentee_Profiles);
+    const mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
+    const menteeProfilesData = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
 }
 function filterByYear(){
     let year = 2019;
     let mentorsData = [];
     let menteesData = [];
-    if(document.getElementById("chk2019").checked == false && document.getElementById("chk2020").checked == false && document.getElementById("chk2021").checked == false){
+    if(document.getElementById("2019").checked == false && document.getElementById("2020").checked == false && document.getElementById("2021").checked == false){
         renderAllProfiles();
     }else{
         for(let i=0; i<3; i++){
-            if(document.getElementById("chk"+year).checked)
+            if(document.getElementById(year).checked)
             {
                 mentorsData = mentorsData.concat(mentor[year]),
                 menteesData = menteesData.concat(mentee[year]),
