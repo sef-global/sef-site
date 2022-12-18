@@ -72,3 +72,7 @@ hr {
   text-align: left;
   padding: 8px;
 }
+
+.university-filter {
+  display: none;
+}
