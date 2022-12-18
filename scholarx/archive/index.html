@@ -93,47 +93,51 @@
                 <label class="custom-control-label" for="chk2022">2022</label>
             </button>
         </div>
-        <h6>INDUSTRY</h6>
-        <hr>
-        <div class="mt-2 mb-5">
-            <button class="btn btn-sm active mb-3" onclick="filterProfiles('all')"> Show all</button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Computer Science')">
-                <input class="custom-control-input" id="chkComputerScience" type="checkbox">
-                <label class="custom-control-label" for="chkComputerScience" onclick="filterProfiles('Computer Science')">Computer Science</label>
-            </button>
-            <br>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Engineering')">
-                <input class="custom-control-input" id="chkEngineering" type="checkbox" >
-                <label class="custom-control-label" for="chkEngineering"  onclick="filterProfiles('Engineering')">Engineering</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Life Sciences')">
-                <input class="custom-control-input" id="chkLifeSciences" type="checkbox" >
-                <label class="custom-control-label" for="chkLifeSciences" onclick="filterProfiles('Life Sciences')">Life Sciences</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Data Science & AI')">
-                <input class="custom-control-input" id="chkDataSciencenAI" type="checkbox">
-                <label class="custom-control-label" for="chkDataSciencenAI" onclick="filterProfiles('Data Science & AI')">Data Science & AI</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Physical Science')">
-                <input class="custom-control-input" id="chkPhysicalScience" type="checkbox">
-                <label class="custom-control-label" for="chkPhysicalScience" onclick="filterProfiles('Physical Science')">Physical Science</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Other')">
-                <input class="custom-control-input" id="chkOther" type="checkbox">
-                <label class="custom-control-label" for="chkOther" onclick="filterProfiles('Other')">Other</label>
-            </button>
-        </div> 
-        <h6>UNIVERSITY</h6>
-        <hr>
-        <div class="dropdown mt-2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              All Universities
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item active" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-            </ul>
-          </div>
+        <div id="industry-filter">
+            <h6>INDUSTRY</h6>
+            <hr>
+            <div class="mt-2 mb-5">
+                <button class="btn btn-sm active mb-3" onclick="filterProfiles('all')"> Show all</button>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Computer Science')">
+                    <input class="custom-control-input" id="chkComputerScience" type="checkbox">
+                    <label class="custom-control-label" for="chkComputerScience" onclick="filterProfiles('Computer Science')">Computer Science</label>
+                </button>
+                <br>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Engineering')">
+                    <input class="custom-control-input" id="chkEngineering" type="checkbox" >
+                    <label class="custom-control-label" for="chkEngineering"  onclick="filterProfiles('Engineering')">Engineering</label>
+                </button>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Life Sciences')">
+                    <input class="custom-control-input" id="chkLifeSciences" type="checkbox" >
+                    <label class="custom-control-label" for="chkLifeSciences" onclick="filterProfiles('Life Sciences')">Life Sciences</label>
+                </button>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Data Science & AI')">
+                    <input class="custom-control-input" id="chkDataSciencenAI" type="checkbox">
+                    <label class="custom-control-label" for="chkDataSciencenAI" onclick="filterProfiles('Data Science & AI')">Data Science & AI</label>
+                </button>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Physical Science')">
+                    <input class="custom-control-input" id="chkPhysicalScience" type="checkbox">
+                    <label class="custom-control-label" for="chkPhysicalScience" onclick="filterProfiles('Physical Science')">Physical Science</label>
+                </button>
+                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Other')">
+                    <input class="custom-control-input" id="chkOther" type="checkbox">
+                    <label class="custom-control-label" for="chkOther" onclick="filterProfiles('Other')">Other</label>
+                </button>
+            </div> 
+        </div>
+        <div id="university-filter" class="university-filter">
+            <h6>UNIVERSITY</h6>
+            <hr>
+            <div class="dropdown mt-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All Universities
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </div>
+        </div>
       </div>
         <div class="col-9">
             <div class="search-filter">
