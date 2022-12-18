@@ -59,10 +59,9 @@ async function getData() {
 }
 
 async function loadData() {
-    const payload = await getData();
-    [mentor[2019],mentor[2020],mentor[2021]] = [payload.mentor2019,payload.mentor2020,payload.mentor2021];
-    [mentee[2019],mentee[2020],mentee[2021]] = [payload.mentee2019,payload.mentee2020,payload.mentee2021];
- 
+    const { data } = await getData();
+    mentor = data.mentors;
+    mentee = data.mentees;
     const mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
     $("#mentorProfiles").html(mentorProfiles);
