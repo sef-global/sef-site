@@ -42,11 +42,15 @@ $(document).ready(function(){
     $('#selection').on('change', function(){
     	var selectedValue = $(this).val();
         if(selectedValue === "mentees"){
-            document.getElementById("showMentors").style.display = "none";
-            document.getElementById("showMentees").style.display = "flex";
+            $("#showMentees").show();
+            $("#showMentors").hide();
+            $("#university-filter").show();
+            $("#industry-filter").hide();
         } else if(selectedValue === "mentors"){
-            document.getElementById("showMentees").style.display = "none";
-            document.getElementById("showMentors").style.display = "flex";
+            $("#showMentees").hide();
+            $("#showMentors").show();
+            $("#university-filter").hide();
+            $("#industry-filter").show();
         }      
     });
 });

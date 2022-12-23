@@ -2,7 +2,7 @@ let nextPageToken = null;
 let fetchedItemCount = 0;
 
 function loadYoutubeVideos() {
-    let url = "https://sef-dataholder.herokuapp.com/youtube/onelive?maxResults=12";
+    let url = "https://apps.sefglobal.org/youtube/onelive?maxResults=12";
     if (nextPageToken != null){
         url = url + "&nextPageToken=" + nextPageToken;
     }
