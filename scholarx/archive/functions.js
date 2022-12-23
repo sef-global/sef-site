@@ -14,6 +14,7 @@ let mentee = {
 }
 let mentorProfilesData;
 let menteeProfilesData;
+
 //search mentors and mentees
 $(document).ready(function () {
     $("#search").on("keyup", function () {
