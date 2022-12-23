@@ -170,7 +170,7 @@
             <div class="row justify-content-center">
                 <div class="col-11 text-center">
                     <p class="display-3 text-onelive font-weight-bolder mb-0">Let's hear it from our</p>
-                    <p class="display-3 text-onelive font-weight-bolder">ScholarX Alumini</p>
+                    <p class="display-3 text-onelive font-weight-bolder">ScholarX Alumni</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -187,9 +187,9 @@
     <div class="container mt-5 mb-5">
         <h1 class="display-3 text-center mb-5">Featured Articles</h1>
         <!--Featured stories goes here-->
-        <div id="featured-stories" class="featured-stories"></div>
-        <div class="row justify-content-center" id="btnFeaturedStories" style="visibility:hidden;">
-            <button id="btn-featured-stories-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        <div id="posts" class="posts"></div>
+        <div class="row justify-content-center" id="btnPosts" style="visibility:hidden;">
+            <button id="posts-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
         </div>
     </div>
 </section>
@@ -635,6 +635,7 @@
 <script src="/assets/js/navigation.js"></script>
 <!-- External JS file for the JS functions-->
 <script src="./functions.js"></script>
+<script src="/assets/js/functions.js"></script>
 
 <script type="text/html" id="templateTeam">
     <div class="row">
@@ -697,26 +698,26 @@
     <hr/>
 </script>
 
-<script type="text/html" id="template-featured-stories">
+<script type="text/html" id="template-posts">
     <div class="row">
         {{#data}}
-        <div class="col-md-4 mb-5">
-            <a href="{{url}}" target="_blank">
-                <div class="card shadow featured-story mb-4">
-                    <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,w_400/{{image}}" alt="Rounded image"
-                         class="img-fluid rounded shadow img-full">
-                    <div class="card-body">
-                        <h6>{{title}}</h6>
+        <div class="col-md-4 mb-5" >
+            <div class="card px-0">
+                <a href="{{url}}" target="_blank" class="card shadow project-card">
+                    <div class="card-body posts-card-body">
+                        <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,w_400/{{image}}" class="img-fluid  img-full" alt="Rounded image">
+                        <p class="card-text text-darker text-left ml-3">
+                            {{title}}
+                        </p>
                     </div>
                     <div class="card-footer">
                         <div class="author">
-                            <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_200,w_200/{{author_image}}" alt="..."
-                                 class="avatar img-raised overflow-visible">
+                            <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_200,w_200/{{author_image}}" alt="..." class="avatar img-raised">
                             <span>{{author_name}}</span>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
         {{/data}}
     </div>
@@ -738,6 +739,7 @@
 
 <script>
     $(function () {
+        loadPosts('https://script.google.com/macros/s/AKfycbxoEfCuQK2x57cHG0HG0YlljD6FoKbIwygdEz0wkt6ex4YAxEviuLdwJbiXKNZwA-k64g/exec')
         loadMentees();
     });
 

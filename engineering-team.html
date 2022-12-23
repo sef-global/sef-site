@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="The engineering team is the backbone of the SEF community. This team is saturated with potent young talent who engage in various challenges when it comes to contribution.">
         <meta name="author" content="Sustainable Education Foundation">
-        <meta property="og:image" content="assets/img/brand/scholarx.png">
+        <meta property="og:image" content="assets/img/engineering-page-hero-image.png">
         <title>Engineering Team | Sustainable Education Foundation</title>
         <!-- Favicon -->
         <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-md-6 height-500 mt-2">
-                <img src="assets/img/deve-page-hero.png" class="img-fluid align-self-center w-100">
+                <img src="assets/img/engineering-page-hero-image.png" class="img-fluid align-self-center w-100">
             </div>
         </div>
     </div>
@@ -137,7 +137,17 @@
         </div>
     </div>
 </section>
-
+<!-- Blog articles section -->
+<section class="section">
+    <div class="container mt-5 mb-5">
+        <h1 class="display-3 text-center mb-5">Blog Articles from Our Engineers</h1>
+        <!--Blog articles goes here-->
+        <div id="posts" class="posts"></div>
+        <div class="row justify-content-center" id="btnPosts" style="visibility:hidden;">
+            <button id="posts-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div id="footer"></div>
     <!--footer goes here -->
@@ -157,9 +167,37 @@
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/functions.js"></script>
+<!--Mustache.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script type="text/html" id="template-posts">
+    <div class="row">
+        {{#data}}
+        <div class="col-md-4 mb-5" >
+            <div class="card px-0">
+                <a href="{{url}}" target="_blank" class="card shadow project-card">
+                    <div class="card-body posts-card-body">
+                        <img src="{{image}}" class="img-fluid  img-full" alt="Rounded image">
+                        <p class="card-text text-darker text-left ml-3">
+                            {{title}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="author">
+                            <img src="{{author_image}}" alt="..." class="avatar img-raised">
+                            <span>{{author_name}}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{/data}}
+    </div>
+</script>
 <script>
     $(function () {
-        loadNavAndFooter('assets/content/static')
+        loadNavAndFooter('assets/content/static');
+        // loadBlogPosts();
+        loadPosts('https://script.google.com/macros/s/AKfycbyUdfhk9WWFLoMWxQvNIEUNl793RbXGnyo-ZIYRn9K1T6QFN1_9G8Ln9NpTCCJba2dzOg/exec');
     })
 </script>
 </html>
