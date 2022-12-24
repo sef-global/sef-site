@@ -14,6 +14,7 @@ let mentee = {
 }
 let mentorProfilesData;
 let menteeProfilesData;
+let dataHolder = [];
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -129,6 +130,7 @@ function filterByYear(){
             if(document.getElementById(year).checked)
             {
                 mentorsData = mentorsData.concat(mentor[year]),
+                dataHolder = mentorsData,
                 menteesData = menteesData.concat(mentee[year]);
                 renderProfiles(mentorsData,menteesData)
             }
@@ -153,20 +155,15 @@ function filterProfiles(value){
     if(document.getElementById("2019").checked == false && document.getElementById("2020").checked == false && document.getElementById("2021").checked == false){
         mentorsData = mentorProfilesData;
     }else{
-        for(let i=0; i<3; i++){
-            if(document.getElementById(year).checked){
-                mentorsData = mentorsData.concat(mentor[year]);
-            }
-            year++;
-        }
+        mentorsData = dataHolder;
     }
     //slicing mentors based on their industry
     for(let i=0; i<mentorsData.length; i++){
         if(mentorsData[i].fields == "Computer Science"){
             mentorByIndustry[1].push(mentorsData[i]);
-        }else if(mentorsData[i].fields == "Life Sciences"){
-            mentorByIndustry[2].push(mentorsData[i]);
         }else if(mentorsData[i].fields == "Engineering"){
+            mentorByIndustry[2].push(mentorsData[i]);
+        }else if(mentorsData[i].fields == "Life Sciences"){
             mentorByIndustry[3].push(mentorsData[i]);            
         }else if(mentorsData[i].fields == "Data Science & AI"){
             mentorByIndustry[4].push(mentorsData[i]);
