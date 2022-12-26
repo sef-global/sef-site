@@ -2,19 +2,11 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-let mentor = {
-    2019:[],
-    2020:[],
-    2021:[]
-}
-let mentee = {
-    2019:[],
-    2020:[],
-    2021:[]
-}
-let mentorProfilesData;
-let menteeProfilesData;
-let dataHolder = [];
+let mentor = []
+let mentee = []
+let mentorProfilesData
+let menteeProfilesData
+let dataHolder = []
 
 //search mentors and mentees
 $(document).ready(function () {
