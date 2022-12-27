@@ -77,6 +77,10 @@ hr {
   padding: 8px;
 }
 
+.university-filter {
+  display: none;
+}
+
 #mentorProfiles:hover {
   cursor: pointer;
 }
