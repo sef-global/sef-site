@@ -34,7 +34,7 @@ This repository contains source for Sustainable Education Foundation Website. [V
 
 #### Want to contribute to this project? 
 
-**Send us a Pull Request**
+[**Send us a Pull Request**](https://github.com/sef-global/sef-site/issues)
 
 Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 ## Prerequisites
