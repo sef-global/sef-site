@@ -2,7 +2,7 @@
 function loadUpcomingEvents() {
     $.ajax({
         type: 'GET',
-        url: 'https://sef-dataholder.herokuapp.com/calendar/onelive?maxResults=3',
+        url: 'https://apps.sefglobal.org/calendar/onelive?maxResults=3',
         dataType: 'json',
         success: function (payload) {
             if (!(payload.items === undefined || payload.items.length == 0)) {
@@ -50,7 +50,7 @@ function loadUpcomingEvents() {
 function loadYoutubeVideos() {
     $.ajax({
         type: 'get',
-        url: 'https://sef-dataholder.herokuapp.com/youtube/onelive?maxResults=3',
+        url: 'https://apps.sefglobal.org/youtube/onelive?maxResults=3',
         dataType: 'json',
         success: function (data) {
             // Slice if the description if it is very long

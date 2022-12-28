@@ -752,3 +752,23 @@ li.timeline-element:last-child {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+/*Blog posts/Featured stories section*/
+.posts .card {
+    height: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.posts-card-body {
+    padding:0;
+}
+
+/*to adjust height and width of cards*/
+.posts-card-body img {
+    height: 200px;
+    width: 1000px;
+    padding-bottom: 2%;
+    /*round shaped border*/
+    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
+}
