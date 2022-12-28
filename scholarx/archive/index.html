@@ -217,7 +217,7 @@
 <!-- template mentees -->
 <script type="text/html" id="templateMentees">
     {{#menteeProfiles}}
-        <tr >
+        <tr onclick="openMenteeProfile('{{index}}')">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>            

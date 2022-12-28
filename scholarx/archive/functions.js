@@ -81,11 +81,22 @@ async function loadData() {
 }
 loadData();
 
-
-
 function openMentorProfile(index){
     // Get the selected mentor
     const profile = mentorProfilesData[parseInt(index)];
+    
+    // Add content to the template
+    const template = $("#template-profile-modal-content").html();
+    const content = Mustache.render(template, profile);
+    // Update the modal
+    $("#profile-modal-content").html(content);
+    // Open the modal
+    $("#profile-modal").modal();
+}
+
+function openMenteeProfile(index){
+    // Get the selected mentee
+    const profile = menteeProfilesData[parseInt(index)];
     
     // Add content to the template
     const template = $("#template-profile-modal-content").html();
