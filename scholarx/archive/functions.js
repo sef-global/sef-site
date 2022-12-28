@@ -2,16 +2,8 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-let mentor = {
-    2019:[],
-    2020:[],
-    2021:[]
-}
-let mentee = {
-    2019:[],
-    2020:[],
-    2021:[]
-}
+let mentors = []
+let mentees = []
 let mentorProfilesData;
 let menteeProfilesData;
 
