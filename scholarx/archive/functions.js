@@ -2,8 +2,8 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-let mentor = []
-let mentee = []
+let mentors = []
+let mentees = []
 //search mentors and mentees
 $(document).ready(function () {
     $("#search").on("keyup", function () {
@@ -51,13 +51,13 @@ async function getData() {
 
 async function loadData() {
     const { data } = await getData();
-    mentor = data.mentors;
-    mentee = data.mentees;
-    const mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
+    mentors = data.mentors;
+    mentees = data.mentees;
+    const mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
     $("#mentorProfiles").html(mentorProfiles);
 
-    const menteeProfilesData = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
+    const menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
     $("#menteeProfiles").html(menteeProfiles);
 }
@@ -69,8 +69,8 @@ function renderProfiles(mentorYear,menteeYear) {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function renderAllProfiles() {
-    const mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
-    const menteeProfilesData = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
+    const mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
+    const menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
     $("#mentorProfiles").html(mentorProfiles);
@@ -86,8 +86,8 @@ function filterByYear(){
         for(let i=0; i<3; i++){
             if(document.getElementById(year).checked)
             {
-                mentorsData = mentorsData.concat(mentor[year]),
-                menteesData = menteesData.concat(mentee[year]),
+                mentorsData = mentorsData.concat(mentors[year]),
+                menteesData = menteesData.concat(mentees[year]),
                 renderProfiles(mentorsData,menteesData)
             }
             year++;
