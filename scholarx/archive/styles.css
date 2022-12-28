@@ -72,3 +72,18 @@ hr {
   text-align: left;
   padding: 8px;
 }
+<<<<<<< HEAD
+=======
+
+.university-filter {
+  display: none;
+}
+
+#mentorProfiles:hover {
+  cursor: pointer;
+}
+
+#menteeProfiles:hover {
+  cursor: pointer;
+}
+>>>>>>> 1cee0c1c8b697b9284aabb7bc355f0c603568dce
