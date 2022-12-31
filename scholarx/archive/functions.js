@@ -2,8 +2,8 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
-let mentor = []
-let mentee = []
+let mentors = []
+let mentees = []
 let mentorProfilesData
 let menteeProfilesData
 let dataHolder = []
@@ -59,13 +59,13 @@ async function getData() {
 
 async function loadData() {
     const { data } = await getData();
-    mentor = data.mentors;
-    mentee = data.mentees;
-    mentorProfilesData = mentor[2019].concat(mentor[2020]).concat(mentor[2021]);
+    mentors = data.mentors;
+    mentees = data.mentees;
+    mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
     $("#mentorProfiles").html(mentorProfiles);
 
-    menteeProfilesData = mentee[2019].concat(mentee[2020]).concat(mentee[2021]);
+    menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
     $("#menteeProfiles").html(menteeProfiles);
 }
@@ -84,26 +84,18 @@ function renderAllProfiles() {
 }
 //function to return true if all industry checkboxes are unchecked.
 function allFalse(){
-    let number = 0;
     for(let i=1; i<7; i++){
-        if(document.getElementById("industry_"+i).checked == false){
-            number++;
+        if(document.getElementById("industry_"+i).checked == true){
+            return false
         }
-    }
-    if(number==6){
-        return true
-    }else{
-        return false
-    }
+    }return true
 }
 //function to uncheck checkboxes
-function uncheckIndustryFilters(){
+function uncheckFilters(){
+    let year = 2019
     for(let i=1; i<7; i++){
         document.getElementById("industry_"+i).checked = false;
     }
-}
-function uncheckYearByFilters(){
-    let year = 2019
     for(let i=0; i<4; i++){
         document.getElementById(year).checked = false
         year++
@@ -111,7 +103,6 @@ function uncheckYearByFilters(){
 }
 //year by filters
 function filterByYear(){
-    uncheckIndustryFilters();
     let year = 2019;
     let mentorsData = [];
     let menteesData = [];
@@ -121,17 +112,21 @@ function filterByYear(){
         for(let i=0; i<3; i++){
             if(document.getElementById(year).checked)
             {
-                mentorsData = mentorsData.concat(mentor[year]),
-                dataHolder = mentorsData,
-                menteesData = menteesData.concat(mentee[year]);
-                renderProfiles(mentorsData,menteesData)
+                mentorsData = mentorsData.concat(mentors[year]);
+                menteesData = menteesData.concat(mentees[year]);
+                dataHolder = mentorsData; 
+                if(allFalse()){
+                    renderProfiles(mentorsData,menteesData)
+                }else{
+                    filterByIndustry("value")
+                }      
             }
             year++;
         }
     }
 }
 //filter by industry
-function filterProfiles(value){
+function filterByIndustry(value){
     let mentorByIndustry = {
         1:[],
         2:[],
@@ -141,7 +136,6 @@ function filterProfiles(value){
         6:[]
     }
     let mentorIndustryData=[]
-    let year = 2019;
     let mentorsData = [];
     //filter data based on the year
     if(document.getElementById("2019").checked == false && document.getElementById("2020").checked == false && document.getElementById("2021").checked == false){
@@ -168,18 +162,17 @@ function filterProfiles(value){
     //industry checkbox selections
     for(let i=1; i<7; i++){
         if(document.getElementById("industry_" + i).checked){
-            mentorIndustryData = mentorIndustryData.concat(mentorByIndustry[i]);
+            mentorIndustryData = mentorIndustryData.concat(mentorByIndustry[i])
         }
     } 
     if(value == "all"){
         renderAllProfiles()
-        uncheckYearByFilters()
-        uncheckIndustryFilters()
+        uncheckFilters()
     }else{
         if(allFalse()){
             renderProfiles(mentorsData,menteeProfilesData)
         }else{
-            renderProfiles(mentorIndustryData,menteeProfilesData);
+            renderProfiles(mentorIndustryData,menteeProfilesData)
         }
     }
 }
