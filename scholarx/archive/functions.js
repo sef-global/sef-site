@@ -4,6 +4,7 @@ $(function () {
 
 let mentors = []
 let mentees = []
+
 //search mentors and mentees
 $(document).ready(function () {
     $("#search").on("keyup", function () {
