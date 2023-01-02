@@ -7,10 +7,6 @@
   max-width: 350px;
 }
 
-.search-btn{
-  margin-left: 20px;
-}
-
 .input-group{
   margin-top: 10px;
   margin-bottom: 15px;
@@ -75,4 +71,8 @@ hr {
   border-top: 1px solid #eeeeee;
   text-align: left;
   padding: 8px;
+}
+
+.university-filter {
+  display: none;
 }

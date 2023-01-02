@@ -6,7 +6,6 @@ const selectedCategories = new Set();
 $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
     loadProfiles(); // load profiles
-    loadFeaturedStories(); // load featured stories
     toggleCategory("all"); // Select all categories
     // Listner for FAQ
     $('.panel').click(
@@ -131,52 +130,6 @@ function toggleCategory(category) {
             $(categoryCheckboxID).prop("checked", false);
         }
     }
-}
-
-//function to load profile data
-function loadFeaturedStories() {
-    $.ajax({
-        type: 'get',
-        url: 'https://script.google.com/macros/s/AKfycbzpNJgeah9hpaf4mRWer5U_y27qWdeFArS6j17LhtxxhAKXkg0uaU9iKG5JHmM1RGP_/exec',
-        dataType: 'json',
-        success: function (data) {
-            document.getElementById('btnFeaturedStories').style.visibility = "visible";
-
-            //hide section if there are no featured Stories
-            if (data.length == 0){
-              document.getElementById("featured-stories-section").style.display = "none";
-            }else if (data.length >= 6) {
-                //slice array to two parts
-                let partOne = data.slice(0, 6);
-                let partTwo = data.slice(6);
-
-                //mustache render - part one
-                let contentPartOne = Mustache.render(
-                    $('#template-featured-stories').html(), {'data': partOne});
-
-                //display first 8 profiles
-                $('#featured-stories').html(contentPartOne);
-
-                //hide button
-                $('#btn-featured-stories-show-more').click(function () {
-                    let contentPartTwo = Mustache.render(
-                        $('#template-featured-stories').html(), {'data': partTwo});
-                    $(contentPartTwo).appendTo('#featured-stories').hide().fadeIn(1000);
-                    $('#btn-featured-stories-show-more').hide();
-                });
-            } else {
-                //mustache render
-                let content = Mustache.render(
-                    $('#template-featured-stories').html(), {'data': data});
-
-                //display first 8 profiles
-                $('#featured-stories').html(content);
-
-                //hide button
-                $('#btn-featured-stories-show-more').hide();
-            }
-        }
-    });
 }
 
 function openMentorProfile(index){
