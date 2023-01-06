@@ -62,12 +62,8 @@ async function loadData() {
     mentors = data.mentors;
     mentees = data.mentees;
     mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
-    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
-    $("#mentorProfiles").html(mentorProfiles);
-
     menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
-    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
-    $("#menteeProfiles").html(menteeProfiles);
+    renderAllProfiles()
 }
 loadData();
 function renderProfiles(mentorYear,menteeYear) {
@@ -83,7 +79,7 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
 }
 //function to return true if all industry checkboxes are unchecked.
-function allFalse(){
+function isEveryIndustryUnchecked(){
     for(let i=1; i<7; i++){
         if(document.getElementById("industry_"+i).checked == true){
             return false
@@ -92,36 +88,32 @@ function allFalse(){
 }
 //function to uncheck checkboxes
 function uncheckFilters(){
-    let year = 2019
     for(let i=1; i<7; i++){
         document.getElementById("industry_"+i).checked = false;
     }
-    for(let i=0; i<4; i++){
-        document.getElementById(year).checked = false
-        year++
+    for(let year=2019; year<=2022; year++){
+        document.getElementById(year).checked = false;
     }
 }
 //year by filters
 function filterByYear(){
-    let year = 2019;
     let mentorsData = [];
     let menteesData = [];
     if(document.getElementById("2019").checked == false && document.getElementById("2020").checked == false && document.getElementById("2021").checked == false){
         renderAllProfiles();
     }else{
-        for(let i=0; i<3; i++){
+        for(let year=2019; year<=2022; year++){
             if(document.getElementById(year).checked)
             {
                 mentorsData = mentorsData.concat(mentors[year]);
                 menteesData = menteesData.concat(mentees[year]);
                 dataHolder = mentorsData; 
-                if(allFalse()){
+                if(isEveryIndustryUnchecked()){
                     renderProfiles(mentorsData,menteesData)
                 }else{
-                    filterByIndustry("value")
+                    filterByIndustry("")
                 }      
             }
-            year++;
         }
     }
 }
@@ -169,7 +161,7 @@ function filterByIndustry(value){
         renderAllProfiles()
         uncheckFilters()
     }else{
-        if(allFalse()){
+        if(isEveryIndustryUnchecked()){
             renderProfiles(mentorsData,menteeProfilesData)
         }else{
             renderProfiles(mentorIndustryData,menteeProfilesData)
