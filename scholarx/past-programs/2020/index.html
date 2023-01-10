@@ -214,7 +214,7 @@
 </section>
 
 <section class="section pb-0 bg-gradient-white">
-    <div class="container">
+    <div class="container" id="mentees_div">
         <h1 class="display-3 text-center mb-5">Mentees</h1>
         <div class="justify-content-center">
             <!--Mentees table goes here-->
@@ -272,6 +272,10 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="row justify-content-center" id="btnMentees" style="visibility:hidden;">
+                <button id="mentee-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+                <a id="mentee-show-less" class="btn btn-link btn-outline-white btn-info" href="#mentees_div">SEE LESS</a>
+            </div>
         </div>
     </div>
 </section>
@@ -446,12 +450,57 @@
             url: 'https://script.google.com/macros/s/AKfycbx_JpPBVggdoBq2wO6NDaP0uvTb9-VZiJF77GbnfUSSQFNdBZ8a7KZKuXEvJXdB2m-FXQ/exec',
             dataType: 'json',
             success: function (data) {
-                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
-                //display mentees
-                $("#teamMentees").html(templateMentees);
+                document.getElementById('btnMentees').style.visibility = "visible";
+                //slice array to two parts
+                if (data.length >= 6) {
+                    let tempProfileCount =6;
+                    let profileCount =data.length;
+                    let initialPart = data.slice(0, 6);
+
+                    //mustache render - initial part
+                    let initialProfileSet = Mustache.render(
+                        $('#templateMentees').html(), { 'data': initialPart }
+                    );
+
+                    //display first 6 mentees
+                    $('#teamMentees').html(initialProfileSet);
+                    $('#mentee-show-less').hide();
+
+                    //display 6 more mentees with a click
+                    $('#mentee-show-more').click(function () {
+                        tempProfileCount+=6;
+                        let nextPart =data.slice(tempProfileCount-6,tempProfileCount);
+
+                        //mustache render - next part
+                        let nextProfileSet = Mustache.render(
+                            $('#templateMentees').html(), { 'data': nextPart });
+                        $(nextProfileSet).appendTo('#teamMentees').hide().fadeIn(1000);
+                        $("#mentee-show-less").show();
+
+                        if(tempProfileCount>=profileCount){
+                            $('#mentee-show-more').hide();
+                        }
+                    });
+
+                    $("#mentee-show-less").click(function () {
+                        $("#teamMentees").html(initialProfileSet);
+                        $("#mentee-show-more").show();
+                        $("#mentee-show-less").hide();
+                    });
+                } else {
+                    //mustache render
+                    let content = Mustache.render(
+                        $('#templateMentees').html(), { 'data': data });
+
+                    //display first 6 mentees
+                    $('#teamMentees').html(content);
+
+                    //hide button
+                    $('#mentee-show-more').hide();
+                    $('#mentee-show-less').hide();
+                }
             }
         });
-    }  
-    
+    }
 </script>
 </html>
