@@ -59,3 +59,62 @@ function loadPosts(url){
         }
     });
 }
+//function to load mentee profiles
+function loadMentees(url) {
+    $.ajax({
+        type: 'get',
+        url: url,
+        dataType: 'json',
+        success: function (data) {
+            document.getElementById('btnMentees').style.visibility = "visible";
+            //slice array to two parts
+            if (data.length >= 6) {
+                let tempProfileCount =6;
+                let profileCount =data.length;
+                let initialPart = data.slice(0, 6);
+
+                //mustache render - initial part
+                let initialProfileSet = Mustache.render(
+                    $('#templateMentees').html(), { 'data': initialPart }
+                );
+
+                //display first 6 mentees
+                $('#teamMentees').html(initialProfileSet);
+                $('#mentee-show-less').hide();
+
+                //display 6 more mentees with a click
+                $('#mentee-show-more').click(function () {
+                    tempProfileCount+=6;
+                    let nextPart =data.slice(tempProfileCount-6,tempProfileCount);
+
+                    //mustache render - next part
+                    let nextProfileSet = Mustache.render(
+                        $('#templateMentees').html(), { 'data': nextPart });
+                    $(nextProfileSet).appendTo('#teamMentees').hide().fadeIn(1000);
+                    $("#mentee-show-less").show();
+
+                    if(tempProfileCount>=profileCount){
+                        $('#mentee-show-more').hide();
+                    }
+                });
+
+                $("#mentee-show-less").click(function () {
+                    $("#teamMentees").html(initialProfileSet);
+                    $("#mentee-show-more").show();
+                    $("#mentee-show-less").hide();
+                });
+            } else {
+                //mustache render
+                let content = Mustache.render(
+                    $('#templateMentees').html(), { 'data': data });
+
+                //display first 6 mentees
+                $('#teamMentees').html(content);
+
+                //hide button
+                $('#mentee-show-more').hide();
+                $('#mentee-show-less').hide();
+            }
+        }
+    });
+}
