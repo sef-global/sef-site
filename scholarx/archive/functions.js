@@ -58,13 +58,7 @@ async function loadData() {
     const { data } = await getData();
     mentors = data.mentors;
     mentees = data.mentees;
-    const mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
-    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
-    $("#mentorProfiles").html(mentorProfiles);
-
-    const menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
-    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
-    $("#menteeProfiles").html(menteeProfiles);
+    renderAllProfiles();
 }
 loadData();
 function renderProfiles(mentorYear,menteeYear) {
@@ -82,20 +76,18 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function filterByYear(){
-    let year = 2019;
     let mentorsData = [];
     let menteesData = [];
-    if(document.getElementById("2019").checked == false && document.getElementById("2020").checked == false && document.getElementById("2021").checked == false){
+    if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
         renderAllProfiles();
     }else{
-        for(let i=0; i<3; i++){
+        for(let year=2019; year<2022; year++){
             if(document.getElementById(year).checked)
             {
                 mentorsData = mentorsData.concat(mentors[year]),
                 menteesData = menteesData.concat(mentees[year]),
                 renderProfiles(mentorsData,menteesData)
             }
-            year++;
         }
     }
 }
