@@ -69,9 +69,9 @@ function loadMentees(url) {
             document.getElementById('btnMentees').style.visibility = "visible";
             //slice array to two parts
             if (data.length >= 6) {
-                let tempProfileCount =6;
-                let profileCount =data.length;
-                let initialPart = data.slice(0, 6);
+                let initialProfileCount =6;
+                let profileCount = data.length;
+                let initialPart = data.slice(0, initialProfileCount);
 
                 //mustache render - initial part
                 let initialProfileSet = Mustache.render(
@@ -84,8 +84,8 @@ function loadMentees(url) {
 
                 //display 6 more mentees with a click
                 $('#mentee-show-more').click(function () {
-                    tempProfileCount+=6;
-                    let nextPart =data.slice(tempProfileCount-6,tempProfileCount);
+                    initialProfileCount+=6;
+                    let nextPart =data.slice(initialProfileCount-6,initialProfileCount);
 
                     //mustache render - next part
                     let nextProfileSet = Mustache.render(
@@ -93,7 +93,7 @@ function loadMentees(url) {
                     $(nextProfileSet).appendTo('#teamMentees').hide().fadeIn(1000);
                     $("#mentee-show-less").show();
 
-                    if(tempProfileCount>=profileCount){
+                    if(initialProfileCount>=profileCount){
                         $('#mentee-show-more').hide();
                     }
                 });
