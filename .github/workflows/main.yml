@@ -20,4 +20,3 @@ jobs:
         env:
           DEPLOY_DOMAIN: https://pr-${{ github.event.number }}-sef-site.surge.sh
         run: surge ./ $DEPLOY_DOMAIN --token ${{ secrets.SURGE_TOKEN }}
-        
