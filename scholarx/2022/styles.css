@@ -39,36 +39,6 @@
     cursor: pointer;
 }
 
-.featured-story img{
-    height: 200px;
-    object-fit: cover;
-}
-
-.featured-stories .card {
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.featured-story .card-body {
-    padding-bottom: 0;
-}
-
-.featured-story .card-footer .stats i {
-    padding-top: 3px;
-    padding-right: 5px;
-}
-
-.featured-story .card-footer {
-    font-size: 0.9em;
-    padding-top: 0;
-}
-
-.featured-story .author span{
-    color: #6f81a4;
-    padding-left: 4px;
-    padding-top: 4px;
-}
-
 .past-section{
     background-color: #f8fdff
 }
