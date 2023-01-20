@@ -291,15 +291,23 @@
     <div class="project-card shadow my-4 ">
         <div class="container">
             <div class="row  py-5">
-                <div class="col-md-4 align-items-center justify-content-center text-center my-auto">
+                <div class="col-md-3 align-items-center justify-content-center text-center my-auto">
                     <img src="{{image}}}"
                          style="width: 100px; height: 100px; border-radius: 50%; border: 5px solid #EAECEE;">
-                    <a href="{{linkedin}}}" target="_blank"><p class="pt-2 font">{{dev_name}}</p></a>
+                    <a href="{{linkedin}}}" target="_blank"><p class="pt-2 font pr-2">{{dev_name}}</p></a>
                 </div>
-                <div class="col-md-8 font-size">
+                <div class="col-md-9 font-size">
                     <h4>"{{story}}"
                     </h4>
                 </div>
+            </div>
+            <div class="pb-4 mx-4">
+                <h5>Acheivements</h5>
+                <ul>
+                    {{#acheivements}}
+                    <li>{{{.}}}</li>
+                    {{/acheivements}}
+                </ul>
             </div>
         </div>
     </div>
@@ -307,7 +315,7 @@
 </script>
 <script>
     async function loadStories() {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbx_OyZXWfpda8Ygl_icvhCWLSkXLqDnacIa6ZQR7-SxbXjudTK0FkJRujBlJ2mLFdoD2g/exec");
+        const response = await fetch("https://script.google.com/macros/s/AKfycbwv81hbfTsHAGcNQnmrjcV9YPVkipHRbjXct_6DlPWrovCVqy90j8DlRNb2D_MTQAiOuQ/exec");
         const data = await response.json();
         const template = document.getElementById("template-dev").innerHTML;
         const content = Mustache.render(template, {card: data});
