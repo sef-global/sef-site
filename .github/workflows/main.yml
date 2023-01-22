@@ -19,4 +19,5 @@ jobs:
       - name: Deploying on Surge
         env:
           DEPLOY_DOMAIN: https://pr-${{ github.event.number }}-sef-site.surge.sh
-        run: surge ./ $DEPLOY_DOMAIN --token ${{ secrets.SURGE_TOKEN }}
+          SURGE_TOKEN: aadbfcb04e3dae63bb3561ca05f93eb1
+        run: surge ./ $DEPLOY_DOMAIN --token $SURGE_TOKEN
