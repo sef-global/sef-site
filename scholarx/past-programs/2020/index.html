@@ -214,7 +214,7 @@
 </section>
 
 <section class="section pb-0 bg-gradient-white">
-    <div class="container">
+    <div class="container" id="mentees">
         <h1 class="display-3 text-center mb-5">Mentees</h1>
         <div class="justify-content-center">
             <!--Mentees table goes here-->
@@ -272,6 +272,10 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="row justify-content-center" id="btnMentees" style="visibility:hidden;">
+                <button id="mentee-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+                <a id="mentee-show-less" class="btn btn-link btn-outline-white btn-info" href="#mentees">SEE LESS</a>
+            </div>
         </div>
     </div>
 </section>
@@ -436,22 +440,8 @@
 
 <script>
     $(function () {
-        loadMentees();
+        loadMentees('https://script.google.com/macros/s/AKfycbx_JpPBVggdoBq2wO6NDaP0uvTb9-VZiJF77GbnfUSSQFNdBZ8a7KZKuXEvJXdB2m-FXQ/exec');
         loadPosts('https://script.google.com/macros/s/AKfycbyrED1ynzfadBwuHgy1Gl7DH35yuY9rtBGe-VJ2wGgyiB-o-cVbQyXFQNEkdyByRJpgKA/exec');
     });
-
-    function loadMentees() {
-        $.ajax({
-            type: 'get',
-            url: 'https://script.google.com/macros/s/AKfycbx_JpPBVggdoBq2wO6NDaP0uvTb9-VZiJF77GbnfUSSQFNdBZ8a7KZKuXEvJXdB2m-FXQ/exec',
-            dataType: 'json',
-            success: function (data) {
-                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
-                //display mentees
-                $("#teamMentees").html(templateMentees);
-            }
-        });
-    }  
-    
 </script>
 </html>
