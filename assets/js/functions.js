@@ -60,10 +60,10 @@ function loadPosts(url){
     });
 }
 //function to load mentee profiles
-function loadMentees(url) {
+function loadMentees(sheetURL) {
     $.ajax({
         type: 'get',
-        url: url,
+        url: sheetURL,
         dataType: 'json',
         success: function (data) {
             document.getElementById('btnMentees').style.visibility = "visible";
