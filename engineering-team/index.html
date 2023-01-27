@@ -294,7 +294,7 @@
         {{/data}}
     </div>
 </script>
-<script id="template-dev" type="text/html">
+<script id="success-story" type="text/html">
     {{#card}}
     <div class="project-card shadow my-4 ">
         <div class="container">
@@ -325,7 +325,7 @@
     async function loadStories() {
         const response = await fetch("https://script.google.com/macros/s/AKfycbwv81hbfTsHAGcNQnmrjcV9YPVkipHRbjXct_6DlPWrovCVqy90j8DlRNb2D_MTQAiOuQ/exec");
         const data = await response.json();
-        const template = document.getElementById("template-dev").innerHTML;
+        const template = document.getElementById("success-story").innerHTML;
         const content = Mustache.render(template, {card: data});
         document.getElementById('stories').innerHTML = content;
     }
