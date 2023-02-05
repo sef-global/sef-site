@@ -2,6 +2,9 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
+let mentors = []
+let mentees = []
+
 //search mentors and mentees
 $(document).ready(function () {
     $("#search").on("keyup", function () {
@@ -52,13 +55,39 @@ async function getData() {
 }
 
 async function loadData() {
-    const payload = await getData();
-    const mentorProfiles = payload.mentor2021.concat(payload.mentor2020).concat(payload.mentor2019);
-    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
-    $("#mentorProfiles").html(mentor_Profiles);
-
-    const menteeProfiles = payload.mentee2021.concat(payload.mentee2020).concat(payload.mentee2019);
-    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
-    $("#menteeProfiles").html(mentee_Profiles);
+    const { data } = await getData();
+    mentors = data.mentors;
+    mentees = data.mentees;
+    renderAllProfiles();
 }
 loadData();
+function renderProfiles(mentorYear,menteeYear) {
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
+}
+function renderAllProfiles() {
+    const mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
+    const menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
+}
+function filterByYear(){
+    let mentorsData = [];
+    let menteesData = [];
+    if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
+        renderAllProfiles();
+    }else{
+        for(let year=2019; year<2022; year++){
+            if(document.getElementById(year).checked)
+            {
+                mentorsData = mentorsData.concat(mentors[year]),
+                menteesData = menteesData.concat(mentees[year]),
+                renderProfiles(mentorsData,menteesData)
+            }
+        }
+    }
+}
