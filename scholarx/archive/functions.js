@@ -46,7 +46,7 @@ $(document).ready(function(){
     });
 });
 
-const data_url = "https://script.google.com/macros/s/AKfycbw0TVyldiK5ijUxjLJkhrxHpxZpIjoeLytZqrvOlftYeHywn1hBEnL0aHGIS8hOFxPp/exec";
+const data_url = "https://script.google.com/macros/s/AKfycbxxuC5tlaEQpYBFnf09fsgxMgc6--97F6iOXo2mtxNgwwrp2ukzirlComP_GPjY8amN/exec";
 
 async function getData() {
     const response = await fetch(data_url);
@@ -55,9 +55,14 @@ async function getData() {
 }
 
 async function loadData() {
-    const { data } = await getData();
-    mentors = data.mentors;
-    mentees = data.mentees;
+    const {data}  = await getData();
+    for(let i=0; i<data.length; i++){
+        if (data[i].type == "mentor"){
+            mentors.push(data[i])
+        }else {
+            mentees.push(data[i])
+        }
+    }
     renderAllProfiles();
 }
 loadData();
@@ -68,10 +73,8 @@ function renderProfiles(mentorYear,menteeYear) {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function renderAllProfiles() {
-    const mentorProfilesData = mentors[2019].concat(mentors[2020]).concat(mentors[2021]);
-    const menteeProfilesData = mentees[2019].concat(mentees[2020]).concat(mentees[2021]);
-    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfilesData });
-    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfilesData });
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentors });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": mentees });
     $("#mentorProfiles").html(mentorProfiles);
     $("#menteeProfiles").html(menteeProfiles);
 }
