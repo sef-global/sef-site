@@ -2,6 +2,9 @@ $(function () {
     loadNavAndFooter('/assets/content/static');  //relative path to content directory
 });
 
+let mentors = []
+let mentees = []
+
 //search mentors and mentees
 $(document).ready(function () {
     $("#search").on("keyup", function () {
@@ -43,7 +46,7 @@ $(document).ready(function(){
     });
 });
 
-const data_url = "https://script.google.com/macros/s/AKfycbw0TVyldiK5ijUxjLJkhrxHpxZpIjoeLytZqrvOlftYeHywn1hBEnL0aHGIS8hOFxPp/exec";
+const data_url = "https://script.google.com/macros/s/AKfycbxxuC5tlaEQpYBFnf09fsgxMgc6--97F6iOXo2mtxNgwwrp2ukzirlComP_GPjY8amN/exec";
 
 async function getData() {
     const response = await fetch(data_url);
@@ -52,13 +55,42 @@ async function getData() {
 }
 
 async function loadData() {
-    const payload = await getData();
-    const mentorProfiles = payload.mentor2021.concat(payload.mentor2020).concat(payload.mentor2019);
-    let mentor_Profiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorProfiles });
-    $("#mentorProfiles").html(mentor_Profiles);
-
-    const menteeProfiles = payload.mentee2021.concat(payload.mentee2020).concat(payload.mentee2019);
-    let mentee_Profiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeProfiles });
-    $("#menteeProfiles").html(mentee_Profiles);
+    const {data}  = await getData();
+    for(let i=0; i<data.length; i++){
+        if (data[i].type == "mentor"){
+            mentors.push(data[i])
+        }else {
+            mentees.push(data[i])
+        }
+    }
+    renderAllProfiles();
 }
 loadData();
+function renderProfiles(mentorYear,menteeYear) {
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
+}
+function renderAllProfiles() {
+    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentors });
+    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": mentees });
+    $("#mentorProfiles").html(mentorProfiles);
+    $("#menteeProfiles").html(menteeProfiles);
+}
+function filterByYear(){
+    let mentorsData = [];
+    let menteesData = [];
+    if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
+        renderAllProfiles();
+    }else{
+        for(let year=2019; year<2022; year++){
+            if(document.getElementById(year).checked)
+            {
+                mentorsData = mentorsData.concat(mentors[year]),
+                menteesData = menteesData.concat(mentees[year]),
+                renderProfiles(mentorsData,menteesData)
+            }
+        }
+    }
+}
