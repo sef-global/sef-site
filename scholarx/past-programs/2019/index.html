@@ -133,7 +133,7 @@
 </section>
 
 <section class="section pb-0 bg-gradient-white">
-    <div class="container">
+    <div class="container" id="mentees">
         <h1 class="display-3 text-center mb-5">Mentees</h1>
         <div class="justify-content-center">
             <!--Mentees table goes here-->
@@ -191,6 +191,10 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="row justify-content-center" id="btnMentees" style="visibility:hidden;">
+                <button id="mentee-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+                <a id="mentee-show-less" class="btn btn-link btn-outline-white btn-info" href="#mentees">SEE LESS</a>
+            </div>
         </div>
     </div>
 </section>
@@ -267,7 +271,7 @@
 
         loadProfiles(); // call function to load profiles
         loadFaqComponent();
-        loadMentees();
+        loadMentees('https://script.google.com/macros/s/AKfycbz_Bdaau2mDB6yd00DXNyxaVBg0zddxL96rF5hS6zHSia6GjtzioIy1R057ohqnr-D0_A/exec');
     });
 
     //function to load profile data
@@ -305,19 +309,6 @@
                     //hide button
                     $("#btnShowMore").hide();
                 }
-            }
-        });
-    }
-
-    function loadMentees() {
-        $.ajax({
-            type: 'get',
-            url: 'https://script.google.com/macros/s/AKfycbz_Bdaau2mDB6yd00DXNyxaVBg0zddxL96rF5hS6zHSia6GjtzioIy1R057ohqnr-D0_A/exec',
-            dataType: 'json',
-            success: function (data) {
-                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
-                //display mentees
-                $("#teamMentees").html(templateMentees);
             }
         });
     }
