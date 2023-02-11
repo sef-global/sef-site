@@ -88,33 +88,33 @@ function renderCohortCheckboxes(){
         checkboxYears.push({ id: years[i] });
     }
     var data = {checkboxes:checkboxYears};
-    var template = document.getElementById("template").innerHTML;
+    var template = document.getElementById("cohort").innerHTML;
     var output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
+}
+function checkboxCheckStatus(){
+    for(let i=years[0]; i<=years[years.length-1]; i++){  //function to return true if all checkboxes are not selected
+        if(document.getElementById(i).checked){
+            return false;
+        }
+    }return true;
 }
 function filterByYear(){
     let mentorsData = [];
     let menteesData = [];
-    let temporyMentorData = [];
-    let temporyMenteeData=[];
-    if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
+    if(checkboxCheckStatus()){
         renderAllProfiles();
     }else{
         for(let year=years[0]; year<=years[years.length-1]; year++){
             if(document.getElementById(year).checked)
             {
-                for(let i=0; i<mentors.length; i++){
-                    if(mentors[i].year == year){
-                        temporyMentorData.push(mentors[i])
-                    }
+                function checkYears(element) {
+                    return element.year == year;
                 }
-                for(let i=0; i<mentees.length; i++){
-                    if(mentees[i].year == year){
-                        temporyMenteeData.push(mentees[i])
-                    }
-                }
-                mentorsData = mentorsData.concat(temporyMentorData);
-                menteesData = menteesData.concat(temporyMenteeData);
+                const filteredMentors = mentors.filter(checkYears);
+                const filteredMentees = mentees.filter(checkYears);
+                mentorsData = mentorsData.concat(filteredMentors);
+                menteesData = menteesData.concat(filteredMentees);
             }
         }
         renderProfiles(mentorsData,menteesData)

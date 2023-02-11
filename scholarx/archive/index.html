@@ -195,14 +195,14 @@
 </script>
 
 <!-- template COHORT filters-->
-<script id="template" type="x-tmpl-mustache">
+<script id="cohort" type="x-tmpl-mustache">
     {{#checkboxes}}
     <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
         <input class="custom-control-input" id={{id}} type="checkbox" onclick="filterByYear()">
         <label class="custom-control-label" for={{id}}>{{id}}</label>
     </button>
     {{/checkboxes}}
-  </script>
+</script>
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
