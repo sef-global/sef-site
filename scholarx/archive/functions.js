@@ -4,6 +4,7 @@ $(function () {
 
 let mentors = []
 let mentees = []
+let years = []
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -57,13 +58,16 @@ async function getData() {
 async function loadData() {
     const {data}  = await getData();
     for(let i=0; i<data.length; i++){
+        years.push(data[i].year)
         if (data[i].type == "mentor"){
             mentors.push(data[i])
         }else {
             mentees.push(data[i])
         }
     }
+    years = [...new Set(years)]
     renderAllProfiles();
+    renderCohortCheckboxes();
 }
 loadData();
 function renderProfiles(mentorYear,menteeYear) {
@@ -78,19 +82,41 @@ function renderAllProfiles() {
     $("#mentorProfiles").html(mentorProfiles);
     $("#menteeProfiles").html(menteeProfiles);
 }
+function renderCohortCheckboxes(){
+    const checkboxYears = []
+    for(let i=0; i<years.length; i++){
+        checkboxYears.push({ id: years[i] });
+    }
+    var data = {checkboxes:checkboxYears};
+    var template = document.getElementById("template").innerHTML;
+    var output = Mustache.render(template, data);
+    document.getElementById("cohort-filters").innerHTML = output;
+}
 function filterByYear(){
     let mentorsData = [];
     let menteesData = [];
+    let temporyMentorData = [];
+    let temporyMenteeData=[];
     if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
         renderAllProfiles();
     }else{
-        for(let year=2019; year<2022; year++){
+        for(let year=years[0]; year<=years[years.length-1]; year++){
             if(document.getElementById(year).checked)
             {
-                mentorsData = mentorsData.concat(mentors[year]),
-                menteesData = menteesData.concat(mentees[year]),
-                renderProfiles(mentorsData,menteesData)
+                for(let i=0; i<mentors.length; i++){
+                    if(mentors[i].year == year){
+                        temporyMentorData.push(mentors[i])
+                    }
+                }
+                for(let i=0; i<mentees.length; i++){
+                    if(mentees[i].year == year){
+                        temporyMenteeData.push(mentees[i])
+                    }
+                }
+                mentorsData = mentorsData.concat(temporyMentorData);
+                menteesData = menteesData.concat(temporyMenteeData);
             }
         }
+        renderProfiles(mentorsData,menteesData)
     }
 }
