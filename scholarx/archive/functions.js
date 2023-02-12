@@ -90,17 +90,8 @@ function renderCohortCheckboxes(){
     let output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
 }
-function getSelectedYears(){
-    const selectedCheckboxes = []
-    for(let i=years[0]; i<=years[years.length-1]; i++){
-        if(document.getElementById(i).checked){
-            selectedCheckboxes.push(i)
-        }
-    }
-    return selectedCheckboxes;
-}
 function filterByYear() {
-    const selectedYears = getSelectedYears();
+    const selectedYears = years.filter((year) => document.getElementById(year).checked);
     if (selectedYears.length == 0 || selectedYears.length == years.length) {
        renderAllProfiles();
        return;
