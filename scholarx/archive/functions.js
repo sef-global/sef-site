@@ -83,40 +83,29 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function renderCohortCheckboxes(){
-    const checkboxYears = []
-    for(let i=0; i<years.length; i++){
-        checkboxYears.push({ id: years[i] });
-    }
-    var data = {checkboxes:checkboxYears};
-    var template = document.getElementById("cohort").innerHTML;
-    var output = Mustache.render(template, data);
+    const data = { checkboxes: years.map(function(year) {
+        return { id: year };
+    }) };
+    let template = document.getElementById("cohort").innerHTML;
+    let output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
 }
-function checkboxCheckStatus(){
-    for(let i=years[0]; i<=years[years.length-1]; i++){  //function to return true if all checkboxes are not selected
+function getSelectedYears(){
+    const selectedCheckboxes = []
+    for(let i=years[0]; i<=years[years.length-1]; i++){
         if(document.getElementById(i).checked){
-            return false;
+            selectedCheckboxes.push(i)
         }
-    }return true;
-}
-function filterByYear(){
-    let mentorsData = [];
-    let menteesData = [];
-    if(checkboxCheckStatus()){
-        renderAllProfiles();
-    }else{
-        for(let year=years[0]; year<=years[years.length-1]; year++){
-            if(document.getElementById(year).checked)
-            {
-                function checkYears(element) {
-                    return element.year == year;
-                }
-                const filteredMentors = mentors.filter(checkYears);
-                const filteredMentees = mentees.filter(checkYears);
-                mentorsData = mentorsData.concat(filteredMentors);
-                menteesData = menteesData.concat(filteredMentees);
-            }
-        }
-        renderProfiles(mentorsData,menteesData)
     }
+    return selectedCheckboxes;
 }
+function filterByYear() {
+    const selectedYears = getSelectedYears();
+    if (selectedYears.length == 0 || selectedYears.length == years.length) {
+       renderAllProfiles();
+       return;
+    }
+    filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+    filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+    renderProfiles(filteredMentors, filteredMentees);
+ }
