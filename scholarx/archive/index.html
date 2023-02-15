@@ -76,22 +76,7 @@
         <h6>COHORT</h6>
         <hr>
         <div class="mt-2 mb-5">
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2019" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2019">2019</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2020" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2020">2020</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2021" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2021">2021</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2022" type="checkbox">
-                <label class="custom-control-label" for="2022">2022</label>
-            </button>
+            <div id="cohort-filters"></div>
         </div>
         <div id="industry-filter">
             <h6>INDUSTRY</h6>
@@ -209,6 +194,15 @@
     {{/menteeProfiles}}     
 </script>
 
+<!-- template COHORT filters-->
+<script id="cohort" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{id}} type="checkbox" onclick="filterByYear()">
+        <label class="custom-control-label" for={{id}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

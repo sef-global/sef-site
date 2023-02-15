@@ -4,6 +4,7 @@ $(function () {
 
 let mentors = []
 let mentees = []
+let years = []
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -57,13 +58,16 @@ async function getData() {
 async function loadData() {
     const {data}  = await getData();
     for(let i=0; i<data.length; i++){
+        years.push(data[i].year)
         if (data[i].type == "mentor"){
             mentors.push(data[i])
         }else {
             mentees.push(data[i])
         }
     }
+    years = [...new Set(years)]
     renderAllProfiles();
+    renderCohortCheckboxes();
 }
 loadData();
 function renderProfiles(mentorYear,menteeYear) {
@@ -78,19 +82,21 @@ function renderAllProfiles() {
     $("#mentorProfiles").html(mentorProfiles);
     $("#menteeProfiles").html(menteeProfiles);
 }
-function filterByYear(){
-    let mentorsData = [];
-    let menteesData = [];
-    if(!document.getElementById("2019").checked && !document.getElementById("2020").checked && !document.getElementById("2021").checked){
-        renderAllProfiles();
-    }else{
-        for(let year=2019; year<2022; year++){
-            if(document.getElementById(year).checked)
-            {
-                mentorsData = mentorsData.concat(mentors[year]),
-                menteesData = menteesData.concat(mentees[year]),
-                renderProfiles(mentorsData,menteesData)
-            }
-        }
-    }
+function renderCohortCheckboxes(){
+    const data = { checkboxes: years.map(function(year) {
+        return { id: year };
+    }) };
+    let template = document.getElementById("cohort").innerHTML;
+    let output = Mustache.render(template, data);
+    document.getElementById("cohort-filters").innerHTML = output;
 }
+function filterByYear() {
+    const selectedYears = years.filter((year) => document.getElementById(year).checked);
+    if (selectedYears.length == 0 || selectedYears.length == years.length) {
+       renderAllProfiles();
+       return;
+    }
+    filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+    filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+    renderProfiles(filteredMentors, filteredMentees);
+ }
