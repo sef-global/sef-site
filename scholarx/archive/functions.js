@@ -95,6 +95,7 @@ function uncheckCheckboxes(){
     for(let i in industries){
         document.getElementById(i.split(' ')[0]) = false;
     }
+    renderAllProfiles()
 }
 function renderCohortCheckboxes(){
     const data = { checkboxes: years.map(function(year) {
