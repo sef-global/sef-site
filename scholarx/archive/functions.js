@@ -89,13 +89,13 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function uncheckCheckboxes(){
-    for(let i in years){
-        document.getElementById(i) = false;
+    for(let year in years){
+        document.getElementById(year) = false;
     }
-    for(let i in industries){
-        document.getElementById(i.split(' ')[0]) = false;
+    for(let industry in industries){
+        document.getElementById(industry.split(' ')[0]) = false;
     }
-    renderAllProfiles()
+    renderAllProfiles();
 }
 function renderCohortCheckboxes(){
     const data = { checkboxes: years.map(function(year) {
@@ -118,7 +118,6 @@ function filterByIndustry(industry){
     const selectedIndustries = industries.filter((industry) => document.getElementById(industry.split(' ')[0]).checked);
     if(industry === "all"){
        uncheckCheckboxes(); 
-       renderAllProfiles();
     } else{
         if(selectedYears.length == 0 || selectedYears.length == years.length){
             filteredMentors = mentors;
@@ -126,11 +125,11 @@ function filterByIndustry(industry){
             filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
             filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
         }
-        for(let i in industries){
-            if(document.getElementById(industries[i].split(' ')[0]).checked){
-                for(let j in filteredMentors){
-                    if(filteredMentors[j].fields === industries[i]){
-                        mentorsData.push(filteredMentors[j])
+        for(let industry in industries){
+            if(document.getElementById(industries[industry].split(' ')[0]).checked){
+                for(let mentor in filteredMentors){
+                    if(filteredMentors[mentor].fields === industries[industry]){
+                        mentorsData.push(filteredMentors[mentor])
                     }
                 }
             }
