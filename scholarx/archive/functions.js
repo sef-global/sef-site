@@ -71,9 +71,14 @@ async function loadData() {
     }
     years = [...new Set(years)]
     industries = [...new Set(industries)]
-    industries.pop(industries.length-1)
-    //alert(industries)
-    //industries.shift()
+    //remove unwanted industry fields (to consider as an industry it need to be a string and string length need to be > 0 )
+    let filteredIndustries = []
+    for(let i=0; i<industries.length; i++){
+        if(typeof(industries[i]) === 'string' && industries[i].length > 0){
+            filteredIndustries.push(industries[i])
+        }
+    }
+    industries = filteredIndustries;
     renderAllProfiles();
     renderCohortCheckboxes();
 }
@@ -91,11 +96,11 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
 }
 function uncheckCheckboxes(){
-    for(let i=2019; i<=years[years.length-1]; i++){
+    for(let i=years.sort()[0]; i<=years[years.length-1]; i++){
         document.getElementById(i).checked = false;
     }
     for(let i=0; i<industries.length; i++){
-        document.getElementById(industries[i].split(' ')[0]).checked = false;
+        document.getElementById(industries[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
 }
 function renderCohortCheckboxes(){
@@ -103,7 +108,7 @@ function renderCohortCheckboxes(){
         return { id: year };
     }) };
     const industriesData = { checkboxes: industries.map(function(industry) {
-        return { id: industry }
+        return { id: industry , htmlId:industry.replace(/\s+/g, '_').toLowerCase()}
     }) };
     let template = document.getElementById("cohort").innerHTML;
     let output = Mustache.render(template, data);
@@ -116,7 +121,7 @@ function renderCohortCheckboxes(){
 function filterByIndustry(industry){
     let mentorsData = []
     const selectedYears = years.filter((year) => document.getElementById(year).checked);
-    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.split(' ')[0]).checked);
+    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
     if(industry === 'all'){
        uncheckCheckboxes(); 
        renderAllProfiles()
@@ -129,7 +134,7 @@ function filterByIndustry(industry){
             filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
         }
         for(let industry in industries){
-            if(document.getElementById(industries[industry].split(' ')[0]).checked){
+            if(document.getElementById(industries[industry].replace(/\s+/g, '_').toLowerCase()).checked){
                 for(let mentor in filteredMentors){
                     if(filteredMentors[mentor].fields === industries[industry]){
                         mentorsData.push(filteredMentors[mentor])
@@ -145,7 +150,7 @@ function filterByIndustry(industry){
 }
 function filterByYear() {
     const selectedYears = years.filter((year) => document.getElementById(year).checked);
-    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.split(' ')[0]).checked);
+    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
     if(selectedIndustries == 0 && selectedYears == 0){
         renderAllProfiles()
         return
