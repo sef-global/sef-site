@@ -71,7 +71,9 @@ async function loadData() {
     }
     years = [...new Set(years)]
     industries = [...new Set(industries)]
-    industries.shift()
+    industries.pop(industries.length-1)
+    //alert(industries)
+    //industries.shift()
     renderAllProfiles();
     renderCohortCheckboxes();
 }
