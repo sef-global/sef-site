@@ -71,14 +71,9 @@ async function loadData() {
     }
     years = [...new Set(years)]
     industries = [...new Set(industries)]
-    //remove unwanted industry fields (to consider as an industry it need to be a string and string length need to be > 0 )
-    let filteredIndustries = []
-    for(let i=0; i<industries.length; i++){
-        if(typeof(industries[i]) === 'string' && industries[i].length > 0){
-            filteredIndustries.push(industries[i])
-        }
-    }
-    industries = filteredIndustries;
+    //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
+    industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
+    years = years.filter(year => typeof year === 'number' && year.toString().length > 0);
     renderAllProfiles();
     renderCohortCheckboxes();
 }
