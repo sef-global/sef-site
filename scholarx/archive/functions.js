@@ -98,6 +98,9 @@ function uncheckCheckboxes(){
         document.getElementById(industries[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
 }
+function selectedIndustriesData(){
+    return industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
+}
 function renderCohortCheckboxes(){
     const data = { checkboxes: years.map(function(year) {
         return { id: year };
@@ -116,7 +119,7 @@ function renderCohortCheckboxes(){
 function filterByIndustry(industry){
     let mentorsData = []
     const selectedYears = years.filter((year) => document.getElementById(year).checked);
-    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
+    const selectedIndustries = selectedIndustriesData();
     if(industry === 'all'){
        uncheckCheckboxes(); 
        renderAllProfiles()
@@ -139,14 +142,14 @@ function filterByIndustry(industry){
         }
         renderProfiles(mentorsData,filteredMentees)
     }
-    if(selectedIndustries == 0 || selectedIndustries == industries.length){
+    if(selectedIndustries.length == 0){
         filterByYear();
     }
 }
 function filterByYear() {
     const selectedYears = years.filter((year) => document.getElementById(year).checked);
-    const selectedIndustries = industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
-    if(selectedIndustries == 0 && selectedYears == 0){
+    const selectedIndustries = selectedIndustriesData();
+    if(selectedIndustries.length == 0 && selectedYears.length == 0){
         renderAllProfiles()
         return
     }
