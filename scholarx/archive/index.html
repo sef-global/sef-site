@@ -82,32 +82,8 @@
             <h6>INDUSTRY</h6>
             <hr>
             <div class="mt-2 mb-5">
-                <button class="btn btn-sm active mb-3" onclick="filterProfiles('all')"> Show all</button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Computer Science')">
-                    <input class="custom-control-input" id="chkComputerScience" type="checkbox">
-                    <label class="custom-control-label" for="chkComputerScience" onclick="filterProfiles('Computer Science')">Computer Science</label>
-                </button>
-                <br>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Engineering')">
-                    <input class="custom-control-input" id="chkEngineering" type="checkbox" >
-                    <label class="custom-control-label" for="chkEngineering"  onclick="filterProfiles('Engineering')">Engineering</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Life Sciences')">
-                    <input class="custom-control-input" id="chkLifeSciences" type="checkbox" >
-                    <label class="custom-control-label" for="chkLifeSciences" onclick="filterProfiles('Life Sciences')">Life Sciences</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Data Science & AI')">
-                    <input class="custom-control-input" id="chkDataSciencenAI" type="checkbox">
-                    <label class="custom-control-label" for="chkDataSciencenAI" onclick="filterProfiles('Data Science & AI')">Data Science & AI</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Physical Science')">
-                    <input class="custom-control-input" id="chkPhysicalScience" type="checkbox">
-                    <label class="custom-control-label" for="chkPhysicalScience" onclick="filterProfiles('Physical Science')">Physical Science</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Other')">
-                    <input class="custom-control-input" id="chkOther" type="checkbox">
-                    <label class="custom-control-label" for="chkOther" onclick="filterProfiles('Other')">Other</label>
-                </button>
+                <button class="btn btn-sm active mb-3" onclick="filterByIndustry('all')"> Show all</button>
+                <div id="dynamic-industry-filters"></div>
             </div> 
         </div>
         <div id="university-filter" class="university-filter">
@@ -192,6 +168,16 @@
             <td>{{mentor}}</td>
         </tr>
     {{/menteeProfiles}}     
+</script>
+  
+<!-- template INDUSTRY filters-->
+<script id="industry-filter-template" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByIndustry('industry')">
+        <label class="custom-control-label" for={{htmlId}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
 </script>
 
 <!-- template COHORT filters-->
