@@ -8,6 +8,7 @@ let years = []
 let industries = []
 let filteredMentees = []
 let filteredMentors = []
+let universities = []
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -37,11 +38,15 @@ $(document).ready(function(){
     $('#selection').on('change', function(){
     	var selectedValue = $(this).val();
         if(selectedValue === "mentees"){
+            uncheckCheckboxes();
+            renderAllProfiles();
             $("#showMentees").show();
             $("#showMentors").hide();
             $("#university-filter").show();
             $("#industry-filter").hide();
         } else if(selectedValue === "mentors"){
+            uncheckCheckboxes();
+            renderAllProfiles();
             $("#showMentees").hide();
             $("#showMentors").show();
             $("#university-filter").hide();
@@ -67,17 +72,34 @@ async function loadData() {
             mentors.push(data[i])
         }else {
             mentees.push(data[i])
+            universities.push(data[i].university)
         }
     }
     years = [...new Set(years)]
     industries = [...new Set(industries)]
+    universities = [...new Set(universities)]
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
+    universities = universities.filter(university => typeof university === 'string' && university.trim().length > 0);
     years = years.filter(year => typeof year === 'number' && year.toString().length > 0);
     renderAllProfiles();
     renderCohortCheckboxes();
 }
 loadData();
+//university filtering
+$(document).ready(function(){
+    $('#dynamic-university-dropdowns').on('change', function(){
+        let menteesData = [];
+    	var selectedUniversity = $(this).val();
+        if(selectedYearsData().length == 0){
+            menteesData = mentees;
+        }else{
+            menteesData = filteredMentees;
+        }
+        menteesData = menteesData.filter(mentee => mentee.university && mentee.university.replace(/\s+/g, '_').toLowerCase() === selectedUniversity);
+        renderProfiles(mentors,menteesData)
+    });
+});
 function renderProfiles(mentorYear,menteeYear) {
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
@@ -111,6 +133,9 @@ function renderCohortCheckboxes(){
     const industriesData = { checkboxes: industries.map(function(industry) {
         return { id: industry , htmlId:industry.replace(/\s+/g, '_').toLowerCase()}
     }) };
+    const universitiesData = { checkboxes: universities.map(function(university) {
+        return { id: university , htmlId:university.replace(/\s+/g, '_').toLowerCase()};
+    }) };
     let template = document.getElementById("cohort").innerHTML;
     let output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
@@ -118,6 +143,10 @@ function renderCohortCheckboxes(){
     let industryTemplate = document.getElementById("industry-filter-template").innerHTML;
     let industry = Mustache.render(industryTemplate, industriesData);
     document.getElementById("dynamic-industry-filters").innerHTML = industry;
+    //render university dropdowns
+    let universityTemplate = document.getElementById("university-template").innerHTML;
+    let university = Mustache.render(universityTemplate, universitiesData);
+    document.getElementById("dynamic-university-dropdowns").innerHTML = university;
 }
 function filterByIndustry(industry){
     let mentorsData = []
@@ -150,6 +179,7 @@ function filterByIndustry(industry){
     }
 }
 function filterByYear() {
+    $("#dynamic-university-dropdowns").prop("selectedIndex", -1);
     const selectedYears = selectedYearsData();
     const selectedIndustries = selectedIndustriesData();
     if(selectedIndustries.length == 0 && selectedYears.length == 0){
