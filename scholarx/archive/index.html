@@ -89,14 +89,12 @@
         <div id="university-filter" class="university-filter">
             <h6>UNIVERSITY</h6>
             <hr>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  All Universities
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <select class="dropdown mt-2" id="dynamic-university-dropdowns" size="8"></select>
+            <div class="mt-2 mb-5">
+                <button class="btn btn-sm active mb-3" onclick="filterByUniversity('all')"> Show all</button>
+                <div class="university-filter-scroller">
+                    <div id="dynamic-university-filters"></div>
                 </div>
-              </div>
+            </div>
         </div>
       </div>
         <div class="col-9">
@@ -192,7 +190,10 @@
 <!--template UNIVERSITY dropdowns-->
 <script id="university-template" type="x-tmpl-mustache">
     {{#checkboxes}}
-        <option class="dropdown-item" value={{htmlId}}>{{id}}</option>
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByUniversity('university')">
+        <label class="custom-control-label" style="width: 140px; word-wrap: break-word; white-space: pre-line;" for={{htmlId}}><small>{{id}}</small></label>
+    </button>
     {{/checkboxes}}
 </script>
 <!-- Core -->

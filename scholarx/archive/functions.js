@@ -86,20 +86,6 @@ async function loadData() {
     renderCohortCheckboxes();
 }
 loadData();
-//university filtering
-$(document).ready(function(){
-    $('#dynamic-university-dropdowns').on('change', function(){
-        let menteesData = [];
-    	var selectedUniversity = $(this).val();
-        if(selectedYearsData().length == 0){
-            menteesData = mentees;
-        }else{
-            menteesData = filteredMentees;
-        }
-        menteesData = menteesData.filter(mentee => mentee.university && mentee.university.replace(/\s+/g, '_').toLowerCase() === selectedUniversity);
-        renderProfiles(mentors,menteesData)
-    });
-});
 function renderProfiles(mentorYear,menteeYear) {
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
@@ -119,12 +105,19 @@ function uncheckCheckboxes(){
     for(let i=0; i<industries.length; i++){
         document.getElementById(industries[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
+    for(let i=0; i<universities.length; i++){
+        document.getElementById(universities[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
+    }
 }
+//remove space between words  eg: university of moratuwa -> university_of_moratuwa
 function selectedIndustriesData(){
     return industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
 }
 function selectedYearsData(){
     return years.filter((year) => document.getElementById(year).checked);
+}
+function selectedUniversitiesData(){
+    return universities.filter((university) => document.getElementById(university.replace(/\s+/g, '_').toLowerCase()).checked);
 }
 function renderCohortCheckboxes(){
     const data = { checkboxes: years.map(function(year) {
@@ -143,10 +136,40 @@ function renderCohortCheckboxes(){
     let industryTemplate = document.getElementById("industry-filter-template").innerHTML;
     let industry = Mustache.render(industryTemplate, industriesData);
     document.getElementById("dynamic-industry-filters").innerHTML = industry;
-    //render university dropdowns
+    //render university filters
     let universityTemplate = document.getElementById("university-template").innerHTML;
     let university = Mustache.render(universityTemplate, universitiesData);
-    document.getElementById("dynamic-university-dropdowns").innerHTML = university;
+    document.getElementById("dynamic-university-filters").innerHTML = university;
+}
+function filterByUniversity(university){
+    let menteesData = []
+    const selectedYears = selectedYearsData();
+    const selectedUniversities = selectedUniversitiesData();
+    if(university === 'all'){
+       uncheckCheckboxes(); 
+       renderAllProfiles()
+       return
+    } else{
+        if(selectedYears.length == 0 || selectedYears.length == years.length){
+            filteredMentees = mentees;
+        } else{
+            filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+            filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+        }
+        for(let university in universities){
+            if(document.getElementById(universities[university].replace(/\s+/g, '_').toLowerCase()).checked){
+                for(let mentee in filteredMentees){
+                    if(filteredMentees[mentee].university === universities[university]){
+                        menteesData.push(filteredMentees[mentee])
+                    }
+                }
+            }
+        }
+        renderProfiles(filteredMentors,menteesData)
+    }
+    if(selectedUniversities.length == 0){
+        filterByYear();
+    }
 }
 function filterByIndustry(industry){
     let mentorsData = []
@@ -179,9 +202,24 @@ function filterByIndustry(industry){
     }
 }
 function filterByYear() {
-    $("#dynamic-university-dropdowns").prop("selectedIndex", -1);
     const selectedYears = selectedYearsData();
     const selectedIndustries = selectedIndustriesData();
+    const selectedUniversities = selectedUniversitiesData();
+    //helps to achieve mentees page cofunctionality with cohort filters 
+    if(document.getElementById("selection").value === "mentees"){
+        if(selectedUniversities.length == 0 && selectedYears.length == 0){
+            renderAllProfiles()
+            return
+        }
+        if (selectedUniversities.length == 0) {
+           filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+           filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+           renderProfiles(filteredMentors, filteredMentees);
+        } else{
+            filterByUniversity("")
+        }
+        return;
+    }//mentors page cofunctionality
     if(selectedIndustries.length == 0 && selectedYears.length == 0){
         renderAllProfiles()
         return
