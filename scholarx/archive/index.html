@@ -206,9 +206,9 @@
 <!--template UNIVERSITY dropdowns-->
 <script id="university-template" type="x-tmpl-mustache">
     {{#checkboxes}}
-    <button class="btn btn-sm university-checkbox mb-3 btn-checkbox">
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
         <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByUniversity('university')">
-        <label class="university-label custom-control-label" style="font-size: 13px;" for={{htmlId}}>{{id}}</label>
+        <label class="university-label custom-control-label" style="font-size: 13px; text-transform: capitalize; for={{htmlId}}>{{id}}</label>
     </button>
     {{/checkboxes}}
 </script>

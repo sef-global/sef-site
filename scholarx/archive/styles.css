@@ -90,10 +90,6 @@ hr {
   white-space: pre-line;
 }
 
-.university-checkbox {
-  text-transform: capitalize;
-}
-
 #mentorProfiles:hover {
   cursor: pointer;
 }
