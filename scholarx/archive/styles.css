@@ -93,3 +93,11 @@ hr {
 .university-checkbox {
   text-transform: capitalize;
 }
+
+#mentorProfiles:hover {
+  cursor: pointer;
+}
+
+#menteeProfiles:hover {
+  cursor: pointer;
+}
