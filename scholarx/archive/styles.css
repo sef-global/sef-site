@@ -78,8 +78,18 @@ hr {
 }
 
 .university-filter-scroller{
-  max-height: 300px; 
+  max-height: 350px; 
   overflow-y: auto;
   overflow-x: hidden;
-  padding-right: 20px; width: 150;
+}
+
+.university-label{
+  text-align: left; 
+  width: 160px;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.university-checkbox {
+  text-transform: capitalize;
 }
