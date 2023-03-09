@@ -76,3 +76,10 @@ hr {
 .university-filter {
   display: none;
 }
+
+.no-results-page{
+  height: 850px;
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
+}

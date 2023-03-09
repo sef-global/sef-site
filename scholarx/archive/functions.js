@@ -19,16 +19,23 @@ $(document).ready(function () {
         $("#menteeProfiles tr").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
-    });
-    $$('div.tags').find('input:checkbox').live('click', function () {
-        $('#mentorProfiles > tr').hide();
-        $('#menteeProfiles > tr').hide();
-        $('div.tags').find('input:checked').each(function () {
-            $('#mentorProfiles > tr.' + $(this).val()).show();
-        });
-        $('div.tags').find('input:checked').each(function () {
-            $('#menteeProfiles > tr.' + $(this).val()).show();
-        });
+        if(document.getElementById("selection").value === "mentors"){
+            $("#showMentors").show();
+            if($("#mentorProfiles tr:visible").length === 0){
+                $("#noResultsMessage").show();
+                $("#showMentors").hide();
+            }else{
+                $("#noResultsMessage").hide();
+            }
+        }else{
+            $("#showMentees").show();
+            if($("#menteeProfiles tr:visible").length === 0){
+                $("#noResultsMessage").show();
+                $("#showMentees").hide();
+            }else{
+                $("#noResultsMessage").hide();
+            }
+        }
     });
 });
 
