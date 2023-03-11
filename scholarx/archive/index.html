@@ -89,15 +89,12 @@
         <div id="university-filter" class="university-filter">
             <h6>UNIVERSITY</h6>
             <hr>
-            <div class="dropdown mt-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  All Universities
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </div>
+            <div class="mt-2 mb-5">
+                <button class="btn btn-sm active mb-3" onclick="filterByUniversity('all')"> Show all</button>
+                <div class="university-filter-scroller">
+                    <div id="dynamic-university-filters"></div>
+                </div>
+            </div>
         </div>
       </div>
         <div class="col-9">
@@ -186,6 +183,16 @@
     <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
         <input class="custom-control-input" id={{id}} type="checkbox" onclick="filterByYear()">
         <label class="custom-control-label" for={{id}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
+
+<!--template UNIVERSITY dropdowns-->
+<script id="university-template" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByUniversity('university')">
+        <label class="university-label custom-control-label" style="font-size: 13px; text-transform: capitalize;" for={{htmlId}}>{{id}}</label>
     </button>
     {{/checkboxes}}
 </script>

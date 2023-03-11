@@ -8,6 +8,7 @@ let years = []
 let industries = []
 let filteredMentees = []
 let filteredMentors = []
+let universities = []
 
 //search mentors and mentees
 $(document).ready(function () {
@@ -37,11 +38,15 @@ $(document).ready(function(){
     $('#selection').on('change', function(){
     	var selectedValue = $(this).val();
         if(selectedValue === "mentees"){
+            uncheckCheckboxes();
+            renderAllProfiles();
             $("#showMentees").show();
             $("#showMentors").hide();
             $("#university-filter").show();
             $("#industry-filter").hide();
         } else if(selectedValue === "mentors"){
+            uncheckCheckboxes();
+            renderAllProfiles();
             $("#showMentees").hide();
             $("#showMentors").show();
             $("#university-filter").hide();
@@ -67,12 +72,17 @@ async function loadData() {
             mentors.push(data[i])
         }else {
             mentees.push(data[i])
+            universities.push(data[i].university)
         }
     }
     years = [...new Set(years)]
     industries = [...new Set(industries)]
+    universities = [...new Set(universities)]
+    // Sort the universities array alphabetically
+    universities.sort();
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
+    universities = universities.filter(university => typeof university === 'string' && university.trim().length > 0);
     years = years.filter(year => typeof year === 'number' && year.toString().length > 0);
     renderAllProfiles();
     renderCohortCheckboxes();
@@ -97,12 +107,19 @@ function uncheckCheckboxes(){
     for(let i=0; i<industries.length; i++){
         document.getElementById(industries[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
+    for(let i=0; i<universities.length; i++){
+        document.getElementById(universities[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
+    }
 }
+//remove space between words  eg: university of moratuwa -> university_of_moratuwa
 function selectedIndustriesData(){
     return industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
 }
 function selectedYearsData(){
     return years.filter((year) => document.getElementById(year).checked);
+}
+function selectedUniversitiesData(){
+    return universities.filter((university) => document.getElementById(university.replace(/\s+/g, '_').toLowerCase()).checked);
 }
 function renderCohortCheckboxes(){
     const data = { checkboxes: years.map(function(year) {
@@ -111,6 +128,9 @@ function renderCohortCheckboxes(){
     const industriesData = { checkboxes: industries.map(function(industry) {
         return { id: industry , htmlId:industry.replace(/\s+/g, '_').toLowerCase()}
     }) };
+    const universitiesData = { checkboxes: universities.map(function(university) {
+        return { id: university , htmlId:university.replace(/\s+/g, '_').toLowerCase()};
+    }) };
     let template = document.getElementById("cohort").innerHTML;
     let output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
@@ -118,6 +138,40 @@ function renderCohortCheckboxes(){
     let industryTemplate = document.getElementById("industry-filter-template").innerHTML;
     let industry = Mustache.render(industryTemplate, industriesData);
     document.getElementById("dynamic-industry-filters").innerHTML = industry;
+    //render university filters
+    let universityTemplate = document.getElementById("university-template").innerHTML;
+    let university = Mustache.render(universityTemplate, universitiesData);
+    document.getElementById("dynamic-university-filters").innerHTML = university;
+}
+function filterByUniversity(university){
+    let menteesData = []
+    const selectedYears = selectedYearsData();
+    const selectedUniversities = selectedUniversitiesData();
+    if(university === 'all'){
+       uncheckCheckboxes(); 
+       renderAllProfiles()
+       return
+    } else{
+        if(selectedYears.length == 0 || selectedYears.length == years.length){
+            filteredMentees = mentees;
+        } else{
+            filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+            filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+        }
+        for(let university in universities){
+            if(document.getElementById(universities[university].replace(/\s+/g, '_').toLowerCase()).checked){
+                for(let mentee in filteredMentees){
+                    if(filteredMentees[mentee].university === universities[university]){
+                        menteesData.push(filteredMentees[mentee])
+                    }
+                }
+            }
+        }
+        renderProfiles(filteredMentors,menteesData)
+    }
+    if(selectedUniversities.length == 0){
+        filterByYear();
+    }
 }
 function filterByIndustry(industry){
     let mentorsData = []
@@ -152,6 +206,22 @@ function filterByIndustry(industry){
 function filterByYear() {
     const selectedYears = selectedYearsData();
     const selectedIndustries = selectedIndustriesData();
+    const selectedUniversities = selectedUniversitiesData();
+    //helps to achieve mentees page cofunctionality with cohort filters 
+    if(document.getElementById("selection").value === "mentees"){
+        if(selectedUniversities.length == 0 && selectedYears.length == 0){
+            renderAllProfiles()
+            return
+        }
+        if (selectedUniversities.length == 0) {
+           filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+           filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+           renderProfiles(filteredMentors, filteredMentees);
+        } else{
+            filterByUniversity("")
+        }
+        return;
+    }//mentors page cofunctionality
     if(selectedIndustries.length == 0 && selectedYears.length == 0){
         renderAllProfiles()
         return
