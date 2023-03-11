@@ -83,3 +83,16 @@ hr {
   margin-bottom:auto;
   text-align:center;
 }
+
+.university-filter-scroller{
+  max-height: 350px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.university-label{
+  text-align: left; 
+  width: 160px;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
