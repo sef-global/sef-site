@@ -89,3 +89,11 @@ hr {
   word-wrap: break-word;
   white-space: pre-line;
 }
+
+#mentorProfiles:hover {
+  cursor: pointer;
+}
+
+#menteeProfiles:hover {
+  cursor: pointer;
+}

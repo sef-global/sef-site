@@ -75,6 +75,13 @@ async function loadData() {
             universities.push(data[i].university)
         }
     }
+    //add index for all the items 
+    mentors.forEach(function (mentors, index) {
+        mentors.index = index;
+    });
+    mentees.forEach(function (mentees, index) {
+        mentees.index = index;
+    });
     years = [...new Set(years)]
     industries = [...new Set(industries)]
     universities = [...new Set(universities)]
@@ -233,4 +240,18 @@ function filterByYear() {
     } else{
         filterByIndustry("")
     }
+}
+function openMentorProfile(index){
+    const profile = mentors[parseInt(index)];
+    const template = $("#template-profile-mentor-content").html();
+    const content = Mustache.render(template, profile);
+    $("#profile-modal-content").html(content);
+    $("#profile-modal").modal();
+}
+function openMenteeProfile(index){
+    const profile = mentees[parseInt(index)];
+    const template = $("#template-profile-mentee-content").html();
+    const content = Mustache.render(template, profile);
+    $("#profile-modal-content").html(content);
+    $("#profile-modal").modal();
 }
