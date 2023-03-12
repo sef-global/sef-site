@@ -30,6 +30,7 @@
     <link type="text/css" href="./styles.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e2941913d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -101,7 +102,14 @@
             <div class="search-filter">
                 <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
             </div>
-            <!--mentor details-->
+            <!--no results message-->
+            <div id="noResultsMessage" class="no-results-page" style="display: none;">
+                <span class="no-results-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                <p class="no-results-text">No Results Found</p>
+            </div>
+            <!--mentor details-->        
             <div id="showMentors" class="mentors-table">
                 <table>
                     <thead>

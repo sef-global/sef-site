@@ -77,6 +77,23 @@ hr {
   display: none;
 }
 
+.no-results-page{
+  height: 850px;
+  margin-top: 50px;
+  text-align:center;
+}
+
+.no-results-icon{
+  font-size: 150px;
+  color: rgb(215, 215, 215);
+}
+
+.no-results-text{
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(215, 215, 215);
+}
+
 .university-filter-scroller{
   max-height: 350px; 
   overflow-y: auto;

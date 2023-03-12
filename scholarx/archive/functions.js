@@ -20,16 +20,23 @@ $(document).ready(function () {
         $("#menteeProfiles tr").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
-    });
-    $$('div.tags').find('input:checkbox').live('click', function () {
-        $('#mentorProfiles > tr').hide();
-        $('#menteeProfiles > tr').hide();
-        $('div.tags').find('input:checked').each(function () {
-            $('#mentorProfiles > tr.' + $(this).val()).show();
-        });
-        $('div.tags').find('input:checked').each(function () {
-            $('#menteeProfiles > tr.' + $(this).val()).show();
-        });
+        if(document.getElementById("selection").value === "mentors"){
+            $("#showMentors").show();
+            if($("#mentorProfiles tr:visible").length === 0){
+                $("#noResultsMessage").show();
+                $("#showMentors").hide();
+            }else{
+                $("#noResultsMessage").hide();
+            }
+        }else{
+            $("#showMentees").show();
+            if($("#menteeProfiles tr:visible").length === 0){
+                $("#noResultsMessage").show();
+                $("#showMentees").hide();
+            }else{
+                $("#noResultsMessage").hide();
+            }
+        }
     });
 });
 
@@ -95,13 +102,34 @@ async function loadData() {
     renderCohortCheckboxes();
 }
 loadData();
+//this function run in every  render profiles functions to reset the page structure based on the selection
+function noRsultsPageHelper(){
+    $("#noResultsMessage").hide();
+    if(document.getElementById("selection").value === "mentors"){
+        $("#showMentors").show();
+    }else if(document.getElementById("selection").value === "mentees"){
+        $("#showMentees").show();
+    }
+}
 function renderProfiles(mentorYear,menteeYear) {
-    let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
-    let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
-    $("#mentorProfiles").html(mentorProfiles);
-    $("#menteeProfiles").html(menteeProfiles);
+    noRsultsPageHelper();
+    //show no results page if sorted mentor or mentee array is empty
+    if(document.getElementById("selection").value === "mentors" && mentorYear.length === 0){
+        $("#noResultsMessage").show();
+        $("#showMentors").hide();
+    }else if(document.getElementById("selection").value === "mentees" && menteeYear.length === 0){
+        $("#noResultsMessage").show();
+        $("#showMentees").hide();
+    //render mentors and mentees based on parameter arrays    
+    }else{
+        let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
+        let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
+        $("#mentorProfiles").html(mentorProfiles);
+        $("#menteeProfiles").html(menteeProfiles);
+    }
 }
 function renderAllProfiles() {
+    noRsultsPageHelper();
     let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentors });
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": mentees });
     $("#mentorProfiles").html(mentorProfiles);
