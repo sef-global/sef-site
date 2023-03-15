@@ -232,16 +232,12 @@
       />
       <h4>{{name}}</h4>
       <span>{{title}}</span>
-      <div class="mt-3">
-        {{#socialLinks}}
-        <a
-          href="{{url}}"
-          target="_blank"
-          class="btn btn-{{platform}} btn-icon-only rounded-circle btn-icon-rounded"
-        >
-          <i class="{{icon}}"></i>
+      <div class="linkedin mt-3">
+        <a href="{{linkedin}}"
+           target="_blank"
+           class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
+            <i class="fab fa-linkedin"></i>
         </a>
-        {{/socialLinks}}
       </div>
     </div>
     <hr />
@@ -252,13 +248,6 @@
       {{#areasOfExpertise}}
       <li>{{.}}</li>
       {{/areasOfExpertise}}
-    </ul>
-    <hr />
-    <h5>Projects :</h5>
-    <ul>
-      {{#projects}}
-      <li>{{.}}</li>
-      {{/projects}}
     </ul>
     <hr />
     <h5>Mentees :</h5>
@@ -280,17 +269,6 @@
       />
       <h4>{{name}}</h4>
       <span>{{title}}</span>
-      <div class="mt-3">
-        {{#socialLinks}}
-        <a
-          href="{{url}}"
-          target="_blank"
-          class="btn btn-{{platform}} btn-icon-only rounded-circle btn-icon-rounded"
-        >
-          <i class="{{icon}}"></i>
-        </a>
-        {{/socialLinks}}
-      </div>
     </div>
     <hr />
     <h5>Mentor :</h5>
