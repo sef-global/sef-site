@@ -92,8 +92,10 @@ async function loadData() {
     years = [...new Set(years)]
     industries = [...new Set(industries)]
     universities = [...new Set(universities)]
-    // Sort the universities array alphabetically
+    // Sort arrays alphabetically or numeric order
     universities.sort();
+    industries.sort();
+    years.sort();
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
     universities = universities.filter(university => typeof university === 'string' && university.trim().length > 0);
