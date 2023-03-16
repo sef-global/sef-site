@@ -30,6 +30,7 @@
     <link type="text/css" href="./styles.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e2941913d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -89,22 +90,26 @@
         <div id="university-filter" class="university-filter">
             <h6>UNIVERSITY</h6>
             <hr>
-            <div class="dropdown mt-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  All Universities
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </div>
+            <div class="mt-2 mb-5">
+                <button class="btn btn-sm active mb-3" onclick="filterByUniversity('all')"> Show all</button>
+                <div class="university-filter-scroller">
+                    <div id="dynamic-university-filters"></div>
+                </div>
+            </div>
         </div>
       </div>
         <div class="col-9">
             <div class="search-filter">
                 <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
             </div>
-            <!--mentor details-->
+            <!--no results message-->
+            <div id="noResultsMessage" class="no-results-page" style="display: none;">
+                <span class="no-results-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                <p class="no-results-text">No Results Found</p>
+            </div>
+            <!--mentor details-->        
             <div id="showMentors" class="mentors-table">
                 <table>
                     <thead>
@@ -136,6 +141,22 @@
         </div>
     </div>
 </div>
+<!--profile modal template-->
+<div class="modal fade profile-modal" id="profile-modal" tabindex="-1" role="dialog" aria-labelledby="profile-modal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"
+         role="document">
+        <!-- Content for the modal goes here -->
+        <div class="modal-content">
+            <div class="pt-3 pr-3">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="profile-modal-content" class="modal-body"></div>
+        </div>
+    </div>
+</div>
 <footer class="footer">
     <div id="footer"></div>
     <!--footer goes here -->
@@ -146,7 +167,7 @@
 <!-- template mentors-->
 <script type="text/html" id="templateMentors">
     {{#mentorProfiles}}
-        <tr >
+        <tr onclick="openMentorProfile('{{index}}')">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>
@@ -159,7 +180,7 @@
 <!-- template mentees -->
 <script type="text/html" id="templateMentees">
     {{#menteeProfiles}}
-        <tr >
+        <tr onclick="openMenteeProfile('{{index}}')">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>            
@@ -189,6 +210,74 @@
     </button>
     {{/checkboxes}}
 </script>
+
+<!--template UNIVERSITY dropdowns-->
+<script id="university-template" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByUniversity('university')">
+        <label class="university-label custom-control-label" style="font-size: 13px; text-transform: capitalize;" for={{htmlId}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
+
+<!--mentor profile model-->
+<script type="text/html" id="template-profile-mentor-content">
+    <div class="text-center">
+      <img 
+        src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{image}}"
+        alt="Rounded image"
+        style="width: 300px;"
+        class="img-fluid rounded-circle profile-image border img-center shadow mb-4"
+      />
+      <h4>{{name}}</h4>
+      <span>{{title}}</span>
+      <div class="linkedin mt-3">
+        <a href="{{linkedin}}"
+           target="_blank"
+           class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
+            <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <hr />
+    <p class="text-justify">{{{bio}}}</p>
+    <hr />
+    <h5>Areas of expertise :</h5>
+    <ul>
+      {{#areasOfExpertise}}
+      <li>{{.}}</li>
+      {{/areasOfExpertise}}
+    </ul>
+    <hr />
+    <h5>Mentees :</h5>
+    <ul>
+        {{#mentees}}
+        <li>{{.}}</li>
+        {{/mentees}}
+      </ul>
+</script>
+
+<!--mentee profile model-->
+<script type="text/html" id="template-profile-mentee-content">
+    <div class="text-center">
+      <img
+        src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{image}}"
+        alt="Rounded image"
+        style="width: 300px;"
+        class="img-fluid rounded-circle profile-image border img-center shadow mb-4"
+      />
+      <h4>{{name}}</h4>
+      <span>{{title}}</span>
+    </div>
+    <hr />
+    <h5>Mentor :</h5>
+    <h6>{{mentor}}</h6>
+    <hr />
+    <h5>University :</h5>
+    <h6>{{university}}</h6>
+</script>
+
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

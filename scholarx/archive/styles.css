@@ -76,3 +76,45 @@ hr {
 .university-filter {
   display: none;
 }
+
+.no-results-page{
+  height: 850px;
+  margin-top: 50px;
+  text-align:center;
+}
+
+.no-results-icon{
+  font-size: 150px;
+  color: rgb(215, 215, 215);
+}
+
+.no-results-text{
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(215, 215, 215);
+}
+
+.university-filter-scroller{
+  max-height: 350px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.university-label{
+  text-align: left; 
+  width: 160px;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+#mentorProfiles:hover {
+  cursor: pointer;
+}
+
+#menteeProfiles:hover {
+  cursor: pointer;
+}
+
+.linkedin{
+  margin-bottom: 10px;
+}
