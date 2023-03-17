@@ -33,7 +33,3 @@
     height: 20px;
     z-index: 400;
 }
-
-.timeline > li.active:before{
-    background-color: #22c0e8;
-}
