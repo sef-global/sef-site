@@ -2,11 +2,13 @@
     height : 140px;
     object-fit : cover;
 }
+
 .timeline {
     list-style-type: none;
     position: relative;
     color: #3b53de;
 }
+
 .timeline:before {
     content: ' ';
     background: #d4d9df;
@@ -17,10 +19,12 @@
     height: 100%;
     z-index: 400;
 }
+
 .timeline > li {
     margin: 20px 0;
     padding-left: 20px;
 }
+
 .timeline > li:before {
     content: ' ';
     background: white;
