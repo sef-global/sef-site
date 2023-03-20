@@ -32,7 +32,7 @@
 
 .skeleton-author-name{
     background-color: hsl(210, 11%, 93%);
-    padding: 20px;
+    padding: 15px !important;
     margin-left: 40px;
     border-radius: 10px;
 }
