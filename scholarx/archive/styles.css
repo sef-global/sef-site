@@ -137,6 +137,9 @@ hr {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .university-filter-scroller{
+    max-height: 260px;
+  }
 }
 
 @media (min-width: 768px){
