@@ -118,3 +118,32 @@ hr {
 .linkedin{
   margin-bottom: 10px;
 }
+
+@media (max-width: 991px) {
+  .row {
+    display: block;
+  }
+  .filters {
+    width: 100%;
+  }
+  .filters.col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .table {
+    width: 100%;
+  }
+  .table.col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  .description {
+    max-width: 100%;
+  }
+  .image{
+    max-width: 100%;
+  }
+}
