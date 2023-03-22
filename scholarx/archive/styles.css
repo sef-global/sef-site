@@ -140,6 +140,9 @@ hr {
   .university-filter-scroller{
     max-height: 260px;
   }
+  .search-filter {
+    justify-content: start;
+}
 }
 
 @media (min-width: 768px){
