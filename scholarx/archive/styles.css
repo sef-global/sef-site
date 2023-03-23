@@ -142,7 +142,16 @@ hr {
   }
   .search-filter {
     justify-content: start;
-}
+  }
+  .filter-container{
+    margin-top:10px;
+  }
+  .mb-5{
+    margin-bottom: 1.5rem !important;
+  }
+  .container {
+    width: 95% !important;
+  }
 }
 
 @media (min-width: 768px){
