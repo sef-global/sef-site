@@ -10,36 +10,46 @@ let filteredMentees = []
 let filteredMentors = []
 let universities = []
 
-//search mentors and mentees
+//main search function
+function search(value){
+    $("#mentorProfiles tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    
+      $("#menteeProfiles tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+      if (document.getElementById("selection").value === "mentors") {
+        $("#showMentors").show();
+        if ($("#mentorProfiles tr:visible").length === 0) {
+          $("#noResultsMessage").show();
+          $("#showMentors").hide();
+        } else {
+          $("#noResultsMessage").hide();
+        }
+      } else {
+        $("#showMentees").show();
+        if ($("#menteeProfiles tr:visible").length === 0) {
+          $("#noResultsMessage").show();
+          $("#showMentees").hide();
+        } else {
+          $("#noResultsMessage").hide();
+        }
+      }
+}
+//we can call this function to manually execute search functionality without keyups
+function searchHelper() {
+    var searchElement = document.getElementById("search");
+    var value = searchElement.value.toLowerCase();
+    search(value)
+}
+//search mentors and mentees (only sensitive to the keyboard keyups)
 $(document).ready(function () {
     $("#search").on("keyup", function () {
         var value = $(this).val().toLowerCase();
-        $("#mentorProfiles tr").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-        $("#menteeProfiles tr").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-        if(document.getElementById("selection").value === "mentors"){
-            $("#showMentors").show();
-            if($("#mentorProfiles tr:visible").length === 0){
-                $("#noResultsMessage").show();
-                $("#showMentors").hide();
-            }else{
-                $("#noResultsMessage").hide();
-            }
-        }else{
-            $("#showMentees").show();
-            if($("#menteeProfiles tr:visible").length === 0){
-                $("#noResultsMessage").show();
-                $("#showMentees").hide();
-            }else{
-                $("#noResultsMessage").hide();
-            }
-        }
+        search(value)
     });
 });
-
 //mentor mentee transition
 $(document).ready(function(){
     $('#selection').on('change', function(){
@@ -128,6 +138,8 @@ function renderProfiles(mentorYear,menteeYear) {
         let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
         $("#mentorProfiles").html(mentorProfiles);
         $("#menteeProfiles").html(menteeProfiles);
+        //this functions helps to achive search bar cofunctionality with checkboxes
+        searchHelper();
     }
 }
 function renderAllProfiles() {
@@ -136,6 +148,7 @@ function renderAllProfiles() {
     let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": mentees });
     $("#mentorProfiles").html(mentorProfiles);
     $("#menteeProfiles").html(menteeProfiles);
+    searchHelper();
 }
 function uncheckCheckboxes(){
     for(let i=years.sort()[0]; i<=years[years.length-1]; i++){
