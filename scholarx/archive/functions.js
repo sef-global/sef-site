@@ -39,14 +39,13 @@ function search(value){
 }
 //we can call this function to manually execute search functionality without keyups
 function searchHelper() {
-    var searchElement = document.getElementById("search");
-    var value = searchElement.value.toLowerCase();
+    const value = document.getElementById("search").value.toLowerCase();
     search(value)
 }
 //search mentors and mentees (only sensitive to the keyboard keyups)
 $(document).ready(function () {
     $("#search").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
+        const value = $(this).val().toLowerCase();
         search(value)
     });
 });
