@@ -42,21 +42,20 @@
 <section class="section pb-0 bg-gradient-white mt-5">
     <div class="container">
         <div class="row row-grid align-items-center justify-content-center">
-            <div class="col-md-6">
+            <div class="description col-md-6">
                 <div class="d-flex px-3">
                     <div class="pl-4">
-                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-5 w-50">
-                        <p>ScholarX is an exclusive 6-month program aimed at providing
-                            mentoring support to a selected pool of high Potential undergraduate students
-                            based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
-                            the world’s top universities or Fortune 500 companies. It’s our free premium
-                            mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
-                            of knowledge and expertise sharing without the limitation of geographical borders.</p>
+                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-4 w-50">
+                        <p>ScholarX intends to deliver free premium mentoring assistance for the elite undergraduate
+                            students based in Sri Lanka, through the means of a Sri Lankan expatriate presently involved
+                            with one of the world’s most renowned universities or Fortune 500 companies. This program
+                            strives to create a sustainable education structure within Sri Lanka by drawing knowledge
+                            and expertise from all across the globe.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="/assets/img/scholarx/new-findmentor.png" class="img-fluid align-self-center w-100">
+            <div class="image col-md-6 px-5">
+                <img src="/scholarx/archive/images/sx-hero-image.png" class="img-fluid align-self-center w-100">
             </div>
         </div>
     </div>
@@ -64,7 +63,7 @@
 <!-- Archive Filter -->
 <div class="container filter-container">
     <div class="row">
-      <div class="col-3 mt-5">
+      <div class="filters mt-5 w-100 col-3" >
         <h6>FILTER</h6>
         <hr>
         <!--mentor mentee selection-->
@@ -98,7 +97,7 @@
             </div>
         </div>
       </div>
-        <div class="col-9">
+      <div class="table w-100 col-9">
             <div class="search-filter">
                 <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
             </div>
@@ -138,7 +137,7 @@
                     </tbody>
                 </table>
             </div>         
-        </div>
+      </div>
     </div>
 </div>
 <!--profile modal template-->
@@ -232,13 +231,15 @@
       />
       <h4>{{name}}</h4>
       <span>{{title}}</span>
+      {{#linkedin}}
       <div class="linkedin mt-3">
-        <a href="{{linkedin}}"
+        <a href="{{.}}"
            target="_blank"
            class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
-            <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
+      {{/linkedin}}
     </div>
     <hr />
     <p class="text-justify">{{{bio}}}</p>
@@ -268,7 +269,15 @@
         class="img-fluid rounded-circle profile-image border img-center shadow mb-4"
       />
       <h4>{{name}}</h4>
-      <span>{{title}}</span>
+      {{#linkedin}}
+      <div class="linkedin mt-3">
+        <a href="{{.}}"
+           target="_blank"
+           class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      {{/linkedin}}
     </div>
     <hr />
     <h5>Mentor :</h5>
