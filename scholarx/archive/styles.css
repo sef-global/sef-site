@@ -166,11 +166,11 @@ hr {
 
 .loader {
   margin: auto;
-  border: 12px solid #EAF0F6;
+  border: 10px solid #EAF0F6;
   border-radius: 50%;
-  border-top: 12px solid rgb(215, 215, 215);
-  width: 125px;
-  height: 125px;
+  border-top: 10px solid rgb(215, 215, 215);
+  width: 75px;
+  height: 75px;
   animation: spinner 4s linear infinite;
 }
 
