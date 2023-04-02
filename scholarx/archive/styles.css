@@ -166,11 +166,11 @@ hr {
 
 .loader {
   margin: auto;
-  border: 20px solid #EAF0F6;
+  border: 12px solid #EAF0F6;
   border-radius: 50%;
-  border-top: 20px solid rgb(215, 215, 215);
-  width: 200px;
-  height: 200px;
+  border-top: 12px solid rgb(215, 215, 215);
+  width: 125px;
+  height: 125px;
   animation: spinner 4s linear infinite;
 }
 
@@ -178,6 +178,12 @@ hr {
   height: 850px;
   margin-top: 100px;
   text-align:center;
+}
+
+.loading-text{
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(215, 215, 215);
 }
 
 @keyframes spinner {
