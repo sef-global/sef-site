@@ -32,6 +32,7 @@ hr {
     margin-top: 20px;
     border-radius: 5px;
     border: 1px solid #eeeeee;
+    display: none;
 }
 
 .mentors-table table {
@@ -161,4 +162,31 @@ hr {
   .image{
     max-width: 100%;
   }
+}
+
+.loader {
+  margin: auto;
+  border: 10px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 10px solid rgb(215, 215, 215);
+  width: 75px;
+  height: 75px;
+  animation: spinner 4s linear infinite;
+}
+
+.loadingAnimationPage{
+  height: 850px;
+  margin-top: 100px;
+  text-align:center;
+}
+
+.loading-text{
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(215, 215, 215);
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

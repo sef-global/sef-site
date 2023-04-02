@@ -105,6 +105,9 @@ async function loadData() {
     universities.sort();
     industries.sort();
     years.sort();
+    //hide loading animation and show mentors table after all data are fetched from API
+    $("#loadingAnimation").hide();
+    $("#showMentors").show();
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
     universities = universities.filter(university => typeof university === 'string' && university.trim().length > 0);
