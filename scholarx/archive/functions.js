@@ -163,6 +163,11 @@ function uncheckCheckboxes(){
         document.getElementById(universities[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
 }
+function resetArchive(){
+    uncheckCheckboxes(); 
+    document.getElementById("search").value = "";
+    renderAllProfiles();
+}
 //remove space between words  eg: university of moratuwa -> university_of_moratuwa
 function selectedIndustriesData(){
     return industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
@@ -200,8 +205,7 @@ function filterByUniversity(university){
     const selectedYears = selectedYearsData();
     const selectedUniversities = selectedUniversitiesData();
     if(university === 'all'){
-       uncheckCheckboxes(); 
-       renderAllProfiles()
+       resetArchive();
        return
     } else{
         if(selectedYears.length == 0 || selectedYears.length == years.length){
@@ -230,8 +234,7 @@ function filterByIndustry(industry){
     const selectedYears = selectedYearsData();
     const selectedIndustries = selectedIndustriesData();
     if(industry === 'all'){
-       uncheckCheckboxes(); 
-       renderAllProfiles()
+       resetArchive();
        return
     } else{
         if(selectedYears.length == 0 || selectedYears.length == years.length){
