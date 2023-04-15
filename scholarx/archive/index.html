@@ -30,6 +30,7 @@
     <link type="text/css" href="./styles.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e2941913d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -41,21 +42,20 @@
 <section class="section pb-0 bg-gradient-white mt-5">
     <div class="container">
         <div class="row row-grid align-items-center justify-content-center">
-            <div class="col-md-6">
+            <div class="description col-md-6">
                 <div class="d-flex px-3">
                     <div class="pl-4">
-                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-5 w-50">
-                        <p>ScholarX is an exclusive 6-month program aimed at providing
-                            mentoring support to a selected pool of high Potential undergraduate students
-                            based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of
-                            the world’s top universities or Fortune 500 companies. It’s our free premium
-                            mentoring platform by Sri Lankans for Sri Lankans working towards creating a culture
-                            of knowledge and expertise sharing without the limitation of geographical borders.</p>
+                        <img src="/assets/img/brand/scholarx.png" class="img-fluid align-self-center mb-4 w-50">
+                        <p>ScholarX intends to deliver free premium mentoring assistance for the elite undergraduate
+                            students based in Sri Lanka, through the means of a Sri Lankan expatriate presently involved
+                            with one of the world’s most renowned universities or Fortune 500 companies. This program
+                            strives to create a sustainable education structure within Sri Lanka by drawing knowledge
+                            and expertise from all across the globe.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="/assets/img/scholarx/new-findmentor.png" class="img-fluid align-self-center w-100">
+            <div class="image col-md-6 px-5">
+                <img src="/scholarx/archive/images/sx-hero-image.png" class="img-fluid align-self-center w-100">
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
 <!-- Archive Filter -->
 <div class="container filter-container">
     <div class="row">
-      <div class="col-3 mt-5">
+      <div class="filters mt-5 w-100 col-3" >
         <h6>FILTER</h6>
         <hr>
         <!--mentor mentee selection-->
@@ -76,74 +76,44 @@
         <h6>COHORT</h6>
         <hr>
         <div class="mt-2 mb-5">
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2019" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2019">2019</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2020" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2020">2020</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2021" type="checkbox" onclick="filterByYear()">
-                <label class="custom-control-label" for="2021">2021</label>
-            </button>
-            <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
-                <input class="custom-control-input" id="2022" type="checkbox">
-                <label class="custom-control-label" for="2022">2022</label>
-            </button>
+            <div id="cohort-filters"></div>
         </div>
         <div id="industry-filter">
             <h6>INDUSTRY</h6>
             <hr>
             <div class="mt-2 mb-5">
-                <button class="btn btn-sm active mb-3" onclick="filterProfiles('all')"> Show all</button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Computer Science')">
-                    <input class="custom-control-input" id="chkComputerScience" type="checkbox">
-                    <label class="custom-control-label" for="chkComputerScience" onclick="filterProfiles('Computer Science')">Computer Science</label>
-                </button>
-                <br>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Engineering')">
-                    <input class="custom-control-input" id="chkEngineering" type="checkbox" >
-                    <label class="custom-control-label" for="chkEngineering"  onclick="filterProfiles('Engineering')">Engineering</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Life Sciences')">
-                    <input class="custom-control-input" id="chkLifeSciences" type="checkbox" >
-                    <label class="custom-control-label" for="chkLifeSciences" onclick="filterProfiles('Life Sciences')">Life Sciences</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Data Science & AI')">
-                    <input class="custom-control-input" id="chkDataSciencenAI" type="checkbox">
-                    <label class="custom-control-label" for="chkDataSciencenAI" onclick="filterProfiles('Data Science & AI')">Data Science & AI</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Physical Science')">
-                    <input class="custom-control-input" id="chkPhysicalScience" type="checkbox">
-                    <label class="custom-control-label" for="chkPhysicalScience" onclick="filterProfiles('Physical Science')">Physical Science</label>
-                </button>
-                <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox" onclick="filterProfiles('Other')">
-                    <input class="custom-control-input" id="chkOther" type="checkbox">
-                    <label class="custom-control-label" for="chkOther" onclick="filterProfiles('Other')">Other</label>
-                </button>
+                <button class="btn btn-sm active mb-3" onclick="filterByIndustry('all')"> Show all</button>
+                <div id="dynamic-industry-filters"></div>
             </div> 
         </div>
         <div id="university-filter" class="university-filter">
             <h6>UNIVERSITY</h6>
             <hr>
-            <div class="dropdown mt-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  All Universities
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </div>
+            <div class="mt-2 mb-5">
+                <button class="btn btn-sm active mb-3" onclick="filterByUniversity('all')"> Show all</button>
+                <div class="university-filter-scroller">
+                    <div id="dynamic-university-filters"></div>
+                </div>
+            </div>
         </div>
       </div>
-        <div class="col-9">
+      <div class="table w-100 col-9">
             <div class="search-filter">
                 <input id="search" type="text" class="form-control rounded search-bar" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
             </div>
-            <!--mentor details-->
+            <!--no results message-->
+            <div id="noResultsMessage" class="no-results-page" style="display: none;">
+                <span class="no-results-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                <p class="no-results-text">No Results Found</p>
+            </div>
+            <!--loading animation-->
+            <div id="loadingAnimation" class="loadingAnimationPage">
+                <div class="loader"></div>
+                <p class="loading-text">Loading.....</p>
+            </div>
+            <!--mentor details-->        
             <div id="showMentors" class="mentors-table">
                 <table>
                     <thead>
@@ -172,6 +142,22 @@
                     </tbody>
                 </table>
             </div>         
+      </div>
+    </div>
+</div>
+<!--profile modal template-->
+<div class="modal fade profile-modal" id="profile-modal" tabindex="-1" role="dialog" aria-labelledby="profile-modal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"
+         role="document">
+        <!-- Content for the modal goes here -->
+        <div class="modal-content">
+            <div class="pt-3 pr-3">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="profile-modal-content" class="modal-body"></div>
         </div>
     </div>
 </div>
@@ -185,7 +171,7 @@
 <!-- template mentors-->
 <script type="text/html" id="templateMentors">
     {{#mentorProfiles}}
-        <tr >
+        <tr onclick="openMentorProfile('{{index}}')">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>
@@ -198,7 +184,7 @@
 <!-- template mentees -->
 <script type="text/html" id="templateMentees">
     {{#menteeProfiles}}
-        <tr >
+        <tr onclick="openMenteeProfile('{{index}}')">
             <th scope="row">
                 <img src="https://res.cloudinary.com/dsxobn1ln/image/upload/c_scale,h_48,w_48/{{image}}" class="avatar">
             </th>            
@@ -207,6 +193,103 @@
             <td>{{mentor}}</td>
         </tr>
     {{/menteeProfiles}}     
+</script>
+  
+<!-- template INDUSTRY filters-->
+<script id="industry-filter-template" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByIndustry('industry')">
+        <label class="custom-control-label" for={{htmlId}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
+
+<!-- template COHORT filters-->
+<script id="cohort" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{id}} type="checkbox" onclick="filterByYear()">
+        <label class="custom-control-label" for={{id}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
+
+<!--template UNIVERSITY dropdowns-->
+<script id="university-template" type="x-tmpl-mustache">
+    {{#checkboxes}}
+    <button class="btn btn-sm custom-checkbox mb-3 btn-checkbox">
+        <input class="custom-control-input" id={{htmlId}} type="checkbox" onclick="filterByUniversity('university')">
+        <label class="university-label custom-control-label" style="font-size: 13px; text-transform: capitalize;" for={{htmlId}}>{{id}}</label>
+    </button>
+    {{/checkboxes}}
+</script>
+
+<!--mentor profile model-->
+<script type="text/html" id="template-profile-mentor-content">
+    <div class="text-center">
+      <img 
+        src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{image}}"
+        alt="Rounded image"
+        style="width: 300px;"
+        class="img-fluid rounded-circle profile-image border img-center shadow mb-4"
+      />
+      <h4>{{name}}</h4>
+      <span>{{title}}</span>
+      {{#linkedin}}
+      <div class="linkedin mt-3">
+        <a href="{{.}}"
+           target="_blank"
+           class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      {{/linkedin}}
+    </div>
+    <hr />
+    <p class="text-justify">{{{bio}}}</p>
+    <hr />
+    <h5>Areas of expertise :</h5>
+    <ul>
+      {{#areasOfExpertise}}
+      <li>{{.}}</li>
+      {{/areasOfExpertise}}
+    </ul>
+    <hr />
+    <h5>Mentees :</h5>
+    <ul>
+        {{#mentees}}
+        <li>{{.}}</li>
+        {{/mentees}}
+      </ul>
+</script>
+
+<!--mentee profile model-->
+<script type="text/html" id="template-profile-mentee-content">
+    <div class="text-center">
+      <img
+        src="https://res.cloudinary.com/dsxobn1ln/image/upload/{{image}}"
+        alt="Rounded image"
+        style="width: 300px;"
+        class="img-fluid rounded-circle profile-image border img-center shadow mb-4"
+      />
+      <h4>{{name}}</h4>
+      {{#linkedin}}
+      <div class="linkedin mt-3">
+        <a href="{{.}}"
+           target="_blank"
+           class="btn btn-linkedin btn-icon-only rounded-circle btn-icon-rounded">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      {{/linkedin}}
+    </div>
+    <hr />
+    <h5>Mentor :</h5>
+    <h6>{{mentor}}</h6>
+    <hr />
+    <h5>University :</h5>
+    <h6>{{university}}</h6>
 </script>
 
 <!-- Core -->
