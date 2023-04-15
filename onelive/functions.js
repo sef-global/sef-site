@@ -2,7 +2,7 @@
 function loadYoutubeVideos() {
     $.ajax({
         type: 'get',
-        url: 'https://apps.sefglobal.org/youtube/onelive?maxResults=3',
+        url: 'https://dataholder.sefglobal.org/youtube/onelive?maxResults=3',
         dataType: 'json',
         success: function (data) {
             // Slice if the description if it is very long
