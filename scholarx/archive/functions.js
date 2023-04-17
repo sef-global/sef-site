@@ -71,7 +71,7 @@ $(document).ready(function(){
     });
 });
 
-const data_url = "https://script.google.com/macros/s/AKfycbxxuC5tlaEQpYBFnf09fsgxMgc6--97F6iOXo2mtxNgwwrp2ukzirlComP_GPjY8amN/exec";
+const data_url = "https://script.google.com/macros/s/AKfycbxi1JfJ-28nCF-j998f2dKuyPOMKa4ZXMdLeBSm8UAir4JWD1ZfyOySC_ZFqIaLE887/exec";
 
 async function getData() {
     const response = await fetch(data_url);
