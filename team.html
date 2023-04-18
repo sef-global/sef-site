@@ -487,7 +487,7 @@
         //display first 8 profiles
         $("#" + id).html(contentPartOne);
 
-        if (profiles.length >= 8) {
+        if (profiles.length > 8) {
             $("#btnShowLess_" + id).hide();
             //hide button
             $("#btnShowMore_" + id).click(function () {
