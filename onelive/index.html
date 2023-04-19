@@ -14,7 +14,7 @@
     <meta name="description" content="OneLive is an interactive webinar series done every weekend with the
     experts in their fields.">
     <meta name="author" content="Sustainable Education Foundation">
-    <meta property="og:image" content="images/header-onelive.svg">
+    <meta property="og:image" content="./images/header-onelive.jpg">
     <title>OneLive | Sustainable Education Foundation</title>
     <!-- Favicon -->
     <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -51,21 +51,6 @@
         </div>
     </section>
 
-    <!--  upcoming events section  -->
-    <section class="section section-secondary mb-0 pb-5" id="section-events">
-        <div class="container">
-            <div class="row justify-content-center mb-3">
-                <div class="col-9 text-center">
-                    <h1 class="display-3 text-center mb-5">Upcoming Events</h1>
-                </div>
-            </div>
-            <div class="row" id="upcoming-events">
-                <div class="col-md-12">
-                    <div class="h5 font-weight-normal text-muted text-center mt-4 status-text">Loading...</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="section bg-secondary">
         <div class="container">
@@ -343,27 +328,10 @@
     </div>
 </script>
 
-<script id="upcoming-events-template" type="text/html">
-    {{#data}}
-    <div class="col-10 offset-1">
-        <a href="{{facebookLink}}" target="_blank">
-            <div class="card card-event shadow shadow-lg--hover mb-1 text-body">
-                <div class="card-body">
-                    <span class="h5 mr-1 card-event-date">{{date}}</span>
-                    <span class="small text-muted mr-4 text-uppercase">{{month}}, {{day}}</span>
-                    <div class="mr-sm-5 d-inline-block"> {{startTime}} - {{endTime}}</div>
-                    <div class="font-weight-bold ml-1 d-inline-block mt-3 mt-md-0">{{summary}}</div>
-                </div>
-            </div>
-        </a>
-    </div>
-    {{/data}}
-</script>
 
 <script>
     $(function () {
         loadNavAndFooter('/assets/content/static');  //relative path to content directory
-        loadUpcomingEvents(); //load upcoming events
         loadProfiles(); // load profiles
         loadFaqComponent();
         loadYoutubeVideos();

@@ -15,7 +15,7 @@
                             a selected pool of High Potential undergraduate students based in Sri Lanka ideally by a Sri Lankan expat currently engaged with one of the world’s top universities or Fortune 500 companies. It’s our free premium mentoring platform by Sri Lankans for Sri Lankans working
                             towards creating a culture of knowledge and expertise sharing without the limitation of geographical borders.">
     <meta name="author" content="Sustainable Education Foundation">
-    <meta property="og:image" content="assets/img/brand/scholarx.png">
+    <meta property="og:image" content="../../../assets/img/brand/scholarx.png">
     <title>ScholarX | Sustainable Education Foundation</title>
     <!-- Favicon -->
     <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Montserrat', sans-serif; color: black">
+<body>
 <header class="header-global">
     <!--nav bar goes here-->
     <div id="navbar"></div>
@@ -133,7 +133,7 @@
 </section>
 
 <section class="section pb-0 bg-gradient-white">
-    <div class="container">
+    <div class="container" id="mentees">
         <h1 class="display-3 text-center mb-5">Mentees</h1>
         <div class="justify-content-center">
             <!--Mentees table goes here-->
@@ -191,6 +191,10 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="row justify-content-center" id="btnMentees" style="visibility:hidden;">
+                <button id="mentee-show-more" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+                <a id="mentee-show-less" class="btn btn-link btn-outline-white btn-info" href="#mentees">SEE LESS</a>
+            </div>
         </div>
     </div>
 </section>
@@ -267,7 +271,7 @@
 
         loadProfiles(); // call function to load profiles
         loadFaqComponent();
-        loadMentees();
+        loadMentees('https://script.google.com/macros/s/AKfycbz_Bdaau2mDB6yd00DXNyxaVBg0zddxL96rF5hS6zHSia6GjtzioIy1R057ohqnr-D0_A/exec');
     });
 
     //function to load profile data
@@ -305,19 +309,6 @@
                     //hide button
                     $("#btnShowMore").hide();
                 }
-            }
-        });
-    }
-
-    function loadMentees() {
-        $.ajax({
-            type: 'get',
-            url: 'https://script.google.com/macros/s/AKfycbz_Bdaau2mDB6yd00DXNyxaVBg0zddxL96rF5hS6zHSia6GjtzioIy1R057ohqnr-D0_A/exec',
-            dataType: 'json',
-            success: function (data) {
-                let templateMentees = Mustache.render($("#templateMentees").html(), {"data": data});
-                //display mentees
-                $("#teamMentees").html(templateMentees);
             }
         });
     }

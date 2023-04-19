@@ -41,48 +41,6 @@
 
 }
 
-.featured-story img{
-    height: 300px;
-    object-fit: cover;
-}
-
-.featured-stories .card {
-    height: 100%;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.featured-story{
-    padding-bottom: 0;
-
-}
-
-.featured-story .card-footer .stats i {
-    padding-top: 3px;
-    padding-right: 5px;
-}
-
-.featured-story .card-footer {
-    font-size: 0.9em;
-    padding-top: 0;
-}
-.featured-story .card-footer {
-    padding-left: 5%;
-}
-
-.feature-card-body {
-  padding:0;
-}
-
-/*to adjust height and width of cards*/
-.feature-card-body img {
-    height: 200px;
-    width: 1000px;
-    padding-bottom: 2%;
-    /*round shaped border*/
-    border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
-}
-
 .author {
     font-size: 0.9rem;
     padding-top: 3px;
@@ -92,11 +50,7 @@
     padding-top: 3px;
     padding-right: 7px;
 }
-.featured-story .author span{
-    color: #6f81a4;
-    padding-left: 4px;
-    padding-top: 4px;
-}
+
 .author {
     font-size: 0.9rem;
     padding-top: 3px;

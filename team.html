@@ -14,7 +14,7 @@
     <meta name="description" content="Success of every organization depends on the team<br> and we got the 'right'
     team">
     <meta name="author" content="Sustainable Education Foundation">
-    <meta property="og:image" content="assets/img/team-header.svg">
+    <meta property="og:image" content="assets/img/team-header.jpg">
     <title>Meet Our Team | Sustainable Education Foundation</title>
     <!-- Favicon -->
     <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -29,7 +29,7 @@
     <link type="text/css" href="assets/css/global-custom.css" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Montserrat', sans-serif;">
+<body>
 <header class="header-global">
     <!--nav bar goes here-->
     <div id="navbar">
@@ -487,7 +487,7 @@
         //display first 8 profiles
         $("#" + id).html(contentPartOne);
 
-        if (profiles.length >= 8) {
+        if (profiles.length > 8) {
             $("#btnShowLess_" + id).hide();
             //hide button
             $("#btnShowMore_" + id).click(function () {
