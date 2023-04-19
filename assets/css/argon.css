@@ -8623,7 +8623,7 @@ button.bg-darker:focus
 
 .justify-content-end
 {
-    justify-content: flex-end !important;
+    justify-content: space-evenly;
 }
 
 .justify-content-center
