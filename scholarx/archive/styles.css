@@ -18,7 +18,7 @@ hr {
 
 .filter-container{
   margin-top:150px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .btn-checkbox {
@@ -189,4 +189,10 @@ hr {
 @keyframes spinner {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px){
+  .contact-us{
+    display: flex !important;
+  }
 }
