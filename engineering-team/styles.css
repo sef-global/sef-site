@@ -1,0 +1,42 @@
+.skeleton-box {
+    border-radius: 20px;
+}
+
+.skeleton-post-body {
+    padding: 15px 15px !important;
+}
+
+.skeleton-post-body .skeleton-img {
+    background-color: hsl(210, 11%, 93%);
+    float: left;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.skeleton-author-name {
+    background-color: hsl(210, 11%, 93%);
+    padding: 15px !important;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.skeleton-image {
+    background-color: hsl(210, 11%, 93%);
+    padding: 70px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.skeleton-topic {
+    background-color: hsl(210, 11%, 93%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.skeleton-profile {
+    background-color: hsl;
+}
+
