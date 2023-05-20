@@ -772,3 +772,70 @@ body {
     /*round shaped border*/
     border-radius: 1.7rem 1.7rem 0.2rem 0.2rem;
 }
+
+/* ---------------------- Testimonial section ------------------------ */
+.testimonialBox hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.testimonialSection {
+    padding: 10px 10px 10px 10px;
+}
+
+.testimonialSection .main-topic {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.testimonialBox {
+    padding: 32px 32px 40px 32px;
+    background-color: #fff;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    font-size: 24px;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+.testimonialSection .paragraph {
+    color: black;
+    margin-top: 25px;
+}
+
+.authorDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.authorDetails .details, .authorDetails .name {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.authorDetails .name {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.authorDetails .details {
+    margin-top: 4px;
+}
+
+.authorImg {
+    height: 100%;
+    margin-top: 27px;
+    margin-bottom: 2px;
+}
+
+.authorImg .img {
+    border-radius: 50% !important;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #EAECEE;
+}
+
