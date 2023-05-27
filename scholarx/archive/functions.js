@@ -304,7 +304,7 @@ $(document).ready(function () {
     });
 });
 //to make the checkboxes to select one at a time
-const checkboxes = document.querySelectorAll('.custom-checkbox');
+const checkboxes = document.querySelectorAll('.custom-check-box');
 
 function handleCheckboxChange() {
   checkboxes.forEach(checkbox => {
