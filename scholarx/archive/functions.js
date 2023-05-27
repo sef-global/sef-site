@@ -299,11 +299,23 @@ $(document).ready(function () {
                 $("#showMentees").show();
                 $("#university-filter").show();
                 $("#industry-filter").hide();
-            } else {
-                menteeList.style.display = 'none';
             }
         });
     });
+});
+//to make the checkboxes to select one at a time
+const checkboxes = document.querySelectorAll('.custom-checkbox');
+
+function handleCheckboxChange() {
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked && checkbox !== this) {
+      checkbox.checked = false;
+    }
+  });
+}
+
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', handleCheckboxChange);
 });
 function openMentorProfile(index) {
     const profile = mentors[parseInt(index)];
