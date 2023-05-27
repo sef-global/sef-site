@@ -275,12 +275,8 @@ function filterByYear() {
     }
 }
 //mentor mentee selection
-$(document).ready(function () {
-    $('#selection').on('change', function () {
+function mentorsCheckout() {
         var mentorsCheckbox = document.getElementById('mentorsCheckbox');
-        var menteesCheckbox = document.getElementById('menteesCheckbox');
-        var mentorList = document.getElementById('mentorList');
-        var menteeList = document.getElementById('menteeList');
         mentorsCheckbox.addEventListener('change', function () {
             if (mentorsCheckbox.checked) {
                 uncheckCheckboxes();
@@ -291,21 +287,22 @@ $(document).ready(function () {
                 $("#industry-filter").show();
             }
         });
-        menteesCheckbox.addEventListener('change', function () {
-            if (menteesCheckbox.checked) {
-                uncheckCheckboxes();
-                renderAllProfiles();
-                $("#showMentors").hide();
-                $("#showMentees").show();
-                $("#university-filter").show();
-                $("#industry-filter").hide();
-            }
-        });
+}
+function menteesCheckout() {
+    var menteesCheckbox = document.getElementById('menteesCheckbox');
+    menteesCheckbox.addEventListener('change', function () {
+    if (menteesCheckbox.checked) {
+        uncheckCheckboxes();
+        renderAllProfiles();
+        $("#showMentees").show();
+        $("#showMentors").hide();
+        $("#university-filter").show();
+        $("#industry-filter").hide();
+        }
     });
-});
+}
 //to make the checkboxes to select one at a time
 const checkboxes = document.querySelectorAll('.custom-check-box');
-
 function handleCheckboxChange() {
   checkboxes.forEach(checkbox => {
     if (checkbox.checked && checkbox !== this) {
@@ -313,9 +310,18 @@ function handleCheckboxChange() {
     }
   });
 }
-
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('change', handleCheckboxChange);
+});
+//to keep the mentors checkbox checked
+var checkboxState = localStorage.getItem('myCheckboxState');
+if (checkboxState === 'checked') {
+    document.getElementById('mentorsCheckbox').checked = true;
+}
+document.getElementById('mentorsCheckbox').addEventListener('change', function() {
+    if (this.checked) {
+    localStorage.setItem('myCheckboxState', 'checked');
+    } 
 });
 function openMentorProfile(index) {
     const profile = mentors[parseInt(index)];
