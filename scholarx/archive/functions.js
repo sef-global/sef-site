@@ -274,6 +274,7 @@ function filterByYear() {
         filterByIndustry("")
     }
 }
+//mentor mentee selection
 $(document).ready(function () {
     $('#selection').on('change', function () {
         var mentorsCheckbox = document.getElementById('mentorsCheckbox');
