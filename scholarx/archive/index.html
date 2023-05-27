@@ -69,12 +69,12 @@
         <!--mentor mentee selection-->
         <div class="mt-2 mb-5" id="selection">
             <button class="btn btn-sm custom-checkbox mb-3 py-2 btn-checkbox">
-                <input class="custom-control-input custom-check-box" id="mentorsCheckbox" type="checkbox">
-                <label class="custom-control-label custom-checkbox" for="mentorsCheckbox">mentors</label>
+                <input class="custom-control-input custom-check-box" id="mentorsCheckbox" onclick="mentorsCheckout()" type="checkbox">
+                <label class="custom-control-label" for="mentorsCheckbox">mentors</label>
             </button>
             <br>
             <button class="btn btn-sm custom-checkbox mb-3 py-2 btn-checkbox">
-                <input class="custom-control-input custom-check-box" id="menteesCheckbox" type="checkbox">
+                <input class="custom-control-input custom-check-box" id="menteesCheckbox" onclick="menteesCheckout()" type="checkbox">
                 <label class="custom-control-label" for="menteesCheckbox">mentees</label>
             </button>
         </div>
