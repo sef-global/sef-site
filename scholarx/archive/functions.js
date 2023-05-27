@@ -86,6 +86,7 @@ async function loadData() {
     years.sort();
     //hide loading animation and show mentors table after all data are fetched from API
     $("#loadingAnimation").hide();
+    document.getElementById('mentorsCheckbox').checked = true;
     $("#showMentors").show();
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
@@ -312,16 +313,6 @@ function handleCheckboxChange() {
 }
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('change', handleCheckboxChange);
-});
-//to keep the mentors checkbox checked
-var checkboxState = localStorage.getItem('myCheckboxState');
-if (checkboxState === 'checked') {
-    document.getElementById('mentorsCheckbox').checked = true;
-}
-document.getElementById('mentorsCheckbox').addEventListener('change', function() {
-    if (this.checked) {
-    localStorage.setItem('myCheckboxState', 'checked');
-    } 
 });
 function openMentorProfile(index) {
     const profile = mentors[parseInt(index)];
