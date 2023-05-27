@@ -101,7 +101,7 @@ function noRsultsPageHelper() {
     $("#noResultsMessage").hide();
     if (document.getElementById('mentorsCheckbox').checked == true) {
         $("#showMentors").show();
-    } else if (document.getElementById("selection").value === "mentees") {
+    } else if (document.getElementById('menteesCheckbox').checked == true) {
         $("#showMentees").show();
     }
 }
@@ -249,7 +249,7 @@ function filterByYear() {
     const selectedIndustries = selectedIndustriesData();
     const selectedUniversities = selectedUniversitiesData();
     //helps to achieve mentees page cofunctionality with cohort filters 
-    if (document.getElementById("selection").value === "mentees") {
+    if (document.getElementById('menteesCheckbox').checked == true) {
         if (selectedUniversities.length == 0 && selectedYears.length == 0) {
             renderAllProfiles()
             return
