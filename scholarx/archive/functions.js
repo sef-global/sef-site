@@ -19,7 +19,7 @@ function search(value) {
     $("#menteeProfiles tr").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
-    if (document.getElementById("selection").value === "mentors") {
+    if (document.getElementById('mentorsCheckbox').checked == true) {
         $("#showMentors").show();
         if ($("#mentorProfiles tr:visible").length === 0) {
             $("#noResultsMessage").show();
@@ -99,7 +99,7 @@ loadData();
 //this function run in every  render profiles functions to reset the page structure based on the selection
 function noRsultsPageHelper() {
     $("#noResultsMessage").hide();
-    if (document.getElementById("selection").value === "mentors") {
+    if (document.getElementById('mentorsCheckbox').checked == true) {
         $("#showMentors").show();
     } else if (document.getElementById("selection").value === "mentees") {
         $("#showMentees").show();
