@@ -287,8 +287,8 @@ $(document).ready(function () {
                 renderAllProfiles();
                 $("#showMentors").show();
                 $("#showMentees").hide();
-                $("#university-filter").hide();
-                $("#industry-filter").show();
+                $("#university-filter").show();
+                $("#industry-filter").hide();
             }
         });
         menteesCheckbox.addEventListener('change', function () {
@@ -297,8 +297,10 @@ $(document).ready(function () {
                 renderAllProfiles();
                 $("#showMentors").hide();
                 $("#showMentees").show();
-                $("#university-filter").show();
-                $("#industry-filter").hide();
+                $("#university-filter").hide();
+                $("#industry-filter").show();
+            } else {
+                menteeList.style.display = 'none';
             }
         });
     });
