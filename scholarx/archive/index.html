@@ -67,11 +67,14 @@
         <h6>FILTER</h6>
         <hr>
         <!--mentor mentee selection-->
-        <div class="mt-2 mb-5">
-            <select id="selection" class="btn btn-secondary dropdown-toggle" >
-                <option value="mentors">Mentors</option>
-                <option value="mentees">Mentees</option>
-            </select>
+        <div class="mt-2 mb-5" id="selection">
+            <label class="btn">
+                <input type="checkbox" id="mentorsCheckbox"> Mentors
+            </label>
+            <br>
+            <label class="btn">
+                <input type="checkbox" id="menteesCheckbox"> Mentees
+            </label>
         </div>
         <h6>COHORT</h6>
         <hr>
@@ -220,7 +223,7 @@
         </tr>
     {{/menteeProfiles}}     
 </script>
-  
+
 <!-- template INDUSTRY filters-->
 <script id="industry-filter-template" type="x-tmpl-mustache">
     {{#checkboxes}}
