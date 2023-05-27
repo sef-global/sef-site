@@ -275,32 +275,22 @@ function filterByYear() {
         filterByIndustry("")
     }
 }
-//mentor mentee selection
+//mentor mentee checkboxes
 function mentorsCheckout() {
-    var mentorsCheckbox = document.getElementById('mentorsCheckbox');
-    mentorsCheckbox.addEventListener('change', function () {
-        if (mentorsCheckbox.checked) {
-            uncheckCheckboxes();
-            renderAllProfiles();
-            $("#showMentors").show();
-            $("#showMentees").hide();
-            $("#university-filter").hide();
-            $("#industry-filter").show();
-        }
-    });
+    uncheckCheckboxes();
+    renderAllProfiles();
+    $("#showMentors").show();
+    $("#showMentees").hide();
+    $("#university-filter").hide();
+    $("#industry-filter").show();
 }
 function menteesCheckout() {
-    var menteesCheckbox = document.getElementById('menteesCheckbox');
-    menteesCheckbox.addEventListener('change', function () {
-    if (menteesCheckbox.checked) {
-        uncheckCheckboxes();
-        renderAllProfiles();
-        $("#showMentees").show();
-        $("#showMentors").hide();
-        $("#university-filter").show();
-        $("#industry-filter").hide();
-        }
-    });
+    uncheckCheckboxes();
+    renderAllProfiles();
+    $("#showMentees").show();
+    $("#showMentors").hide();
+    $("#university-filter").show();
+    $("#industry-filter").hide();
 }
 //to make the checkboxes to select one at a time
 const checkboxes = document.querySelectorAll('.custom-check-box');
