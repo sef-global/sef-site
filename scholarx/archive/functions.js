@@ -276,17 +276,17 @@ function filterByYear() {
 }
 //mentor mentee selection
 function mentorsCheckout() {
-        var mentorsCheckbox = document.getElementById('mentorsCheckbox');
-        mentorsCheckbox.addEventListener('change', function () {
-            if (mentorsCheckbox.checked) {
-                uncheckCheckboxes();
-                renderAllProfiles();
-                $("#showMentors").show();
-                $("#showMentees").hide();
-                $("#university-filter").hide();
-                $("#industry-filter").show();
-            }
-        });
+    var mentorsCheckbox = document.getElementById('mentorsCheckbox');
+    mentorsCheckbox.addEventListener('change', function () {
+        if (mentorsCheckbox.checked) {
+            uncheckCheckboxes();
+            renderAllProfiles();
+            $("#showMentors").show();
+            $("#showMentees").hide();
+            $("#university-filter").hide();
+            $("#industry-filter").show();
+        }
+    });
 }
 function menteesCheckout() {
     var menteesCheckbox = document.getElementById('menteesCheckbox');
