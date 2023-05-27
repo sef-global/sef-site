@@ -108,7 +108,7 @@ function noRsultsPageHelper() {
 function renderProfiles(mentorYear, menteeYear) {
     noRsultsPageHelper();
     //show no results page if sorted mentor or mentee array is empty
-    if (document.getElementById("selection").value === "mentors" && mentorYear.length === 0) {
+    if (document.getElementById('mentorsCheckbox').checked == true && mentorYear.length === 0) {
         $("#noResultsMessage").show();
         $("#showMentors").hide();
     } else if (document.getElementById("selection").value === "mentees" && menteeYear.length === 0) {
