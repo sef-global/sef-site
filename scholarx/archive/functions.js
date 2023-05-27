@@ -111,7 +111,7 @@ function renderProfiles(mentorYear, menteeYear) {
     if (document.getElementById('mentorsCheckbox').checked == true && mentorYear.length === 0) {
         $("#noResultsMessage").show();
         $("#showMentors").hide();
-    } else if (document.getElementById("selection").value === "mentees" && menteeYear.length === 0) {
+    } else if (document.getElementById('menteesCheckbox').checked == true && menteeYear.length === 0) {
         $("#noResultsMessage").show();
         $("#showMentees").hide();
         //render mentors and mentees based on parameter arrays    
