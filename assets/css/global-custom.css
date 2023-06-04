@@ -10,12 +10,12 @@ body {
 
 /* upspeak & Home page testimonial section*/
 .testimonial-section {
-    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .testimonial-section .main-topic {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    padding-top: 60px;
+    paddinh-bottom: 40px;
 }
 
 .testimonial-section .testimonial-box {
