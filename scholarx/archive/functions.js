@@ -11,31 +11,31 @@ let filteredMentors = []
 let universities = []
 
 //main search function
-function search(value){
-    $("#mentorProfiles tr").filter(function() {
+function search(value) {
+    $("#mentorProfiles tr").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-      });
-    
-      $("#menteeProfiles tr").filter(function() {
+    });
+
+    $("#menteeProfiles tr").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-      });
-      if (document.getElementById("selection").value === "mentors") {
+    });
+    if (document.getElementById('mentorsCheckbox').checked == true) {
         $("#showMentors").show();
         if ($("#mentorProfiles tr:visible").length === 0) {
-          $("#noResultsMessage").show();
-          $("#showMentors").hide();
+            $("#noResultsMessage").show();
+            $("#showMentors").hide();
         } else {
-          $("#noResultsMessage").hide();
+            $("#noResultsMessage").hide();
         }
-      } else {
+    } else {
         $("#showMentees").show();
         if ($("#menteeProfiles tr:visible").length === 0) {
-          $("#noResultsMessage").show();
-          $("#showMentees").hide();
+            $("#noResultsMessage").show();
+            $("#showMentees").hide();
         } else {
-          $("#noResultsMessage").hide();
+            $("#noResultsMessage").hide();
         }
-      }
+    }
 }
 //we can call this function to manually execute search functionality without keyups
 function searchHelper() {
@@ -49,27 +49,6 @@ $(document).ready(function () {
         search(value)
     });
 });
-//mentor mentee transition
-$(document).ready(function(){
-    $('#selection').on('change', function(){
-    	var selectedValue = $(this).val();
-        if(selectedValue === "mentees"){
-            uncheckCheckboxes();
-            renderAllProfiles();
-            $("#showMentees").show();
-            $("#showMentors").hide();
-            $("#university-filter").show();
-            $("#industry-filter").hide();
-        } else if(selectedValue === "mentors"){
-            uncheckCheckboxes();
-            renderAllProfiles();
-            $("#showMentees").hide();
-            $("#showMentors").show();
-            $("#university-filter").hide();
-            $("#industry-filter").show();
-        }      
-    });
-});
 
 const data_url = "https://script.google.com/macros/s/AKfycbxi1JfJ-28nCF-j998f2dKuyPOMKa4ZXMdLeBSm8UAir4JWD1ZfyOySC_ZFqIaLE887/exec";
 
@@ -80,13 +59,13 @@ async function getData() {
 }
 
 async function loadData() {
-    const {data}  = await getData();
-    for(let i=0; i<data.length; i++){
+    const { data } = await getData();
+    for (let i = 0; i < data.length; i++) {
         years.push(data[i].year)
         industries.push(data[i].fields)
-        if (data[i].type == "mentor"){
+        if (data[i].type == "mentor") {
             mentors.push(data[i])
-        }else {
+        } else {
             mentees.push(data[i])
             universities.push(data[i].university)
         }
@@ -107,6 +86,7 @@ async function loadData() {
     years.sort();
     //hide loading animation and show mentors table after all data are fetched from API
     $("#loadingAnimation").hide();
+    document.getElementById('mentorsCheckbox').checked = true;
     $("#showMentors").show();
     //remove unwanted industry & year fields (to consider as an industry it need to be a string and string length need to be > 0 / year need to be a number)
     industries = industries.filter(industry => typeof industry === 'string' && industry.trim().length > 0);
@@ -117,25 +97,25 @@ async function loadData() {
 }
 loadData();
 //this function run in every  render profiles functions to reset the page structure based on the selection
-function noRsultsPageHelper(){
+function noRsultsPageHelper() {
     $("#noResultsMessage").hide();
-    if(document.getElementById("selection").value === "mentors"){
+    if (document.getElementById('mentorsCheckbox').checked == true) {
         $("#showMentors").show();
-    }else if(document.getElementById("selection").value === "mentees"){
+    } else if (document.getElementById('menteesCheckbox').checked == true) {
         $("#showMentees").show();
     }
 }
-function renderProfiles(mentorYear,menteeYear) {
+function renderProfiles(mentorYear, menteeYear) {
     noRsultsPageHelper();
     //show no results page if sorted mentor or mentee array is empty
-    if(document.getElementById("selection").value === "mentors" && mentorYear.length === 0){
+    if (document.getElementById('mentorsCheckbox').checked == true && mentorYear.length === 0) {
         $("#noResultsMessage").show();
         $("#showMentors").hide();
-    }else if(document.getElementById("selection").value === "mentees" && menteeYear.length === 0){
+    } else if (document.getElementById('menteesCheckbox').checked == true && menteeYear.length === 0) {
         $("#noResultsMessage").show();
         $("#showMentees").hide();
-    //render mentors and mentees based on parameter arrays    
-    }else{
+        //render mentors and mentees based on parameter arrays    
+    } else {
         let mentorProfiles = Mustache.render($("#templateMentors").html(), { "mentorProfiles": mentorYear });
         let menteeProfiles = Mustache.render($("#templateMentees").html(), { "menteeProfiles": menteeYear });
         $("#mentorProfiles").html(mentorProfiles);
@@ -152,37 +132,48 @@ function renderAllProfiles() {
     $("#menteeProfiles").html(menteeProfiles);
     searchHelper();
 }
-function uncheckCheckboxes(){
-    for(let i=years.sort()[0]; i<=years[years.length-1]; i++){
+function uncheckCheckboxes() {
+    for (let i = years.sort()[0]; i <= years[years.length - 1]; i++) {
         document.getElementById(i).checked = false;
     }
-    for(let i=0; i<industries.length; i++){
+    for (let i = 0; i < industries.length; i++) {
         document.getElementById(industries[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
-    for(let i=0; i<universities.length; i++){
+    for (let i = 0; i < universities.length; i++) {
         document.getElementById(universities[i].replace(/\s+/g, '_').toLowerCase()).checked = false;
     }
 }
+function resetArchive() {
+    uncheckCheckboxes();
+    document.getElementById("search").value = "";
+    renderAllProfiles();
+}
 //remove space between words  eg: university of moratuwa -> university_of_moratuwa
-function selectedIndustriesData(){
+function selectedIndustriesData() {
     return industries.filter((industry) => document.getElementById(industry.replace(/\s+/g, '_').toLowerCase()).checked);
 }
-function selectedYearsData(){
+function selectedYearsData() {
     return years.filter((year) => document.getElementById(year).checked);
 }
-function selectedUniversitiesData(){
+function selectedUniversitiesData() {
     return universities.filter((university) => document.getElementById(university.replace(/\s+/g, '_').toLowerCase()).checked);
 }
-function renderCohortCheckboxes(){
-    const data = { checkboxes: years.map(function(year) {
-        return { id: year };
-    }) };
-    const industriesData = { checkboxes: industries.map(function(industry) {
-        return { id: industry , htmlId:industry.replace(/\s+/g, '_').toLowerCase()}
-    }) };
-    const universitiesData = { checkboxes: universities.map(function(university) {
-        return { id: university , htmlId:university.replace(/\s+/g, '_').toLowerCase()};
-    }) };
+function renderCohortCheckboxes() {
+    const data = {
+        checkboxes: years.map(function (year) {
+            return { id: year };
+        })
+    };
+    const industriesData = {
+        checkboxes: industries.map(function (industry) {
+            return { id: industry, htmlId: industry.replace(/\s+/g, '_').toLowerCase() }
+        })
+    };
+    const universitiesData = {
+        checkboxes: universities.map(function (university) {
+            return { id: university, htmlId: university.replace(/\s+/g, '_').toLowerCase() };
+        })
+    };
     let template = document.getElementById("cohort").innerHTML;
     let output = Mustache.render(template, data);
     document.getElementById("cohort-filters").innerHTML = output;
@@ -195,63 +186,61 @@ function renderCohortCheckboxes(){
     let university = Mustache.render(universityTemplate, universitiesData);
     document.getElementById("dynamic-university-filters").innerHTML = university;
 }
-function filterByUniversity(university){
+function filterByUniversity(university) {
     let menteesData = []
     const selectedYears = selectedYearsData();
     const selectedUniversities = selectedUniversitiesData();
-    if(university === 'all'){
-       uncheckCheckboxes(); 
-       renderAllProfiles()
-       return
-    } else{
-        if(selectedYears.length == 0 || selectedYears.length == years.length){
+    if (university === 'all') {
+        resetArchive();
+        return
+    } else {
+        if (selectedYears.length == 0 || selectedYears.length == years.length) {
             filteredMentees = mentees;
-        } else{
+        } else {
             filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
             filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
         }
-        for(let university in universities){
-            if(document.getElementById(universities[university].replace(/\s+/g, '_').toLowerCase()).checked){
-                for(let mentee in filteredMentees){
-                    if(filteredMentees[mentee].university === universities[university]){
+        for (let university in universities) {
+            if (document.getElementById(universities[university].replace(/\s+/g, '_').toLowerCase()).checked) {
+                for (let mentee in filteredMentees) {
+                    if (filteredMentees[mentee].university === universities[university]) {
                         menteesData.push(filteredMentees[mentee])
                     }
                 }
             }
         }
-        renderProfiles(filteredMentors,menteesData)
+        renderProfiles(filteredMentors, menteesData)
     }
-    if(selectedUniversities.length == 0){
+    if (selectedUniversities.length == 0) {
         filterByYear();
     }
 }
-function filterByIndustry(industry){
+function filterByIndustry(industry) {
     let mentorsData = []
     const selectedYears = selectedYearsData();
     const selectedIndustries = selectedIndustriesData();
-    if(industry === 'all'){
-       uncheckCheckboxes(); 
-       renderAllProfiles()
-       return
-    } else{
-        if(selectedYears.length == 0 || selectedYears.length == years.length){
+    if (industry === 'all') {
+        resetArchive();
+        return
+    } else {
+        if (selectedYears.length == 0 || selectedYears.length == years.length) {
             filteredMentors = mentors;
-        } else{
+        } else {
             filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
             filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
         }
-        for(let industry in industries){
-            if(document.getElementById(industries[industry].replace(/\s+/g, '_').toLowerCase()).checked){
-                for(let mentor in filteredMentors){
-                    if(filteredMentors[mentor].fields === industries[industry]){
+        for (let industry in industries) {
+            if (document.getElementById(industries[industry].replace(/\s+/g, '_').toLowerCase()).checked) {
+                for (let mentor in filteredMentors) {
+                    if (filteredMentors[mentor].fields === industries[industry]) {
                         mentorsData.push(filteredMentors[mentor])
                     }
                 }
             }
         }
-        renderProfiles(mentorsData,filteredMentees)
+        renderProfiles(mentorsData, filteredMentees)
     }
-    if(selectedIndustries.length == 0){
+    if (selectedIndustries.length == 0) {
         filterByYear();
     }
 }
@@ -260,40 +249,69 @@ function filterByYear() {
     const selectedIndustries = selectedIndustriesData();
     const selectedUniversities = selectedUniversitiesData();
     //helps to achieve mentees page cofunctionality with cohort filters 
-    if(document.getElementById("selection").value === "mentees"){
-        if(selectedUniversities.length == 0 && selectedYears.length == 0){
+    if (document.getElementById('menteesCheckbox').checked == true) {
+        if (selectedUniversities.length == 0 && selectedYears.length == 0) {
             renderAllProfiles()
             return
         }
         if (selectedUniversities.length == 0) {
-           filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
-           filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
-           renderProfiles(filteredMentors, filteredMentees);
-        } else{
+            filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+            filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+            renderProfiles(filteredMentors, filteredMentees);
+        } else {
             filterByUniversity("")
         }
         return;
     }//mentors page cofunctionality
-    if(selectedIndustries.length == 0 && selectedYears.length == 0){
+    if (selectedIndustries.length == 0 && selectedYears.length == 0) {
         renderAllProfiles()
         return
     }
     if (selectedIndustries.length == 0) {
-       filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
-       filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
-       renderProfiles(filteredMentors, filteredMentees);
-    } else{
+        filteredMentors = mentors.filter((mentor) => selectedYears.includes(mentor.year));
+        filteredMentees = mentees.filter((mentee) => selectedYears.includes(mentee.year));
+        renderProfiles(filteredMentors, filteredMentees);
+    } else {
         filterByIndustry("")
     }
 }
-function openMentorProfile(index){
+//mentor mentee checkboxes
+function mentorsCheckout() {
+    uncheckCheckboxes();
+    renderAllProfiles();
+    $("#showMentors").show();
+    $("#showMentees").hide();
+    $("#university-filter").hide();
+    $("#industry-filter").show();
+}
+function menteesCheckout() {
+    uncheckCheckboxes();
+    renderAllProfiles();
+    $("#showMentees").show();
+    $("#showMentors").hide();
+    $("#university-filter").show();
+    $("#industry-filter").hide();
+}
+//to make the checkboxes to select one at a time
+const checkboxes = document.querySelectorAll('.custom-check-box');
+function handleCheckboxChange() {
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked && checkbox !== this) {
+      checkbox.checked = false;
+    }
+  });
+}
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', handleCheckboxChange);
+});
+function openMentorProfile(index) {
     const profile = mentors[parseInt(index)];
     const template = $("#template-profile-mentor-content").html();
     const content = Mustache.render(template, profile);
     $("#profile-modal-content").html(content);
     $("#profile-modal").modal();
 }
-function openMenteeProfile(index){
+function openMenteeProfile(index) {
     const profile = mentees[parseInt(index)];
     const template = $("#template-profile-mentee-content").html();
     const content = Mustache.render(template, profile);

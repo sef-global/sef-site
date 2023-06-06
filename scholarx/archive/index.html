@@ -67,11 +67,16 @@
         <h6>FILTER</h6>
         <hr>
         <!--mentor mentee selection-->
-        <div class="mt-2 mb-5">
-            <select id="selection" class="btn btn-secondary dropdown-toggle" >
-                <option value="mentors">Mentors</option>
-                <option value="mentees">Mentees</option>
-            </select>
+        <div class="mt-2 mb-5" id="selection">
+            <button class="btn btn-sm custom-checkbox mb-3 py-2 btn-checkbox">
+                <input class="custom-control-input custom-check-box" id="mentorsCheckbox" onclick="mentorsCheckout()" type="checkbox">
+                <label class="custom-control-label" for="mentorsCheckbox">mentors</label>
+            </button>
+            <br>
+            <button class="btn btn-sm custom-checkbox mb-3 py-2 btn-checkbox">
+                <input class="custom-control-input custom-check-box" id="menteesCheckbox" onclick="menteesCheckout()" type="checkbox">
+                <label class="custom-control-label" for="menteesCheckbox">mentees</label>
+            </button>
         </div>
         <h6>COHORT</h6>
         <hr>
@@ -161,6 +166,32 @@
         </div>
     </div>
 </div>
+<!--contact us-->
+<section class="section section-secondary">
+    <div class="container px-md-5 pb-3">
+      <div class="contact-us row align-items-center justify-content-md-between">
+        <div class="col-md-5 d-flex justify-content-center">
+          <img class="img-fluid align-self-start w-80"
+               src="./images/contact-section.png"
+               alt="" width="250px">
+        </div>
+        <div class="col-md-7 justify-content-center">
+          <div>
+            <div class="row justify-content-center justify-content-md-end">
+              <div class="col-12">
+                <h3 class="mb-2 mt-4 text-onelive">Help Us Improve</h3>
+                <p>
+                    If you have noticed any incorrect data on ScholarX archive, please contact us. Your feedback helps us improve our content and correct any errors that may have been overlooked. Thank you.
+                    <a href="mailto:sustainableedufoundation@gmail.com">sustainableedufoundation@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--footer-->
 <footer class="footer">
     <div id="footer"></div>
     <!--footer goes here -->
@@ -194,7 +225,7 @@
         </tr>
     {{/menteeProfiles}}     
 </script>
-  
+
 <!-- template INDUSTRY filters-->
 <script id="industry-filter-template" type="x-tmpl-mustache">
     {{#checkboxes}}
