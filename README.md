@@ -5,7 +5,7 @@
 [![version](https://img.shields.io/badge/version-3.0.0-yellow.svg)](https://semver.org)
 [![Twitter Follow](https://img.shields.io/twitter/follow/goasksef.svg?style=social&label=Follow&maxAge=2592000?style=flat-square)](https://twitter.com/goasksef)
 
-This website was built by a set of enthusiastic developers as part of the Sustainable Education Foundation.
+This website was built by a set of [enthusiastic developers](https://github.com/sef-global/sef-site/graphs/contributors) as part of the Sustainable Education Foundation.
 
 <div align="center">
   <img src="https://avatars3.githubusercontent.com/u/31291163?s=200&v=4" />
