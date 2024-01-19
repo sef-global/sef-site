@@ -69,7 +69,7 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 
 <hr>
 
-Sustainable Education Foundation
+© 2024 [Sustainable Education Foundation - SEF](https://sefglobal.org/).
 
 Developed using theme Argon by Creative tim
 
