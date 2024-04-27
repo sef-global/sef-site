@@ -60,16 +60,22 @@ async function getData() {
 
 async function loadData() {
     const { data } = await getData();
+    const mentorNames = new Set(); // Set to store unique mentor names
     for (let i = 0; i < data.length; i++) {
-        years.push(data[i].year)
-        industries.push(data[i].fields)
+        years.push(data[i].year);
+        industries.push(data[i].fields);
         if (data[i].type == "mentor") {
-            mentors.push(data[i])
+            // Check if the mentor's name is already in the Set
+            if (!mentorNames.has(data[i].name)) {
+                mentorNames.add(data[i].name); // Add the mentor's name to the Set
+                mentors.push(data[i]); // Add the mentor to the mentors array
+            }
         } else {
-            mentees.push(data[i])
-            universities.push(data[i].university)
+            mentees.push(data[i]);
+            universities.push(data[i].university);
         }
     }
+    
     //add index for all the items 
     mentors.forEach(function (mentors, index) {
         mentors.index = index;
