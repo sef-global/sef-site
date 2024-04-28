@@ -60,14 +60,14 @@ async function getData() {
 
 async function loadData() {
     const { data } = await getData();
-    const mentorNames = new Set(); // Set to store unique mentor names
+    const mentorName = new Set(); // Set to store unique mentor names
     for (let i = 0; i < data.length; i++) {
         years.push(data[i].year);
         industries.push(data[i].fields);
         if (data[i].type == "mentor") {
-            // Check if the mentor's name is already in the Set
-            if (!mentorNames.has(data[i].name)) {
-                mentorNames.add(data[i].name); // Add the mentor's name to the Set
+            // Check if the mentor's name is already in the Set using the title
+            if (!mentorName.has(data[i].title)) {
+                mentorName.add(data[i].title); // Add the mentor's title to the Set
                 mentors.push(data[i]); // Add the mentor to the mentors array
             }
         } else {
