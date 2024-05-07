@@ -741,6 +741,52 @@ li.timeline-element:last-child {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .footer-elements {
+       position: relative;
+       top: 14px;
+       left: 280px;
+    }
+
+    .copyright {
+        width: 103%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .footer-elements {
+       left: 100px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .footer-elements {
+       left: 60px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .footer-elements {
+       left: 35px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-elements {
+       left: 18px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .footer-elements {
+        left: 2px;
+        justify
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
 .program-timeline-row{
     width: 100%;
 }
