@@ -427,37 +427,51 @@
             dataType: 'json',
             success: function (data) {
 
-                //slice array to two parts
-                if (data.length >= 8) {
-                    let partOne = data.slice(0, 8);
-                    let partTwo = data.slice(8);
+                // Define global variable to keep track of displayed profiles
+                let displayedProfiles = 8;
 
-                    //mustache render - part one
-                    let contentPartOne = Mustache.render($("#templateTeam").html(), {"data": partOne});
-
-                    //display first 8 profiles
-                    $("#teamContent").html(contentPartOne);
-                    $("#btnShowLess").hide();
-                    //hide button
-                    $("#btnShowMore").click(function () {
-                        let contentPartTwo = Mustache.render($("#templateTeam").html(), {"data": partTwo});
-                        $("#teamContent").append(contentPartTwo);
-                        $("#btnShowMore").hide();
-                        $("#btnShowLess").show();
-                    });
-                    $("#btnShowLess").click(function () {
-                        $("#teamContent").html(contentPartOne);
-                        $("#btnShowMore").show();
-                        $("#btnShowLess").hide();
-                    });
-                } else {
-                    //mustache render
-                    let content = Mustache.render($("#templateTeam").html(), {"data": data});
-
-                    //display first 8 profiles
+                // Function to display profiles based on the number to show
+                function displayProfiles(numToShow) {
+                    // Slice the data array based on the number to show
+                    let profilesToShow = data.slice(0, numToShow);
+                    // Render the profiles using Mustache
+                    let content = Mustache.render($("#templateTeam").html(), {"data": profilesToShow});
+                    // Display the rendered profiles
                     $("#teamContent").html(content);
+                }
 
-                    //hide button
+                // Displaying first 8 profiles
+                displayProfiles(displayedProfiles);
+                $("#btnShowLess").hide();
+
+
+                // Show More button click event
+                $("#btnShowMore").click(function () {
+                    // Increment the number of displayed profiles
+                    displayedProfiles += 8;
+                    // Display profiles based on the updated count
+                    displayProfiles(displayedProfiles);
+                    // Hide or show appropriate buttons
+                    if (displayedProfiles >= data.length) {
+                        $("#btnShowMore").hide();
+                    }
+                    $("#btnShowLess").show();
+                });
+
+                // Show Less button click event
+                $("#btnShowLess").click(function () {
+                    // Reset the displayed profiles count to 8
+                    displayedProfiles = 8;
+                    // Display the initial 8 profiles
+                    displayProfiles(displayedProfiles);
+                    // Hide the Show Less button
+                    $("#btnShowLess").hide();
+                    // Show the Show More button
+                    $("#btnShowMore").show();
+                });
+
+                // Hide buttons if there are no more than 8 profiles
+                if (data.length <= 8) {
                     $("#btnShowMore").hide();
                     $("#btnShowLess").hide();
                 }
