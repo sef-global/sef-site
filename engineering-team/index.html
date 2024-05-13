@@ -262,21 +262,36 @@
 <script src="../assets/js/functions.js"></script>
 <!--Mustache.js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+<!--
+ * Renders a list of blog posts using the provided data.
+ * The posts are displayed in a grid layout with 3 posts per row.
+ * Each post is displayed as a card with an image, title, and author information.
+ *
+ * @param {Object[]} data - An array of post data objects.
+ * @param {string} data[].url - The URL of the post.
+ * @param {string} data[].image - The URL of the post image.
+ * @param {string} data[].title - The title of the post.
+ * @param {string} data[].author_image - The URL of the author's profile image.
+ * @param {string} data[].author_name - The name of the post author.
+ -->
 <script type="text/html" id="template-posts">
     <div class="row">
         {{#data}}
-        <div class="col-md-4 mb-5">
-            <div class="card px-0">
+        <div class="col-md-4 col-sm-6 mb-5">
+            <div class="card px-0 blogpost-card">
                 <a href="{{url}}" target="_blank" class="card shadow project-card">
                     <div class="card-body posts-card-body">
-                        <img src="{{image}}" class="img-fluid  img-full" alt="Rounded image">
+                        <div class="image-container" style="position: relative; overflow: hidden; height: 0; padding-bottom: 56.25%;">
+                            <img src="{{image}}" class="img-fluid img-thumbnail" alt="Post Image" style="object-fit: cover; width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+                        </div>
                         <p class="card-text text-darker text-left ml-3">
                             {{title}}
                         </p>
                     </div>
                     <div class="card-footer">
                         <div class="author">
-                            <img src="{{author_image}}" alt="..." class="avatar img-raised">
+                            <img src="{{author_image}}" alt="Author Image" class="avatar img-raised" style="object-fit: cover; width: 30px; height: 30px;">
                             <span>{{author_name}}</span>
                         </div>
                     </div>
@@ -286,6 +301,22 @@
         {{/data}}
     </div>
 </script>
+
+</script>
+
+<!--
+ * Renders a success story card using the provided data.
+ * The card includes the developer's image, name, LinkedIn profile link, and the story text.
+ * It also lists the developer's achievements.
+ *
+ * @param {Object} card - An object containing the success story data.
+ * @param {string} card.image - The URL of the developer's profile image.
+ * @param {string} card.linkedin - The URL of the developer's LinkedIn profile.
+ * @param {string} card.dev_name - The name of the developer.
+ * @param {string} card.story - The success story text.
+ * @param {string[]} card.acheivements - An array of the developer's achievements.
+ * @returns {string} The HTML markup for the success story card.
+ -->
 <script id="success-story" type="text/html">
     {{#card}}
     <div class="project-card shadow my-4 ">
@@ -313,6 +344,12 @@
     </div>
     {{/card}}
 </script>
+
+<!--
+ * Asynchronously loads and renders a list of "success stories" from a Google Apps Script API endpoint.
+ *
+ * This function is called when the page is loaded to populate the "stories" section of the page.
+ -->
 <script>
     async function loadStories() {
         const response = await fetch("https://script.google.com/macros/s/AKfycbwv81hbfTsHAGcNQnmrjcV9YPVkipHRbjXct_6DlPWrovCVqy90j8DlRNb2D_MTQAiOuQ/exec");
