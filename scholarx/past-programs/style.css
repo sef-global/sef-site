@@ -30,20 +30,20 @@
     padding: 0 !important;
     display: flex;
     flex-direction: column;
-    padding: 10px !important;
-    gap: 5px;
+    padding: 15px !important;
+    gap: 10px;
 
 }
 
 .scholarx-card-deck .scholarx-card .card-body .card-title{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 0;
 }
 
 .scholarx-card-deck .scholarx-card .card-body .card-text{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #666;
     margin-bottom: 0;
 }
@@ -59,11 +59,11 @@
     }
 
     .scholarx-card-deck .scholarx-card .card-body .card-title{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .scholarx-card-deck .scholarx-card .card-body .card-text{
-        font-size: 0.7rem;
+        font-size: 0.85rem;
     }
 }
 
