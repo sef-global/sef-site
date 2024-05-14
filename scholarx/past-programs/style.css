@@ -2,3 +2,73 @@
     height: 140px;
     object-fit: cover;
 }
+
+.scholarx-card-deck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.scholarx-card-deck .scholarx-card{
+    width: calc(100%/3 - 10px) !important;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    border-radius: 25px;
+}
+
+.scholarx-card-deck .scholarx-card .card-img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 100px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.scholarx-card-deck .scholarx-card .card-body{
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    padding: 10px !important;
+    gap: 5px;
+
+}
+
+.scholarx-card-deck .scholarx-card .card-body .card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.scholarx-card-deck .scholarx-card .card-body .card-text{
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .scholarx-card-deck .scholarx-card{
+        width: calc(100%/2 - 15px/2) !important;
+        gap: 0;
+    }
+
+    .scholarx-card-deck .scholarx-card .card-img{
+        height: 100px;
+    }
+
+    .scholarx-card-deck .scholarx-card .card-body .card-title{
+        font-size: 1rem;
+    }
+
+    .scholarx-card-deck .scholarx-card .card-body .card-text{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 494px) {
+    .scholarx-card-deck .scholarx-card{
+        width: 100% !important;
+    }
+}
