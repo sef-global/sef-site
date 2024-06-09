@@ -123,12 +123,8 @@
                                 alt="ScholarX"
                             >
                             <p class="card-text text-darker text-center">ScholarX is an exclusive 6-month mentoring program
-                                aimed
-                                at a
-                                selected
-                                pool of undergraduate students based in Sri Lanka.</p>
-                            <h5 class="display-3 text-center project-stat">
-                                2500+</h5>
+                                aimed at a selected pool of undergraduate students based in Sri Lanka.</p>
+                            <h5 class="display-3 text-center project-stat" id="scholarx-stat">5000+</h5>
                             <p class="text-dark text-center stats">
                                 hours of mentoring provided via our ScholarX program
                             </p>
@@ -139,11 +135,8 @@
                             <img src="assets/img/projects/irc.png" class="card-img-top project-img img-center" alt="IRC"
                             >
                             <p class="card-text text-darker text-center">The International Research Council (IRC) is a
-                                community
-                                created by
-                                SEF to
-                                showcase the work in various fields of Sri Lankan researchers.</p>
-                            <h5 class="display-3 text-center project-stat">100+</h5>
+                                community created by SEF to showcase the work in various fields of Sri Lankan researchers.</p>
+                            <h5 class="display-3 text-center project-stat" id="irc-stat">100+</h5>
                             <p class="text-dark text-center stats">
                                 researchers of Sri Lankan origin representing the world's top universities
                             </p>
@@ -155,11 +148,9 @@
                                 class="card-img-top project-img img-center"
                                 alt="OneLive">
                             <p class="card-text text-darker text-center">"OneLive" is an interactive webinar series done
-                                every weekend with the
-                                experts in their fields to expand
-                                the knowledge of Sri Lankan students.
+                                every weekend with the experts in their fields to expand the knowledge of Sri Lankan students.
                             </p>
-                            <h5 class="display-3 text-center project-stat">275 000+</h5>
+                            <h5 class="display-3 text-center project-stat" id="onelive-stat">275 000+</h5>
                             <p class="text-dark text-center stats">
                                 students reached via our Onelive interactive webinar series
                             </p>
@@ -175,11 +166,9 @@
                             <img src="assets/img/projects/academix.png" class="card-img-top project-img img-center"
                                  alt="Academix">
                             <p class="card-text text-darker text-center">AcadeMix aims to curate a collection of free
-                                education resources
-                                for Sri Lankan students to maximise their learning
+                                education resources for Sri Lankan students to maximise their learning
                                 potential from Primary through to Post Graduate education.</p>
-                            <h5 class="display-3 text-center project-stat">
-                                100+</h5>
+                            <h5 class="display-3 text-center project-stat" id="academix-stat">100+</h5>
                             <p class="text-dark text-center stats">
                                 free online resources to learn from home
                             </p>
@@ -193,21 +182,20 @@
                                 <p class="card-text text-darker text-center project-card-p">A 12 week program aimed at creating a non-competitive safe 
                                     environment to develop English speaking skills for Sri Lankan undergraduates.
                                 </p>
-                            <h5 class="display-3 text-center project-stat">
-                                09</h5>
+                            <h5 class="display-3 text-center project-stat" id="upspeak-stat">09</h5>
                             <p class="text-dark text-center stats">
                                 students improved their English speaking skills</p>
                         </div>
                     </a>
-		    <a href="student-ambassador.html" class="card col-lg-4 shadow project-card">
+                    <!-- student-ambassador goes here -->
+                    <a href="student-ambassador.html" class="card col-lg-4 shadow project-card">
                         <div class="card-body">
                             <img src="assets/img/projects/sa.png" class="card-img-top project-img img-center"
                                  alt="Student Ambassador">
                             <p class="card-text text-darker text-center">Student Ambassadors (SA) of the Sustainable
                                 Education Foundation (SEF) will act as a liaison for SEF while also acting as an
-                                Evangelist for the Sustainable
-                                Education Foundation.</p>
-                            <h5 class="display-3 text-center project-stat">100+</h5>
+                                Evangelist for the Sustainable Education Foundation.</p>
+                            <h5 class="display-3 text-center project-stat" id="sa-stat">100+</h5>
                             <p class="text-dark text-center stats">
                                 students trained with soft skills required for the industry
                             </p>
@@ -538,4 +526,68 @@
         )
     })
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = [
+            { id: "scholarx-stat", start: 0, end: 5000, duration: 2000 },
+            { id: "irc-stat", start: 0, end: 100, duration: 2000 },
+            { id: "onelive-stat", start: 0, end: 275000, duration: 2000 },
+            { id: "academix-stat", start: 0, end: 100, duration: 2000 },
+            { id: "upspeak-stat", start: 0, end: 9, duration: 2000 },
+            { id: "sa-stat", start: 0, end: 100, duration: 2000 }
+        ];
+
+        let observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1
+        };
+
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(document.getElementById("projects"));
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                animateCounter(counter.id, counter.start, counter.end, counter.duration);
+            });
+        }
+
+        function animateCounter(id, start, end, duration) {
+            const element = document.getElementById(id);
+            let startTimestamp = null;
+
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                let value = Math.floor(progress * (end - start) + start);
+                if (id === 'upspeak-stat') {
+                    element.textContent = value.toString().padStart(2, '0');
+                } 
+                
+                else {
+                    element.textContent = value.toLocaleString();
+                    if (progress === 1) {
+                        element.textContent += "+";
+                    }
+                }
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+
+            window.requestAnimationFrame(step);
+        }
+    });
+</script>
+
 </html>
